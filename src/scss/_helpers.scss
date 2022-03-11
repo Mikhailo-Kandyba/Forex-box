@@ -1,0 +1,33 @@
+@import "variables";
+@import "mixin";
+
+.size-md {
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base + 2;
+}
+
+.button-md {
+  padding: 12px 22px 12px 65px !important;
+}
+
+.img-button {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/img-button.png");
+    background-repeat: no-repeat;
+    z-index: 50;
+
+    &:hover {
+      filter: contrast(20%);
+    }
+  }
+}
+

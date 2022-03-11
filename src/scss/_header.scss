@@ -1,43 +1,72 @@
 @import "variables";
 @import "mixin";
 
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0 50px 0 0;
+  background: $white;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+}
 
+.select-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.lang {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 2px;
+  background: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
+  margin-right: 15px;
+
+  label {
+    font-family: $lato-regular;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    color: $mine-shaft;
+
+    &:hover {
+      background: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
+      color: $white;
+      transition: all .50s;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 40px 20px !important;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+
+  &:after {
+    display: none;
+  }
+}
 
 .header-content {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-
-  @include breakpoint($tablet) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  @include breakpoint($mobile) {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .input-group {
-    display: none;
-
-    @include breakpoint($mobile) {
-      display: flex;
-      max-width: 135px;
-    }
-  }
-
-  .logo {
-    @include breakpoint($mobile) {
-      margin-right: 17px;
-    }
-  }
 }
 
 .menu-navigation-wrap {
   min-width: 630px;
-  margin-bottom: 5px;
 
   @include breakpoint($mobile) {
     position: fixed;
@@ -63,22 +92,32 @@
   }
 
   li {
-    @include breakpoint($mobile) {
-      font-size: $font-size-base + 3;
-      line-height: $line-height-base + 5;
-    }
+    margin-right: 80px;
   }
 
   a {
-    padding: 5px 10px;
-    color: $black;
+    color: $mine-shaft;
+    position: relative;
+    padding-bottom: 7px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+      transition: width 0.3s linear;
+    }
 
     &:hover {
       color: $black;
-    }
 
-    @include breakpoint($mobile) {
-      display: block;
+      &:after {
+        width: 100%;
+      }
     }
   }
 
@@ -162,6 +201,65 @@
       bottom: 4px;
       transform: translateY(-8px) translateX(0) rotate(-45deg);
       width: 100%;
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  top: 98px;
+  bottom: 0;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+    background: $white;
+    max-width: 131px;
+    width: 100%;
+    padding: 32px 11px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      font-family: $lato-regular;
+
+      .sidebar-hover {
+        display: block;
+      }
+
+      .sidebar-img {
+        display: none;
+      }
+    }
+
+    .sidebar-hover {
+      display: none;
+    }
+
+    img {
+      width: 33px;
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
   }
 }

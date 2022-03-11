@@ -10,139 +10,84 @@
     <body>
         <div id="wrapper">
             <header class="header">
-                <div class="container-xxl padding-left-73">
-                    <div class="header-content position-relative">
-<!--                        <a class="logo" href="index.html">-->
-<!--                            <img src="./images/logo.svg" width="197" height="63" alt="logo">-->
-<!--                        </a>-->
-                        <div class="input-group">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        </div>
-                        <div class="menu-navigation-wrap">
-                            <ul class="menu-navigation">
-                                <li class="d-flex">
-                                    <a href="#">Каталог продукции</a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle z-index-20" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li>
-                                                <a href="#">Кольца</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Подвески</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Часы</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Еще украшения</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Серьги</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Цепи</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Браслеты</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Фасфор</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Столовое серебро</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Roberto Bravo</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="d-flex">
-                                    <a href="#">Услуги компании</a>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                            <li>
-                                                <a href="#">Украшения на заказ</a>
-                                                <a href="#">Гравировка</a>
-                                                <a href="#">Ремонт ювелирных изделий</a>
-                                                <a href="#">Обручальные кольца на заказ</a>
-                                                <a href="#">Ремонт ювелирных изделий</a>
-                                                <a href="#">Обручальные кольца на заказ</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">О нас</a>
-                                </li>
-                                <li>
-                                    <a href="#">Контакты</a>
-                                </li>
-                                <li>
-                                    <ul class="btn-list btn-mobile d-flex align-items-center justify-content-end">
-                                        <li>
-                                            <button class="btn-icon">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn-icon">
-                                                <i class="fa fa-search" aria-hidden="true"></i>
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <select class="languages">
-                                                <option>RU</option>
-                                                <option>UA</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <button class="btn-icon">
-                                                <i class="fa fa-rub" aria-hidden="true"></i>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="btn-list d-flex align-items-center justify-content-end">
-                                <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </button>
-                                </li>
-                                <li>
-                                    <select class="languages">
-                                        <option>RU</option>
-                                        <option>UA</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </button>
-                                </li>
-                            </ul>
-                        <button class="btn-menu">
-                            <span class="top"></span>
-                            <span class="middle"></span>
-                            <span class="bottom"></span>
-                        </button>
+                <div class="header-content">
+                    <div class="menu-navigation-wrap">
+                        <ul class="menu-navigation">
+                            <li>
+                                <a class="logo" href="index.html">
+                                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Заказ услуги">Заказ услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Мои услуги">Мои услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Статистика потребления ресурсов">Статистика потребления ресурсов</a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="select-wrap">
+                        <form action="#" class="lang">
+                            <label for="select-button" class="button-md img-button">0.00 EUR</label>
+                            <input type="submit" id="select-button">
+                        </form>
+                        <form action="#" class="lang">
+                            <label for="select-languages" class="size-md">Ru</label>
+                            <input type="submit" id="select-languages">
+                        </form>
+                    </div>
+                    <button class="btn-menu">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </button>
                 </div>
             </header>
-            <main>
-
+            <main style="display: flex; padding: 100px;">
+                <ul class="sidebar">
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <img class="sidebar-img" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
+                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <section class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet deserunt ea eos hic inventore, ipsam optio possimus reprehenderit repudiandae. A adipisci beatae libero maiores placeat quia quibusdam veniam voluptate.</p>
+                </section>
             </main>
             <footer>
 
