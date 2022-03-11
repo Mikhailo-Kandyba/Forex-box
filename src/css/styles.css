@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  height: 100%;
+  background: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Lato-Light;
+  font-weight: 400;
+  min-width: 320px;
+  color: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: 0;
+  text-decoration: none; }
+  a:hover {
+    color: 0; }
+  a:focus {
+    outline: none; }
+
+i {
+  color: 0; }
+
+button {
+  cursor: pointer;
+  border: none; }
+  button:focus {
+    outline: none; }
+
+.btn-menu {
+  background: transparent;
+  padding: 0; }
+  .btn-menu:hover {
+    background: transparent; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+input {
+  outline: none; }
+
+* {
+  box-sizing: border-box; }
+
+#wrapper {
+  overflow: hidden;
+  position: relative; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../font/lato/Lato-Bold.woff") format("woff"), url("../font/lato/Lato-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("../font/lato/Lato-light.woff") format("woff"), url("../font/lato/Lato-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../font/lato/Lato-Regular.woff") format("woff"), url("../font/lato/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.container-xxl {
+  max-width: 1310px; }
+
+.header-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  @media only screen and (max-width: 1023px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start; } }
+  @media only screen and (max-width: 767px) {
+    .header-content {
+      flex-direction: row;
+      justify-content: flex-start; } }
+  .header-content .input-group {
+    display: none; }
+    @media only screen and (max-width: 767px) {
+      .header-content .input-group {
+        display: flex;
+        max-width: 135px; } }
+  @media only screen and (max-width: 767px) {
+    .header-content .logo {
+      margin-right: 17px; } }
+
+.menu-navigation-wrap {
+  min-width: 630px;
+  margin-bottom: 5px; }
+  @media only screen and (max-width: 767px) {
+    .menu-navigation-wrap {
+      position: fixed;
+      top: 0;
+      right: 200%;
+      transition: all .25s ease;
+      min-width: 230px; } }
+
+.menu-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 767px) {
+    .menu-navigation {
+      display: block;
+      background: #fff;
+      min-width: inherit;
+      padding: 50px 30px;
+      border-radius: 5px; } }
+  @media only screen and (max-width: 767px) {
+    .menu-navigation li {
+      font-size: 21px;
+      line-height: 27px; } }
+  .menu-navigation a {
+    padding: 5px 10px;
+    color: 0; }
+    .menu-navigation a:hover {
+      color: 0; }
+    @media only screen and (max-width: 767px) {
+      .menu-navigation a {
+        display: block; } }
+  .menu-navigation .btn-mobile {
+    display: none !important; }
+    @media only screen and (max-width: 767px) {
+      .menu-navigation .btn-mobile {
+        display: flex !important; } }
+  @media only screen and (max-width: 767px) {
+    .menu-navigation .justify-content-end {
+      justify-content: flex-start !important; } }
+
+@media only screen and (max-width: 767px) {
+  .show-menu {
+    right: 0; } }
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  height: 22px;
+  width: 28px;
+  cursor: pointer;
+  transition: all .25s ease;
+  z-index: 103;
+  transform: rotate(180deg); }
+  @media only screen and (max-width: 767px) {
+    .btn-menu {
+      display: block; } }
+  .btn-menu span {
+    background: 0;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+  .btn-menu .middle {
+    transform: translate(0, -50%);
+    top: 50%;
+    width: 70%; }
+  .btn-menu .bottom {
+    top: auto;
+    bottom: 0; }
+  .btn-menu .top {
+    bottom: 0;
+    width: 40%; }
+  .btn-menu.active {
+    background: transparent; }
+    .btn-menu.active .top {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+      top: 0;
+      width: 100%; }
+    .btn-menu.active .middle {
+      opacity: 0; }
+    .btn-menu.active .bottom {
+      bottom: 4px;
+      transform: translateY(-8px) translateX(0) rotate(-45deg);
+      width: 100%; }

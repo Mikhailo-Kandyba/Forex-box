@@ -1,0 +1,176 @@
+@import "variables";
+@import "mixin";
+
+
+
+
+.header-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .input-group {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: flex;
+      max-width: 135px;
+    }
+  }
+
+  .logo {
+    @include breakpoint($mobile) {
+      margin-right: 17px;
+    }
+  }
+}
+
+.menu-navigation-wrap {
+  min-width: 630px;
+  margin-bottom: 5px;
+
+  @include breakpoint($mobile) {
+    position: fixed;
+    top: 0;
+    right: 200%;
+    transition: all .25s ease;
+    min-width: 230px;
+  }
+}
+
+.menu-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include breakpoint($mobile) {
+    display: block;
+    background: $white;
+    min-width: inherit;
+    padding: 50px 30px;
+    border-radius: 5px;
+  }
+
+  li {
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base + 5;
+    }
+  }
+
+  a {
+    padding: 5px 10px;
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+
+    @include breakpoint($mobile) {
+      display: block;
+    }
+  }
+
+  .btn-mobile {
+    display: none !important;
+    @include breakpoint($mobile) {
+      display: flex !important;
+    }
+  }
+
+  .justify-content-end {
+    @include breakpoint($mobile) {
+      justify-content: flex-start !important;
+    }
+  }
+}
+
+.show-menu {
+  @include breakpoint($mobile) {
+    right: 0;
+  }
+}
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  height: 22px;
+  width: 28px;
+  cursor: pointer;
+  transition: all .25s ease;
+  z-index: 103;
+  transform: rotate(180deg);
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+
+  span {
+    background: $black;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+
+  .middle {
+    transform: translate(0, -50%);
+    top: 50%;
+    width: 70%;
+  }
+
+  .bottom {
+    top: auto;
+    bottom: 0;
+  }
+
+  .top {
+    bottom: 0;
+    width: 40%;
+  }
+
+  &.active {
+    background: transparent;
+    .top {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+      top: 0;
+      width: 100%;
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      bottom: 4px;
+      transform: translateY(-8px) translateX(0) rotate(-45deg);
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
