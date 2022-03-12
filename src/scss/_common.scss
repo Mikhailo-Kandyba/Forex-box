@@ -1,0 +1,109 @@
+@import "variables";
+@import "mixin";
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+    background: $white;
+    max-width: 131px;
+    height: 15%;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:first-child {
+      height: 10%;
+    }
+
+    .active {
+      font-family: $lato-regular;
+
+      .sidebar-hover {
+        display: block;
+      }
+
+      .sidebar-img {
+        display: none;
+      }
+    }
+
+    .sidebar-hover {
+      display: none;
+    }
+
+    img {
+      width: 33px;
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $mine-shaft;
+      text-align: center;
+
+      &:hover {
+        font-family: $lato-regular;
+
+        .sidebar-hover {
+          display: block;
+        }
+
+        .sidebar-img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  img {
+    width: 80px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.title-page {
+  font-family: $lato-regular;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base + 5;
+  margin-bottom: 25px;
+}
+
+.service {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
+    border-radius: 5px;
+    max-width: 310px;
+    min-height: 170px;
+    width: 100%;
+    position: relative;
+
+    p {
+      font-family: $lato-regular;
+      font-size: $font-size-base + 17;
+      line-height: $line-height-base + 11;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.account-page {
+  padding-left: 65px;
+}

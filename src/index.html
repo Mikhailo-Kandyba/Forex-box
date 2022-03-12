@@ -10,16 +10,11 @@
     <body>
         <div id="wrapper">
             <header class="header">
-                <div class="header-content">
+                <div class="container">
                     <div class="menu-navigation-wrap">
                         <ul class="menu-navigation">
                             <li>
-                                <a class="logo" href="index.html">
-                                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Заказ услуги">Заказ услуги</a>
+                                <a href="#" class="active" title="Заказ услуги">Заказ услуги</a>
                             </li>
                             <li>
                                 <a href="#" title="Мои услуги">Мои услуги</a>
@@ -28,70 +23,90 @@
                                 <a href="#" title="Статистика потребления ресурсов">Статистика потребления ресурсов</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="select-wrap">
-                        <form action="#" class="lang">
-                            <label for="select-button" class="button-md img-button">0.00 EUR</label>
-                            <input type="submit" id="select-button">
-                        </form>
-                        <form action="#" class="lang">
-                            <label for="select-languages" class="size-md">Ru</label>
-                            <input type="submit" id="select-languages">
-                        </form>
+                        <div class="select-wrap">
+                            <form action="#" class="lang">
+                                <label for="select-button" class="button-md img-button">0.00 EUR</label>
+                                <input type="submit" id="select-button">
+                            </form>
+                            <form action="#" class="lang">
+                                <label for="select-languages" class="size-md">Ru</label>
+                                <input type="submit" id="select-languages">
+                            </form>
+                        </div>
                     </div>
                     <button class="btn-menu">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
-                    </button>
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </button>
                 </div>
             </header>
-            <main style="display: flex; padding: 100px;">
-                <ul class="sidebar">
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
-                        <span>Услуги</span>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
-                        <span>Биллинг</span>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
-                        <span>Данные аккаунта</span>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
-                        <span>Поддержка</span>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
-                        <span>Партнерская программа</span>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <img class="sidebar-img" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
-                        <img class="sidebar-hover" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
-                        <span>Выйти</span>
-                        <a href="#"></a>
-                    </li>
-                </ul>
+            <main>
                 <section class="container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet deserunt ea eos hic inventore, ipsam optio possimus reprehenderit repudiandae. A adipisci beatae libero maiores placeat quia quibusdam veniam voluptate.</p>
+                    <ul class="sidebar">
+                        <li>
+                            <a class="logo" href="index.html">
+                                <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">
+                                <img class="sidebar-img" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-img" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-img" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-img" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-img" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-img" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
+                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="container">
+                    <div class="account-page">
+                        <h1 class="title-page">Аккаунт: 53785</h1>
+                        <ul class="service">
+                            <li>
+                                <button class="prompt-btn" data-title="">
+                                    <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
+                                </button>
+                                <p>OPTIMUM</p>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </main>
-            <footer>
-
-            </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/main.js"></script>

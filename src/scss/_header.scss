@@ -2,31 +2,29 @@
 @import "mixin";
 
 .header {
-  position: fixed;
-  width: 100%;
-  padding: 0 50px 0 0;
+  padding: 17px 0 8px 130px;
   background: $white;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
 }
 
 .select-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .lang {
   display: flex;
   border-radius: 6px;
-  overflow: hidden;
   padding: 2px;
   background: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
-  margin-right: 15px;
+  margin: 0 15px 15px 0;
 
   label {
     font-family: $lato-regular;
     cursor: pointer;
-    text-align: center;
     padding: 10px 20px;
     position: relative;
     background: $white;
@@ -49,24 +47,10 @@
   }
 }
 
-.logo {
-  display: flex;
-  padding: 40px 20px !important;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
-
-  &:after {
-    display: none;
-  }
-}
-
-.header-content {
+.menu-navigation-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.menu-navigation-wrap {
-  min-width: 630px;
 
   @include breakpoint($mobile) {
     position: fixed;
@@ -82,6 +66,8 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-width: 700px;
+  margin-right: 20px;
 
   @include breakpoint($mobile) {
     display: block;
@@ -92,7 +78,7 @@
   }
 
   li {
-    margin-right: 80px;
+    margin: 0 10px 10px 0;
   }
 
   a {
@@ -118,6 +104,22 @@
       &:after {
         width: 100%;
       }
+    }
+  }
+
+  .active {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+      transition: width 0.3s linear;
     }
   }
 
@@ -205,64 +207,7 @@
   }
 }
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: fixed;
-  left: 0;
-  height: 100%;
-  top: 98px;
-  bottom: 0;
 
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
-    background: $white;
-    max-width: 131px;
-    width: 100%;
-    padding: 32px 11px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    &:hover {
-      font-family: $lato-regular;
-
-      .sidebar-hover {
-        display: block;
-      }
-
-      .sidebar-img {
-        display: none;
-      }
-    }
-
-    .sidebar-hover {
-      display: none;
-    }
-
-    img {
-      width: 33px;
-      display: flex;
-      margin-bottom: 12px;
-    }
-
-    span {
-      display: block;
-      text-align: center;
-    }
-
-    a {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-  }
-}
 
 
 

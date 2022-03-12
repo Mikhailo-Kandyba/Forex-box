@@ -1,0 +1,10 @@
+@import "mixin";
+@import "variables";
+
+.prompt-btn {
+  background: $transparent;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
