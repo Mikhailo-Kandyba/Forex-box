@@ -57,20 +57,11 @@ table {
 }
 
 a {
-  color: $black;
   text-decoration: none;
-
-  &:hover {
-    color: $black;
-  }
 
   &:focus {
     outline: none;
   }
-}
-
-i {
-  color: $black;
 }
 
 button {
@@ -79,15 +70,6 @@ button {
 
   &:focus {
     outline: none;
-  }
-}
-
-.btn-menu {
-  background: transparent;
-  padding: 0;
-
-  &:hover {
-    background: transparent;
   }
 }
 
@@ -107,7 +89,6 @@ input {
 #wrapper {
   overflow: hidden;
   position: relative;
-  height: 100vh;
 }
 
 h1,

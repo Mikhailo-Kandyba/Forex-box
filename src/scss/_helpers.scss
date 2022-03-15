@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 
+/*size button*/
 .size-md {
   font-size: $font-size-base + 2;
   line-height: $line-height-base + 2;
@@ -9,7 +10,9 @@
 .button-md {
   padding: 12px 22px 12px 65px !important;
 }
+/*end size button*/
 
+/*img-button*/
 .img-button {
   position: relative;
 
@@ -30,10 +33,13 @@
     }
   }
 }
+/*end img-button*/
 
+/*padding*/
 .padding-30 {
   padding: 30px 10px 10px 30px;
 }
+/*end padding*/
 
 .gradient-border {
   border: 2px solid transparent;
@@ -43,4 +49,12 @@
 
 .align-flex-start {
   align-items: flex-start;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.max-width-113 {
+  max-width: 113px !important;
 }

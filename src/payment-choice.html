@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Forex-box</title>
+        <title>Payment-choice</title>
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="css/styles.css">
@@ -97,86 +97,85 @@
                 </section>
                 <!------------------------------------------end sidebar------------------------------------------------------->
                 <section class="container">
-                    <div class="account-page">
-                        <h1 class="title-page">Аккаунт: 53785</h1>
-                        <!----------------------------------service-list------------------------------------------------------>
-                        <ul class="service-list">
-                            <li class="service-item">
-                                <div class="service-area">
-                                    <div class="popup" onclick="myFunction()">
-                                        <div class="popup-text" id="myPopup">
-                                            <span>1 терминал MetaTrader</span>
-                                            <span>500MB оперативной памяти для терминала</span>
-                                            <span>Нагрузка на CPU до 5%</span>
-                                            <span>3GB дискового хранилища</span>
-                                        </div>
-                                        <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
+                    <h1 class="title-page">Аккаунт: 53785</h1>
+                    <!--------------------------------------service-list------------------------------------------------------>
+                    <ul class="service-list justify-content-flex-start">
+                        <li class="service-item">
+                            <div class="service-area">
+                                <div class="popup" onclick="myFunction()">
+                                    <div class="popup-text" id="myPopup">
+                                        <span>1 терминал MetaTrader</span>
+                                        <span>500MB оперативной памяти для терминала</span>
+                                        <span>Нагрузка на CPU до 5%</span>
+                                        <span>3GB дискового хранилища</span>
                                     </div>
-                                    <p class="view">OPTIMUM</p>
+                                    <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
                                 </div>
-                            </li>
-                            <li class="service-item gradient-border">
-                                <div class="service-area">
-                                    <p class="name-price">Цена за месяц:</p>
-                                    <p class="price">2,52€/mon</p>
-                                </div>
-                            </li>
-                            <li class="service-item">
-                                <div class="service-area padding-30 align-flex-start">
-                                    <form action="#" class="close-btn">
-                                        <label for="close">
-                                            <img src="./images/close-btn.svg" width="28" height="28" alt="close-btn">
-                                        </label>
-                                        <input type="submit" id="close">
-                                    </form>
-                                    <p class="text">Терминалы: 1 шт.</p>
-                                    <p class="text">Память на 1 терминал: 500МБ</p>
-                                    <p class="text">Дисковая квота: 3 ГБ</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <!----------------------------------end service-list-------------------------------------------------->
-                        <!----------------------------------accordion--------------------------------------------------------->
-                        <div class="accordion">
-                            <div class="accordion__title">
-                                <span class="accordion__title-text">Добавить терминал</span>
+                                <p class="view">OPTIMUM</p>
                             </div>
-                            <div class="accordion__content">
-                                <form action="#" class="terminal-selection">
-                                    <div class="form_radio_btn">
-                                        <input id="terminal-one" type="radio" name="radio" value="1">
-                                        <label for="terminal-one">+ 1 терминал</label>
-                                    </div>
-                                    <div class="form_radio_btn">
-                                        <input id="terminal-two" type="radio" name="radio" value="2" checked>
-                                        <label for="terminal-two">+ 2 терминал</label>
-                                    </div>
-                                    <div class="form_radio_btn">
-                                        <input id="terminal-three" type="radio" name="radio" value="3">
-                                        <label for="terminal-three">+ 3 терминал</label>
-                                    </div>
-                                </form>
+                        </li>
+                        <li class="service-item gradient-border">
+                            <div class="service-area">
+                                <p class="name-price">Цена за месяц:</p>
+                                <p class="price">2,52€/mon</p>
                             </div>
-                        </div>
-                        <!----------------------------------end accordion----------------------------------------------------->
-                        <!----------------------------------accordion replacement--------------------------------------------->
-<!--                        <form action="#">-->
-<!--                            <fieldset>-->
-<!--                                <select name="filesB" id="filesB" class="select-terminal">-->
-<!--                                    <option value="mypodcast" data-class="podcast">John Resig Podcast</option>-->
-<!--                                    <option value="myvideo" data-class="video">Scott Gonz&#xE1;lez Video</option>-->
-<!--                                    <option value="myrss" data-class="rss">jQuery RSS XML</option>-->
-<!--                                </select>-->
-<!--                            </fieldset>-->
-<!--                        </form>-->
-                        <!----------------------------------end accordion replacement----------------------------------------->
-                        <!----------------------------------promo-code-form--------------------------------------------------->
-                        <form action="#" class="promo-code-form">
-                            <input type="text" placeholder="Введите промокод">
-                        </form>
-                        <!----------------------------------end promo-code-form----------------------------------------------->
-                        <button class="btn">Заказать</button>
-                    </div>
+                        </li>
+                    </ul>
+                    <!--------------------------------------end service-list-------------------------------------------------->
+                </section>
+                <section class="container payment-wrap">
+                    <h3>Оплата</h3>
+                    <p>Выберите один из пособов оплаты:</p>
+                    <!--------------------------------------bank-card-list---------------------------------------------------->
+                    <ul class="bank-card-list">
+                        <li>
+                            <div class="img-area">
+                                <img src="./images/name-bank-card.png" width="168" height="42" alt="name-bank-card">
+                            </div>
+                            <ul class="card-type-list">
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/visa.png" width="38" height="13" alt="visa">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/google-pay.png" width="41" height="17" alt="visa">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/apple-pay.png" width="43" height="17" alt="apple-pay">
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <div class="img-area max-width-113">
+                                <img src="./images/name-bank-card-2.png" width="113" height="59" alt="name-bank-card">
+                            </div>
+                            <ul class="card-type-list">
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-area">
+                                        <img src="./images/visa.png" width="38" height="13" alt="visa">
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <!--------------------------------------end bank-card-list------------------------------------------------>
                 </section>
             </main>
         </div>

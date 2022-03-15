@@ -2,7 +2,7 @@
 @import "mixin";
 
 .header {
-  padding: 17px 0 8px 130px;
+  padding: 17px 8px;
   background: $white;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
   margin-bottom: 40px;
@@ -13,6 +13,8 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 250px;
+  width: 100%;
 }
 
 .lang {
@@ -97,14 +99,6 @@
       background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
       transition: width 0.3s linear;
     }
-
-    &:hover {
-      color: $black;
-
-      &:after {
-        width: 100%;
-      }
-    }
   }
 
   .active {
@@ -160,7 +154,7 @@
   }
 
   span {
-    background: $black;
+    background: $mine-shaft;
     border: none;
     height: 2px;
     width: 100%;
