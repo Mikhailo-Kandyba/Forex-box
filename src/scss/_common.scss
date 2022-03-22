@@ -1,8 +1,16 @@
 @import "variables";
 @import "mixin";
 
-main {
+.main-wrap {
   padding: 65px 20px 20px 255px;
+
+  @include breakpoint($desktop) {
+    padding: 65px 20px 20px 200px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 20px 20px 150px;
+  }
 }
 
 .sidebar {
@@ -81,6 +89,7 @@ main {
 
 
 .title-page {
+  font-family: $lato-light;
   line-height: $line-height-base + 5;
   margin-bottom: 21px;
 }
@@ -109,10 +118,11 @@ main {
   width: 100%;
   position: relative;
   margin-right: 35px;
+  padding: 15px;
 
   @include breakpoint($tablet) {
-    margin-right: 10px;
-    max-width: 300px;
+    margin-right: 5px;
+    max-width: 280px;
   }
 
   &:last-child {
@@ -160,7 +170,7 @@ main {
   margin-bottom: 20px;
 
   @include breakpoint($tablet) {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   select {
@@ -232,7 +242,7 @@ main {
   margin-bottom: 25px;
 
   @include breakpoint($tablet) {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   input {
