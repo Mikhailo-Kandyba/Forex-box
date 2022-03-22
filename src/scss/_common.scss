@@ -171,7 +171,6 @@ main {
 .selected-item {
   font-size: $font-size-base;
   line-height: $line-height-base;
-  //font-family: $lato-regular;
   position: relative;
   padding: 14px 45px 14px 21px;
   background: $white;
@@ -205,9 +204,10 @@ main {
   line-height: $line-height-base + 2  ;
   padding: 10px 17px 5px;
   cursor: pointer;
+  font-family: $lato-light;
 
   &:hover {
-    //font-family: $lato-regular;
+    font-family: $base-font-default;
   }
 }
 
