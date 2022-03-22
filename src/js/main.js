@@ -1,11 +1,17 @@
+
 //btn-menu
 $(".btn-menu").on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass("active");
-    $(".menu-navigation-wrap").toggleClass('show-menu');
+    $(".sidebar-wrap").toggleClass('show-menu');
     $("body").toggleClass('overflow-hidden');
     $("body").toggleClass('background');
 });
+
+//tabs
+$( function() {
+    $( "#tabs" ).tabs();
+} );
 
 // When the user clicks on div, open the popup
 function myFunction() {
@@ -13,51 +19,94 @@ function myFunction() {
     popup.classList.toggle("show");
 }
 
-//accordion
-$(function() {
 
-    //BEGIN
-    $(".accordion__title").on("click", function(e) {
-
-        e.preventDefault();
-        var $this = $(this);
-
-        if (!$this.hasClass("accordion-active")) {
-            $(".accordion__content").slideUp(400);
-            $(".accordion__title").removeClass("accordion-active");
-        }
-
-        $this.toggleClass("accordion-active");
-        $this.next().slideToggle();
-    });
-    //END
-
-});
-
-//accordion replacement//
-
-// $( function() {
-//     $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
-//         _renderItem: function( ul, item ) {
-//             var li = $( "<li>" ),
-//                 wrapper = $( "<div>", { text: item.label } );
+// //close/open select terminal
+// $(document).ready(function(){
+//     $("option#public").change(function(){
+//         if ($(this).prop('checked')) {
+//             $('#hide').fadeIn().show();
 //
-//             if ( item.disabled ) {
-//                 li.addClass( "ui-state-disabled" );
-//             }
-//
-//             $( "<span>", {
-//                 style: item.element.attr( "data-style" ),
-//                 "class": "ui-icon " + item.element.attr( "data-class" )
-//             })
-//                 .appendTo( wrapper );
-//
-//             return li.append( wrapper ).appendTo( ul );
+//         } else {
+//             $('#hide').fadeOut(300);
 //         }
 //     });
-//
-//     $( "#filesB" )
-//         .iconselectmenu()
-//         .iconselectmenu( "menuWidget" )
-//         .addClass( "ui-menu-icons customicons" );
-// } );
+// })
+
+
+$( ".close-block-btn" ).click(function() {
+    $( ".close-block" ).hide( "slow" );
+});
+//end
+
+
+//custom-select
+(function($) {
+    $(document).ready(function() {
+        var customSelect = $(".custom-select");
+
+        customSelect.each(function() {
+            var thisCustomSelect = $(this),
+                options = thisCustomSelect.find("option"),
+                firstOptionText = options.first().text();
+
+            var selectedItem = $("<div></div>", {
+                class: "selected-item"
+            })
+                .appendTo(thisCustomSelect)
+                .text(firstOptionText);
+
+            var allItems = $("<div></div>", {
+                class: "all-items all-items-hide"
+            }).appendTo(thisCustomSelect);
+
+            options.each(function() {
+                var that = $(this),
+                    optionText = that.text();
+
+                var item = $("<div></div>", {
+                    class: "item",
+                    on: {
+                        click: function() {
+                            var selectedOptionText = that.text();
+                            selectedItem.text(selectedOptionText).removeClass("arrowanim");
+                            allItems.addClass("all-items-hide");
+                        }
+                    }
+                })
+                    .appendTo(allItems)
+                    .text(optionText);
+            });
+        });
+
+        var selectedItem = $(".selected-item"),
+            allItems = $(".all-items");
+
+        selectedItem.on("click", function(e) {
+            var currentSelectedItem = $(this),
+                currentAllItems = currentSelectedItem.next(".all-items");
+
+            allItems.not(currentAllItems).addClass("all-items-hide");
+            selectedItem.not(currentSelectedItem).removeClass("arrowanim");
+
+            currentAllItems.toggleClass("all-items-hide");
+            currentSelectedItem.toggleClass("arrowanim");
+
+            e.stopPropagation();
+        });
+
+        $(document).on("click", function() {
+            var opened = $(".all-items:not(.all-items-hide)"),
+                index = opened.parent().index();
+
+            customSelect
+                .eq(index)
+                .find(".all-items")
+                .addClass("all-items-hide");
+            customSelect
+                .eq(index)
+                .find(".selected-item")
+                .removeClass("arrowanim");
+        });
+    });
+})(jQuery);
+//end

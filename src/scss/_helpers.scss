@@ -1,18 +1,20 @@
 @import "variables";
 @import "mixin";
 
-/*size button*/
+/**********************************size button***************************/
 .size-md {
   font-size: $font-size-base + 2;
   line-height: $line-height-base + 2;
 }
 
-.button-md {
-  padding: 12px 22px 12px 65px !important;
-}
-/*end size button*/
+.btn-sm {
+  padding: 7px 20px;
 
-/*img-button*/
+  @include breakpoint($desktop) {
+    padding: 7px 10px;
+  }
+}
+/**********************************img-button************************/
 .img-button {
   position: relative;
 
@@ -28,23 +30,55 @@
     background-repeat: no-repeat;
     z-index: 50;
 
+    @include breakpoint($desktop) {
+      background-image: url("../images/img-button-table.png");
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 21px;
+    }
+
     &:hover {
       filter: contrast(20%);
     }
   }
 }
-/*end img-button*/
-
-/*padding*/
+/*******************************padding*****************************/
 .padding-30 {
   padding: 30px 10px 10px 30px;
 }
-/*end padding*/
+
+.padding-left-255 {
+  padding-left: 255px;
+
+  @include breakpoint($desktop) {
+    padding-left: 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding-left: 135px;
+  }
+}
+
+.btn-padding-custom {
+  padding: 9px 22px 9px 65px !important;
+
+  @include breakpoint($desktop) {
+    padding: 9px 22px 9px 50px !important;
+  }
+}
 
 .gradient-border {
-  border: 2px solid transparent;
-  background-image: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
-  border-image-slice: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, $christine 0%, $saffron 100%) 1;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #FABB35 0%, #EB800C 121.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .align-flex-start {
@@ -58,3 +92,12 @@
 .max-width-113 {
   max-width: 113px !important;
 }
+
+.d-none-xl {
+  display: none;
+}
+
+.d-block-md {
+  display: block;
+}
+

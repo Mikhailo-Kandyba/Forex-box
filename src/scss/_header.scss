@@ -2,91 +2,85 @@
 @import "mixin";
 
 .header {
-  padding: 17px 8px;
-  background: $white;
-  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-  margin-bottom: 40px;
-}
-
-.select-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 250px;
-  width: 100%;
+  padding: 20px 20px 16px 255px;
+  background: #fff;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
-.lang {
+.btn-group {
   display: flex;
-  border-radius: 6px;
-  padding: 2px;
-  background: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
-  margin: 0 15px 15px 0;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  min-width: 270px;
 
-  label {
-    font-family: $lato-regular;
+  @include breakpoint($desktop) {
+    min-width: 235px;
+  }
+
+  button {
+    margin: 0 0 10px 10px;
+
+    @include breakpoint($desktop) {
+      margin: 0 0 10px 20px;
+    }
+  }
+
+  .custom-select {
+    margin: 0 0 10px 10px;
     cursor: pointer;
-    padding: 10px 20px;
-    position: relative;
-    background: $white;
-    border-radius: 5px;
-    color: $mine-shaft;
+
+    @include breakpoint($desktop) {
+      margin: 0 0 10px 20px;
+    }
 
     &:hover {
-      background: linear-gradient(to right, #eb800c 0%, #fabb35 100%);
-      color: $white;
+      background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+      color: #fff;
       transition: all .50s;
     }
   }
 
-  input {
-    display: none;
+  .selected-item {
+    font-family: $lato-light;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 5;
+    background: $transparent;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
   }
 
-  &:last-child {
-    margin-right: 0;
+  .item {
+    color: #000;
+
+    @include breakpoint($desktop) {
+      padding: 5px 7px;
+    }
   }
 }
 
-.menu-navigation-wrap {
+.menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  @include breakpoint($mobile) {
-    position: fixed;
-    top: 0;
-    right: 200%;
-    transition: all .25s ease;
-    min-width: 230px;
-  }
-}
-
-.menu-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 700px;
   margin-right: 20px;
 
-  @include breakpoint($mobile) {
-    display: block;
-    background: $white;
-    min-width: inherit;
-    padding: 50px 30px;
-    border-radius: 5px;
-  }
-
-  li {
-    margin: 0 10px 10px 0;
-  }
-
   a {
+    font-family: $lato-light;
     color: $mine-shaft;
+    margin-right: 60px;
     position: relative;
     padding-bottom: 7px;
+    display: block;
 
     &:after {
       content: '';
@@ -97,37 +91,24 @@
       bottom: 0;
       width: 0;
       background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
-      transition: width 0.3s linear;
+      transition: width 0.25s linear;
+    }
+
+    &:hover {
+      font-family: $base-font-default;
+
+      &:after {
+        width: 100%;
+      }
     }
   }
 
   .active {
-    position: relative;
-
+    font-family: $base-font-default;
     &:after {
-      content: '';
-      position: absolute;
-      height: 2px;
-      left: 0;
-      right: 0;
-      bottom: 0;
       width: 100%;
-      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
-      transition: width 0.3s linear;
     }
-  }
 
-  .btn-mobile {
-    display: none !important;
-    @include breakpoint($mobile) {
-      display: flex !important;
-    }
-  }
-
-  .justify-content-end {
-    @include breakpoint($mobile) {
-      justify-content: flex-start !important;
-    }
   }
 }
 
@@ -200,6 +181,111 @@
     }
   }
 }
+
+//.ui-state-active {
+//  .ui-tabs-anchor {
+//    position: relative;
+//    //font-family: $lato-regular !important;
+//    color: $mine-shaft !important;
+//
+//    &:after {
+//      content: '';
+//      position: absolute;
+//      height: 2px;
+//      left: 0;
+//      right: 0;
+//      bottom: 0;
+//      width: 100%;
+//      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+//    }
+//  }
+//}
+//
+//.ui-state-hover {
+//  .ui-tabs-anchor {
+//    //font-family: $lato-regular !important;
+//
+//    &:after {
+//      content: '';
+//      position: absolute;
+//      height: 2px;
+//      left: 0;
+//      right: 0;
+//      bottom: 0;
+//      width: 100%;
+//      background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+//      transition: width 0.25s linear;
+//    }
+//  }
+//}
+//
+//.ui-widget.ui-widget-content {
+//  border: none;
+//  padding: 0;
+//}
+//
+//.ui-state-default,
+//.ui-widget-content .ui-state-default,
+//.ui-widget-header .ui-state-default {
+//  border: none;
+//  color: $mine-shaft;
+//  background: $transparent;
+//}
+//
+//.ui-tabs {
+//  .ui-tabs-nav {
+//    padding: 35px 20px 25px 255px;
+//    background: $white;
+//    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+//    margin-bottom: 65px;
+//    position: relative;
+//
+//    @include breakpoint($desktop) {
+//      padding: 34px 70px 22px 195px;
+//      margin-bottom: 40px;
+//    }
+//
+//    @include breakpoint($tablet) {
+//      padding: 20px 20px 20px 135px;
+//    }
+//
+//    li {
+//      margin: 0 60px 0 0;
+//
+//      @include breakpoint($desktop) {
+//        margin: 0 40px 0 0;
+//      }
+//
+//      @include breakpoint($tablet) {
+//        margin: 0 20px 0 0;
+//      }
+//    }
+//
+//    .ui-tabs-anchor {
+//      padding: 0 0 7px 0;
+//      font-family: $lato-light;
+//    }
+//  }
+//
+//  .ui-tabs-panel {
+//    padding: 0 0 0 255px;
+//    margin-bottom: 50px;
+//
+//    @include breakpoint($desktop) {
+//      padding: 0 0 0 195px;
+//    }
+//
+//    @include breakpoint($tablet) {
+//      padding: 0 0 0 135px;
+//    }
+//  }
+//}
+
+
+
+
+
+
 
 
 

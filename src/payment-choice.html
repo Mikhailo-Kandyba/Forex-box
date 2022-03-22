@@ -4,47 +4,17 @@
         <title>Payment-choice</title>
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!------------connection style tabs-------------------------------->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <!----------------------------------->
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div id="wrapper">
-            <header class="header">
-                <div class="container">
-                    <!-------------------------------------menu-navigation-wrap---------------------------------------->
-                    <div class="menu-navigation-wrap">
-                        <ul class="menu-navigation">
-                            <li>
-                                <a href="#" class="active" title="Заказ услуги">Заказ услуги</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Мои услуги">Мои услуги</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Статистика потребления ресурсов">Статистика потребления ресурсов</a>
-                            </li>
-                        </ul>
-                        <div class="select-wrap">
-                            <form action="#" class="lang">
-                                <label for="select-button" class="button-md img-button">0.00 EUR</label>
-                                <input type="submit" id="select-button">
-                            </form>
-                            <form action="#" class="lang">
-                                <label for="select-languages" class="size-md">Ru</label>
-                                <input type="submit" id="select-languages">
-                            </form>
-                        </div>
-                    </div>
-                    <button class="btn-menu">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
-                    </button>
-                    <!-------------------------------------end menu-navigation-wrap---------------------------------------->
-                </div>
-            </header>
-            <main>
-                <!------------------------------------------sidebar----------------------------------------------------------->
-                <section class="container">
+            <header>
+                <!-------------------------------------sidebar-wrap---------------------------------------->
+                <div class="sidebar-wrap">
+                    <!------------------------------------------sidebar----------------------------------------------------------->
                     <ul class="sidebar">
                         <li>
                             <a class="logo" href="index.html">
@@ -53,55 +23,78 @@
                         </li>
                         <li>
                             <a href="#" class="active">
-                                <img class="sidebar-img" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
                                 <span>Услуги</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="sidebar-img" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
                                 <span>Биллинг</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="sidebar-img" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
                                 <span>Данные аккаунта</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="sidebar-img" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
                                 <span>Поддержка</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="sidebar-img" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
                                 <span>Партнерская программа</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="sidebar-img" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
-                                <img class="sidebar-hover" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
                                 <span>Выйти</span>
                             </a>
                         </li>
                     </ul>
-                </section>
-                <!------------------------------------------end sidebar------------------------------------------------------->
-                <section class="container">
-                    <h1 class="title-page">Аккаунт: 53785</h1>
-                    <!--------------------------------------service-list------------------------------------------------------>
-                    <ul class="service-list justify-content-flex-start">
-                        <li class="service-item">
-                            <div class="service-area">
+                    <!------------------------------------------end sidebar------------------------------------------------------->
+                </div>
+                <button class="btn-menu">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+                <!-------------------------------------end sidebar-wrap---------------------------------------->
+            </header>
+            <main>
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Заказ услуги</a></li>
+                        <li><a href="#tabs-2">Мои услуги</a></li>
+                        <li class="btn-wrap">
+                            <div class="btn-group">
+                                <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+                                <div class="custom-select gradient-border btn-sm">
+                                    <select>
+                                        <option value="1">Ru</option>
+                                        <option value="2">Ua</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h1 class="title-page">Аккаунт: 53785</h1>
+                        <!----------------------------------service-list------------------------------------------------------>
+                        <ul class="service-list">
+                            <li class="service-item">
                                 <div class="popup" onclick="myFunction()">
                                     <div class="popup-text" id="myPopup">
                                         <span>1 терминал MetaTrader</span>
@@ -112,74 +105,151 @@
                                     <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
                                 </div>
                                 <p class="view">OPTIMUM</p>
-                            </div>
-                        </li>
-                        <li class="service-item gradient-border">
-                            <div class="service-area">
+                                <!------------------------------------close/open selection terminal-------------------------------------->
+                                <div id="hide" class="close-block service-area padding-30 align-flex-start" style="display:none;">
+                                    <p class="text">Терминалы: 1 шт.</p>
+                                    <p class="text">Память на 1 терминал: 500МБ</p>
+                                    <p class="text">Дисковая квота: 3 ГБ</p>
+                                    <button class="close-block-btn">
+                                        <img src="./images/close-block-btn.png" width="28" height="28" alt="close-block-btn">
+                                    </button>
+                                </div>
+                                <!------------------------------------end close/open selection terminal-------------------------------------->
+                            </li>
+                            <li class="service-item gradient-border">
                                 <p class="name-price">Цена за месяц:</p>
-                                <p class="price">2,52€/mon</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--------------------------------------end service-list-------------------------------------------------->
-                </section>
-                <section class="container payment-wrap">
-                    <h3>Оплата</h3>
-                    <p>Выберите один из пособов оплаты:</p>
-                    <!--------------------------------------bank-card-list---------------------------------------------------->
-                    <ul class="bank-card-list">
-                        <li>
-                            <div class="img-area">
-                                <img src="./images/name-bank-card.png" width="168" height="42" alt="name-bank-card">
-                            </div>
-                            <ul class="card-type-list">
+                                <p class="price gradient-text">2,52€/mon</p>
+                            </li>
+                        </ul>
+                        <!----------------------------------end service-list-------------------------------------------------->
+                        <div class="payment-wrap">
+                            <h3>Оплата</h3>
+                            <p>Выберите один из пособов оплаты:</p>
+                            <!--------------------------------------bank-card-list---------------------------------------------------->
+                            <ul class="bank-card-list">
                                 <li>
                                     <div class="img-area">
-                                        <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
+                                        <img src="./images/name-bank-card.png" width="168" height="42" alt="name-bank-card">
                                     </div>
+                                    <ul class="card-type-list">
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/visa.png" width="38" height="13" alt="visa">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/google-pay.png" width="41" height="17" alt="visa">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/apple-pay.png" width="43" height="17" alt="apple-pay">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#"></a>
                                 </li>
                                 <li>
-                                    <div class="img-area">
-                                        <img src="./images/visa.png" width="38" height="13" alt="visa">
+                                    <div class="img-area max-width-113">
+                                        <img src="./images/name-bank-card-2.png" width="113" height="59" alt="name-bank-card">
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="img-area">
-                                        <img src="./images/google-pay.png" width="41" height="17" alt="visa">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img-area">
-                                        <img src="./images/apple-pay.png" width="43" height="17" alt="apple-pay">
-                                    </div>
+                                    <ul class="card-type-list">
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-area">
+                                                <img src="./images/visa.png" width="38" height="13" alt="visa">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#"></a>
                                 </li>
                             </ul>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <div class="img-area max-width-113">
-                                <img src="./images/name-bank-card-2.png" width="113" height="59" alt="name-bank-card">
-                            </div>
-                            <ul class="card-type-list">
-                                <li>
-                                    <div class="img-area">
-                                        <img src="./images/mastercard.png" width="33" height="20" alt="mastercard">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img-area">
-                                        <img src="./images/visa.png" width="38" height="13" alt="visa">
-                                    </div>
-                                </li>
-                            </ul>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                    <!--------------------------------------end bank-card-list------------------------------------------------>
-                </section>
+                            <!--------------------------------------end bank-card-list------------------------------------------------>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                    </div>
+                </div>
             </main>
+            <header>
+                <!-------------------------------------sidebar-wrap---------------------------------------->
+                <div class="sidebar-wrap">
+                    <!------------------------------------------sidebar----------------------------------------------------------->
+                    <ul class="sidebar">
+                        <li>
+                            <a class="logo" href="index.html">
+                                <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-1.svg" width="33" height="27" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-1.svg" width="33" height="27" alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-2.svg" width="33" height="27" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-2.svg" width="33" height="27" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-3.svg" width="33" height="27" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-3.svg" width="33" height="27" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-4.svg" width="33" height="27" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-4.svg" width="33" height="27" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-5.svg" width="33" height="27" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-5.svg" width="33" height="27" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="sidebar-icon" src="./images/icon-sidebar-6.svg" width="33" height="27" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" src="./images/icon-sidebar-hover-6.svg" width="33" height="27" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!------------------------------------------end sidebar------------------------------------------------------->
+                </div>
+                <button class="btn-menu">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+                <!-------------------------------------end sidebar-wrap---------------------------------------->
+            </header>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--------------connection libraries tabs--------------------->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <!--------------------------------------->
         <script src="js/main.js"></script>
     </body>
 </html>
