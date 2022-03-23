@@ -177,8 +177,8 @@ h6 {
     display: none; }
 
 .btn {
-  font-family: Lato-Regular;
-  font-size: 20px;
+  font-family: Lato-Regular !important;
+  font-size: 20px !important;
   line-height: 24px;
   padding: 15px;
   max-width: 310px;
@@ -203,6 +203,15 @@ h6 {
   z-index: 50; }
   .close-block-btn img {
     width: 28px; }
+
+.toggle-button {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  padding: 0;
+  height: 100%; }
 
 .header {
   display: flex;
@@ -340,59 +349,6 @@ h6 {
       bottom: 4px;
       transform: translateY(-8px) translateX(0) rotate(-45deg);
       width: 100%; }
-
-.ui-state-active .ui-tabs-anchor {
-  position: relative;
-  color: #373737 !important; }
-  .ui-state-active .ui-tabs-anchor:after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%); }
-
-.ui-state-hover .ui-tabs-anchor:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
-  transition: width 0.25s linear; }
-
-.ui-widget.ui-widget-content {
-  border: none;
-  padding: 0; }
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-  border: none;
-  color: #373737;
-  background: transparent; }
-
-.ui-tabs .ui-tabs-nav {
-  background: transparent;
-  margin-bottom: 65px;
-  position: relative;
-  border: none; }
-  @media only screen and (max-width: 1275px) {
-    .ui-tabs .ui-tabs-nav {
-      margin-bottom: 40px; } }
-  .ui-tabs .ui-tabs-nav li {
-    margin: 0 20px 0 0; }
-  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-    padding: 0 0 7px 0;
-    font-family: Lato-Light; }
-
-.ui-tabs .ui-tabs-panel {
-  margin-bottom: 50px;
-  padding: 0; }
 
 .main-wrap {
   padding: 65px 20px 20px 255px; }
@@ -584,7 +540,7 @@ h6 {
     border-radius: 5px;
     padding: 15px 20px; }
     .promo-code-form input::placeholder {
-      color: #c9c9c9;
+      color: #b9b9b9;
       background-image: url("../images/check-mark.svg");
       background-repeat: no-repeat;
       background-position: right; }
@@ -654,6 +610,138 @@ h6 {
     display: flex; }
 
 /*end styles bank-card-list*/
+.tabs-content {
+  max-width: 705px;
+  width: 100%; }
+
+.ui-state-active .ui-tabs-anchor {
+  position: relative;
+  color: #373737 !important; }
+  .ui-state-active .ui-tabs-anchor:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%); }
+
+.ui-state-hover .ui-tabs-anchor:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
+  transition: width 0.25s linear; }
+
+.ui-widget.ui-widget-content {
+  border: none;
+  padding: 0; }
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: none;
+  color: #373737;
+  background: transparent; }
+
+.ui-tabs .ui-tabs-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: transparent;
+  margin-bottom: 18px;
+  position: relative;
+  border: none; }
+  @media only screen and (max-width: 1275px) {
+    .ui-tabs .ui-tabs-nav {
+      margin-bottom: 40px; } }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 0 7px 0;
+    font-family: Lato-Light;
+    color: #b9b9b9; }
+
+.ui-tabs .ui-tabs-panel {
+  margin-bottom: 50px;
+  padding: 0; }
+  .ui-tabs .ui-tabs-panel p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 26px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .row .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px; }
+
+.registration-form .form-group {
+  margin-bottom: 7px; }
+
+.registration-form label {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #373737; }
+
+.registration-form span {
+  display: block;
+  font-family: Lato-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e23737; }
+
+.registration-form input {
+  font-family: Lato-Regular;
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+  height: 36px;
+  border: none;
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid #848484;
+  margin-bottom: 2px; }
+  .registration-form input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+    color: #d0cfcf; }
+
+.registration-form .input-area {
+  position: relative; }
+
+.registration-form .custom-select {
+  max-width: inherit; }
+  .registration-form .custom-select span {
+    font-size: 15px;
+    line-height: 18px;
+    color: #373737; }
+
+.registration-form .selected-item {
+  border-bottom: 1px solid #848484;
+  background: transparent !important;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 14px 43px 13px 0px; }
+
+.registration-form a {
+  font-family: Lato-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #345ba7; }
+
+.toggle-input {
+  padding: 10px 50px 10px 10px; }
+
 /**********************************size button***************************/
 .size-md {
   font-size: 20px;
@@ -700,6 +788,12 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .padding-left-255 {
       padding-left: 135px; } }
+
+.padding-right-27 {
+  padding-right: 27px; }
+
+.margin-bottom-18 {
+  margin-bottom: 18px; }
 
 .btn-padding-custom {
   padding: 9px 22px 9px 65px !important; }

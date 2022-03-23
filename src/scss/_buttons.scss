@@ -98,8 +98,8 @@
 }
 
 .btn {
-  font-family: $base-font-default;
-  font-size: $font-size-base + 2;
+  font-family: $base-font-default !important;
+  font-size: $font-size-base + 2 !important;
   line-height: $line-height-base + 2;
   padding: 15px;
   max-width: 310px;
@@ -130,6 +130,16 @@
   img {
     width: 28px;
   }
+}
+
+.toggle-button {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  padding: 0;
+  height: 100%;
 }
 
 
