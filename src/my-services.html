@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Forex-box</title>
+        <title>My-service</title>
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="css/styles.css">
@@ -10,17 +10,17 @@
         <div id="wrapper">
             <header class="header">
                 <ul class="menu">
-                    <li><a href="index.html" class="active">Заказ услуги</a></li>
-                    <li><a href="my-services.html">Мои услуги</a></li>
+                    <li><a href="index.html">Заказ услуги</a></li>
+                    <li><a href="my-services.html" class="active">Мои услуги</a></li>
                 </ul>
                 <div class="btn-group">
                     <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
                     <div class="custom-select gradient-border btn-sm">
-                            <select>
-                                <option value="1">Ru</option>
-                                <option value="2">Ua</option>
-                            </select>
-                        </div>
+                        <select>
+                            <option value="1">Ru</option>
+                            <option value="2">Ua</option>
+                        </select>
+                    </div>
                 </div>
                 <button class="btn-menu">
                     <span class="top"></span>
@@ -36,12 +36,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="active">
+                        <a href="index.html" class="active">
                             <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
                             <span>Услуги</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -52,7 +52,7 @@
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
                             <span>Биллинг</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -63,7 +63,7 @@
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
                             <span>Данные аккаунта</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -74,7 +74,7 @@
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
                             <span>Поддержка</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -85,7 +85,7 @@
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
                             <span>Партнерская программа</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -96,7 +96,7 @@
                             <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
                             <span>Выйти</span>
                             <ul>
-                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </a>
@@ -104,49 +104,6 @@
                 </ul>
                 <main class="main-wrap">
                     <h3 class="title-page">Аккаунт: 53785</h3>
-                    <!----------------------------------service-list------------------------------------------------------>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="popup" onclick="myFunction()">
-                                <div class="popup-text" id="myPopup">
-                                    <span>1 терминал MetaTrader</span>
-                                    <span>500MB оперативной памяти для терминала</span>
-                                    <span>Нагрузка на CPU до 5%</span>
-                                    <span>3GB дискового хранилища</span>
-                                </div>
-                                <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
-                            </div>
-                            <p class="view">OPTIMUM</p>
-                            <!------------------------------------close/open selection terminal-------------------------------------->
-                            <div id="hide" class="close-block service-area padding-30 align-flex-start" style="display:none;">
-                                <p class="text">Терминалы: 1 шт.</p>
-                                <p class="text">Память на 1 терминал: 500МБ</p>
-                                <p class="text">Дисковая квота: 3 ГБ</p>
-                                <button class="close-block-btn">
-                                    <img src="./images/close-block-btn.png" width="28" height="28" alt="close-block-btn">
-                                </button>
-                            </div>
-                            <!------------------------------------end close/open selection terminal-------------------------------------->
-                        </li>
-                        <li class="service-item gradient-border">
-                            <p class="name-price">Цена за месяц:</p>
-                            <p class="price gradient-text">2,52€/mon</p>
-                        </li>
-                    </ul>
-                    <!----------------------------------end service-list-------------------------------------------------->
-                    <div class="custom-select">
-                        <select>
-                            <option value="0">Добавить терминал</option>
-                            <option value="1">+ 1 терминал</option>
-                            <option value="2">+ 2 терминал</option>
-                            <option value="3">+ 3 терминал</option>
-                        </select>
-                    </div>
-                    <form action="#" class="promo-code-form">
-                        <input type="text" placeholder="Введите промокод">
-                    </form>
-                    <!----------------------------------end promo-code-form----------------------------------------------->
-                    <button class="btn gradient-border">Заказать</button>
                 </main>
             </div>
         </div>
