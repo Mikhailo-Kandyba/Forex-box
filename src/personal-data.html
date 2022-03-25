@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Personal-data</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <ul class="menu">
+            <li><a href="personal-data.html" class="active">Личные данные</a></li>
+            <li><a href="#">Настройки безопасности</a></li>
+        </ul>
+        <div class="btn-group">
+            <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+            <div class="custom-select gradient-border btn-sm">
+                <select>
+                    <option value="1">Ru</option>
+                    <option value="2">Ua</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn-menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </header>
+    <div>
+        <ul class="sidebar">
+            <li>
+                <a class="logo" href="index.html">
+                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                    <span>Услуги</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="balance.html">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                    <span>Биллинг</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="personal-data.html" class="active">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                    <span>Данные аккаунта</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                    <span>Поддержка</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                    <span>Партнерская программа</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                    <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                    <span>Выйти</span>
+                    <ul>
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+        <main class="main-wrap">
+            <h1 class="title-page">Информация о вас</h1>
+            <form action="#" class="registration-form personal-data-form">
+                <div class="row margin-bottom-18">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Введите текст">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Введите текст">
+                        </div>
+                        <div class="custom-select">
+                                <span>Страна:</span>
+                                <select>
+                                    <option value="0">Выберите из списка</option>
+                                    <option value="1">America</option>
+                                    <option value="2">Czech</option>
+                                    <option value="3">Poland</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="surname">Фамилия</label>
+                            <input type="text" id="surname" placeholder="Введите текст">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Номер телефона</label>
+                            <input type="tel" id="phone-number" placeholder="-- --- -- --">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <h4 class="heading">Подпишитесь на рассылку:</h4>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </main>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/button.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
