@@ -1,24 +1,7 @@
-
-//btn-menu
-$(".btn-menu").on('click', function(e) {
-    e.preventDefault();
-    $(this).toggleClass("active");
-    $(".sidebar-wrap").toggleClass('show-menu');
-    $("body").toggleClass('overflow-hidden');
-    $("body").toggleClass('background');
-});
-
 //tabs
 $( function() {
     $( "#tabs" ).tabs();
 } );
-
-// When the user clicks on div, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
-
 
 // //close/open select terminal
 // $(document).ready(function(){
@@ -31,13 +14,12 @@ function myFunction() {
 //         }
 //     });
 // })
-
-
-$( ".close-block-btn" ).click(function() {
-    $( ".close-block" ).hide( "slow" );
-});
-//end
-
+//
+//
+// $( ".close-block-btn" ).click(function() {
+//     $( ".close-block" ).hide( "slow" );
+// });
+// //end
 
 //custom-select
 (function($) {
@@ -122,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 //end
+
+
+
+
 
 
 

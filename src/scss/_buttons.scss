@@ -3,7 +3,7 @@
 
 /* Popup container - can be anything you want */
 .popup {
-  display: inline-block;
+  display: flex;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -141,6 +141,8 @@
   padding: 0;
   height: 100%;
 }
+
+
 
 
 

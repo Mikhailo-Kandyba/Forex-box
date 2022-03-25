@@ -1,5 +1,6 @@
 $transparent:          transparent;
 $white:                #fff;
+$spring-wood:          #fBf9f8;
 $silver:               #c9c9c9;
 $alto:                 #d0cfcf;
 $silver:               #b9b9b9;
@@ -10,15 +11,17 @@ $saffron:              #fabb35;
 $christine:            #eb800c;
 $cinnabar:             #e23737;
 $azure:                #345ba7;
+$ocean-green:          #3EA278;
 
 //font page
-$base-font-default: Lato-Regular;
-$lato-bold: Lato-Bold;
-$lato-light: Lato-Light;
+$base-font-default:    Lato-Regular;
+$lato-bold:            Lato-Bold;
+$lato-light:           Lato-Light;
+$proxima-nova-regular: ProximaNova-Regular;
 
 //Body
 $base-text-color: $mine-shaft;
-$base-background: $white;
+$base-background: $spring-wood;
 $base-font-family: $base-font-default;
 $font-size-base: 18px;
 $line-height-base: 22px;
