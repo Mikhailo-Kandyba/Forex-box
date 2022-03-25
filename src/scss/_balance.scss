@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixin";
+
+.balance-select-wrap {
+  h4 {
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+    @include breakpoint($tablet) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+  }
+  .all-items {
+    z-index: 1;
+    padding: 25px 13px 7px 25px;
+
+    .item {
+      display: inline-block;
+      background: $white;
+      box-shadow: 1px 1px 15px rgba(75, 44, 9, 0.1);
+      border-radius: 5px;
+      max-width: 70px;
+      padding: 9px 5px;
+      width: 100%;
+      text-align: center;
+      margin: 0 9px 10px 0;
+
+      &:hover {
+        background: linear-gradient(180deg, #FABB35 0%, #EB800C 121.87%);
+        color: $white;
+        font-family: $lato-bold;
+      }
+    }
+  }
+
+  .custom-select {
+    max-width: 275px;
+  }
+}
+
+.description-balance {
+  font-family: $lato-light;
+  max-width: 1068px;
+  margin-bottom: 20px;
+}

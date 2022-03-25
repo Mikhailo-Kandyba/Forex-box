@@ -920,6 +920,42 @@ h6 {
 .status {
   color: #e23737; }
 
+.balance-select-wrap h4 {
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 15px;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 1023px) {
+    .balance-select-wrap h4 {
+      font-size: 16px;
+      line-height: 20px; } }
+
+.balance-select-wrap .all-items {
+  z-index: 1;
+  padding: 25px 13px 7px 25px; }
+  .balance-select-wrap .all-items .item {
+    display: inline-block;
+    background: #fff;
+    box-shadow: 1px 1px 15px rgba(75, 44, 9, 0.1);
+    border-radius: 5px;
+    max-width: 70px;
+    padding: 9px 5px;
+    width: 100%;
+    text-align: center;
+    margin: 0 9px 10px 0; }
+    .balance-select-wrap .all-items .item:hover {
+      background: linear-gradient(180deg, #FABB35 0%, #EB800C 121.87%);
+      color: #fff;
+      font-family: Lato-Bold; }
+
+.balance-select-wrap .custom-select {
+  max-width: 275px; }
+
+.description-balance {
+  font-family: Lato-Light;
+  max-width: 1068px;
+  margin-bottom: 20px; }
+
 /**********************************size button***************************/
 .size-md {
   font-size: 20px;
