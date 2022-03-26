@@ -8,7 +8,6 @@
   padding: 20px 20px 9px 255px;
   background: $white;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-  position: relative;
 
   @include breakpoint($desktop) {
     padding: 21px 75px 11px 195px;
@@ -20,6 +19,7 @@
 
   @include breakpoint($mobile) {
     padding: 32px 58px 28px 60px;
+    background: $transparent;
   }
 }
 
@@ -160,18 +160,22 @@
   @include breakpoint($mobile) {
     right: 0;
   }
+
+  .overlay {
+    display: block;
+  }
 }
 
 .btn-menu {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 22px;
-  width: 30px;
+  top: 31px;
+  right: 59px;
+  height: 26px;
+  width: 38px;
   cursor: pointer;
   transition: all .25s ease;
-  z-index: 103;
+  z-index: 120;
   transform: rotate(180deg);
   background: $transparent;
 
@@ -211,7 +215,7 @@
     background: transparent;
     .top {
       transform: translateY(8px) translateX(0) rotate(45deg);
-      top: 0;
+      top: 4px;
       width: 100%;
     }
 

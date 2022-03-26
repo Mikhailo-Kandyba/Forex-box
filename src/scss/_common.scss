@@ -11,6 +11,10 @@
   @include breakpoint($tablet) {
     padding: 25px 30px 20px 150px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 40px 58px 20px 60px;
+  }
 }
 
 .service-list {
@@ -18,6 +22,10 @@
   align-items: center;
   margin-bottom: 21px;
   flex-wrap: wrap;
+
+  @include breakpoint($mobile) {
+    justify-content: space-between;
+  }
 
   .text {
     //font-family: $lato-regular;
@@ -38,10 +46,11 @@
   position: relative;
   margin-right: 35px;
   padding: 15px;
+  background: $white;
 
   @include breakpoint($tablet) {
-    margin-right: 28px;
-    max-width: 280px;
+    margin-right: 18px;
+    max-width: 285px;
   }
 
   &:last-child {
@@ -89,7 +98,7 @@
   margin-bottom: 20px;
 
   @include breakpoint($tablet) {
-    max-width: 280px;
+    max-width: 285px;
   }
 
   select {
@@ -106,7 +115,6 @@
   box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
   border-radius: 5px;
   cursor: pointer;
-  z-index: 100;
 
   @include breakpoint($desktop) {
     padding: 17px 45px 17px 28px;
@@ -160,35 +168,3 @@
 /*end styles centering*/
 
 /*styles select*/
-.promo-code-form {
-  max-width: 310px;
-  margin-bottom: 25px;
-
-  @include breakpoint($desktop) {
-    margin-bottom: 28px;
-  }
-
-  @include breakpoint($tablet) {
-    max-width: 280px;
-  }
-
-  input {
-    //font-family: $lato-regular;
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base - 2;
-    height: 55px;
-    width: 100%;
-    border: none;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
-    border-radius: 5px;
-    padding: 15px 20px;
-
-    &::placeholder {
-      color: $silver;
-      background-image: url("../images/check-mark.svg");
-      background-repeat: no-repeat;
-      background-position: right;
-    }
-  }
-}

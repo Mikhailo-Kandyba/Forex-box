@@ -1,7 +1,15 @@
+//btn-menu
+$(".btn-menu").on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(".sidebar-wrap").toggleClass('show-menu');
+    $("body").toggleClass('overflow-hidden');
+});
+
 //tabs
-$( function() {
-    $( "#tabs" ).tabs();
-} );
+// $( function() {
+//     $( "#tabs" ).tabs();
+// } );
 
 // //close/open select terminal
 // $(document).ready(function(){
@@ -93,18 +101,32 @@ $( function() {
 })(jQuery);
 //end
 
-//toggle password
-document.addEventListener('DOMContentLoaded', function () {
-    const passwordEle = document.getElementById('сonfirm-password');
-    const toggleEle = document.getElementById('toggle');
+// //toggle password
+// document.addEventListener('DOMContentLoaded', function () {
+//     const passwordEle = document.getElementById('сonfirm-password');
+//     const toggleEle = document.getElementById('toggle');
+//
+//     toggleEle.addEventListener('click', function () {
+//         const type = passwordEle.getAttribute('type');
+//         passwordEle.setAttribute('type', type === 'password' ? 'text' : 'password');
+//     });
+// });
+// //end
 
-    toggleEle.addEventListener('click', function () {
-        const type = passwordEle.getAttribute('type');
-        passwordEle.setAttribute('type', type === 'password' ? 'text' : 'password');
-    });
-});
-//end
+let accordion = document.querySelector('.sidebar');
 
+function accordionOpener(node) {
+    if (node) {
+        for (let i = 0; i < node.children.length; i++) {
+            node.children[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                node.children[i].classList.toggle("active-item");
+            });
+        }
+    }
+}
+
+accordionOpener(accordion);
 
 
 

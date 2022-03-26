@@ -142,7 +142,6 @@
   }
 }
 
-
 .align-flex-start {
   align-items: flex-start;
 }
@@ -165,6 +164,18 @@
   }
 }
 
+.d-flex-sm {
+  @include breakpoint($mobile) {
+    display: flex;
+  }
+}
+
+.d-none-sm {
+  @include breakpoint($mobile) {
+    display: none !important;
+  }
+}
+
 .border-radius-5 {
   border-radius: 5px;
 }
@@ -172,6 +183,17 @@
 .position-relative {
   position: relative;
 }
+
+.width-sm-120 {
+  @include breakpoint($mobile) {
+    width: 120px;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 
 
 
