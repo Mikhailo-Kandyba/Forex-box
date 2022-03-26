@@ -6,15 +6,20 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 9px 255px;
-  background: #fff;
+  background: $white;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  position: relative;
 
   @include breakpoint($desktop) {
-    padding: 20px 20px 16px 200px;
+    padding: 21px 75px 11px 195px;
   }
 
   @include breakpoint($tablet) {
-    padding: 20px 20px 16px 150px;
+    padding: 11px 30px 11px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 32px 58px 28px 60px;
   }
 }
 
@@ -29,6 +34,10 @@
     min-width: 235px;
   }
 
+  @include breakpoint($mobile) {
+    display: none;
+  }
+
   .btn {
     max-width: none;
     width: auto;
@@ -36,11 +45,27 @@
 
   button {
     margin: 0 0 10px 10px;
+
+    @include breakpoint($desktop) {
+      margin: 0 0 10px 16px;
+    }
+
+    @include breakpoint($tablet) {
+      margin: 0 0 5px 5px;
+    }
   }
 
   .custom-select {
     margin: 0 0 10px 10px;
     cursor: pointer;
+
+    @include breakpoint($desktop) {
+      margin: 0 0 10px 16px;
+    }
+
+    @include breakpoint($tablet) {
+      margin: 0 0 5px 5px;
+    }
 
     &:hover {
       background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
@@ -78,8 +103,16 @@
   flex-wrap: wrap;
   margin-right: 20px;
 
+  @include breakpoint($mobile) {
+    display: none;
+  }
+
   li {
     margin-right: 60px;
+
+    @include breakpoint($desktop) {
+      margin-right: 40px;
+    }
 
     @include breakpoint($tablet) {
       margin-right: 20px;
@@ -132,24 +165,25 @@
 .btn-menu {
   display: none;
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 0;
   height: 22px;
-  width: 28px;
+  width: 30px;
   cursor: pointer;
   transition: all .25s ease;
   z-index: 103;
   transform: rotate(180deg);
+  background: $transparent;
 
   @include breakpoint($mobile) {
     display: block;
   }
 
   span {
-    background: $mine-shaft;
+    background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
     border: none;
     height: 2px;
-    width: 100%;
+    width: 80%;
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +194,7 @@
   .middle {
     transform: translate(0, -50%);
     top: 50%;
-    width: 70%;
+    width: 100%;
   }
 
   .bottom {
@@ -170,7 +204,7 @@
 
   .top {
     bottom: 0;
-    width: 40%;
+    width: 80%;
   }
 
   &.active {
@@ -192,11 +226,6 @@
     }
   }
 }
-
-
-
-
-
 
 
 

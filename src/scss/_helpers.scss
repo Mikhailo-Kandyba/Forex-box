@@ -160,7 +160,9 @@
 }
 
 .d-block-md {
-  display: block;
+  @include breakpoint($mobile) {
+    display: block;
+  }
 }
 
 .border-radius-5 {

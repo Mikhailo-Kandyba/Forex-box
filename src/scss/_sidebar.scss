@@ -12,7 +12,11 @@
   z-index: 100;
 
   @include breakpoint($desktop) {
-    width: 123px;
+    width: 122px;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
   }
 
   li {
@@ -69,14 +73,19 @@
     }
   }
 
-  .logo {
-    img {
-      width: 90px;
-      margin-bottom: 0;
-    }
-  }
-
   ul {
     display: none;
+  }
+}
+
+.logo {
+  img {
+    width: 90px;
+    margin-bottom: 0;
+    display: flex;
+
+    @include breakpoint($mobile) {
+      width: 120px;
+    }
   }
 }
