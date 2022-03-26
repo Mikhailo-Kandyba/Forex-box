@@ -1,0 +1,26 @@
+@import "mixin";
+@import "variables";
+
+.title-page {
+  font-size: $font-size-base + 4;
+  line-height: $line-height-base + 5;
+  margin-bottom: 32px;
+}
+
+.heading {
+  font-size: $font-size-base + 4;
+  line-height: $line-height-base + 5;
+  margin-bottom: 30px;
+}
+
+.column-heading {
+  font-family: $lato-light;
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 9;
+}
+
+.account-title {
+  font-family: $lato-light;
+  line-height: $line-height-base + 5;
+  margin-bottom: 21px;
+}
