@@ -110,6 +110,11 @@
       background: $white;
       top: 90px;
       padding-top: 35px;
+
+      @include breakpoint($mobile-sm) {
+        top: 70px;
+        padding-top: 25px;
+      }
     }
 
     li {
@@ -139,11 +144,12 @@
         padding: 10px 50px;
         width: 100%;
         position: relative;
-      }
-
-      @include breakpoint($mobile) {
         height: auto;
         justify-content: flex-start;
+      }
+
+      @include breakpoint($mobile-sm) {
+        padding: 10px 53px 10px 20px;
       }
 
       &:after {
@@ -158,12 +164,20 @@
           height: 23px;
           background-repeat: no-repeat;
         }
+
+        @include breakpoint($mobile-sm) {
+          right: 30px;
+        }
       }
 
       img {
         @include breakpoint($mobile) {
           margin-bottom: 0;
           margin-right: 20px;
+        }
+
+        @include breakpoint($mobile-sm) {
+          margin-right: 11px;
         }
       }
 
@@ -178,15 +192,17 @@
 
       li {
         border-bottom: 1px solid rgba(184, 129, 70, 0.1);
-        margin: 0 50px;
-
-        &:first-child {
-          box-shadow: none;
-          padding: 0;
-        }
+        margin: 0 50px 5px;
       }
 
       a {
+        @include breakpoint($mobile-sm) {
+          font-size: $font-size-base - 1;
+          line-height: $line-height-base - 1;
+          font-family: $lato-light;
+          padding: 8px 30px 15px 30px;
+          text-align: left;
+        }
         &:after {
           display: none;
         }
@@ -233,6 +249,10 @@
       max-width: 495px;
       width: 100%;
       display: flex;
+
+      @include breakpoint($mobile-sm) {
+        padding: 14px 20px;
+      }
     }
 
     .btn-group {

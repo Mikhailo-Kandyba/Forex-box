@@ -7,9 +7,9 @@ $(".btn-menu").on('click', function(e) {
 });
 
 //tabs
-// $( function() {
-//     $( "#tabs" ).tabs();
-// } );
+$( function() {
+    $( "#tabs" ).tabs();
+} );
 
 // //close/open select terminal
 // $(document).ready(function(){

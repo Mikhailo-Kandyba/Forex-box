@@ -11,6 +11,10 @@
     font-size: $font-size-base - 3;
     line-height: $line-height-base - 4;
     color: $mine-shaft;
+
+    @include breakpoint($mobile-sm) {
+      font-family: $lato-light;
+    }
   }
 
   span {
@@ -19,6 +23,10 @@
     font-size: $font-size-base - 4;
     line-height: $line-height-base - 5;
     color: $cinnabar;
+
+    @include breakpoint($mobile) {
+      letter-spacing: -0.5px;
+    }
   }
 
   input {
@@ -31,11 +39,21 @@
     padding: 10px 10px 10px 0;
     border-bottom: 1px solid $gray;
     margin-bottom: 2px;
+    background: $base-background;
+
+    @include breakpoint($mobile-sm) {
+      font-family: $lato-light;
+    }
 
     &::placeholder {
       font-size: $font-size-base + 2;
       line-height: $line-height-base + 2;
       color: $alto;
+
+      @include breakpoint($mobile-sm) {
+        font-size: $font-size-base;
+        line-height: $line-height-base - 2;
+      }
     }
   }
 
@@ -66,6 +84,14 @@
     font-size: $font-size-base - 4;
     line-height: $line-height-base - 5;
     color: $azure;
+  }
+
+  .btn {
+    max-width: 310px;
+
+    @include breakpoint($mobile-sm) {
+      max-width: 100%;
+    }
   }
 }
 

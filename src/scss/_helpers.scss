@@ -89,6 +89,10 @@
   @include breakpoint($desktop) {
     padding: 9px 22px 9px 50px !important;
   }
+
+  @include breakpoint($mobile-sm) {
+    padding: 6px 22px !important;
+  }
 }
 
 .gradient-border {
@@ -150,6 +154,12 @@
   justify-content: flex-start;
 }
 
+.flex-direction-sm-column {
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+  }
+}
+
 .max-width-113 {
   max-width: 113px !important;
 }
@@ -173,6 +183,14 @@
 .d-none-sm {
   @include breakpoint($mobile) {
     display: none !important;
+  }
+}
+
+.d-after-sm-none {
+  &:after {
+    @include breakpoint($mobile-sm) {
+      display: none;
+    }
   }
 }
 

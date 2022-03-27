@@ -83,6 +83,11 @@
         margin: 0 0 5px 5px;
       }
 
+      @include breakpoint($mobile-sm) {
+        padding: 4px 10px;
+        margin: 0 10px 5px;
+      }
+
       &:hover {
         background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
         color: #fff;
