@@ -17,14 +17,10 @@
   }
 
   li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
     background: $white;
     font-family: $lato-light;
-    padding: 2px;
     flex-grow: 1;
 
     .hover-sidebar-icon  {
@@ -42,8 +38,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: $mine-shaft;
     text-align: center;
+    width: 100%;
+    height: 100%;
 
     &:hover {
       font-family: $base-font-default;
@@ -59,6 +58,14 @@
   }
 
   .logo {
+    @include breakpoint($desktop) {
+      padding: 9px 0;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 0;
+    }
+
     img {
       width: 90px;
       margin-bottom: 0;
@@ -83,6 +90,7 @@
     z-index: 110;
     height: 100%;
     background: $white;
+    overflow-y: scroll;
   }
 
   .sidebar {
@@ -100,6 +108,8 @@
       width: 100%;
       z-index: 110;
       background: $white;
+      top: 90px;
+      padding-top: 35px;
     }
 
     li {
@@ -108,28 +118,9 @@
         box-shadow: none;
         align-items: flex-start;
         flex-grow: inherit;
-        margin-bottom: 25px;
         flex-direction: column;
+        margin-bottom: 25px;
       }
-
-      &:first-child {
-        @include breakpoint($mobile) {
-          box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-          padding: 20px 50px;
-        }
-      }
-
-      //.header-sidebar {
-      //  display: none;
-      //
-      //  @include breakpoint($mobile) {
-      //    display: flex;
-      //    align-items: center;
-      //    justify-content: flex-start;
-      //    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-      //    padding: 20px 50px;
-      //  }
-      //}
 
       .custom-select {
         @include breakpoint($mobile) {
@@ -145,9 +136,14 @@
     a {
       @include breakpoint($mobile) {
         flex-direction: row;
-        padding: 20px 50px;
+        padding: 10px 50px;
         width: 100%;
         position: relative;
+      }
+
+      @include breakpoint($mobile) {
+        height: auto;
+        justify-content: flex-start;
       }
 
       &:after {
@@ -222,6 +218,33 @@
       @include breakpoint($mobile) {
         display: block;
       }
+    }
+  }
+
+  .header-sidebar {
+    display: none;
+
+    @include breakpoint($mobile) {
+      position: fixed;
+      z-index: 120;
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      padding: 20px 50px;
+      background: $white;
+      max-width: 495px;
+      width: 100%;
+      display: flex;
+    }
+
+    .btn-group {
+      justify-content: flex-start;
+    }
+
+    button {
+      margin: 0 5px 5px 0;
+    }
+
+    .selected-item {
+      margin: 0 5px 5px 0 !important;
     }
   }
 }

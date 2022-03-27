@@ -121,8 +121,12 @@
     max-width: 285px;
   }
 
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
   input {
-    //font-family: $lato-regular;
     font-size: $font-size-base + 2;
     line-height: $line-height-base - 2;
     height: 55px;
@@ -133,11 +137,22 @@
     border-radius: 5px;
     padding: 15px 20px;
 
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base + 2;
+      height: 50px;
+      padding: 10px 20px;
+    }
+
     &::placeholder {
       color: $silver;
       background-image: url("../images/check-mark.svg");
       background-repeat: no-repeat;
       background-position: right;
+
+      @include breakpoint($mobile-sm) {
+        background-image: url("../images/check-mark-mobile.svg");
+      }
     }
   }
 }

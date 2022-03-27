@@ -136,7 +136,15 @@ h6 {
     left: 50%;
     margin-left: -80px;
     z-index: 100;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato-Light;
     /* Popup arrow */ }
+    @media only screen and (max-width: 710px) {
+      .popup .popup-text {
+        left: auto;
+        right: 0;
+        z-index: 130; } }
     .popup .popup-text::after {
       content: "";
       position: absolute;
@@ -146,6 +154,10 @@ h6 {
       border-width: 5px;
       border-style: solid;
       border-color: #fff transparent transparent transparent; }
+      @media only screen and (max-width: 710px) {
+        .popup .popup-text::after {
+          left: auto;
+          right: 10px; } }
     .popup .popup-text span {
       display: block; }
   .popup .show {
@@ -196,6 +208,10 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .btn {
       max-width: 285px; } }
+  @media only screen and (max-width: 710px) {
+    .btn {
+      padding: 11px;
+      max-width: 100%; } }
   .btn:hover {
     background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
     color: #fff;
@@ -235,14 +251,10 @@ h6 {
       width: 122px; } }
   .sidebar li,
   .sidebar-mobile li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
     background: #fff;
     font-family: Lato-Light;
-    padding: 2px;
     flex-grow: 1; }
     .sidebar li .hover-sidebar-icon,
     .sidebar-mobile li .hover-sidebar-icon {
@@ -257,8 +269,11 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #373737;
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    height: 100%; }
     .sidebar a:hover,
     .sidebar-mobile a:hover {
       font-family: Lato-Regular; }
@@ -268,6 +283,14 @@ h6 {
       .sidebar a:hover .sidebar-icon,
       .sidebar-mobile a:hover .sidebar-icon {
         display: none; }
+  @media only screen and (max-width: 1275px) {
+    .sidebar .logo,
+    .sidebar-mobile .logo {
+      padding: 9px 0; } }
+  @media only screen and (max-width: 1023px) {
+    .sidebar .logo,
+    .sidebar-mobile .logo {
+      padding: 0; } }
   .sidebar .logo img,
   .sidebar-mobile .logo img {
     width: 90px;
@@ -288,7 +311,8 @@ h6 {
     transition: all .25s ease;
     z-index: 110;
     height: 100%;
-    background: #fff; } }
+    background: #fff;
+    overflow-y: scroll; } }
 
 @media only screen and (max-width: 767px) {
   .sidebar-wrap .sidebar {
@@ -302,19 +326,17 @@ h6 {
       position: absolute;
       width: 100%;
       z-index: 110;
-      background: #fff; } }
+      background: #fff;
+      top: 90px;
+      padding-top: 35px; } }
   @media only screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile li {
       border: none;
       box-shadow: none;
       align-items: flex-start;
       flex-grow: inherit;
-      margin-bottom: 25px;
-      flex-direction: column; } }
-  @media only screen and (max-width: 767px) {
-    .sidebar-wrap .sidebar-mobile li:first-child {
-      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-      padding: 20px 50px; } }
+      flex-direction: column;
+      margin-bottom: 25px; } }
   @media only screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile li .custom-select {
       max-width: 48px; } }
@@ -323,9 +345,13 @@ h6 {
   @media only screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile a {
       flex-direction: row;
-      padding: 20px 50px;
+      padding: 10px 50px;
       width: 100%;
       position: relative; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile a {
+      height: auto;
+      justify-content: flex-start; } }
   @media only screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile a:after {
       content: '';
@@ -370,6 +396,25 @@ h6 {
   .sidebar-wrap .active-item .mobile-menu {
     display: block; } }
 
+.sidebar-wrap .header-sidebar {
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .header-sidebar {
+      position: fixed;
+      z-index: 120;
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      padding: 20px 50px;
+      background: #fff;
+      max-width: 495px;
+      width: 100%;
+      display: flex; } }
+  .sidebar-wrap .header-sidebar .btn-group {
+    justify-content: flex-start; }
+  .sidebar-wrap .header-sidebar button {
+    margin: 0 5px 5px 0; }
+  .sidebar-wrap .header-sidebar .selected-item {
+    margin: 0 5px 5px 0 !important; }
+
 .overlay {
   display: none; }
   @media only screen and (max-width: 767px) {
@@ -399,6 +444,9 @@ h6 {
     .header {
       padding: 32px 58px 28px 60px;
       background: transparent; } }
+  @media only screen and (max-width: 710px) {
+    .header {
+      padding: 23px 29px 18px 30px; } }
 
 .btn-group {
   display: flex;
@@ -424,18 +472,33 @@ h6 {
       .btn-group button {
         margin: 0 0 5px 5px; } }
   .btn-group .custom-select {
-    margin: 0 0 10px 10px;
-    cursor: pointer; }
-    @media only screen and (max-width: 1275px) {
-      .btn-group .custom-select {
-        margin: 0 0 10px 16px; } }
-    @media only screen and (max-width: 1023px) {
-      .btn-group .custom-select {
-        margin: 0 0 5px 5px; } }
-    .btn-group .custom-select:hover {
-      background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
-      color: #fff;
-      transition: all .50s; }
+    margin-bottom: 0; }
+    .btn-group .custom-select .selected-item {
+      margin: 0 0 10px 10px;
+      cursor: pointer;
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #eb800c 0%, #fabb35 100%) 1;
+      padding: 7px 20px; }
+      @media only screen and (max-width: 1275px) {
+        .btn-group .custom-select .selected-item {
+          margin: 0 0 11px 16px;
+          padding: 7px 10px; } }
+      @media only screen and (max-width: 1023px) {
+        .btn-group .custom-select .selected-item {
+          margin: 0 0 5px 5px; } }
+      .btn-group .custom-select .selected-item:hover {
+        background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+        color: #fff;
+        transition: all .50s; }
+    .btn-group .custom-select .all-items {
+      margin-top: -10px !important;
+      width: calc(100% - 10%) !important;
+      right: 0;
+      left: auto; }
+    .btn-group .custom-select .item {
+      padding: 5px 10px;
+      text-align: center; }
   .btn-group .selected-item {
     font-family: Lato-Light;
     font-size: 20px;
@@ -515,6 +578,10 @@ h6 {
   @media only screen and (max-width: 767px) {
     .btn-menu {
       display: block; } }
+  @media only screen and (max-width: 710px) {
+    .btn-menu {
+      top: 23px;
+      right: 28px; } }
   .btn-menu span {
     background: linear-gradient(90deg, #EC840F 0%, #FABB35 100%);
     border: none;
@@ -559,15 +626,24 @@ h6 {
   @media only screen and (max-width: 767px) {
     .main-wrap {
       padding: 40px 58px 20px 60px; } }
+  @media only screen and (max-width: 710px) {
+    .main-wrap {
+      padding: 40px 29px 20px 30px; } }
 
 .service-list {
   display: flex;
   align-items: center;
   margin-bottom: 21px;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 710px) {
+    .service-list {
+      margin-bottom: 5px; } }
   @media only screen and (max-width: 767px) {
     .service-list {
       justify-content: space-between; } }
+  @media only screen and (max-width: 710px) {
+    .service-list {
+      flex-direction: column; } }
   .service-list .text {
     margin-bottom: 15px; }
 
@@ -589,17 +665,33 @@ h6 {
     .service-item {
       margin-right: 18px;
       max-width: 285px; } }
+  @media only screen and (max-width: 710px) {
+    .service-item {
+      max-width: 100%; } }
+  @media only screen and (max-width: 710px) {
+    .service-item {
+      min-height: 150px;
+      margin-right: 0;
+      margin-bottom: 16px; } }
   .service-item:last-child {
     margin-right: 0; }
   .service-item .view {
     font-size: 35px;
     line-height: 38px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 710px) {
+      .service-item .view {
+        font-size: 25px;
+        line-height: 15px; } }
 
 .name-price {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 3px; }
+  @media only screen and (max-width: 710px) {
+    .name-price {
+      font-size: 18px;
+      line-height: 22px; } }
 
 .price {
   font-family: Lato-Bold;
@@ -626,6 +718,10 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .custom-select {
       max-width: 285px; } }
+  @media only screen and (max-width: 710px) {
+    .custom-select {
+      margin-bottom: 15px;
+      max-width: 100%; } }
   .custom-select select {
     display: none; }
 
@@ -641,6 +737,11 @@ h6 {
   @media only screen and (max-width: 1275px) {
     .selected-item {
       padding: 17px 45px 17px 28px; } }
+  @media only screen and (max-width: 710px) {
+    .selected-item {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 45px 15px 28px; } }
   .selected-item:after {
     content: '';
     position: absolute;
@@ -857,6 +958,10 @@ input.md-toggle-round + label:after {
   @media only screen and (max-width: 1023px) {
     .promo-code-form {
       max-width: 285px; } }
+  @media only screen and (max-width: 710px) {
+    .promo-code-form {
+      margin-bottom: 20px;
+      max-width: 100%; } }
   .promo-code-form input {
     font-size: 20px;
     line-height: 20px;
@@ -867,11 +972,20 @@ input.md-toggle-round + label:after {
     box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
     border-radius: 5px;
     padding: 15px 20px; }
+    @media only screen and (max-width: 710px) {
+      .promo-code-form input {
+        font-size: 16px;
+        line-height: 24px;
+        height: 50px;
+        padding: 10px 20px; } }
     .promo-code-form input::placeholder {
       color: #b9b9b9;
       background-image: url("../images/check-mark.svg");
       background-repeat: no-repeat;
       background-position: right; }
+      @media only screen and (max-width: 710px) {
+        .promo-code-form input::placeholder {
+          background-image: url("../images/check-mark-mobile.svg"); } }
 
 .title-page {
   font-size: 22px;
@@ -892,6 +1006,10 @@ input.md-toggle-round + label:after {
   font-family: Lato-Light;
   line-height: 27px;
   margin-bottom: 21px; }
+  @media only screen and (max-width: 710px) {
+    .account-title {
+      font-size: 16px;
+      line-height: 10px; } }
 
 .payment-wrap h3 {
   font-size: 22px;

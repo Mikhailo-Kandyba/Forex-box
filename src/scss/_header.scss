@@ -21,6 +21,10 @@
     padding: 32px 58px 28px 60px;
     background: $transparent;
   }
+
+  @include breakpoint($mobile-sm) {
+    padding: 23px 29px 18px 30px;
+  }
 }
 
 .btn-group {
@@ -56,21 +60,42 @@
   }
 
   .custom-select {
-    margin: 0 0 10px 10px;
-    cursor: pointer;
+    margin-bottom: 0;
 
-    @include breakpoint($desktop) {
-      margin: 0 0 10px 16px;
+    .selected-item {
+      margin: 0 0 10px 10px;
+      cursor: pointer;
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(to right, $christine 0%, $saffron 100%) 1;
+      padding: 7px 20px;
+
+      @include breakpoint($desktop) {
+        margin: 0 0 11px 16px;
+        padding: 7px 10px;
+      }
+
+      @include breakpoint($tablet) {
+        margin: 0 0 5px 5px;
+      }
+
+      &:hover {
+        background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+        color: #fff;
+        transition: all .50s;
+      }
     }
 
-    @include breakpoint($tablet) {
-      margin: 0 0 5px 5px;
+    .all-items {
+      margin-top: -10px !important;
+      width: calc(100% - 10%) !important;
+      right: 0;
+      left: auto;
     }
 
-    &:hover {
-      background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
-      color: #fff;
-      transition: all .50s;
+    .item {
+      padding: 5px 10px;
+      text-align: center;
     }
   }
 
@@ -181,6 +206,11 @@
 
   @include breakpoint($mobile) {
     display: block;
+  }
+
+  @include breakpoint($mobile-sm) {
+    top: 23px;
+    right: 28px;
   }
 
   span {

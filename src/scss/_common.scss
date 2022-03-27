@@ -15,6 +15,10 @@
   @include breakpoint($mobile) {
     padding: 40px 58px 20px 60px;
   }
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 29px 20px 30px;
+  }
 }
 
 .service-list {
@@ -23,8 +27,16 @@
   margin-bottom: 21px;
   flex-wrap: wrap;
 
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 5px;
+  }
+
   @include breakpoint($mobile) {
     justify-content: space-between;
+  }
+
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
   }
 
   .text {
@@ -53,23 +65,41 @@
     max-width: 285px;
   }
 
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+  }
+
+  @include breakpoint($mobile-sm) {
+    min-height: 150px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
 
   .view {
-    //font-family: $lato-regular;
     font-size: $font-size-base + 17;
     line-height: $line-height-base + 16;
     text-transform: uppercase;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base + 7;
+      line-height: $line-height-base - 7;
+    }
   }
 }
 
 .name-price {
-  //font-family: $lato-regular;
   font-size: $font-size-base + 2;
   line-height: $line-height-base + 2;
   margin-bottom: 3px;
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
 }
 
 .price {
@@ -101,6 +131,11 @@
     max-width: 285px;
   }
 
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
   select {
     display: none;
   }
@@ -118,6 +153,12 @@
 
   @include breakpoint($desktop) {
     padding: 17px 45px 17px 28px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
+    padding: 15px 45px 15px 28px;
   }
 
   &:after {
