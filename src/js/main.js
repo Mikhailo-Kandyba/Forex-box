@@ -113,7 +113,7 @@ $(".btn-menu").on('click', function(e) {
 // });
 // //end
 
-let accordion = document.querySelector('.sidebar');
+let accordion = document.querySelector('.sidebar-mobile');
 
 function accordionOpener(node) {
     if (node) {
@@ -126,8 +126,7 @@ function accordionOpener(node) {
     }
 }
 
-accordionOpener(accordion);
-
+accordionOpener(accordion)
 
 
 

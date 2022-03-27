@@ -1,7 +1,8 @@
 @import "variables";
 @import "mixin";
 
-.sidebar {
+.sidebar,
+.sidebar-mobile {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -25,18 +26,6 @@
     font-family: $lato-light;
     padding: 2px;
     flex-grow: 1;
-
-    .active {
-      font-family: $base-font-default;
-
-      .hover-sidebar-icon {
-        display: block;
-      }
-
-      .sidebar-icon {
-        display: none;
-      }
-    }
 
     .hover-sidebar-icon  {
       display: none;
@@ -77,7 +66,7 @@
     }
   }
 
-  ul {
+  .mobile-menu {
     display: none;
   }
 }
@@ -97,6 +86,14 @@
   }
 
   .sidebar {
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  .sidebar-mobile {
+    display: none;
+
     @include breakpoint($mobile) {
       display: flex;
       position: absolute;
@@ -120,16 +117,28 @@
           box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
           padding: 20px 50px;
         }
+      }
 
-        .custom-select {
-          @include breakpoint($mobile) {
-            max-width: 48px;
-          }
-        }
+      //.header-sidebar {
+      //  display: none;
+      //
+      //  @include breakpoint($mobile) {
+      //    display: flex;
+      //    align-items: center;
+      //    justify-content: flex-start;
+      //    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      //    padding: 20px 50px;
+      //  }
+      //}
 
-        .btn-group {
-          justify-content: flex-start;
+      .custom-select {
+        @include breakpoint($mobile) {
+          max-width: 48px;
         }
+      }
+
+      .btn-group {
+        justify-content: flex-start;
       }
     }
 
@@ -146,7 +155,8 @@
           content: '';
           position: absolute;
           right: 60px;
-          top: 20px;
+          top: 50%;
+          transform: translate(0, -50%);
           background-image: url("../images/plus.svg");
           width: 23px;
           height: 23px;
@@ -164,16 +174,6 @@
       .mobile-menu {
         padding: 10px 50px;
         width: 100%;
-      }
-    }
-
-    .active {
-      &:after {
-        @include breakpoint($mobile) {
-          background-image: url("../images/minus.svg");
-          width: 18px;
-          height: 3px;
-        }
       }
     }
 
@@ -199,7 +199,26 @@
   }
 
   .active-item {
+    a {
+      font-family: $base-font-default;
+
+      .hover-sidebar-icon {
+        display: block;
+      }
+
+      .sidebar-icon {
+        display: none;
+      }
+
+      &:after {
+        background-image: url("../images/minus.svg");
+        width: 23px;
+        height: 3px;
+      }
+    }
+
     .mobile-menu {
+
       @include breakpoint($mobile) {
         display: block;
       }

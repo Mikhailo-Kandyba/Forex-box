@@ -219,7 +219,8 @@ h6 {
   padding: 0;
   height: 100%; }
 
-.sidebar {
+.sidebar,
+.sidebar-mobile {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -229,9 +230,11 @@ h6 {
   width: 130px;
   z-index: 100; }
   @media only screen and (max-width: 1275px) {
-    .sidebar {
+    .sidebar,
+    .sidebar-mobile {
       width: 122px; } }
-  .sidebar li {
+  .sidebar li,
+  .sidebar-mobile li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,35 +244,37 @@ h6 {
     font-family: Lato-Light;
     padding: 2px;
     flex-grow: 1; }
-    .sidebar li .active {
-      font-family: Lato-Regular; }
-      .sidebar li .active .hover-sidebar-icon {
-        display: block; }
-      .sidebar li .active .sidebar-icon {
-        display: none; }
-    .sidebar li .hover-sidebar-icon {
+    .sidebar li .hover-sidebar-icon,
+    .sidebar-mobile li .hover-sidebar-icon {
       display: none; }
-    .sidebar li img {
+    .sidebar li img,
+    .sidebar-mobile li img {
       width: 33px;
       display: flex;
       margin-bottom: 12px; }
-  .sidebar a {
+  .sidebar a,
+  .sidebar-mobile a {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #373737;
     text-align: center; }
-    .sidebar a:hover {
+    .sidebar a:hover,
+    .sidebar-mobile a:hover {
       font-family: Lato-Regular; }
-      .sidebar a:hover .hover-sidebar-icon {
+      .sidebar a:hover .hover-sidebar-icon,
+      .sidebar-mobile a:hover .hover-sidebar-icon {
         display: block; }
-      .sidebar a:hover .sidebar-icon {
+      .sidebar a:hover .sidebar-icon,
+      .sidebar-mobile a:hover .sidebar-icon {
         display: none; }
-  .sidebar .logo img {
+  .sidebar .logo img,
+  .sidebar-mobile .logo img {
     width: 90px;
     margin-bottom: 0;
     display: flex; }
-  .sidebar ul {
+  .sidebar .mobile-menu,
+  .sidebar-mobile .mobile-menu {
     display: none; }
 
 @media only screen and (max-width: 767px) {
@@ -287,76 +292,79 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .sidebar-wrap .sidebar {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    z-index: 110;
-    background: #fff; } }
+    display: none; } }
 
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar li {
-    border: none;
-    box-shadow: none;
-    align-items: flex-start;
-    flex-grow: inherit;
-    margin-bottom: 25px;
-    flex-direction: column; } }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar li:first-child {
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
-    padding: 20px 50px; } }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar li:first-child .custom-select {
-    max-width: 48px; } }
-
-.sidebar-wrap .sidebar li:first-child .btn-group {
-  justify-content: flex-start; }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar a {
-    flex-direction: row;
-    padding: 20px 50px;
-    width: 100%;
-    position: relative; } }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar a:after {
-    content: '';
-    position: absolute;
-    right: 60px;
-    top: 20px;
-    background-image: url("../images/plus.svg");
-    width: 23px;
-    height: 23px;
-    background-repeat: no-repeat; } }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar a img {
-    margin-bottom: 0;
-    margin-right: 20px; } }
-
-.sidebar-wrap .sidebar a .mobile-menu {
-  padding: 10px 50px;
-  width: 100%; }
-
-@media only screen and (max-width: 767px) {
-  .sidebar-wrap .sidebar .active:after {
-    background-image: url("../images/minus.svg");
-    width: 18px;
-    height: 3px; } }
-
-.sidebar-wrap .sidebar .mobile-menu {
-  width: 100%; }
-  .sidebar-wrap .sidebar .mobile-menu li {
-    border-bottom: 1px solid rgba(184, 129, 70, 0.1);
-    margin: 0 50px; }
-    .sidebar-wrap .sidebar .mobile-menu li:first-child {
+.sidebar-wrap .sidebar-mobile {
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      z-index: 110;
+      background: #fff; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile li {
+      border: none;
       box-shadow: none;
-      padding: 0; }
-  .sidebar-wrap .sidebar .mobile-menu a:after {
+      align-items: flex-start;
+      flex-grow: inherit;
+      margin-bottom: 25px;
+      flex-direction: column; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile li:first-child {
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+      padding: 20px 50px; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile li .custom-select {
+      max-width: 48px; } }
+  .sidebar-wrap .sidebar-mobile li .btn-group {
+    justify-content: flex-start; }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile a {
+      flex-direction: row;
+      padding: 20px 50px;
+      width: 100%;
+      position: relative; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile a:after {
+      content: '';
+      position: absolute;
+      right: 60px;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-image: url("../images/plus.svg");
+      width: 23px;
+      height: 23px;
+      background-repeat: no-repeat; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-wrap .sidebar-mobile a img {
+      margin-bottom: 0;
+      margin-right: 20px; } }
+  .sidebar-wrap .sidebar-mobile a .mobile-menu {
+    padding: 10px 50px;
+    width: 100%; }
+  .sidebar-wrap .sidebar-mobile .mobile-menu {
+    width: 100%; }
+    .sidebar-wrap .sidebar-mobile .mobile-menu li {
+      border-bottom: 1px solid rgba(184, 129, 70, 0.1);
+      margin: 0 50px; }
+      .sidebar-wrap .sidebar-mobile .mobile-menu li:first-child {
+        box-shadow: none;
+        padding: 0; }
+    .sidebar-wrap .sidebar-mobile .mobile-menu a:after {
+      display: none; }
+
+.sidebar-wrap .active-item a {
+  font-family: Lato-Regular; }
+  .sidebar-wrap .active-item a .hover-sidebar-icon {
+    display: block; }
+  .sidebar-wrap .active-item a .sidebar-icon {
     display: none; }
+  .sidebar-wrap .active-item a:after {
+    background-image: url("../images/minus.svg");
+    width: 23px;
+    height: 3px; }
 
 @media only screen and (max-width: 767px) {
   .sidebar-wrap .active-item .mobile-menu {
