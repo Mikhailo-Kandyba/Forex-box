@@ -6,10 +6,10 @@ $(".btn-menu").on('click', function(e) {
     $("body").toggleClass('overflow-hidden');
 });
 
-//tabs
-$( function() {
-    $( "#tabs" ).tabs();
-} );
+// //tabs
+// $( function() {
+//     $( "#tabs" ).tabs();
+// } );
 
 // //close/open select terminal
 // $(document).ready(function(){
@@ -28,6 +28,12 @@ $( function() {
 //     $( ".close-block" ).hide( "slow" );
 // });
 // //end
+
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
 
 //custom-select
 (function($) {
@@ -127,7 +133,6 @@ function accordionOpener(node) {
 }
 
 accordionOpener(accordion)
-
 
 
 

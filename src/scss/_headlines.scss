@@ -30,12 +30,6 @@
   margin-bottom: 30px;
 }
 
-.column-heading {
-  font-family: $lato-light;
-  font-size: $font-size-base - 3;
-  line-height: $line-height-base - 9;
-}
-
 .account-title {
   font-family: $lato-light;
   line-height: $line-height-base + 5;
@@ -44,5 +38,15 @@
   @include breakpoint($mobile-sm) {
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 12;
+  }
+}
+
+.col-sm-heading {
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 11;
+  display: none;
+
+  @include breakpoint($mobile-sm) {
+    display: block;
   }
 }
