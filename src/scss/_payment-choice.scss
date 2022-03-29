@@ -23,6 +23,10 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 
+  @include breakpoint($mobile) {
+    justify-content: space-between;
+  }
+
   @include breakpoint($mobile-sm) {
     flex-direction: column;
   }
@@ -48,7 +52,9 @@
     }
 
     @include breakpoint($tablet) {
-      margin: 0 30px 15px 0;
+      margin: 0 0 15px 0;
+      max-width: 312px;
+      min-height: 170px;
     }
 
     @include breakpoint($mobile-sm) {

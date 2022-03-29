@@ -91,6 +91,7 @@
 
 .modal-content-custom {
   max-width: 433px;
+  margin: 0 auto;
 }
 
 .modal-body-custom-two {
@@ -109,6 +110,5 @@
 }
 
 .modal {
-  display: flex !important;
-  justify-content: center;
+  margin: 0 auto;
 }

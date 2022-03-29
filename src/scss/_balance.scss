@@ -40,6 +40,11 @@
       font-size: $font-size-base - 2;
       line-height: $line-height-base - 2;
     }
+
+    @include breakpoint($mobile) {
+      font-family: $lato-light;
+      font-size: $font-size-base - 3;
+    }
   }
 
   .all-items {
@@ -86,6 +91,8 @@
 
     @include breakpoint($mobile-sm) {
       padding: 15px 45px 15px 23px;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
     }
 
     &:after {
@@ -107,7 +114,7 @@
   }
 
   @include breakpoint($mobile) {
-    margin-bottom: 18px;
+    margin-bottom: 13px;
   }
 }
 

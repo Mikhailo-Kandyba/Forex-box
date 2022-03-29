@@ -6,10 +6,10 @@ $(".btn-menu").on('click', function(e) {
     $("body").toggleClass('overflow-hidden');
 });
 
-// //tabs
-// $( function() {
-//     $( "#tabs" ).tabs();
-// } );
+//tabs
+$( function() {
+    $( "#tabs" ).tabs();
+} );
 
 // //close/open select terminal
 // $(document).ready(function(){
