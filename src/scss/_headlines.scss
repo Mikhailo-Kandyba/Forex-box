@@ -24,6 +24,18 @@
   }
 }
 
+.title-page-my-services {
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 26px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 21px;
+  }
+}
+
 .heading {
   font-size: $font-size-base + 4;
   line-height: $line-height-base + 5;
@@ -48,5 +60,6 @@
 
   @include breakpoint($mobile-sm) {
     display: block;
+    margin-bottom: 10px;
   }
 }

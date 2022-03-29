@@ -1,0 +1,114 @@
+@import "variables";
+@import "mixin";
+
+.modal-title {
+  font-family: $base-font-default;
+  font-size: $font-size-base + 7;
+  line-height: $line-height-base + 8;
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+.modal-header {
+  border-bottom: 0;
+  position: relative;
+  justify-content: center;
+  padding: 25px 50px 10px;
+
+  .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    background: transparent url(../images/modal-btn-close.svg) center/1em auto no-repeat;
+  }
+}
+
+.modal-body {
+  padding: 10px 25px 0;
+
+  p {
+    font-family: $lato-light;
+    font-size: $font-size-base - 1;
+    line-height: $line-height-base - 1;
+    margin-bottom: 12px;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 2;
+    }
+  }
+
+  img {
+    width: 87px;
+  }
+
+  .header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      max-width: 125px;
+      width: 100%;
+
+      @include breakpoint($mobile-sm) {
+        max-width: 95px;
+      }
+    }
+  }
+}
+
+.modal-footer {
+  justify-content: center;
+  border: none;
+  padding: 0 0 30px 0;
+
+  .btn {
+    max-width: 335px;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 3 !important;
+      line-height: $line-height-base - 2 !important;
+    }
+  }
+}
+
+.fade {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-body-custom {
+  text-align: center;
+  padding: 55px 50px 85px 50px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 80px 40px 120px 40px;
+  }
+}
+
+.modal-content-custom {
+  max-width: 433px;
+}
+
+.modal-body-custom-two {
+  padding: 0 80px 45px 80px;
+  text-align: center;
+
+  @include breakpoint($mobile-sm) {
+    padding: 0 30px 45px 30px;
+  }
+
+  p {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 30px;
+  }
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+}

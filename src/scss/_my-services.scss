@@ -1,12 +1,38 @@
 @import "variables";
 @import "mixin";
 
+.main-wrap-my-services {
+  @include breakpoint($desktop) {
+    padding: 50px 20px 20px 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 29px 20px 30px;
+  }
+}
+
 .search-form {
   margin-bottom: 30px;
+  max-width: 316px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 21px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+  }
 
   .form-group {
     position: relative;
-    max-width: 316px;
   }
 
   .btn-search {
@@ -21,6 +47,9 @@
 
 
   input {
+    font-family: $lato-light;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     background: $white;
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
@@ -29,10 +58,14 @@
     width: 100%;
     border: none;
 
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      height: 45px;
+      padding: 10px 40px 10px 20px;
+    }
+
     &::placeholder  {
-      font-family: $lato-light;
-      font-size: $font-size-base;
-      line-height: $line-height-base;
       color: $gray;
     }
   }
@@ -41,6 +74,20 @@
 .checkbox-area {
   margin-bottom: 26px;
   margin-left: 18px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 42px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-left: 31px;
+    margin-bottom: 31px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-left: 19px;
+    margin-bottom: 28px;
+  }
 
   input[type="checkbox"]:checked,
   input[type="checkbox"]:not(:checked) {
@@ -57,6 +104,11 @@
     line-height: $line-height-base - 2;
     font-family: $lato-light;
     cursor: pointer;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 6;
+    }
   }
 
   input[type="checkbox"]:checked + label:before,
@@ -117,6 +169,15 @@
   width: 100%;
   margin-bottom: 23px;
 
+  @include breakpoint($desktop) {
+    margin-bottom: 33px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
   p {
     display: flex;
     font-family: $lato-light;
@@ -124,16 +185,32 @@
     line-height: $line-height-base - 2;
     margin-bottom: 20px;
 
+    @include breakpoint($desktop) {
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 5;
+    }
+
     &:last-child {
       margin-bottom: 0;
+
+      @include breakpoint($mobile-sm) {
+        margin-bottom: 5px;
+      }
     }
   }
 
   .row {
     margin: 0 0 10px;
 
+    @include breakpoint($desktop) {
+      margin: 0 0 4px;
+    }
+
     &:first-child {
-      //margin: 0 -15px 0 -15px;
       padding: 10px;
     }
   }
@@ -142,6 +219,23 @@
     display: block;
     margin-bottom: 20px;
     margin-right: 6px;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 2;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 2;
+    }
+  }
+
+  .row-heading {
+    @include breakpoint($mobile-sm) {
+      display: none;
+    }
   }
 }
 
@@ -154,11 +248,26 @@
   font-size: $font-size-base - 3;
   line-height: $line-height-base - 9;
 
+  @include breakpoint($desktop) {
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 11;
+  }
+
   .col {
     padding: 0 15px 0 27px;
 
+    &:nth-child(2) {
+      @include breakpoint($desktop) {
+        padding: 0 15px 0 52px;
+      }
+    }
+
     &:last-child {
       padding: 0 15px 0 0;
+
+      @include breakpoint($desktop) {
+        padding: 0 35px 0 0;
+      }
     }
   }
 }
@@ -173,8 +282,18 @@
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
 
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+    padding: 12px 12px 5px;
+  }
+
   .col {
     width: 35%;
+
+    @include breakpoint($mobile-sm) {
+      width: 100%;
+      padding: 0;
+    }
   }
 }
 
@@ -182,9 +301,18 @@
   display: flex;
   width: 65%;
 
+  @include breakpoint($mobile-sm) {
+    width: 100%;
+    padding: 0;
+  }
+
   .col {
     width: 50%;
     padding: 0 15px;
+
+    @include breakpoint($mobile-sm) {
+      padding: 0;
+    }
   }
 }
 
@@ -266,17 +394,31 @@
   max-width: 980px;
   width: 100%;
   margin-bottom: 200px;
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+    flex-direction: column;
+  }
 }
 
 .select-pages-content {
   display: flex;
   align-items: center;
 
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 25px;
+  }
+
   p {
     font-family: $lato-light;
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 2;
     margin-right: 10px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 5;
+    }
   }
 }
 
@@ -303,6 +445,10 @@
   position: absolute;
   right: 0;
   top: -10px;
+
+  @include breakpoint($mobile-sm) {
+    top: 0;
+  }
 }
 
 .btn-secondary {
@@ -342,6 +488,16 @@
   color: $black;
   padding: 3px 15px;
 
+  @include breakpoint($desktop) {
+    line-height: $line-height-base + 12;
+  }
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 5;
+    white-space: inherit;
+  }
+
   &:hover {
     background: rgba(196, 196, 196, 0.15);
     font-family: $base-font-default;
@@ -358,9 +514,15 @@
   right: -26px !important;
   background: $white;
   border: 0.5px solid rgba(235, 128, 12, 0.5);
-  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   transform: translate(0px, 48px) !important;
   min-width: 328px;
+  width: 100%;
+
+  @include breakpoint($mobile-sm) {
+    min-width: 268px;
+    transform: translate(-26px, 38px) !important;
+  }
 
   //&:after {
   //  content: "";
@@ -379,85 +541,8 @@
 
 
 
-.modal-title {
-  font-family: $base-font-default;
-  font-size: $font-size-base + 7;
-  line-height: $line-height-base + 8;
-}
 
-.modal-header {
-  border-bottom: 0;
-  position: relative;
-  justify-content: center;
-  padding: 25px 50px 10px;
 
-  .btn-close {
-    position: absolute;
-    top: 20px;
-    right: 24px;
-    background: transparent url(../images/modal-btn-close.svg) center/1em auto no-repeat;
-  }
-}
-
-.modal-body {
-  padding: 10px 25px 0;
-
-  p {
-    font-family: $lato-light;
-    font-size: $font-size-base - 1;
-    line-height: $line-height-base - 1;
-    margin-bottom: 12px;
-  }
-
-  img {
-    width: 87px;
-  }
-
-  .header-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .btn {
-      max-width: 125px;
-      width: 100%;
-    }
-  }
-}
-
-.modal-footer {
-  justify-content: center;
-  border: none;
-  padding: 0 0 30px 0;
-
-  .btn {
-    max-width: 335px;
-  }
-}
-
-.fade {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-body-custom {
-  text-align: center;
-  padding: 55px 50px 85px 50px;
-}
-
-.modal-content-custom {
-  max-width: 433px;
-}
-
-.modal-body-custom-two {
-  padding: 0 80px 45px 80px;
-  text-align: center;
-
-  p {
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base + 2;
-    margin-bottom: 30px;
-  }
-}
 
 
 

@@ -207,6 +207,21 @@
   position: relative;
 }
 
+.position-relative-col {
+  position: relative;
+
+  @include breakpoint($mobile-sm) {
+    position: static;
+  }
+}
+
+.position-relative-sm-row {
+  @include breakpoint($mobile-sm) {
+    position: relative;
+  }
+}
+
+
 .width-sm-120 {
   @include breakpoint($mobile) {
     width: 120px;
