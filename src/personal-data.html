@@ -167,10 +167,10 @@
             </ul>
             <span class="overlay"></span>
         </div>
-        <main class="main-wrap">
-            <h1 class="title-page">Информация о вас</h1>
+        <main class="main-wrap main-wrap-personal-data">
+            <h1 class="title-page title-page-personal-data">Информация о вас</h1>
             <form action="#" class="registration-form personal-data-form">
-                <div class="row margin-bottom-18">
+                <div class="row row-tbody-form">
                     <div class="col">
                         <div class="form-group">
                             <label for="name">Имя</label>
@@ -203,13 +203,25 @@
                 </div>
             </form>
             <h4 class="heading">Подпишитесь на рассылку:</h4>
-            <div class="md-switch md">
-                <input type="checkbox" id="marketing-promotions2" name="marketing-promotions2" title="Sign Up for Marketing Promotions" class="md-toggle md-toggle-round">
-                <label for="marketing-promotions2"><span>Техническая рассылка</span></label>
+            <div class="switch-wrap">
+                <div class="switch-group">
+                    <p>Техническая рассылка</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <div class="switch-group">
+                    <p>Новостная рассылка</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
             </div>
-            <div class="md-switch md">
-                <input type="checkbox" id="register-proxtra2" name="register-proxtra2" title="Register for Pro Xtra" class="md-toggle md-toggle-round">
-                <label for="register-proxtra2"><span>Новостная рассылка</span></label>
+            <div class="header-btn">
+                <button class="btn gradient-border btn-xl btn-background btn-text-white">Сохранить изменения </button>
+                <button class="btn-cancellation">Отмена</button>
             </div>
         </main>
     </div>

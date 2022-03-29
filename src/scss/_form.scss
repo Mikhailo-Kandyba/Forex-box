@@ -98,7 +98,16 @@
 .personal-data-form {
   max-width: 750px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 16px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+    margin-bottom: 27px;
+  }
 
   input {
     background: $white;
@@ -107,6 +116,13 @@
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     padding: 10px 22px;
+
+    @include breakpoint($mobile) {
+      height: 55px;
+      font-family: $lato-light;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
   }
 
   label {
@@ -132,6 +148,12 @@
 
   .all-items {
     z-index: 1;
+  }
+
+  .row-tbody-form {
+    @include breakpoint($mobile-sm) {
+      flex-direction: column;
+    }
   }
 }
 

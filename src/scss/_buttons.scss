@@ -161,6 +161,21 @@
   height: 100%;
 }
 
+.btn-cancellation {
+  font-family: $lato-light;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background: $transparent;
+  color: $mine-shaft;
+  border: 0;
+  border-bottom: 1px solid $mine-shaft;
+  padding: 0;
+
+  &:hover {
+    font-family: $base-font-default;
+  }
+}
+
 
 
 

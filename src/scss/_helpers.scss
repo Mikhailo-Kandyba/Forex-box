@@ -100,6 +100,34 @@
   }
 }
 
+.btn-xl {
+  max-width: 365px;
+
+  @include breakpoint($tablet) {
+    max-width: 285px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 315px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+  }
+}
+
+.btn-background {
+  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(250,187,53,1) 0%, rgba(235,128,12,1) 100%);
+  }
+}
+
+.btn-text-white {
+  color: $white;
+}
+
 .gradient-border {
   border-width: 2px;
   border-style: solid;

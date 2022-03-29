@@ -1,7 +1,49 @@
 @import "variables";
 @import "mixin";
 
+.main-wrap-personal-data {
+  @include breakpoint($desktop) {
+    padding: 50px 20px 20px 195px;
+  }
 
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 29px 20px 30px;
+  }
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-right: 20px;
+
+    @include breakpoint($mobile-sm) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.switch-wrap {
+  margin-bottom: 40px;
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 32px;
+  }
+}
 
 
 

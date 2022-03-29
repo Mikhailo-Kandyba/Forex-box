@@ -42,10 +42,26 @@
   }
 }
 
+.title-page-personal-data {
+  margin-bottom: 16px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 16px;
+  }
+}
+
 .heading {
   font-size: $font-size-base + 4;
   line-height: $line-height-base + 5;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 20px;
+  }
 }
 
 .account-title {
