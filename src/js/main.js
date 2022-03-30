@@ -8,7 +8,7 @@ $(".btn-menu").on('click', function(e) {
 
 //tabs
 $( function() {
-    $( "#tabs" ).tabs();
+    $( ".tabs" ).tabs();
 } );
 
 // //close/open select terminal

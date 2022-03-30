@@ -1,6 +1,10 @@
 @import "mixin";
 @import "variables";
 
+.tabs {
+  margin-bottom: 50px;
+}
+
 .tabs-content {
   max-width: 705px;
   width: 100%;
@@ -103,7 +107,6 @@
   }
 
   .ui-tabs-panel {
-    margin-bottom: 50px;
     padding: 0;
 
     p {

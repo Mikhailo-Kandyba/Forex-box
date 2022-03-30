@@ -235,7 +235,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">
+                                                <a class="dropdown-item" href="freezing.html">
                                                     <img src="./images/icon-dropdown-4.svg" width="17" height="16" alt="icon-dropdown">
                                                     Заморозка
                                                 </a>
@@ -336,12 +336,12 @@
 
             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+                    <div class="modal-content account-replacement-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalToggleLabel">Замена аккаунта</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body account-replacement-body">
                             <p>
                                 При замене аккаунт будет удален (со всеми данными), а затем создан заново,
                                 но уже в другом кластере, соотве-тственно изменится адрес для подключения
@@ -359,11 +359,9 @@
             </div>
             <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body modal-body-custom">
+                    <div class="modal-content modal-content-success">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body modal-body-success">
                             <img src="./images/check-mark-two.png" width="87" height="87" alt="check-mark-two">
                             <p>
                                 Действие успешно завершено!
@@ -375,17 +373,17 @@
 
             <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content modal-content-custom">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body modal-body-custom-two">
+                    <div class="modal-content modal-content-cancellation">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
                             <p>
                                 Вы действительно хотите отменить выбранную услугу?
                             </p>
-                            <div class="header-btn">
-                                <button class="btn gradient-border">Да</button>
-                                <button class="btn gradient-border">Нет</button>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal-footer-content">
+                                <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-dismiss="modal" aria-label="Close">Да</button>
+                                <button class="btn gradient-border btn-md">Нет</button>
                             </div>
                         </div>
                     </div>

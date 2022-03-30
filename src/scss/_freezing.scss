@@ -1,0 +1,148 @@
+@import "mixin";
+@import "variables";
+
+.row-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 8px 45px;
+
+  @include breakpoint($tablet) {
+    padding: 5px 5px 8px 5px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    display: none;
+  }
+
+  .column {
+    font-family: $lato-light;
+    font-size: $font-size-base - 3;
+    width: 25%;
+
+    @include breakpoint($tablet) {
+      padding: 0 5px;
+    }
+  }
+}
+
+.row-content {
+  display: flex;
+  background: $white;
+  border-radius: 5px;
+  padding: 20px 10px 20px 45px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+
+  @include breakpoint($tablet) {
+    padding: 20px 10px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+  }
+}
+
+.column-group {
+  display: flex;
+  width: 50%;
+
+  @include breakpoint($mobile-sm) {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .column {
+    width: 50%;
+    font-family: $lato-light;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+
+    @include breakpoint($tablet) {
+      padding: 0 5px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    margin: 0 !important;
+  }
+}
+
+.tabs-freezing.tabs-content {
+  max-width: 985px;
+}
+
+.tabs-freezing {
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 30px;
+  }
+  .ui-tabs-nav {
+    justify-content: flex-start;
+    margin-bottom: 45px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 35px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      margin-bottom: 20px;
+    }
+
+    .ui-tabs-anchor {
+      padding: 0;
+
+      @include breakpoint($mobile-sm) {
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+      }
+    }
+
+    .ui-tabs-tab {
+      margin-right: 38px;
+
+      @include breakpoint($tablet) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.tabs-freezing {
+  .ui-state-hover {
+    .ui-tabs-anchor {
+      color: $mine-shaft !important;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: $black;
+        transition: width 0.25s linear;
+      }
+    }
+  }
+
+  .ui-state-active {
+    .ui-tabs-anchor {
+      position: relative;
+      color: $mine-shaft !important;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: $black;
+      }
+    }
+  }
+}

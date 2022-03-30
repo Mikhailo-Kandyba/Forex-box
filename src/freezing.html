@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Service-order-registration</title>
+    <title>Freezing</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!------------connection style tabs-------------------------------->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <!----------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,8 +17,8 @@
             <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
         </a>
         <ul class="menu">
-            <li><a href="index.html" class="active">Заказ услуги</a></li>
-            <li><a href="my-services.html">Мои услуги</a></li>
+            <li><a href="#">Заказ услуги</a></li>
+            <li><a href="personal-data.html" class="active">Мои услуги</a></li>
         </ul>
         <div class="btn-group">
             <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
@@ -170,135 +171,143 @@
             </ul>
             <span class="overlay"></span>
         </div>
-        <main class="main-wrap">
-            <h3 class="account-title">Аккаунт: 53785</h3>
-            <!----------------------------------service-list------------------------------------------------------>
-            <ul class="service-list">
-                <li class="service-item">
-                    <div class="popup" onclick="myFunction()">
-                        <div class="popup-text" id="myPopup">
-                            <span>1 терминал MetaTrader</span>
-                            <span>500MB оперативной памяти для терминала</span>
-                            <span>Нагрузка на CPU до 5%</span>
-                            <span>3GB дискового хранилища</span>
-                        </div>
-                        <img src="./images/prompt.svg" width="28" height="28" alt="prompt">
-                    </div>
-                    <p class="view">OPTIMUM</p>
-                    <!------------------------------------close/open selection terminal-------------------------------------->
-                    <div id="hide" class="close-block service-area padding-30 align-flex-start" style="display:none;">
-                        <p class="text">Терминалы: 1 шт.</p>
-                        <p class="text">Память на 1 терминал: 500МБ</p>
-                        <p class="text">Дисковая квота: 3 ГБ</p>
-                        <button class="close-block-btn">
-                            <img src="./images/close-block-btn.png" width="28" height="28" alt="close-block-btn">
-                        </button>
-                    </div>
-                    <!------------------------------------end close/open selection terminal-------------------------------------->
-                </li>
-                <li class="service-item gradient-border">
-                    <p class="name-price">Цена за месяц:</p>
-                    <p class="price gradient-text">2,52€/mon</p>
-                </li>
-            </ul>
-            <!----------------------------------end service-list-------------------------------------------------->
-            <form action="#" class="promo-code-form">
-                <input type="text" placeholder="Введите промокод">
-            </form>
-            <div class="tabs tabs-content">
+        <main class="main-wrap main-wrap-personal-data">
+            <div class="tabs tabs-content tabs-freezing">
                 <ul>
-                    <li><a href="#tabs-1">Регистрация</a></li>
-                    <li><a href="#tabs-2">Вход</a></li>
+                    <li><a href="#tabs-1">Все услуги</a></li>
+                    <li><a href="#tabs-2">Заморозка</a></li>
                 </ul>
                 <div id="tabs-1">
-                    <p>Повторные регистрации (создание еще одного личного кабинета) запрещены.
-                        Создание нескольких личных кабинетов для одного человека
-                        (в т.ч. на подставные данные) повлечет их блокировку.
-                    </p>
-                    <form action="#" class="registration-form">
-                        <div class="row margin-bottom-18 flex-direction-sm-column">
-                            <div class="col">
-                                <div class="padding-right-27">
-                                    <div class="form-group">
-                                        <label for="name">Имя и Отчество:</label>
-                                        <input type="text" id="name" placeholder="Введите текст">
-                                        <span>Вы воспользовались некорректными символами</span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Фамилия:</label>
-                                        <input type="text" id="surname" placeholder="Введите текст">
-                                        <span>Вы воспользовались некорректными символами</span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Пароль:</label>
-                                        <input type="password" id="password" placeholder="Введите текст">
-                                        <span>Вы воспользовались некорректными символами</span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="сonfirm-password">Подтверждение пароля:</label>
-                                        <div class="input-area">
-                                            <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password" />
-                                            <button class="toggle-button" id="toggle">
-                                                <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
-                                            </button>
-                                        </div>
-                                        <span>Вы воспользовались некорректными символами</span>
-                                    </div>
+                    <div class="all-services">
+                        <div class="row-title">
+                            <div class="column">Услуга</div>
+                            <div class="column">Цена</div>
+                            <div class="column">Итого</div>
+                            <div class="column">Возвратится на баланс</div>
+                        </div>
+                        <div class="row-content">
+                            <div class="column-group">
+                                <div class="column">
+                                    <div class="col-sm-heading">Услуга </div>
+                                    <strong class="marker-green">FX1 - U98198</strong>
+                                </div>
+                                <div class="column">
+                                    <div class="col-sm-heading">Цена</div>
+                                    <p>€2.52 EUR</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" placeholder="Введите текст">
+                            <div class="column-group">
+                                <div class="column">
+                                    <div class="col-sm-heading">Итого</div>
+                                    <p>€2.52 EUR</p>
                                 </div>
-                                <div class="form-group">
-                                    <label for="phone-number">Номер телефона:</label>
-                                    <input type="tel" id="phone-number" placeholder="-- --- -- --">
+                                <div class="column">
+                                    <div class="col-sm-heading">Возвратится на баланс</div>
+                                    <p>€2.52 EUR</p>
                                 </div>
-                                <div class="custom-select">
-                                        <span>Страна:</span>
-                                        <select>
-                                            <option value="0">Ukraine</option>
-                                            <option value="1">America</option>
-                                            <option value="2">Czech</option>
-                                            <option value="3">Poland</option>
-                                        </select>
-                                    </div>
                             </div>
                         </div>
-                        <button class="btn gradient-border">Продолжить покупку</button>
-                    </form>
+                    </div>
                 </div>
                 <div id="tabs-2">
-                    <form action="#" class="registration-form">
-                        <div class="row margin-bottom-18 flex-direction-sm-column">
-                            <div class="col">
-                                <div class="padding-right-27">
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="email" id="email" placeholder="Введите текст">
-                                        <span>Вы воспользовались некорректными символами</span>
-                                    </div>
+                    <div class="all-services">
+                        <div class="row-title">
+                            <div class="column">Услуга</div>
+                            <div class="column">Цена</div>
+                            <div class="column">Итого</div>
+                            <div class="column">Возвратится на баланс22</div>
+                        </div>
+                        <div class="row-content">
+                            <div class="column-group">
+                                <div class="column">
+                                    <div class="col-sm-heading">Услуга </div>
+                                    <strong class="marker-green">FX1 - U98198</strong>
+                                </div>
+                                <div class="column">
+                                    <div class="col-sm-heading">Цена</div>
+                                    <p>€2.52 EUR</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="сonfirm-password">Подтверждение пароля:</label>
-                                    <div class="input-area">
-                                        <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password" placeholder="Введите пароль" />
-                                        <button class="toggle-button" id="toggle">
-                                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
-                                        </button>
-                                    </div>
-                                    <a href="#">Забыли пароль?</a>
+                            <div class="column-group">
+                                <div class="column">
+                                    <div class="col-sm-heading">Итого</div>
+                                    <p>€2.52 EUR</p>
+                                </div>
+                                <div class="column">
+                                    <div class="col-sm-heading">Возвратится на баланс</div>
+                                    <p>€2.52 EUR</p>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn gradient-border" type="submit">Продолжить покупку</button>
-                    </form>
+                    </div>
                 </div>
             </div>
+            <a class="btn gradient-border" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Активировать заморозку</a>
         </main>
+    </div>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-confirmation">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body modal-body-confirmation">
+                    <p>
+                        Вы действительно хотите активировать услугу “Заморозка”?
+                    </p>
+                </div>
+                <div class="modal-footer modal-footer-confirmation">
+                    <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Да</button>
+                    <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Нет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-forced-termination">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title modal-title-forced-termination" id="exampleModalToggleLabel">Подтвердите действие на странице my.forex-box.com</h5>
+                </div>
+                <div class="modal-body modal-body-forced-termination">
+                    <p>
+                        Все ваши запущенные терминалы будут закрыты (остановлены) и выполнен принудительный выход из системы
+                    </p>
+                </div>
+                <div class="modal-footer modal-footer-forced-termination">
+                    <button class="btn gradient-border btn-lg btn-background btn-text-white" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
+                    <button class="btn gradient-border btn-lg" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Продолжить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-deleted-account">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <p>
+                        Вы действительно хотите удалить выбранный аккаунт?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Удалить</button>
+                    <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-success">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body modal-body-success">
+                    <img src="./images/check-mark-two.png" width="87" height="87" alt="check-mark-two">
+                    <p>
+                        Действие успешно завершено!
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -306,6 +315,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <!--------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

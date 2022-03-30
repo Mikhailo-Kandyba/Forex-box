@@ -5,6 +5,8 @@
   font-family: $base-font-default;
   font-size: $font-size-base + 7;
   line-height: $line-height-base + 8;
+  text-align: center;
+  margin-bottom: 20px;
 
   @include breakpoint($mobile-sm) {
     font-size: $font-size-base;
@@ -12,11 +14,16 @@
   }
 }
 
+.modal-title-forced-termination {
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base + 2;
+}
+
 .modal-header {
   border-bottom: 0;
   position: relative;
   justify-content: center;
-  padding: 25px 50px 10px;
+  padding: 0;
 
   .btn-close {
     position: absolute;
@@ -27,22 +34,25 @@
 }
 
 .modal-body {
-  padding: 10px 25px 0;
+  //flex: 1 1 auto;
+  flex: 0;
+  padding: 0;
+
+  img {
+    width: 87px;
+  }
 
   p {
     font-family: $lato-light;
-    font-size: $font-size-base - 1;
-    line-height: $line-height-base - 1;
-    margin-bottom: 12px;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 25px;
+    text-align: center;
 
     @include breakpoint($mobile-sm) {
       font-size: $font-size-base - 3;
       line-height: $line-height-base - 2;
     }
-  }
-
-  img {
-    width: 87px;
   }
 
   .header-btn {
@@ -53,6 +63,7 @@
     .btn {
       max-width: 125px;
       width: 100%;
+      margin-right: 0;
 
       @include breakpoint($mobile-sm) {
         max-width: 95px;
@@ -64,7 +75,7 @@
 .modal-footer {
   justify-content: center;
   border: none;
-  padding: 0 0 30px 0;
+  padding: 0;
 
   .btn {
     max-width: 335px;
@@ -80,35 +91,143 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.modal-body-custom {
-  text-align: center;
-  padding: 55px 50px 85px 50px;
+//.modal-body-custom {
+//  text-align: center;
+//  padding: 55px 50px 85px 50px;
+//
+//  @include breakpoint($mobile-sm) {
+//    padding: 80px 40px 120px 40px;
+//  }
+//}
 
-  @include breakpoint($mobile-sm) {
-    padding: 80px 40px 120px 40px;
-  }
-}
+//.modal-content-custom {
+//  max-width: 433px;
+//  min-height: 300px;
+//  margin: 0 auto;
+//  padding: 37px 80px;
+//}
 
-.modal-content-custom {
-  max-width: 433px;
-  margin: 0 auto;
-}
-
-.modal-body-custom-two {
-  padding: 0 80px 45px 80px;
-  text-align: center;
-
-  @include breakpoint($mobile-sm) {
-    padding: 0 30px 45px 30px;
-  }
-
-  p {
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base + 2;
-    margin-bottom: 30px;
-  }
-}
+//.modal-body-custom-two {
+//  padding: 0 80px 45px 80px;
+//  text-align: center;
+//d-flex
+//  @include breakpoint($mobile-sm) {
+//    padding: 0 30px 45px 30px;
+//  }
+//
+//  p {
+//    font-size: $font-size-base + 2;
+//    line-height: $line-height-base + 2;
+//    margin-bottom: 30px;
+//  }
+//}
 
 .modal {
   margin: 0 auto;
+}
+
+.modal-footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  z-index: 1;
+}
+
+.account-replacement-content {
+  padding: 28px 20px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 28px 10px;
+  }
+}
+
+.account-replacement-body {
+  margin-bottom: 7px;
+
+  p {
+    font-size: $font-size-base - 1;
+    line-height: $line-height-base - 2;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-content-success {
+  justify-content: center;
+  min-height: 300px;
+
+  @include breakpoint($mobile-sm) {
+    min-height: 230px;
+  }
+}
+
+.modal-body-success {
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-bottom: 27px;
+  }
+}
+.modal-content-cancellation {
+  margin: 0 auto;
+  max-width: 433px !important;
+  padding: 46px 75px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 36px 15px;
+  }
+}
+
+.modal-content-confirmation {
+  margin: 0 auto;
+  max-width: 433px;
+  padding: 58px 60px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 48px 10px;
+  }
+}
+
+.modal-footer-confirmation {
+  justify-content: space-between;
+}
+
+.modal-body-forced-termination {
+  p {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+.modal-content-forced-termination {
+  max-width: 433px !important;
+  margin: 0 auto;
+  padding: 34px 40px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 34px 10px;
+  }
+}
+
+.modal-footer-forced-termination {
+  justify-content: space-between;
+}
+
+.modal-content-deleted-account {
+  max-width: 433px !important;
+  margin: 0 auto;
+  padding: 80px 60px;
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 10px;
+  }
 }
