@@ -1472,6 +1472,9 @@ input:checked + .slider:before {
 .status {
   color: #e23737; }
 
+.status-active {
+  color: #3EA278; }
+
 .row-heading {
   font-family: Lato-Light;
   font-size: 15px;
@@ -1822,6 +1825,53 @@ input:checked + .slider:before {
     .modal-content-deleted-account {
       padding: 40px 10px; } }
 
+.modal-dialog-view-account {
+  max-width: 665px !important; }
+
+.modal-content-view-account {
+  margin: 0 auto;
+  padding: 50px 30px; }
+
+.modal-body-view-account h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 25px; }
+  .modal-body-view-account h4 span {
+    display: block;
+    font-family: Lato-Light; }
+
+.modal-body-view-account h3 {
+  font-size: 22px;
+  line-height: 27px; }
+
+.modal-body-view-account p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 19px; }
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+.sender,
+.recipient {
+  font-size: 16px;
+  line-height: 20px; }
+  .sender span,
+  .recipient span {
+    display: block;
+    font-family: Lato-Light; }
+
+.info-service h5 {
+  font-size: 18px;
+  line-height: 22px; }
+
+.sender {
+  border-right: 1px solid rgba(0, 0, 0, 0.15); }
+
 @media only screen and (max-width: 1275px) {
   .main-wrap-balance {
     padding: 47px 20px 20px 195px; } }
@@ -2068,6 +2118,30 @@ input:checked + .slider:before {
     bottom: 0;
     width: 100%;
     background: #000; }
+
+.my-accounts {
+  max-width: 1105px;
+  width: 100%;
+  margin-bottom: 30px; }
+  .my-accounts .column {
+    width: 20%; }
+    .my-accounts .column p {
+      font-family: Lato-Light; }
+  .my-accounts .column-title {
+    width: 20%; }
+  .my-accounts .row-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 33px;
+    margin-bottom: 8px; }
+  .my-accounts .row-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 34px;
+    margin-bottom: 12px; }
+
+.pagination-wrap-my-accounts {
+  max-width: 1105px; }
 
 /**********************************size button***************************/
 .size-md {

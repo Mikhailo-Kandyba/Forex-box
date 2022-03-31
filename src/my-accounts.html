@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>My-accounts</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <a class="logo d-none-xl d-block-md" href="index.html">
+                    <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Заказ услуги</a></li>
+                    <li><a href="personal-data.html" class="active">Мои услуги</a></li>
+                </ul>
+                <div class="btn-group">
+                    <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+                    <div class="custom-select">
+                        <select>
+                            <option value="1">Ru</option>
+                            <option value="2">Ua</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-menu">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+            </header>
+            <div>
+                <div class="sidebar-wrap">
+                    <ul class="sidebar">
+                        <li class="sidebar-item">
+                            <a class="logo d-none-sm" href="index.html">
+                                <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="index.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active-item">
+                            <a href="balance.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="personal-data.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-sidebar">
+                        <a class="logo d-none-sm d-none-xl" href="index.html">
+                            <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                        </a>
+                        <div class="btn-group d-none-xl d-flex-sm">
+                            <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="1">Ru</option>
+                                    <option value="2">Ua</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="sidebar-mobile">
+                        <li class="sidebar-item active-item">
+                            <a href="index.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="index.html">Заказ услуги</a></li>
+                                <li><a href="my-services.html">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="balance.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="balance.html">Баланс</a></li>
+                                <li><a href="#">Мои счета</a></li>
+                                <li><a href="#">Внутренние переводы</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="personal-data.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="overlay"></span>
+                </div>
+                <main class="main-wrap main-wrap-personal-data">
+                    <h1 class="title-page title-page-my-services">Мои счета (квитанции) </h1>
+                    <div class="my-accounts">
+                        <div class="row-heading">
+                            <div class="column-title">Номер счета</div>
+                            <div class="column-title">Срок оплаты</div>
+                            <div class="column-title">Оплачен</div>
+                            <div class="column-title">Сумма счета</div>
+                            <div class="column-title">Статус</div>
+                        </div>
+                        <div class="row-content position-relative-sm-row">
+                            <div class="column">
+                                <div class="col-sm-heading">Номер счета</div>
+                                <strong>#962268</strong>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Срок оплаты</div>
+                                <p>31.08.2021</p>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Оплачен</div>
+                                <p>24.08.2021</p>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Сумма счета</div>
+                                <p>€2.52 EUR</p>
+                            </div>
+                            <div class="column position-relative-col">
+                                <div class="col-sm-heading">Статус</div>
+                                <p class="status-active">оплачен</p>
+                                <div class="dropdown-wrap">
+                                    <div class="dropdown">
+                                        <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkOne" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./images/dropdown-btn.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkOne">
+                                            <li>
+                                                <a class="dropdown-item" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                                                    <img src="./images/icon-dropdown-8.svg" width="20" height="20" alt="icon-dropdown">
+                                                    Просмотр счета
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./images/icon-dropdown-9.svg" width="17" height="18" alt="icon-dropdown">
+                                                    Сохранить счет в формате PDF
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-content position-relative-sm-row">
+                            <div class="column">
+                                <div class="col-sm-heading">Номер счета</div>
+                                <strong>#962268</strong>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Срок оплаты</div>
+                                <p>31.08.2021</p>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Оплачен</div>
+                                <p>24.08.2021</p>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-heading">Сумма счета</div>
+                                <p>€2.52 EUR</p>
+                            </div>
+                            <div class="column position-relative-col">
+                                <div class="col-sm-heading">Статус</div>
+                                <p class="status-active">оплачен</p>
+                                <div class="dropdown-wrap">
+                                    <div class="dropdown">
+                                        <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkTwo" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./images/dropdown-btn.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkTwo">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./images/icon-dropdown-1.svg" width="20" height="20" alt="icon-dropdown">
+                                                    Оплатить счет
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./images/icon-dropdown-2.svg" width="17" height="18" alt="icon-dropdown">
+                                                    Данные для входа
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap pagination-wrap-my-accounts">
+                        <div class="select-pages-content">
+                            <p>Результатов на странице:</p>
+                            <div class="custom-select select-pages">
+                                <select>
+                                    <option value="1">100</option>
+                                    <option value="2">200</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li>
+                                <a class="prev" href="#">
+                                    <img src="images/pagination-btn-left.svg" alt="pagination-btn-left">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="active" href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a class="next" href="#">
+                                    <img src="images/pagination-btn-right.svg" alt="pagination-btn-right">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered  modal-dialog-view-account">
+                    <div class="modal-content modal-content-view-account">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body modal-body-view-account">
+                            <h4>
+                                Оплачен с баланса
+                                <span>(24.08.2021 15:35:30)</span>
+                            </h4>
+                            <div class="user-info">
+                                <div class="sender">
+                                    <strong>Плательщик:</strong>
+                                    <span>
+                                        Виктория Валентиновна Гетингер
+                                        v.getinger@gmail.com
+                                        +380669971488
+                                    </span>
+                                </div>
+                                <div class="recipient">
+                                    <strong>Получатель:</strong>
+                                    <span>
+                                        SIA "PODAON" / №40103450338
+                                        Rīga, Maskavas iela 250 k-2 - 56, LV-1063
+                                        +37167651455
+                                        contact@forex-box.com
+                                        forex-box.com
+                                    </span>
+                                </div>
+                            </div>
+                            <h3>Счет (квитанция) #962268</h3>
+                            <p>Срок оплаты: 31.08.2021</p>
+                            <div class="info-service">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5>Услуга:</h5>
+                                        <p>
+                                            FX1 - U98310 (24.08.2021 - 23.09.2021)
+                                            Терминалы: 1 шт.
+                                            Нагрузка CPU: 5%
+                                            Память на 1 терминал: 500МБ
+                                            Дисковая квота: 3GB *
+                                        </p>
+                                        <h5>Платежные операции:</h5>
+                                        <p>Платежей не найдено</p>
+                                    </div>
+                                    <div class="col">
+                                        <h5>
+                                            Сумма:<span>€2.52 EUR</span>
+                                        </h5>
+                                        <h5>
+                                            Оплачено с баланса:<span>€2.52 EUR</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

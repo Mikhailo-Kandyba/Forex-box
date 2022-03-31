@@ -228,6 +228,70 @@
   padding: 80px 60px;
 
   @include breakpoint($mobile-sm) {
-    padding: 40px 10px;
+    padding: 40px 10px ;
   }
 }
+.modal-dialog-view-account {
+  max-width: 665px !important ;
+}
+
+
+.modal-content-view-account {
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.modal-body-view-account {
+  h4 {
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
+    margin-bottom: 25px;
+
+    span {
+      display: block;
+      font-family: $lato-light;
+    }
+  }
+
+  h3 {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 5;
+  }
+
+  p {
+    text-align: left;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 3;
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.sender,
+.recipient {
+  font-size: $font-size-base - 2;
+  line-height: $line-height-base - 2;
+
+  span {
+    display: block;
+    font-family: $lato-light;
+  }
+}
+
+.info-service {
+  h5 {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+.sender {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
