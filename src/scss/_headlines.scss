@@ -52,6 +52,27 @@
   }
 }
 
+.title-page-my-accounts {
+  font-size: $font-size-base + 4;
+  line-height: $line-height-base + 5;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 18px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin-bottom: 19px;
+  }
+}
+
 .heading {
   font-size: $font-size-base + 4;
   line-height: $line-height-base + 5;
@@ -81,6 +102,18 @@
   display: none;
 
   @include breakpoint($mobile-sm) {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.col-md-heading {
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 11;
+  display: none;
+
+  @include breakpoint($mobile) {
+    font-family: $lato-light;
     display: block;
     margin-bottom: 10px;
   }

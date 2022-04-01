@@ -14,8 +14,9 @@
                     <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
                 </a>
                 <ul class="menu">
-                    <li><a href="#">Заказ услуги</a></li>
+                    <li><a href="#">Баланс</a></li>
                     <li><a href="personal-data.html" class="active">Мои услуги</a></li>
+                    <li><a href="#">Внутренние переводы</a></li>
                 </ul>
                 <div class="btn-group">
                     <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
@@ -169,7 +170,7 @@
                     <span class="overlay"></span>
                 </div>
                 <main class="main-wrap main-wrap-personal-data">
-                    <h1 class="title-page title-page-my-services">Мои счета (квитанции) </h1>
+                    <h1 class="title-page title-page-my-accounts">Мои счета (квитанции) </h1>
                     <div class="my-accounts">
                         <div class="row-heading">
                             <div class="column-title">Номер счета</div>
@@ -178,27 +179,27 @@
                             <div class="column-title">Сумма счета</div>
                             <div class="column-title">Статус</div>
                         </div>
-                        <div class="row-content position-relative-sm-row">
+                        <div class="row-content position-relative-md-row">
                             <div class="column">
-                                <div class="col-sm-heading">Номер счета</div>
+                                <div class="col-md-heading">Номер счета</div>
                                 <strong>#962268</strong>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Срок оплаты</div>
+                                <div class="col-md-heading">Срок оплаты</div>
                                 <p>31.08.2021</p>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Оплачен</div>
+                                <div class="col-md-heading">Оплачен</div>
                                 <p>24.08.2021</p>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Сумма счета</div>
+                                <div class="col-md-heading">Сумма счета</div>
                                 <p>€2.52 EUR</p>
                             </div>
-                            <div class="column position-relative-col">
-                                <div class="col-sm-heading">Статус</div>
+                            <div class="column position-relative-md-col">
+                                <div class="col-md-heading">Статус</div>
                                 <p class="status-active">оплачен</p>
-                                <div class="dropdown-wrap">
+                                <div class="dropdown-wrap dropdown-wrap-my-account">
                                     <div class="dropdown">
                                         <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkOne" data-bs-toggle="dropdown" aria-expanded="false">
                                             <img src="./images/dropdown-btn.svg" alt="">
@@ -221,27 +222,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row-content position-relative-sm-row">
+                        <div class="row-content position-relative-md-row">
                             <div class="column">
-                                <div class="col-sm-heading">Номер счета</div>
+                                <div class="col-md-heading">Номер счета</div>
                                 <strong>#962268</strong>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Срок оплаты</div>
+                                <div class="col-md-heading">Срок оплаты</div>
                                 <p>31.08.2021</p>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Оплачен</div>
+                                <div class="col-md-heading">Оплачен</div>
                                 <p>24.08.2021</p>
                             </div>
                             <div class="column">
-                                <div class="col-sm-heading">Сумма счета</div>
+                                <div class="col-md-heading">Сумма счета</div>
                                 <p>€2.52 EUR</p>
                             </div>
-                            <div class="column position-relative-col">
-                                <div class="col-sm-heading">Статус</div>
+                            <div class="column position-relative-md-col">
+                                <div class="col-md-heading">Статус</div>
                                 <p class="status-active">оплачен</p>
-                                <div class="dropdown-wrap">
+                                <div class="dropdown-wrap dropdown-wrap-my-account">
                                     <div class="dropdown">
                                         <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkTwo" data-bs-toggle="dropdown" aria-expanded="false">
                                             <img src="./images/dropdown-btn.svg" alt="">
@@ -331,29 +332,35 @@
                             <h3>Счет (квитанция) #962268</h3>
                             <p>Срок оплаты: 31.08.2021</p>
                             <div class="info-service">
-                                <div class="row">
-                                    <div class="col">
-                                        <h5>Услуга:</h5>
-                                        <p>
-                                            FX1 - U98310 (24.08.2021 - 23.09.2021)
-                                            Терминалы: 1 шт.
-                                            Нагрузка CPU: 5%
-                                            Память на 1 терминал: 500МБ
-                                            Дисковая квота: 3GB *
-                                        </p>
-                                        <h5>Платежные операции:</h5>
-                                        <p>Платежей не найдено</p>
-                                    </div>
-                                    <div class="col">
-                                        <h5>
-                                            Сумма:<span>€2.52 EUR</span>
-                                        </h5>
-                                        <h5>
-                                            Оплачено с баланса:<span>€2.52 EUR</span>
-                                        </h5>
-                                    </div>
+                                <div class="service">
+                                    <h5>Услуга:</h5>
+                                    <p>
+                                        FX1 - U98310 (24.08.2021 - 23.09.2021)
+                                    </p>
+                                    <p>
+                                        Терминалы: 1 шт.
+                                    </p>
+                                    <p>
+                                        Нагрузка CPU: 5%
+                                    </p>
+                                    <p>
+                                        Память на 1 терминал: 500МБ
+                                    </p>
+                                    <p>
+                                        Дисковая квота: 3GB *
+                                    </p>
+                                </div>
+                                <div class="results">
+                                    <h5>
+                                        Сумма:<span>€2.52 EUR</span>
+                                    </h5>
+                                    <h5>
+                                        Оплачено с баланса:<span>€2.52 EUR</span>
+                                    </h5>
                                 </div>
                             </div>
+                            <h5>Платежные операции:</h5>
+                            <p>Платежей не найдено</p>
                         </div>
                     </div>
                 </div>

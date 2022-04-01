@@ -572,7 +572,7 @@ h6 {
         margin-right: 40px; } }
     @media only screen and (max-width: 1023px) {
       .menu li {
-        margin-right: 20px; } }
+        margin-right: 15px; } }
     @media only screen and (max-width: 1023px) {
       .menu li:last-child {
         margin-right: 0; } }
@@ -1077,6 +1077,23 @@ input:checked + .slider:before {
       line-height: 24px;
       margin-bottom: 16px; } }
 
+.title-page-my-accounts {
+  font-size: 22px;
+  line-height: 27px; }
+  @media only screen and (max-width: 1275px) {
+    .title-page-my-accounts {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 18px; } }
+  @media only screen and (max-width: 767px) {
+    .title-page-my-accounts {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-my-accounts {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 19px; } }
+
 .heading {
   font-size: 22px;
   line-height: 27px;
@@ -1102,6 +1119,16 @@ input:checked + .slider:before {
   display: none; }
   @media only screen and (max-width: 710px) {
     .col-sm-heading {
+      display: block;
+      margin-bottom: 10px; } }
+
+.col-md-heading {
+  font-size: 15px;
+  line-height: 11px;
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .col-md-heading {
+      font-family: Lato-Light;
       display: block;
       margin-bottom: 10px; } }
 
@@ -1830,24 +1857,31 @@ input:checked + .slider:before {
 
 .modal-content-view-account {
   margin: 0 auto;
-  padding: 50px 30px; }
+  padding: 30px 30px 23px; }
 
 .modal-body-view-account h4 {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 25px; }
+  margin-bottom: 18px; }
   .modal-body-view-account h4 span {
     display: block;
     font-family: Lato-Light; }
 
 .modal-body-view-account h3 {
   font-size: 22px;
-  line-height: 27px; }
+  line-height: 27px;
+  margin-bottom: 9px; }
 
 .modal-body-view-account p {
   text-align: left;
   font-size: 16px;
   line-height: 19px; }
+
+.modal-body-view-account > p {
+  margin-bottom: 5px; }
+
+.modal-body-view-account > h5 {
+  margin-bottom: 10px; }
 
 .user-info {
   display: flex;
@@ -1865,12 +1899,37 @@ input:checked + .slider:before {
     display: block;
     font-family: Lato-Light; }
 
-.info-service h5 {
-  font-size: 18px;
-  line-height: 22px; }
+.info-service {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px; }
+  .info-service h5 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px; }
+    .info-service h5 span {
+      font-family: Lato-Light;
+      font-size: 16px;
+      line-height: 20px;
+      padding-left: 13px; }
 
 .sender {
-  border-right: 1px solid rgba(0, 0, 0, 0.15); }
+  width: 45%;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 20px 5px 48px 20px; }
+
+.recipient {
+  width: 55%;
+  padding: 19px 7px 10px 30px; }
+
+.service {
+  width: 50%; }
+  .service p {
+    margin-bottom: 0; }
+
+.results {
+  width: 50%;
+  padding-left: 27px; }
 
 @media only screen and (max-width: 1275px) {
   .main-wrap-balance {
@@ -2123,10 +2182,36 @@ input:checked + .slider:before {
   max-width: 1105px;
   width: 100%;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 1275px) {
+    .my-accounts {
+      max-width: 755px;
+      margin-bottom: 19px; } }
+  @media only screen and (max-width: 767px) {
+    .my-accounts {
+      display: flex;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 710px) {
+    .my-accounts {
+      flex-direction: column;
+      margin-bottom: 2px; } }
   .my-accounts .column {
     width: 20%; }
+    @media only screen and (max-width: 767px) {
+      .my-accounts .column {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11px; } }
     .my-accounts .column p {
       font-family: Lato-Light; }
+      @media only screen and (max-width: 767px) {
+        .my-accounts .column p {
+          font-size: 16px;
+          line-height: 20px; } }
+    .my-accounts .column strong {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px; }
   .my-accounts .column-title {
     width: 20%; }
   .my-accounts .row-content {
@@ -2134,14 +2219,58 @@ input:checked + .slider:before {
     justify-content: space-between;
     padding: 20px 30px 20px 33px;
     margin-bottom: 8px; }
+    @media only screen and (max-width: 1023px) {
+      .my-accounts .row-content {
+        padding: 20px 30px 20px 15px; } }
+    @media only screen and (max-width: 767px) {
+      .my-accounts .row-content {
+        max-width: 302px;
+        width: 100%;
+        flex-direction: column;
+        padding: 22px 80px 6px 22px;
+        margin-right: 5px; } }
+    @media only screen and (max-width: 710px) {
+      .my-accounts .row-content {
+        max-width: 100%;
+        padding: 22px 50px 6px 22px;
+        margin-bottom: 16px; } }
+    @media only screen and (max-width: 710px) {
+      .my-accounts .row-content:last-child {
+        margin-right: 0; } }
+  @media only screen and (max-width: 1275px) {
+    .my-accounts .dropdown-wrap-my-account {
+      right: -20px; } }
+  @media only screen and (max-width: 767px) {
+    .my-accounts .dropdown-wrap-my-account {
+      right: 13px;
+      top: 7px; } }
+  @media only screen and (max-width: 710px) {
+    .my-accounts .dropdown-wrap-my-account {
+      right: 5px;
+      top: 10px; } }
+  @media only screen and (max-width: 1275px) {
+    .my-accounts .dropdown-wrap-my-account .dropdown-menu {
+      right: -8px !important; } }
+  @media only screen and (max-width: 710px) {
+    .my-accounts .dropdown-wrap-my-account .dropdown-menu {
+      right: -31px !important; } }
   .my-accounts .row-heading {
     display: flex;
     justify-content: space-between;
     padding: 0 34px;
     margin-bottom: 12px; }
+    @media only screen and (max-width: 1023px) {
+      .my-accounts .row-heading {
+        padding: 0 15px; } }
+    @media only screen and (max-width: 767px) {
+      .my-accounts .row-heading {
+        display: none; } }
 
 .pagination-wrap-my-accounts {
   max-width: 1105px; }
+  @media only screen and (max-width: 1275px) {
+    .pagination-wrap-my-accounts {
+      max-width: 755px; } }
 
 /**********************************size button***************************/
 .size-md {
@@ -2323,6 +2452,16 @@ input:checked + .slider:before {
 @media only screen and (max-width: 710px) {
   .position-relative-sm-row {
     position: relative; } }
+
+@media only screen and (max-width: 767px) {
+  .position-relative-md-row {
+    position: relative; } }
+
+.position-relative-md-col {
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .position-relative-md-col {
+      position: static; } }
 
 @media only screen and (max-width: 767px) {
   .width-sm-120 {

@@ -6,11 +6,44 @@
   width: 100%;
   margin-bottom: 30px;
 
+  @include breakpoint($desktop) {
+    max-width: 755px;
+    margin-bottom: 19px;
+  }
+
+  @include breakpoint($mobile) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+    margin-bottom: 2px;
+  }
+
   .column {
     width: 20%;
 
+    @include breakpoint($mobile) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 11px;
+    }
+
     p {
       font-family: $lato-light;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 2;
+        line-height: $line-height-base - 2;
+      }
+    }
+
+    strong {
+      font-weight: 400;
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
     }
   }
 
@@ -23,6 +56,56 @@
     justify-content: space-between;
     padding: 20px 30px 20px 33px;
     margin-bottom: 8px;
+
+    @include breakpoint($tablet) {
+      padding: 20px 30px 20px 15px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 302px;
+      width: 100%;
+      flex-direction: column;
+      padding: 22px 80px 6px 22px;
+      margin-right: 5px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      max-width: 100%;
+      padding: 22px 50px 6px 22px;
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      @include breakpoint($mobile-sm) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .dropdown-wrap-my-account {
+    @include breakpoint($desktop) {
+      right: -20px;
+    }
+
+    @include breakpoint($mobile) {
+      right: 13px;
+      top: 7px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      right: 5px;
+      top: 10px;
+    }
+
+    .dropdown-menu {
+      @include breakpoint($desktop) {
+        right: -8px !important;
+      }
+
+      @include breakpoint($mobile-sm) {
+        right: -31px !important;
+      }
+    }
   }
 
   .row-heading {
@@ -30,9 +113,21 @@
     justify-content: space-between;
     padding: 0 34px;
     margin-bottom: 12px;
+
+    @include breakpoint($tablet) {
+      padding: 0 15px;
+    }
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 }
 
 .pagination-wrap-my-accounts {
   max-width: 1105px;
+
+  @include breakpoint($desktop) {
+    max-width: 755px;
+  }
 }

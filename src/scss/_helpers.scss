@@ -252,6 +252,20 @@
   }
 }
 
+.position-relative-md-row {
+  @include breakpoint($mobile) {
+    position: relative;
+  }
+}
+.position-relative-md-col {
+  position: relative;
+
+  @include breakpoint($mobile) {
+    position: static;
+  }
+}
+
+
 
 .width-sm-120 {
   @include breakpoint($mobile) {
