@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Personal-data</title>
+    <title>Security-setting</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,8 +13,8 @@
             <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
         </a>
         <ul class="menu">
-            <li><a href="personal-data.html" class="active">Личные данные</a></li>
-            <li><a href="security-settings.html">Настройки безопасности</a></li>
+            <li><a href="personal-data.html">Личные данные</a></li>
+            <li><a href="security-settings.html" class="active">Настройки безопасности</a></li>
         </ul>
         <div class="btn-group">
             <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
@@ -39,7 +39,7 @@
                         <img src="./images/logo.svg" width="90" height="18" alt="logo">
                     </a>
                 </li>
-                <li class="sidebar-item active-item">
+                <li class="sidebar-item">
                     <a href="index.html">
                         <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
                         <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
@@ -53,7 +53,7 @@
                         <span>Биллинг</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item active-item">
                     <a href="personal-data.html">
                         <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
                         <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
@@ -167,62 +167,48 @@
             </ul>
             <span class="overlay"></span>
         </div>
-        <main class="main-wrap main-wrap-personal-data">
-            <h1 class="title-page title-page-personal-data">Информация о вас</h1>
-            <form action="#" class="registration-form personal-data-form">
-                <div class="row row-tbody-form">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="name">Имя</label>
-                            <input type="text" id="name" placeholder="Введите текст">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" placeholder="Введите текст">
-                        </div>
-                        <div class="custom-select">
-                                <span>Страна:</span>
-                                <select>
-                                    <option value="0">Выберите из списка</option>
-                                    <option value="1">America</option>
-                                    <option value="2">Czech</option>
-                                    <option value="3">Poland</option>
-                                </select>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="surname">Фамилия</label>
-                            <input type="text" id="surname" placeholder="Введите текст">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone-number">Номер телефона</label>
-                            <input type="tel" id="phone-number" placeholder="-- --- -- --">
-                        </div>
+        <main class="main-wrap main-wrap-security-setting">
+            <h1 class="title-page title-page-security-setting">Изменить пароль</h1>
+            <form action="#" class="registration-form personal-data-form security-settings-form">
+                <div class="form-group">
+                    <label for="old-password">Старый пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="old-password" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle-one">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="success"></span>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="new-password">Новый пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="new-password" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle-two">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="warning"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="сonfirm-password-rwo">Повторите пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password-rwo" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <button class="btn btn-text-white btn-background">Сохранить изменения </button>
             </form>
-            <h4 class="heading">Подпишитесь на рассылку:</h4>
-            <div class="switch-wrap">
-                <div class="switch-group">
-                    <p>Техническая рассылка</p>
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-                <div class="switch-group">
-                    <p>Новостная рассылка</p>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-            </div>
-            <div class="header-btn">
-                <button class="btn gradient-border btn-xl btn-background btn-text-white">Сохранить изменения </button>
-                <button class="btn-cancellation">Отмена</button>
-            </div>
+            <h3>
+                Двухэтапная аутентификация
+            </h3>
+            <p>
+                Двухэтапная аутентификация подразумевает дополнительный уровень защиты при авторизации. После включения и настройки двухэтапной аутентификации, для входа в систему потребуется ввести не только имя пользователя и пароль, но и дополнительный ключ, к примеру: код безопасности.
+            </p>
+            <button class="btn btn-text-white btn-background">Включить</button>
         </main>
     </div>
 </div>

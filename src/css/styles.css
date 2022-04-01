@@ -1094,6 +1094,19 @@ input:checked + .slider:before {
       line-height: 22px;
       margin-bottom: 19px; } }
 
+.title-page-security-setting {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 1275px) {
+    .title-page-security-setting {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 21px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-security-setting {
+      margin-bottom: 12px; } }
+
 .heading {
   font-size: 22px;
   line-height: 27px;
@@ -2271,6 +2284,113 @@ input:checked + .slider:before {
   @media only screen and (max-width: 1275px) {
     .pagination-wrap-my-accounts {
       max-width: 755px; } }
+
+.main-wrap-security-setting {
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 1275px) {
+    .main-wrap-security-setting {
+      padding: 43px 20px 20px 195px; } }
+  @media only screen and (max-width: 1023px) {
+    .main-wrap-security-setting {
+      padding: 25px 30px 20px 150px; } }
+  @media only screen and (max-width: 767px) {
+    .main-wrap-security-setting {
+      padding: 40px 48px 20px 60px; } }
+  @media only screen and (max-width: 710px) {
+    .main-wrap-security-setting {
+      padding: 40px 29px 20px 30px; } }
+  .main-wrap-security-setting .btn {
+    max-width: 365px; }
+    @media only screen and (max-width: 710px) {
+      .main-wrap-security-setting .btn {
+        max-width: 100%; } }
+  .main-wrap-security-setting h3 {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 25px; }
+    @media only screen and (max-width: 1275px) {
+      .main-wrap-security-setting h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 21px; } }
+    @media only screen and (max-width: 710px) {
+      .main-wrap-security-setting h3 {
+        font-size: 19px;
+        line-height: 23px; } }
+  .main-wrap-security-setting p {
+    font-family: Lato-Light;
+    max-width: 1125px;
+    margin-bottom: 27px; }
+    @media only screen and (max-width: 1275px) {
+      .main-wrap-security-setting p {
+        max-width: 755px;
+        margin-bottom: 24px; } }
+    @media only screen and (max-width: 710px) {
+      .main-wrap-security-setting p {
+        font-size: 16px;
+        line-height: 20px; } }
+
+.security-settings-form {
+  max-width: 365px;
+  margin-bottom: 56px; }
+  @media only screen and (max-width: 1275px) {
+    .security-settings-form {
+      margin-bottom: 47px; } }
+  @media only screen and (max-width: 767px) {
+    .security-settings-form {
+      margin-bottom: 36px; } }
+  @media only screen and (max-width: 710px) {
+    .security-settings-form {
+      margin-bottom: 46px;
+      max-width: 100%; } }
+  .security-settings-form .btn {
+    max-width: 100%;
+    margin-top: 10px; }
+    @media only screen and (max-width: 710px) {
+      .security-settings-form .btn {
+        margin-top: 23px; } }
+  .security-settings-form input {
+    border-right: none;
+    padding: 10px 63px 10px 22px; }
+  .security-settings-form .form-group {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px; }
+    @media only screen and (max-width: 710px) {
+      .security-settings-form .form-group {
+        margin-bottom: 12px; } }
+    .security-settings-form .form-group label {
+      padding-left: 11px;
+      margin-bottom: 4px; }
+      @media only screen and (max-width: 710px) {
+        .security-settings-form .form-group label {
+          padding-left: 16px; } }
+    .security-settings-form .form-group:last-child {
+      margin-bottom: 0; }
+  .security-settings-form .toggle-button {
+    padding: 0 33px; }
+  @media only screen and (max-width: 767px) {
+    .security-settings-form .input-area input {
+      height: 60px; } }
+  @media only screen and (max-width: 710px) {
+    .security-settings-form .input-area input {
+      height: 55px; } }
+
+.success,
+.warning,
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px; }
+
+.warning {
+  background: #fabb35;
+  width: 50%; }
+
+.error {
+  background: #ff6565;
+  width: 17%; }
 
 /**********************************size button***************************/
 .size-md {
