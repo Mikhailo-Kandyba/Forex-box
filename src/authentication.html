@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Authentication</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <a class="logo d-none-xl d-block-md" href="index.html">
+            <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
+        </a>
+        <ul class="menu">
+            <li><a href="personal-data.html">Личные данные</a></li>
+            <li><a href="security-settings.html" class="active">Настройки безопасности</a></li>
+        </ul>
+        <div class="btn-group">
+            <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+            <div class="custom-select">
+                <select>
+                    <option value="1">Ru</option>
+                    <option value="2">Ua</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn-menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </header>
+    <div>
+        <div class="sidebar-wrap">
+            <ul class="sidebar">
+                <li class="sidebar-item">
+                    <a class="logo d-none-sm" href="index.html">
+                        <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-sidebar">
+                <a class="logo d-none-sm d-none-xl" href="index.html">
+                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+                <div class="btn-group d-none-xl d-flex-sm">
+                    <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                    <div class="custom-select">
+                        <select>
+                            <option value="1">Ru</option>
+                            <option value="2">Ua</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-mobile">
+                <li class="sidebar-item active-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="my-services.html">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="balance.html">Баланс</a></li>
+                        <li><a href="#">Мои счета</a></li>
+                        <li><a href="#">Внутренние переводы</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="overlay"></span>
+        </div>
+        <main class="main-wrap main-wrap-security-setting main-wrap-authentication">
+            <h1 class="title-page title-page-security-setting">Изменить пароль</h1>
+            <form action="#" class="registration-form personal-data-form security-settings-form">
+                <div class="form-group">
+                    <label for="old-password">Старый пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="old-password" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle-one">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="success"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Новый пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="new-password" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle-two">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="warning"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="сonfirm-password-rwo">Повторите пароль:</label>
+                    <div class="input-area">
+                        <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password-rwo" placeholder="Введите пароль" />
+                        <button class="toggle-button" id="toggle">
+                            <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                        </button>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <button class="btn btn-text-white btn-background">Сохранить изменения </button>
+            </form>
+            <h3>
+                Двухэтапная аутентификация
+            </h3>
+            <p>
+                Двухэтапная аутентификация подразумевает дополнительный уровень защиты при авторизации. После включения и настройки двухэтапной аутентификации, для входа в систему потребуется ввести не только имя пользователя и пароль, но и дополнительный ключ, к примеру: код безопасности.
+            </p>
+            <div class="authentication">
+                <h3>
+                    <span class="gradient-text">1.</span>
+                    Одноразовый пароль двухэтапной аутентификации
+                </h3>
+                <p>
+                    Эта опция аутентификации использует алгоритм, основанный
+                    на времени. Ваш мобильный телефон может быть использован
+                    для генерации кодов. Если у вас еще нет приложение, которое
+                    может делать это, мы рекомендуем использовать Google
+                    Authenticator, который доступен для мобильных устройств IOS,
+                    Android и Windows.
+                </p>
+                <div class="authentication-area">
+                    <div class="authentication-description">
+                        <p>
+                            Для настройки приложения безопасности:
+                        </p>
+                        <p>
+                            1) Для начала добавьте новый временной token
+                        </p>
+                        <p>
+                            2) Затем используйте приложение для сканирования штрих-кода или введите его вручную:
+                        </p>
+                        <p>
+                            "LPYHU362WUOJVRD4"
+                        </p>
+                    </div>
+                    <div class="qr-code">
+                        <img src="./images/qr-code.png" width="190" height="189" alt="qr-code">
+                    </div>
+                </div>
+            </div>
+            <div class="header-btn">
+                <button class="btn btn-xl btn-background btn-text-white">Продолжить</button>
+                <button class="btn-cancellation">Отмена</button>
+            </div>
+        </main>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

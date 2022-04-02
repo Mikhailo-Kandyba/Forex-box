@@ -91,6 +91,10 @@
   input {
     border-right: none;
     padding: 10px 63px 10px 22px;
+
+    @include breakpoint($mobile-sm) {
+      padding: 10px 63px 10px 16px;
+    }
   }
 
   .form-group {
@@ -118,6 +122,10 @@
 
   .toggle-button {
     padding: 0 33px;
+
+    @include breakpoint($mobile-sm) {
+      padding: 0 19px;
+    }
   }
 
   .input-area {
