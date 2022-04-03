@@ -149,7 +149,7 @@
     margin-right: 60px;
 
     @include breakpoint($desktop) {
-      margin-right: 40px;
+      margin-right: 20px;
     }
 
     @include breakpoint($tablet) {

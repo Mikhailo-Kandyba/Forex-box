@@ -1,0 +1,188 @@
+@import "variables";
+@import "mixin";
+
+.main-wrap-my-tickets {
+  @include breakpoint($desktop) {
+    padding: 50px 20px 20px 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 45px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 29px 20px 30px;
+  }
+
+  .pagination-wrap {
+    max-width: 1040px;
+
+    @include breakpoint($desktop) {
+      max-width: 755px;
+    }
+  }
+
+  .search-form {
+    margin-bottom: 37px;
+
+    @include breakpoint($mobile-sm) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.my-tickets {
+  max-width: 1040px;
+  width: 100%;
+  margin-bottom: 22px;
+
+  @include breakpoint($desktop) {
+    max-width: 755px;
+  }
+
+  .row-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px 0 44px;
+    margin-bottom: 11px;
+
+    @include breakpoint($desktop) {
+      padding: 0 8px 0 53px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 0 8px 0 10px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 0 8px 0 37px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      display: none;
+    }
+
+    .column-title {
+      width: 50%;
+      color: $black;
+
+      @include breakpoint($mobile) {
+        width: 45%;
+      }
+    }
+  }
+
+  .row-content {
+    margin-bottom: 7px;
+
+    @include breakpoint($desktop) {
+      padding: 17px 10px 17px 53px;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 17px 10px 17px 10px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 17px 10px 17px 36px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      padding: 19px 10px 17px 17px;
+    }
+
+    > .column {
+      @include breakpoint($tablet) {
+        padding-right: 10px;
+      }
+
+      @include breakpoint($mobile) {
+        padding-right: 80px;
+      }
+
+      @include breakpoint($mobile-sm) {
+        padding-right: 0;
+      }
+    }
+
+    .column {
+      width: 50%;
+
+      @include breakpoint($tablet) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      @include breakpoint($mobile) {
+        width: 45%;
+      }
+
+      @include breakpoint($mobile-sm) {
+        width: 100%;
+        white-space: normal;
+        overflow: inherit;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .col-group {
+    display: flex;
+    width: 50%;
+
+    @include breakpoint($mobile) {
+      width: 55%;
+    }
+
+    @include breakpoint($mobile-sm) {
+      width: 100%;
+    }
+
+    .column-title {
+      @include breakpoint($mobile) {
+        width: 50%;
+      }
+    }
+
+    .column {
+      width: 50%;
+    }
+
+      p {
+      font-family: $lato-light;
+    }
+  }
+
+  .link {
+    font-family: $lato-light;
+    color: $azure;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  //.dropdown-wrap {
+  //  right: 20px;
+  //
+  //  @include breakpoint($tablet) {
+  //    right: 0;
+  //  }
+  //
+  //  @include breakpoint($mobile-sm) {
+  //    right: 10px;
+  //    top: 6px;
+  //  }
+  //}
+}
