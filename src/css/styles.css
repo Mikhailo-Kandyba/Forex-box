@@ -207,6 +207,9 @@ h6 {
   border-radius: 5px;
   background: #fff;
   cursor: pointer; }
+  @media only screen and (max-width: 1395px) {
+    .btn {
+      padding: 13px; } }
   @media only screen and (max-width: 1023px) {
     .btn {
       max-width: 285px; } }
@@ -1120,6 +1123,22 @@ input:checked + .slider:before {
 @media only screen and (max-width: 710px) {
   .title-page-my-tickets {
     margin-bottom: 21px; } }
+
+.title-page-open-ticket {
+  margin-bottom: 22px; }
+  @media only screen and (max-width: 1395px) {
+    .title-page-open-ticket {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .title-page-open-ticket {
+      margin-bottom: 14px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-open-ticket {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 12px; } }
 
 .heading {
   font-size: 22px;
@@ -2663,6 +2682,228 @@ input:checked + .slider:before {
     .my-tickets .link:hover {
       text-decoration: underline; }
 
+@media only screen and (max-width: 1395px) {
+  .main-wrap-open-ticket {
+    padding: 50px 72px 20px 195px; } }
+
+@media only screen and (max-width: 1023px) {
+  .main-wrap-open-ticket {
+    padding: 25px 30px 20px 150px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-wrap-open-ticket {
+    padding: 39px 58px 20px 60px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-wrap-open-ticket {
+    padding: 30px 29px 20px 30px; } }
+
+.link-back {
+  display: block;
+  font-family: Lato-Light;
+  color: #616161;
+  text-decoration: underline;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 1023px) {
+    .link-back {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .link-back {
+      margin-bottom: 31px; } }
+  @media only screen and (max-width: 710px) {
+    .link-back {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 21px; } }
+  .link-back:hover {
+    text-decoration: none;
+    color: #616161; }
+
+.ticket-data {
+  display: flex;
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 1395px) {
+    .ticket-data {
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 710px) {
+    .ticket-data {
+      flex-direction: column;
+      margin-bottom: 15px; } }
+  .ticket-data p {
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 20px; }
+    @media only screen and (max-width: 1395px) {
+      .ticket-data p {
+        font-size: 14px;
+        line-height: 21px; } }
+    @media only screen and (max-width: 710px) {
+      .ticket-data p {
+        line-height: 16px;
+        margin-bottom: 7px; } }
+    .ticket-data p:last-child {
+      margin-right: 0; }
+
+.btn-holder {
+  display: flex;
+  margin-bottom: 28px;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 1395px) {
+    .btn-holder {
+      margin-bottom: 45px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-holder {
+      margin-bottom: 41px; } }
+  @media only screen and (max-width: 710px) {
+    .btn-holder {
+      margin-bottom: 8px; } }
+  .btn-holder button {
+    max-width: 253px;
+    margin-right: 20px; }
+    @media only screen and (max-width: 1023px) {
+      .btn-holder button {
+        max-width: 230px; } }
+    @media only screen and (max-width: 767px) {
+      .btn-holder button {
+        max-width: 255px; } }
+    @media only screen and (max-width: 710px) {
+      .btn-holder button {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 17px; } }
+    .btn-holder button:last-child {
+      margin-right: 0; }
+
+.reviews {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px 27px 9px;
+  max-width: 1275px;
+  width: 100%;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 1395px) {
+    .reviews {
+      padding: 23px 44px 12px 23px;
+      margin-bottom: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .reviews {
+      padding: 20px 32px 9px 20px; } }
+  @media only screen and (max-width: 710px) {
+    .reviews {
+      padding: 14px 15px 9px 15px; } }
+
+.reviews-area {
+  font-family: Lato-Light;
+  padding-right: 16px; }
+  @media only screen and (max-width: 1395px) {
+    .reviews-area {
+      padding-right: 0; } }
+  .reviews-area p {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 1395px) {
+      .reviews-area p {
+        font-size: 18px;
+        line-height: 22px; } }
+    @media only screen and (max-width: 710px) {
+      .reviews-area p {
+        font-size: 16px;
+        line-height: 20px; } }
+  .reviews-area span {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    line-height: 22px; }
+    @media only screen and (max-width: 710px) {
+      .reviews-area span {
+        font-size: 16px;
+        line-height: 20px; } }
+    .reviews-area span:last-child {
+      margin-bottom: 20px; }
+
+.feedback-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 1395px) {
+    .feedback-data {
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 710px) {
+    .feedback-data {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 12px; } }
+  .feedback-data .user-info {
+    align-items: center;
+    border: none;
+    justify-content: flex-start;
+    border-radius: 0;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 710px) {
+      .feedback-data .user-info {
+        margin-bottom: 15px; } }
+    .feedback-data .user-info span {
+      display: block;
+      margin-right: 20px; }
+      @media only screen and (max-width: 710px) {
+        .feedback-data .user-info span {
+          margin-right: 13px; } }
+    .feedback-data .user-info .badge-md {
+      padding: 11px 45px; }
+      @media only screen and (max-width: 1395px) {
+        .feedback-data .user-info .badge-md {
+          padding: 9px 33px; } }
+      @media only screen and (max-width: 710px) {
+        .feedback-data .user-info .badge-md {
+          padding: 5px 20px;
+          max-width: 100px; } }
+
+.badge {
+  display: block;
+  padding: 11px 24px;
+  font-family: Lato-Bold;
+  font-size: 18px;
+  line-height: 22px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px; }
+  @media only screen and (max-width: 1395px) {
+    .badge {
+      border-radius: 3px;
+      padding: 8px 18px; } }
+  @media only screen and (max-width: 710px) {
+    .badge {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 6px 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; } }
+
+.user {
+  font-family: Lato-Light;
+  color: #000; }
+  @media only screen and (max-width: 710px) {
+    .user {
+      font-size: 16px;
+      line-height: 20px; } }
+
+.date {
+  font-family: Lato-Light;
+  font-size: 16px;
+  line-height: 20px;
+  color: 710px;
+  padding-right: 0;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 710px) {
+    .date {
+      font-size: 14px;
+      line-height: 19px; } }
+
 /**********************************size button***************************/
 .size-md {
   font-size: 20px;
@@ -2759,6 +3000,12 @@ input:checked + .slider:before {
 
 .btn-text-white {
   color: #fff; }
+
+.bg-golden-bell {
+  background: #ed8711; }
+
+.bg-saffron {
+  background: #fabb35; }
 
 .gradient-border {
   border-width: 2px;

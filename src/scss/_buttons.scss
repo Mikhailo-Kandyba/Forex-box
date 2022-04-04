@@ -123,6 +123,10 @@
   background: $white;
   cursor: pointer;
 
+  @include breakpoint($desktop) {
+    padding: 13px;
+  }
+
   @include breakpoint($tablet) {
     max-width: 285px;
   }
