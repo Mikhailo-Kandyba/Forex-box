@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixin";
+
+.main-wrap-file-archive {
+  @include breakpoint($desktop) {
+    padding: 55px 72px 20px 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 39px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 39px 29px 20px 30px;
+  }
+
+  p {
+    font-family: $lato-light;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 30px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    @include breakpoint($mobile-sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .heading {
+    margin-bottom: 5px;
+  }
+}
+
+.downloads {
+  margin-bottom: 65px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 15px;
+  }
+
+  .row-body {
+    @include breakpoint($desktop) {
+      flex-direction: column;
+    }
+  }
+}
+
+.downloads-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 15px;
+  }
+
+  .btn-download {
+    margin-right: 18px;
+
+    @include breakpoint($mobile-sm) {
+      margin-right: 15px;
+    }
+  }
+
+  .description {
+    h4 {
+      margin-bottom: 10px;
+
+      @include breakpoint($desktop) {
+        margin-bottom: 0;
+      }
+
+      @include breakpoint($mobile-sm) {
+        font-size: $font-size-base - 2;
+        line-height: $line-height-base - 2;
+      }
+    }
+
+    p {
+      font-family: $lato-light;
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      margin-bottom: 0;
+
+      @include breakpoint($mobile-sm) {
+        display: none;
+      }
+    }
+  }
+}

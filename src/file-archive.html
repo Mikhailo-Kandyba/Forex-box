@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>File archive</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <a class="logo d-none-xl d-block-md" href="index.html">
+            <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
+        </a>
+        <ul class="menu">
+            <li><a href="#">Открыть тикет</a></li>
+            <li><a href="#">Мои тикеты</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#" class="active">Файловый архив</a></li>
+        </ul>
+        <div class="btn-group">
+            <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+            <div class="custom-select">
+                <select>
+                    <option value="1">Ru</option>
+                    <option value="2">Ua</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn-menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </header>
+    <div>
+        <div class="sidebar-wrap">
+            <ul class="sidebar">
+                <li class="sidebar-item">
+                    <a class="logo d-none-sm" href="index.html">
+                        <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-sidebar">
+                <a class="logo d-none-sm d-none-xl" href="index.html">
+                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+                <div class="btn-group d-none-xl d-flex-sm">
+                    <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                    <div class="custom-select">
+                        <select>
+                            <option value="1">Ru</option>
+                            <option value="2">Ua</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-mobile">
+                <li class="sidebar-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="my-services.html">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="balance.html">Баланс</a></li>
+                        <li><a href="#">Мои счета</a></li>
+                        <li><a href="#">Внутренние переводы</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item active-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="overlay"></span>
+        </div>
+        <main class="main-wrap main-wrap-file-archive">
+            <h1 class="title-page title-page-file-archive"><span class="gradient-text">1.</span>RDP клиенты <span>(Программы для подключения через удаленный рабочий стол)</span></h1>
+            <div class="downloads">
+                <div class="row row-body">
+                    <div class="col col-body">
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Microsoft RDP Client for MAC OS Требуется авторизация
+                                </h4>
+                                <p>
+                                    Официальный и рекомендованный RDP клиент для операционной системы MAC OS от компании Microsoft.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Microsoft Remote Desktop для Android Требуется авторизация
+                                </h4>
+                                <p>
+                                    Официальный клиент удаленного рабочего стола (RDP) от компании Microsoft для смартфонов / планшетов на базе ОС Android.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Microsoft Remote Desktop для iOS Требуется авторизация
+                                </h4>
+                                <p>
+                                    Официальный клиент удаленного рабочего стола (RDP) от компании Microsoft для смартфонов / планшетов на базе iOS.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    RDP клиент v6.1 для Windows XP SP2 Требуется авторизация
+                                </h4>
+                                <p>
+                                    Обновление клиента удаленного рабочего стола (RDP) для Windows XP SP2. Обязательно установите, если у вас RDP версии 5.1 или ниже.
+                                    Если у вас Windows XP SP3 - вам нужно установить ДРУГОЕ обновление!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    RDP клиент v8.0 для Windows 7 Требуется авторизация
+                                </h4>
+                                <p>
+                                    Обновление для протокола удаленного рабочего стола (RDP) версии 8.0 для ОС Windows 7 и Windows 7 SP1, позволяет использовать новые возможности служб удаленных рабочих столов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-body">
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Обновленный RDP клиент (WM v6.5) для Windows Mobile 5 и 6.1
+                                </h4>
+                                <p>
+                                    Установите обновленный RDP клиент из архива. Если при запуске появляется ошибка "wpctsc не является допустимым приложением для pocket PC" - попробуйте установить MS_RDP_v6.5.cab
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Расширение RDP Plus для RDP клиента под Windows Требуется авторизация
+                                </h4>
+                                <p>
+                                    Надстройка для стандартного RDP клиента Windows, предоставляющая дополнительные возможности (сохранение нескольких логинов для одного IP и т.д.)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    RDP клиент v2.1.1 для Mac OS X 10.5.8 - 10.6.x Требуется авторизация
+                                </h4>
+                                <p>
+                                    Клиент (v. 2.1.1) подключения к удаленному рабочему столу (RDP) для Mac OS X 10.5.8 или более поздней версии, позволяет подключить компьютер Macintosh к компьютеру под управлением Windows и работать с приложениями и файлами, расположенными на нем. НЕ поддерживает систему Mac OS X 10.7 (Lion) и более поздних версий.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    RDP клиент v7.0 для Windows XP SP3 Требуется авторизация
+                                </h4>
+                                <p>
+                                    Обновление клиента удаленного рабочего стола (RDP) для Windows XP SP3. Обязательно установите, если у вас RDP версии 6.1 или ниже.
+                                    Обновление подходит только для Windows XP SP3 (на систему с SP2 установить его нельзя).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="heading"><span class="gradient-text">2.</span>Полезные утилиты </h3>
+            <p>Программы для диагностики сети и т.д.</p>
+            <div class="downloads">
+                <div class="row row-body">
+                    <div class="col col-body">
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    credssp-fix.reg Требуется авторизация
+                                </h4>
+                                <p>
+                                    REG файл для исправления ошибки доступа "Произошла ошибка при проверке подлинности. Указанная функция не поддерживается"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    WinMTR
+                                </h4>
+                                <p>
+                                    Windows утилита для диагностики сети и выявления проблемных узлов (на которых пропадают пакеты) между вашим и удаленным сервером.
+                                    <strong>Внимание:</strong> для анализа необходим отчет не менее чем из 500 пакетов!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-body">
+                        <div class="downloads-item">
+                            <button class="btn-download">
+                                <img src="./images/download-icon.svg" width="26" height="26" alt="download">
+                            </button>
+                            <div class="description">
+                                <h4>
+                                    Обновленный RDP клиент (WM v6.5) для Windows Mobile 5 и 6.1
+                                </h4>
+                                <p>
+                                    Установите обновленный RDP клиент из архива. Если при запуске появляется ошибка "wpctsc не является допустимым приложением для pocket PC" - попробуйте установить MS_RDP_v6.5.cab
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

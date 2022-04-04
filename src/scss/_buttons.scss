@@ -180,6 +180,25 @@
   }
 }
 
+.btn-download {
+  max-width: 73px;
+  width: 100%;
+  background: $white;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 23px;
+
+  @include breakpoint($desktop) {
+    max-width: 54px;
+    padding: 15px;
+    margin-right: 25px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-right: 24px;
+  }
+}
+
 
 
 

@@ -145,6 +145,49 @@
   }
 }
 
+.title-page-file-archive {
+  margin-bottom: 40px;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 27px;
+  }
+
+  span {
+    &:last-child {
+      font-family: $lato-light;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 2;
+      }
+
+      @include breakpoint($mobile-sm) {
+        display: block;
+        line-height: $line-height-base - 3;
+        padding-left: 22px;
+        padding-top: 6px;
+      }
+    }
+
+    &:first-child {
+      margin-right: 5px;
+    }
+  }
+}
+
 .heading {
   font-size: $font-size-base + 4;
   line-height: $line-height-base + 5;

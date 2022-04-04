@@ -255,6 +255,22 @@ h6 {
   .btn-cancellation:hover {
     font-family: Lato-Regular; }
 
+.btn-download {
+  max-width: 73px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 23px; }
+  @media only screen and (max-width: 1395px) {
+    .btn-download {
+      max-width: 54px;
+      padding: 15px;
+      margin-right: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-download {
+      margin-right: 24px; } }
+
 .sidebar,
 .sidebar-mobile {
   position: fixed;
@@ -1158,6 +1174,37 @@ input:checked + .slider:before {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 21px; } }
+
+.title-page-file-archive {
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 1395px) {
+    .title-page-file-archive {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .title-page-file-archive {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-file-archive {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 27px; } }
+  .title-page-file-archive span:last-child {
+    font-family: Lato-Light;
+    font-size: 18px;
+    line-height: 22px; }
+    @media only screen and (max-width: 767px) {
+      .title-page-file-archive span:last-child {
+        font-size: 16px; } }
+    @media only screen and (max-width: 710px) {
+      .title-page-file-archive span:last-child {
+        display: block;
+        line-height: 19px;
+        padding-left: 22px;
+        padding-top: 6px; } }
+  .title-page-file-archive span:first-child {
+    margin-right: 5px; }
 
 .heading {
   font-size: 22px;
@@ -3120,6 +3167,83 @@ input:checked + .slider:before {
           height: 6px; } }
     .popular-questions a:hover {
       text-decoration: none; }
+
+@media only screen and (max-width: 1395px) {
+  .main-wrap-file-archive {
+    padding: 55px 72px 20px 195px; } }
+
+@media only screen and (max-width: 1023px) {
+  .main-wrap-file-archive {
+    padding: 25px 30px 20px 150px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-wrap-file-archive {
+    padding: 39px 58px 20px 60px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-wrap-file-archive {
+    padding: 39px 29px 20px 30px; } }
+
+.main-wrap-file-archive p {
+  font-family: Lato-Light;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .main-wrap-file-archive p {
+      font-size: 16px;
+      line-height: 20px; } }
+  @media only screen and (max-width: 710px) {
+    .main-wrap-file-archive p {
+      margin-bottom: 25px; } }
+
+.main-wrap-file-archive .heading {
+  margin-bottom: 5px; }
+
+.downloads {
+  margin-bottom: 65px; }
+  @media only screen and (max-width: 1395px) {
+    .downloads {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 767px) {
+    .downloads {
+      margin-bottom: 15px; } }
+  @media only screen and (max-width: 1395px) {
+    .downloads .row-body {
+      flex-direction: column; } }
+
+.downloads-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px; }
+  @media only screen and (max-width: 1395px) {
+    .downloads-item {
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 710px) {
+    .downloads-item {
+      margin-bottom: 15px; } }
+  .downloads-item .btn-download {
+    margin-right: 18px; }
+    @media only screen and (max-width: 710px) {
+      .downloads-item .btn-download {
+        margin-right: 15px; } }
+  .downloads-item .description h4 {
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 1395px) {
+      .downloads-item .description h4 {
+        margin-bottom: 0; } }
+    @media only screen and (max-width: 710px) {
+      .downloads-item .description h4 {
+        font-size: 16px;
+        line-height: 20px; } }
+  .downloads-item .description p {
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 710px) {
+      .downloads-item .description p {
+        display: none; } }
 
 /**********************************size button***************************/
 .size-md {
