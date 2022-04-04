@@ -57,7 +57,12 @@ table {
 }
 
 a {
+  color: $mine-shaft;
   text-decoration: none;
+
+  &:hover {
+    color: $mine-shaft;
+  }
 
   &:focus {
     outline: none;

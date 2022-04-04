@@ -52,7 +52,10 @@ table {
   border-spacing: 0; }
 
 a {
+  color: #373737;
   text-decoration: none; }
+  a:hover {
+    color: #373737; }
   a:focus {
     outline: none; }
 
@@ -1140,6 +1143,22 @@ input:checked + .slider:before {
       line-height: 22px;
       margin-bottom: 12px; } }
 
+.title-page-faq {
+  margin-bottom: 28px; }
+  @media only screen and (max-width: 1395px) {
+    .title-page-faq {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 33px; } }
+  @media only screen and (max-width: 767px) {
+    .title-page-faq {
+      margin-bottom: 33px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-faq {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 21px; } }
+
 .heading {
   font-size: 22px;
   line-height: 27px;
@@ -1149,6 +1168,13 @@ input:checked + .slider:before {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 20px; } }
+
+.heading-faq {
+  font-size: 20px;
+  line-height: 24px; }
+  @media only screen and (max-width: 1395px) {
+    .heading-faq {
+      margin-bottom: 15px; } }
 
 .account-title {
   font-family: Lato-Light;
@@ -2931,6 +2957,169 @@ input:checked + .slider:before {
   padding: 16px 30px;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
+
+.search-form-fqa {
+  max-width: 622px; }
+  @media only screen and (max-width: 1395px) {
+    .search-form-fqa {
+      max-width: 538px;
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 710px) {
+    .search-form-fqa {
+      margin-bottom: 21px; } }
+  .search-form-fqa input {
+    height: 57px;
+    padding: 15px 60px 15px 30px; }
+    @media only screen and (max-width: 1395px) {
+      .search-form-fqa input {
+        height: 50px;
+        padding: 15px 60px 15px 23px; } }
+    @media only screen and (max-width: 710px) {
+      .search-form-fqa input {
+        height: 44px;
+        padding: 15px 60px 15px 15px; } }
+    .search-form-fqa input::placeholder {
+      font-size: 16px;
+      line-height: 26px; }
+
+.main-questions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 1395px) {
+    .main-questions {
+      margin-bottom: 20px; } }
+  .main-questions li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 295px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-right: 23px;
+    padding: 35px 20px 20px;
+    transition: all .25s ease-out;
+    margin-bottom: 17px; }
+    @media only screen and (max-width: 1395px) {
+      .main-questions li {
+        max-width: 260px;
+        margin-right: 20px;
+        padding: 35px 20px 28px; } }
+    @media only screen and (max-width: 710px) {
+      .main-questions li {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 23px 20px 34px;
+        margin-bottom: 10px; } }
+    .main-questions li:hover {
+      max-width: 305px;
+      box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2); }
+      @media only screen and (max-width: 1395px) {
+        .main-questions li:hover {
+          max-width: 280px; } }
+      @media only screen and (max-width: 710px) {
+        .main-questions li:hover {
+          max-width: inherit; } }
+    .main-questions li:last-child {
+      margin-right: 0; }
+  .main-questions .img-area {
+    max-width: 90px;
+    margin-bottom: 15px;
+    position: relative; }
+    @media only screen and (max-width: 1395px) {
+      .main-questions .img-area {
+        max-width: 60px;
+        margin-bottom: 22px; } }
+    @media only screen and (max-width: 710px) {
+      .main-questions .img-area {
+        max-width: 52px;
+        margin-bottom: 12px; } }
+    .main-questions .img-area img {
+      display: flex; }
+  .main-questions span {
+    display: block;
+    font-family: Lato-Light;
+    margin-bottom: 25px; }
+    @media only screen and (max-width: 1395px) {
+      .main-questions span {
+        display: none; } }
+  .main-questions h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 1395px) {
+      .main-questions h4 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 13px; } }
+  .main-questions a {
+    display: block;
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline; }
+    @media only screen and (max-width: 1395px) {
+      .main-questions a {
+        font-size: 16px;
+        line-height: 20px; } }
+    .main-questions a:hover {
+      text-decoration: none; }
+  .main-questions .shadows {
+    position: absolute; }
+  .main-questions .shadows-one {
+    top: -20px;
+    right: -34px; }
+  .main-questions .shadows-two {
+    bottom: -16px;
+    right: -21px; }
+  .main-questions .shadows-three {
+    top: -11px;
+    left: -35px; }
+  .main-questions .shadows-four {
+    bottom: -30px;
+    left: -30px; }
+
+.popular-questions {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: space-between; }
+  @media only screen and (max-width: 1395px) {
+    .popular-questions {
+      flex-direction: column;
+      max-width: 100%; } }
+  .popular-questions a {
+    display: block;
+    font-family: Lato-Light;
+    padding-left: 25px;
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 15px; }
+    @media only screen and (max-width: 1395px) {
+      .popular-questions a {
+        padding-left: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .popular-questions a {
+        font-size: 16px;
+        line-height: 20px; } }
+    .popular-questions a:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      background-image: url("../images/ellipse-link.svg");
+      width: 9px;
+      height: 9px; }
+      @media only screen and (max-width: 1395px) {
+        .popular-questions a:after {
+          background-image: url("../images/ellipse-link-desktop.svg");
+          width: 6px;
+          height: 6px; } }
+    .popular-questions a:hover {
+      text-decoration: none; }
 
 /**********************************size button***************************/
 .size-md {

@@ -1,0 +1,224 @@
+@import "mixin";
+@import "variables";
+
+.search-form-fqa {
+  max-width: 622px;
+
+  @include breakpoint($desktop) {
+    max-width: 538px;
+    margin-bottom: 25px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 21px;
+  }
+
+  input {
+    height: 57px;
+    padding: 15px 60px 15px 30px;
+
+    @include breakpoint($desktop) {
+      height: 50px;
+      padding: 15px 60px 15px 23px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      height: 44px;
+      padding: 15px 60px 15px 15px;
+    }
+
+    &::placeholder {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base + 4;
+    }
+  }
+}
+
+.main-questions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 295px;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-right: 23px;
+    padding: 35px 20px 20px;
+    transition: all .25s ease-out;
+    margin-bottom: 17px;
+
+    @include breakpoint($desktop) {
+      max-width: 260px;
+      margin-right: 20px;
+      padding: 35px 20px 28px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      max-width: 100%;
+      margin-right: 0;
+      padding: 23px 20px 34px;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      max-width: 305px;
+      box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2);
+
+      @include breakpoint($desktop) {
+        max-width: 280px;
+      }
+
+      @include breakpoint($mobile-sm) {
+        max-width: inherit;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .img-area {
+    max-width: 90px;
+    margin-bottom: 15px;
+    position: relative;
+
+    @include breakpoint($desktop) {
+      max-width: 60px;
+      margin-bottom: 22px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      max-width: 52px;
+      margin-bottom: 12px;
+    }
+
+    img {
+      display: flex;
+    }
+  }
+
+  span {
+    display: block;
+    font-family: $lato-light;
+    margin-bottom: 25px;
+
+    @include breakpoint($desktop) {
+      display: none;
+    }
+  }
+
+  h4 {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 20px;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      margin-bottom: 13px;
+    }
+  }
+
+  a {
+    display: block;
+    font-family: $lato-light;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
+    text-decoration: underline;
+
+    @include breakpoint($desktop) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .shadows {
+    position: absolute;
+  }
+
+  .shadows-one {
+    top: -20px;
+    right: -34px;
+  }
+
+  .shadows-two {
+    bottom: -16px;
+    right: -21px;
+  }
+
+  .shadows-three {
+    top: -11px;
+    left: -35px;
+  }
+
+  .shadows-four {
+    bottom: -30px;
+    left: -30px ;
+  }
+}
+
+.popular-questions {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: space-between;
+
+  @include breakpoint($desktop) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  a {
+    display: block;
+    font-family: $lato-light;
+    padding-left: 25px;
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 15px;
+
+    @include breakpoint($desktop) {
+      padding-left: 15px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      background-image: url("../images/ellipse-link.svg");
+      width: 9px;
+      height: 9px;
+
+      @include breakpoint($desktop) {
+        background-image: url("../images/ellipse-link-desktop.svg");
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
