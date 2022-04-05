@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Affiliate-program-statistics</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <a class="logo d-none-xl d-block-md" href="index.html">
+            <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
+        </a>
+        <ul class="menu">
+            <li><a href="#" class="active">Статистика партнерской программы</a></li>
+        </ul>
+        <div class="btn-group">
+            <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
+            <div class="custom-select">
+                <select>
+                    <option value="1">Ru</option>
+                    <option value="2">Ua</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn-menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </header>
+    <div>
+        <div class="sidebar-wrap">
+            <ul class="sidebar">
+                <li class="sidebar-item">
+                    <a class="logo d-none-sm" href="index.html">
+                        <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                </li>
+                <li class="sidebar-item active-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-sidebar">
+                <a class="logo d-none-sm d-none-xl" href="index.html">
+                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+                <div class="btn-group d-none-xl d-flex-sm">
+                    <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                    <div class="custom-select">
+                        <select>
+                            <option value="1">Ru</option>
+                            <option value="2">Ua</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-mobile">
+                <li class="sidebar-item">
+                    <a href="index.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                        <span>Услуги</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">Заказ услуги</a></li>
+                        <li><a href="my-services.html">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="balance.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                        <span>Биллинг</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="balance.html">Баланс</a></li>
+                        <li><a href="#">Мои счета</a></li>
+                        <li><a href="#">Внутренние переводы</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="personal-data.html">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                        <span>Данные аккаунта</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item active-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                        <span>Поддержка</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                        <span>Партнерская программа</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">
+                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                        <span>Выйти</span>
+                    </a>
+                    <ul class="mobile-menu">
+                        <li><a href="#">Заказ услуги</a></li>
+                        <li><a href="#">Мои услуги</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="overlay"></span>
+        </div>
+        <main class="main-wrap main-wrap-program-statistics">
+            <h1 class="title-page title-page-program-statistics">
+                Активация партнерского аккаунта
+            </h1>
+            <p>
+                Хотите получать до 30% от платежей всех привлеченных вами клиентов. Активируйте партнерский аккаунт и начните зарабатывать прямо сейчас. А еще это отличная возможность предоставить 5% скидку своим друзьям и знакомым, которые планируют воспользоваться нашими услугами. Просто дайте им свой партнерский промо-код, и если они используют его при оформлении заказа - автоматически получат скидку, а вы - до 30% от их платежа!
+            </p>
+            <div class="step-area">
+                <ul class="steps-list">
+                    <li>
+                        <div class="img-area">
+                            <img src="./images/steps-icon-1.png" width="42" height="36" alt="steps">
+                        </div>
+                        <h4>Шаг 1</h4>
+                        <p>
+                            Подключение к партнерской программе
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img-area">
+                            <img src="./images/steps-icon-2.png" width="43" height="43" alt="steps">
+                        </div>
+                        <h4>Шаг 2</h4>
+                        <p>
+                            Привлечение клиентов
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img-area">
+                            <img src="./images/steps-icon-3.png" width="36" height="36" alt="steps">
+                        </div>
+                        <h4>Шаг 3</h4>
+                        <p>
+                            Получение партнерского вознаграждения
+                        </p>
+                    </li>
+                </ul>
+                <div class="btn-holder">
+                    <button class="btn btn-background btn-text-white">Активировать партнерский аккаунт</button>
+                </div>
+            </div>
+            <h4 class="heading">
+                Общие положения партнерской программы:
+            </h4>
+            <ul class="affiliate-program-list">
+                <li>
+                    <strong class="gradient-text">01</strong>
+                    <p>
+                        Партнерское вознаграждение начисляется со всех платежей за ForexBox аккаунт, который был куплен по вашей ссылке / коду
+                    </p>
+                </li>
+                <li>
+                    <strong class="gradient-text">03</strong>
+                    <p>
+                        Минимальная сумма к выводу составляет 1 €, при этом сразу после активации на вашем партнерском счету будет уже 0.95 EUR
+                    </p>
+                </li>
+                <li>
+                    <strong class="gradient-text">02</strong>
+                    <p>
+                        Оплата начисляется через 31 день после оплаты заказа, если к этому времени он не был отменен клиентом или заблокирован
+                    </p>
+                </li>
+                <li>
+                    <strong class="gradient-text">04</strong>
+                    <p>
+                        Заработанные средства можно использовать для оплаты наших услуг или вывести на свой кошелек
+                    </p>
+                </li>
+            </ul>
+            <div class="service-area">
+                <div class="affiliate-table-area">
+                    <h4>
+                        Таблица партнерского вознаграждения / скидок на услуги:
+                    </h4>
+                    <div class="affiliate-table">
+                        <div class="row-heading">
+                            <div class="column">Активных заказов</div>
+                            <div class="column">Вознаграждение</div>
+                            <div class="column">Скидка на услуги</div>
+                        </div>
+                        <div class="row-body">
+                            <div class="column">
+                                <p>до 20</p>
+                                <p>от 20 до 50</p>
+                                <p>от 51 до 100</p>
+                                <p>от 101 до 200</p>
+                                <p>более 200</p>
+                            </div>
+                            <div class="column">
+                                <p>10%</p>
+                                <p>15%</p>
+                                <p>20%</p>
+                                <p>25%</p>
+                                <p>30%</p>
+                            </div>
+                            <div class="column">
+                                <p>10%</p>
+                                <p>20%</p>
+                                <p>30%</p>
+                                <p>40%</p>
+                                <p>50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bonuses-area">
+                    <h4>
+                        Дополнительные бонусы для активных партнеров:
+                    </h4>
+                    <ul class="bonuses-list">
+                        <li>
+                            <p>
+                                Приоритетная техническая поддержка
+                            </p>
+                            <p>
+                                Возможность вывода партнерского вознаграждения на кошелек Яндекс.Деньги, Webmoney, QIWI или банковскую карту
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Публикация в нашем каталоге партнеров
+                            </p>
+                            <p>
+                                Постоянная скидка до 50% на услуги (все свои собственные заказы)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

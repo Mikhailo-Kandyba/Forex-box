@@ -188,6 +188,26 @@
   }
 }
 
+.title-page-program-statistics {
+  margin-bottom: 21px;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 14px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 18px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    margin-bottom: 16px;
+  }
+}
+
 .heading {
   font-size: $font-size-base + 4;
   line-height: $line-height-base + 5;
