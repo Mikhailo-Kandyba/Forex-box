@@ -135,6 +135,14 @@
   background: $saffron;
 }
 
+.status {
+  color: $cinnabar !important;
+}
+
+.status-active {
+  color: $ocean-green !important;
+}
+
 .gradient-border {
   border-width: 2px;
   border-style: solid;
