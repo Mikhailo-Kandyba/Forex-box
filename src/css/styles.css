@@ -49,7 +49,8 @@ q:before, q:after {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  caption-side: top; }
 
 a {
   color: #373737;
@@ -852,7 +853,47 @@ h6 {
   display: none; }
 
 /*end styles centering*/
-/*styles select*/
+.breadcrumb-wrap {
+  margin-bottom: 35px; }
+  @media only screen and (max-width: 1540px) {
+    .breadcrumb-wrap {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 710px) {
+    .breadcrumb-wrap {
+      margin-bottom: 22px; } }
+
+.breadcrumb-item {
+  font-family: Lato-Light;
+  position: relative;
+  padding-right: 15px; }
+  @media only screen and (max-width: 710px) {
+    .breadcrumb-item {
+      font-size: 16px;
+      line-height: 20px; } }
+  .breadcrumb-item a {
+    color: #8f8f8f;
+    text-decoration: underline; }
+    .breadcrumb-item a:hover {
+      text-decoration: none; }
+
+.breadcrumb-item.active {
+  color: #373737; }
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 15px; }
+  .breadcrumb-item + .breadcrumb-item:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-image: url("../images/breadcrumb-pointer.svg");
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 13px; }
+  .breadcrumb-item + .breadcrumb-item:before {
+    display: none; }
+
 .switch {
   position: relative;
   display: inline-block;
@@ -1242,6 +1283,22 @@ input:checked + .slider:before {
     .title-page-referral {
       font-size: 20px;
       line-height: 24px;
+      margin-bottom: 16px; } }
+
+.title-page-referral-link {
+  margin-bottom: 26px; }
+  @media only screen and (max-width: 1540px) {
+    .title-page-referral-link {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 17px; } }
+  @media only screen and (max-width: 767px) {
+    .title-page-referral-link {
+      margin-bottom: 16px; } }
+  @media only screen and (max-width: 710px) {
+    .title-page-referral-link {
+      font-size: 18px;
+      line-height: 22px;
       margin-bottom: 16px; } }
 
 .heading {
@@ -4157,6 +4214,79 @@ input:checked + .slider:before {
   .table-referral .link:hover {
     text-decoration: underline; }
 
+@media only screen and (max-width: 1540px) {
+  .main-wrap-referral-link {
+    padding: 35px 70px 20px 195px; } }
+
+@media only screen and (max-width: 1023px) {
+  .main-wrap-referral-link {
+    padding: 25px 30px 20px 150px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-wrap-referral-link {
+    padding: 30px 58px 20px 60px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-wrap-referral-link {
+    padding: 32px 29px 20px 30px; } }
+
+.referral-table {
+  margin: 0 0 42px -5px; }
+  @media only screen and (max-width: 1540px) {
+    .referral-table {
+      margin: 0 0 35px -5px; } }
+  @media only screen and (max-width: 710px) {
+    .referral-table {
+      margin: 0 0 26px -5px; } }
+  .referral-table td {
+    font-family: Lato-Light;
+    padding: 5px 25px 5px 5px; }
+    @media only screen and (max-width: 1540px) {
+      .referral-table td {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5px 45px 5px 5px; } }
+    @media only screen and (max-width: 710px) {
+      .referral-table td {
+        padding: 5px 24px 5px 5px; } }
+
+.pay-table {
+  min-width: 385px;
+  margin-bottom: 28px; }
+  @media only screen and (max-width: 710px) {
+    .pay-table {
+      min-width: 220px; } }
+  .pay-table caption {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #373737;
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 710px) {
+      .pay-table caption {
+        font-size: 18px;
+        line-height: 22px; } }
+  .pay-table th {
+    font-family: Lato-Light;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    padding: 5px 30px; }
+  .pay-table .tr-content {
+    background: #fff;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px; }
+    .pay-table .tr-content td:first-child {
+      border-radius: 5px 0 0 5px; }
+    .pay-table .tr-content td:last-child {
+      border-radius: 0 5px 5px 0; }
+  .pay-table td {
+    font-family: Lato-Light;
+    padding: 15px 30px; }
+  .pay-table .height-10 {
+    height: 10px; }
+
 /**********************************size button***************************/
 .size-md {
   font-size: 20px;
@@ -4265,6 +4395,9 @@ input:checked + .slider:before {
 
 .status-active {
   color: #3EA278 !important; }
+
+.text-regular {
+  font-family: Lato-Regular !important; }
 
 .gradient-border {
   border-width: 2px;
