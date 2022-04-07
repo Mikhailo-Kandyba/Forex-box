@@ -1,39 +1,6 @@
 @import "mixin";
 @import "variables";
 
-.search-form-fqa {
-  max-width: 622px;
-
-  @include breakpoint($desktop) {
-    max-width: 538px;
-    margin-bottom: 25px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    margin-bottom: 21px;
-  }
-
-  input {
-    height: 57px;
-    padding: 15px 60px 15px 30px;
-
-    @include breakpoint($desktop) {
-      height: 50px;
-      padding: 15px 60px 15px 23px;
-    }
-
-    @include breakpoint($mobile-sm) {
-      height: 44px;
-      padding: 15px 60px 15px 15px;
-    }
-
-    &::placeholder {
-      font-size: $font-size-base - 2;
-      line-height: $line-height-base + 4;
-    }
-  }
-}
-
 .main-questions {
   display: flex;
   flex-wrap: wrap;

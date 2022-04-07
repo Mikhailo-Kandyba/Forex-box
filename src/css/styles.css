@@ -950,80 +950,6 @@ input:checked + .slider:before {
   .switch-group p {
     font-family: Lato-Light; }
 
-.registration-form .form-group {
-  margin-bottom: 7px; }
-
-.registration-form label {
-  display: block;
-  font-size: 15px;
-  line-height: 18px;
-  color: #373737; }
-  @media only screen and (max-width: 710px) {
-    .registration-form label {
-      font-family: Lato-Light; } }
-
-.registration-form span {
-  display: block;
-  font-family: Lato-Light;
-  font-size: 14px;
-  line-height: 17px;
-  color: #e23737; }
-  @media only screen and (max-width: 767px) {
-    .registration-form span {
-      letter-spacing: -0.5px; } }
-
-.registration-form input {
-  font-family: Lato-Regular;
-  font-size: 20px;
-  line-height: 20px;
-  width: 100%;
-  height: 36px;
-  border: none;
-  padding: 10px 10px 10px 0;
-  border-bottom: 1px solid #848484;
-  margin-bottom: 2px;
-  background: #fBf9f8; }
-  @media only screen and (max-width: 710px) {
-    .registration-form input {
-      font-family: Lato-Light; } }
-  .registration-form input::placeholder {
-    font-size: 20px;
-    line-height: 24px;
-    color: #d0cfcf; }
-    @media only screen and (max-width: 710px) {
-      .registration-form input::placeholder {
-        font-size: 18px;
-        line-height: 20px; } }
-
-.registration-form .input-area {
-  position: relative; }
-
-.registration-form .custom-select {
-  max-width: inherit; }
-  .registration-form .custom-select span {
-    font-size: 15px;
-    line-height: 18px;
-    color: #373737; }
-
-.registration-form .selected-item {
-  border-bottom: 1px solid #848484;
-  background: transparent !important;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 14px 43px 13px 0px; }
-
-.registration-form a {
-  font-family: Lato-Light;
-  font-size: 14px;
-  line-height: 17px;
-  color: #345ba7; }
-
-.registration-form .btn {
-  max-width: 310px; }
-  @media only screen and (max-width: 710px) {
-    .registration-form .btn {
-      max-width: 100%; } }
-
 .personal-data-form {
   max-width: 750px;
   width: 100%;
@@ -1035,34 +961,8 @@ input:checked + .slider:before {
     .personal-data-form {
       max-width: 100%;
       margin-bottom: 27px; } }
-  .personal-data-form input {
-    background: #fff;
-    border-bottom: none;
-    height: 60px;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 10px 22px; }
-    @media only screen and (max-width: 767px) {
-      .personal-data-form input {
-        height: 55px;
-        font-family: Lato-Light;
-        font-size: 18px;
-        line-height: 22px; } }
-  .personal-data-form label {
-    padding-left: 22px;
-    margin-bottom: 8px; }
-  .personal-data-form .custom-select span {
-    padding-left: 15px;
-    margin-bottom: 8px; }
-  .personal-data-form .selected-item {
-    background: #fff !important;
-    border-bottom: none;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 20px 22px;
-    height: 60px; }
-  .personal-data-form .all-items {
-    z-index: 1; }
+  .personal-data-form .custom-select {
+    max-width: 100%; }
   @media only screen and (max-width: 710px) {
     .personal-data-form .row-tbody-form {
       flex-direction: column; } }
@@ -1104,6 +1004,304 @@ input:checked + .slider:before {
       @media only screen and (max-width: 710px) {
         .promo-code-form input::placeholder {
           background-image: url("../images/check-mark-mobile.svg"); } }
+
+.reviews-form {
+  max-width: 1275px;
+  width: 100%;
+  margin-bottom: 40px; }
+
+.reviews-form-ticket-two {
+  max-width: 707px !important; }
+  .reviews-form-ticket-two .custom-select {
+    max-width: 100%; }
+  .reviews-form-ticket-two textarea {
+    height: 243px !important; }
+  .reviews-form-ticket-two .file-input {
+    padding: 0; }
+
+.security-settings-form {
+  max-width: 365px;
+  margin-bottom: 56px; }
+  @media only screen and (max-width: 1540px) {
+    .security-settings-form {
+      margin-bottom: 47px; } }
+  @media only screen and (max-width: 767px) {
+    .security-settings-form {
+      margin-bottom: 36px; } }
+  @media only screen and (max-width: 710px) {
+    .security-settings-form {
+      margin-bottom: 46px;
+      max-width: 100%; } }
+  .security-settings-form .btn {
+    max-width: 100%;
+    margin-top: 10px; }
+    @media only screen and (max-width: 710px) {
+      .security-settings-form .btn {
+        margin-top: 23px; } }
+  .security-settings-form input {
+    border-right: none;
+    padding: 10px 63px 10px 22px; }
+    @media only screen and (max-width: 710px) {
+      .security-settings-form input {
+        padding: 10px 63px 10px 16px; } }
+
+.search-form {
+  margin-bottom: 30px;
+  max-width: 316px; }
+  @media only screen and (max-width: 1540px) {
+    .search-form {
+      margin-bottom: 21px; } }
+  @media only screen and (max-width: 710px) {
+    .search-form {
+      max-width: 100%; } }
+  .search-form .btn-search {
+    background: transparent;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0 20px; }
+  .search-form input {
+    font-family: Lato-Light;
+    font-size: 18px;
+    line-height: 22px;
+    background: #fff;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    height: 52px;
+    padding: 15px 60px 15px 20px;
+    width: 100%;
+    border: none; }
+    @media only screen and (max-width: 710px) {
+      .search-form input {
+        font-size: 16px;
+        line-height: 20px;
+        height: 45px;
+        padding: 10px 40px 10px 20px; } }
+    .search-form input::placeholder {
+      color: #848484; }
+
+.search-form-fqa {
+  max-width: 622px; }
+  @media only screen and (max-width: 1540px) {
+    .search-form-fqa {
+      max-width: 538px;
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 710px) {
+    .search-form-fqa {
+      margin-bottom: 21px; } }
+  .search-form-fqa input {
+    height: 57px;
+    padding: 15px 60px 15px 30px; }
+    @media only screen and (max-width: 1540px) {
+      .search-form-fqa input {
+        height: 50px;
+        padding: 15px 60px 15px 23px; } }
+    @media only screen and (max-width: 710px) {
+      .search-form-fqa input {
+        height: 44px;
+        padding: 15px 60px 15px 15px; } }
+    .search-form-fqa input::placeholder {
+      font-size: 16px;
+      line-height: 26px; }
+
+.referral-form {
+  display: flex;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 1540px) {
+    .referral-form {
+      margin-bottom: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .referral-form {
+      margin-bottom: 11px; } }
+  @media only screen and (max-width: 710px) {
+    .referral-form {
+      flex-direction: column;
+      margin-bottom: 7px; } }
+  .referral-form .form-group {
+    max-width: 327px;
+    width: 100%;
+    margin-right: 32px; }
+    @media only screen and (max-width: 767px) {
+      .referral-form .form-group {
+        max-width: 310px; } }
+    @media only screen and (max-width: 710px) {
+      .referral-form .form-group {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 8px; } }
+    .referral-form .form-group:last-child {
+      margin-right: 0; }
+  .referral-form input::placeholder {
+    color: #b9b9b9;
+    text-align: left; }
+
+.main-form input {
+  background: #fff;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  height: 55px;
+  font-family: Lato-Light;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 5px; }
+
+.main-form span {
+  display: block;
+  font-family: Lato-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e23737; }
+  @media only screen and (max-width: 767px) {
+    .main-form span {
+      letter-spacing: -0.5px; } }
+
+.main-form textarea {
+  width: 100%;
+  height: 135px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 20px; }
+  .main-form textarea::placeholder {
+    font-family: Lato-Light;
+    font-size: 20px;
+    line-height: 24px;
+    color: #b9b9b9; }
+  .main-form textarea::-webkit-resizer {
+    background: url("../images/textarea-img.svg") no-repeat; }
+
+.main-form label {
+  display: block;
+  font-family: Lato-Light;
+  font-size: 15px;
+  line-height: 18px;
+  color: #373737;
+  padding-left: 15px;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 710px) {
+    .main-form label {
+      font-family: Lato-Light; } }
+
+.main-form .toggle-button {
+  padding: 0 33px; }
+  @media only screen and (max-width: 710px) {
+    .main-form .toggle-button {
+      padding: 0 19px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-form .input-area input {
+    height: 60px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-form .input-area input {
+    height: 55px; } }
+
+.main-form .form-group {
+  border-radius: 5px;
+  margin-bottom: 16px; }
+  @media only screen and (max-width: 710px) {
+    .main-form .form-group {
+      margin-bottom: 12px; } }
+  .main-form .form-group:last-child {
+    margin-bottom: 0; }
+
+.main-form .custom-select span {
+  font-family: Lato-Light;
+  font-size: 15px;
+  line-height: 18px;
+  color: #373737;
+  padding-left: 15px;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 710px) {
+    .main-form .custom-select span {
+      font-family: Lato-Light; } }
+
+.main-form .selected-item {
+  background: #fff !important;
+  border-bottom: none;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 20px 22px;
+  height: 60px; }
+
+.main-form .all-items {
+  z-index: 1; }
+
+.success,
+.warning,
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px; }
+
+.warning {
+  background: #fabb35;
+  width: 50%; }
+
+.error {
+  background: #ff6565;
+  width: 17%; }
+
+.registration-form label {
+  font-family: Lato-Regular;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 0; }
+  @media only screen and (max-width: 710px) {
+    .registration-form label {
+      font-family: Lato-Light; } }
+
+.registration-form input {
+  background: transparent;
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid #848484;
+  margin-bottom: 2px;
+  border-radius: 0;
+  box-shadow: none; }
+  @media only screen and (max-width: 710px) {
+    .registration-form input {
+      font-family: Lato-Light; } }
+  .registration-form input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+    color: #d0cfcf; }
+    @media only screen and (max-width: 710px) {
+      .registration-form input::placeholder {
+        font-size: 18px;
+        line-height: 20px; } }
+
+.registration-form .custom-select {
+  max-width: inherit; }
+  .registration-form .custom-select span {
+    font-size: 15px;
+    line-height: 18px;
+    color: #373737;
+    padding-left: 0; }
+
+.registration-form .selected-item {
+  border-bottom: 1px solid #848484;
+  background: transparent !important;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 14px 43px 13px 0; }
+
+.registration-form a {
+  font-family: Lato-Light;
+  font-size: 14px;
+  line-height: 17px;
+  color: #345ba7; }
+
+.registration-form .btn {
+  max-width: 310px; }
+  @media only screen and (max-width: 710px) {
+    .registration-form .btn {
+      max-width: 100%; } }
 
 .title-page {
   font-size: 22px;
@@ -1544,45 +1742,6 @@ input:checked + .slider:before {
 @media only screen and (max-width: 710px) {
   .main-wrap-my-services {
     padding: 40px 29px 20px 30px; } }
-
-.search-form {
-  margin-bottom: 30px;
-  max-width: 316px; }
-  @media only screen and (max-width: 1540px) {
-    .search-form {
-      margin-bottom: 21px; } }
-  @media only screen and (max-width: 710px) {
-    .search-form {
-      max-width: 100%; } }
-  .search-form .form-group {
-    position: relative; }
-  .search-form .btn-search {
-    background: transparent;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    padding: 0 20px; }
-  .search-form input {
-    font-family: Lato-Light;
-    font-size: 18px;
-    line-height: 22px;
-    background: #fff;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    height: 52px;
-    padding: 15px 60px 15px 20px;
-    width: 100%;
-    border: none; }
-    @media only screen and (max-width: 710px) {
-      .search-form input {
-        font-size: 16px;
-        line-height: 20px;
-        height: 45px;
-        padding: 10px 40px 10px 20px; } }
-    .search-form input::placeholder {
-      color: #848484; }
 
 .checkbox-area {
   margin-bottom: 26px;
@@ -2525,74 +2684,6 @@ input:checked + .slider:before {
         font-size: 16px;
         line-height: 20px; } }
 
-.security-settings-form {
-  max-width: 365px;
-  margin-bottom: 56px; }
-  @media only screen and (max-width: 1540px) {
-    .security-settings-form {
-      margin-bottom: 47px; } }
-  @media only screen and (max-width: 767px) {
-    .security-settings-form {
-      margin-bottom: 36px; } }
-  @media only screen and (max-width: 710px) {
-    .security-settings-form {
-      margin-bottom: 46px;
-      max-width: 100%; } }
-  .security-settings-form .btn {
-    max-width: 100%;
-    margin-top: 10px; }
-    @media only screen and (max-width: 710px) {
-      .security-settings-form .btn {
-        margin-top: 23px; } }
-  .security-settings-form input {
-    border-right: none;
-    padding: 10px 63px 10px 22px; }
-    @media only screen and (max-width: 710px) {
-      .security-settings-form input {
-        padding: 10px 63px 10px 16px; } }
-  .security-settings-form .form-group {
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 16px; }
-    @media only screen and (max-width: 710px) {
-      .security-settings-form .form-group {
-        margin-bottom: 12px; } }
-    .security-settings-form .form-group label {
-      padding-left: 11px;
-      margin-bottom: 4px; }
-      @media only screen and (max-width: 710px) {
-        .security-settings-form .form-group label {
-          padding-left: 16px; } }
-    .security-settings-form .form-group:last-child {
-      margin-bottom: 0; }
-  .security-settings-form .toggle-button {
-    padding: 0 33px; }
-    @media only screen and (max-width: 710px) {
-      .security-settings-form .toggle-button {
-        padding: 0 19px; } }
-  @media only screen and (max-width: 767px) {
-    .security-settings-form .input-area input {
-      height: 60px; } }
-  @media only screen and (max-width: 710px) {
-    .security-settings-form .input-area input {
-      height: 55px; } }
-
-.success,
-.warning,
-.error {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px; }
-
-.warning {
-  background: #fabb35;
-  width: 50%; }
-
-.error {
-  background: #ff6565;
-  width: 17%; }
-
 .main-wrap-authentication p {
   margin-bottom: 26px; }
   @media only screen and (max-width: 1540px) {
@@ -3066,57 +3157,14 @@ input:checked + .slider:before {
       font-size: 14px;
       line-height: 19px; } }
 
-.reviews-form {
-  max-width: 1275px;
-  width: 100%;
-  margin-bottom: 40px; }
-  .reviews-form .form-group {
-    margin-bottom: 10px; }
-  .reviews-form textarea {
-    width: 100%;
-    height: 135px;
-    background: #fff;
-    border: none;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 20px; }
-    .reviews-form textarea::placeholder {
-      font-family: Lato-Light;
-      font-size: 20px;
-      line-height: 24px;
-      color: #b9b9b9; }
-    .reviews-form textarea::-webkit-resizer {
-      background: url("../images/textarea-img.svg") no-repeat; }
-
-.file-input {
-  background: #fff;
-  padding: 16px 30px;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 5px; }
-
-.search-form-fqa {
-  max-width: 622px; }
-  @media only screen and (max-width: 1540px) {
-    .search-form-fqa {
-      max-width: 538px;
-      margin-bottom: 25px; } }
-  @media only screen and (max-width: 710px) {
-    .search-form-fqa {
-      margin-bottom: 21px; } }
-  .search-form-fqa input {
-    height: 57px;
-    padding: 15px 60px 15px 30px; }
-    @media only screen and (max-width: 1540px) {
-      .search-form-fqa input {
-        height: 50px;
-        padding: 15px 60px 15px 23px; } }
-    @media only screen and (max-width: 710px) {
-      .search-form-fqa input {
-        height: 44px;
-        padding: 15px 60px 15px 15px; } }
-    .search-form-fqa input::placeholder {
-      font-size: 16px;
-      line-height: 26px; }
+.main-wrap-open-ticket-two p {
+  font-family: Lato-Light;
+  max-width: 1030px; }
+  .main-wrap-open-ticket-two p a {
+    color: #345ba7;
+    text-decoration: underline; }
+    .main-wrap-open-ticket-two p a:hover {
+      text-decoration: none; }
 
 .main-questions {
   display: flex;
@@ -4077,63 +4125,6 @@ input:checked + .slider:before {
         font-size: 16px;
         line-height: 20px; } }
 
-.referral-form {
-  display: flex;
-  margin-bottom: 20px; }
-  @media only screen and (max-width: 1540px) {
-    .referral-form {
-      margin-bottom: 24px; } }
-  @media only screen and (max-width: 767px) {
-    .referral-form {
-      margin-bottom: 11px; } }
-  @media only screen and (max-width: 710px) {
-    .referral-form {
-      flex-direction: column;
-      margin-bottom: 7px; } }
-  .referral-form .form-group {
-    max-width: 327px;
-    margin-right: 32px; }
-    @media only screen and (max-width: 767px) {
-      .referral-form .form-group {
-        max-width: 310px; } }
-    @media only screen and (max-width: 710px) {
-      .referral-form .form-group {
-        margin-right: 0;
-        max-width: 100%;
-        margin-bottom: 8px; } }
-    .referral-form .form-group:last-child {
-      margin-right: 0; }
-  .referral-form input {
-    background: #fff;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    width: 100%;
-    font-family: Lato-Light;
-    font-size: 18px;
-    line-height: 18px;
-    height: 60px;
-    padding: 19px 20px;
-    color: #000;
-    border: none; }
-    @media only screen and (max-width: 710px) {
-      .referral-form input {
-        height: 55px;
-        font-size: 16px;
-        line-height: 20px; } }
-    .referral-form input::placeholder {
-      color: #b9b9b9;
-      text-align: left; }
-  .referral-form label {
-    font-family: Lato-Light;
-    font-size: 15px;
-    line-height: 20px;
-    color: #000;
-    padding-left: 22px;
-    margin-bottom: 12px; }
-    @media only screen and (max-width: 1540px) {
-      .referral-form label {
-        margin-bottom: 6px; } }
-
 .tabs-referral {
   max-width: 1160px; }
   .tabs-referral .ui-tabs-nav {
@@ -4469,9 +4460,6 @@ input:checked + .slider:before {
 
 .min-height-230 {
   min-height: 230px; }
-
-.position-relative {
-  position: relative; }
 
 .position-relative-col {
   position: relative; }

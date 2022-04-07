@@ -1,99 +1,6 @@
 @import "mixin";
 @import "variables";
 
-.registration-form {
-  .form-group {
-    margin-bottom: 7px;
-  }
-
-  label {
-    display: block;
-    font-size: $font-size-base - 3;
-    line-height: $line-height-base - 4;
-    color: $mine-shaft;
-
-    @include breakpoint($mobile-sm) {
-      font-family: $lato-light;
-    }
-  }
-
-  span {
-    display: block;
-    font-family: $lato-light;
-    font-size: $font-size-base - 4;
-    line-height: $line-height-base - 5;
-    color: $cinnabar;
-
-    @include breakpoint($mobile) {
-      letter-spacing: -0.5px;
-    }
-  }
-
-  input {
-    font-family: $base-font-default;
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base - 2;
-    width: 100%;
-    height: 36px;
-    border: none;
-    padding: 10px 10px 10px 0;
-    border-bottom: 1px solid $gray;
-    margin-bottom: 2px;
-    background: $base-background;
-
-    @include breakpoint($mobile-sm) {
-      font-family: $lato-light;
-    }
-
-    &::placeholder {
-      font-size: $font-size-base + 2;
-      line-height: $line-height-base + 2;
-      color: $alto;
-
-      @include breakpoint($mobile-sm) {
-        font-size: $font-size-base;
-        line-height: $line-height-base - 2;
-      }
-    }
-  }
-
-  .input-area {
-    position: relative;
-  }
-
-  .custom-select {
-    max-width: inherit;
-
-    span {
-      font-size: $font-size-base - 3;
-      line-height: $line-height-base - 4;
-      color: $mine-shaft;
-    }
-  }
-
-  .selected-item {
-    border-bottom: 1px solid $gray;
-    background: $transparent !important;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 14px 43px 13px 0px;
-  }
-
-  a {
-    font-family: $lato-light;
-    font-size: $font-size-base - 4;
-    line-height: $line-height-base - 5;
-    color: $azure;
-  }
-
-  .btn {
-    max-width: 310px;
-
-    @include breakpoint($mobile-sm) {
-      max-width: 100%;
-    }
-  }
-}
 
 .personal-data-form {
   max-width: 750px;
@@ -109,46 +16,22 @@
     margin-bottom: 27px;
   }
 
-  input {
-    background: $white;
-    border-bottom: none;
-    height: 60px;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 10px 22px;
-
-    @include breakpoint($mobile) {
-      height: 55px;
-      font-family: $lato-light;
-      font-size: $font-size-base;
-      line-height: $line-height-base;
-    }
-  }
-
-  label {
-    padding-left: 22px;
-    margin-bottom: 8px;
-  }
-
   .custom-select {
-    span {
-      padding-left: 15px;
-      margin-bottom: 8px;
-    }
+    max-width: 100%;
   }
 
-  .selected-item {
-    background: $white !important;
-    border-bottom: none;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 20px 22px;
-    height: 60px;
-  }
-
-  .all-items {
-    z-index: 1;
-  }
+  //.selected-item {
+  //  background: $white !important;
+  //  border-bottom: none;
+  //  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  //  border-radius: 5px;
+  //  padding: 20px 22px;
+  //  height: 60px;
+  //}
+  //
+  //.all-items {
+  //  z-index: 1;
+  //}
 
   .row-tbody-form {
     @include breakpoint($mobile-sm) {
@@ -204,3 +87,437 @@
     }
   }
 }
+
+.reviews-form {
+  max-width: 1275px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.reviews-form-ticket-two {
+  max-width: 707px !important;
+
+  .custom-select {
+    max-width: 100%;
+  }
+  //
+  //input {
+  //  background: $white;
+  //  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  //  width: 100%;
+  //  border: none;
+  //  padding: 15px 25px;
+  //  height: 55px;
+  //  font-family: $lato-light;
+  //  font-size: $font-size-base + 2;
+  //  line-height: $line-height-base - 2;
+  //}
+
+  textarea {
+    height: 243px !important;
+  }
+
+  .file-input {
+    padding: 0;
+  }
+}
+
+
+
+.security-settings-form {
+  max-width: 365px;
+  margin-bottom: 56px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 47px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 36px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 46px;
+    max-width: 100%;
+  }
+
+  .btn {
+    max-width: 100%;
+    margin-top: 10px;
+
+    @include breakpoint($mobile-sm) {
+      margin-top: 23px;
+    }
+  }
+
+  input {
+    border-right: none;
+    padding: 10px 63px 10px 22px;
+
+    @include breakpoint($mobile-sm) {
+      padding: 10px 63px 10px 16px;
+    }
+  }
+
+  //.form-group {
+  //  border-radius: 5px;
+  //  overflow: hidden;
+  //  margin-bottom: 16px;
+  //
+  //  @include breakpoint($mobile-sm) {
+  //    margin-bottom: 12px;
+  //  }
+  //
+  //  &:last-child {
+  //    margin-bottom: 0;
+  //  }
+  //}
+}
+
+.search-form {
+  margin-bottom: 30px;
+  max-width: 316px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 21px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    max-width: 100%;
+  }
+
+  .btn-search {
+    background: $transparent;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0 20px;
+  }
+
+
+  input {
+    font-family: $lato-light;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    background: $white;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    height: 52px;
+    padding: 15px 60px 15px 20px;
+    width: 100%;
+    border: none;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      height: 45px;
+      padding: 10px 40px 10px 20px;
+    }
+
+    &::placeholder  {
+      color: $gray;
+    }
+  }
+}
+
+.search-form-fqa {
+  max-width: 622px;
+
+  @include breakpoint($desktop) {
+    max-width: 538px;
+    margin-bottom: 25px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 21px;
+  }
+
+  input {
+    height: 57px;
+    padding: 15px 60px 15px 30px;
+
+    @include breakpoint($desktop) {
+      height: 50px;
+      padding: 15px 60px 15px 23px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      height: 44px;
+      padding: 15px 60px 15px 15px;
+    }
+
+    &::placeholder {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base + 4;
+    }
+  }
+}
+
+.referral-form {
+  display: flex;
+  margin-bottom: 20px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 24px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 11px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    flex-direction: column;
+    margin-bottom: 7px;
+  }
+
+  .form-group {
+    max-width: 327px;
+    width: 100%;
+    margin-right: 32px;
+
+    @include breakpoint($mobile) {
+      max-width: 310px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      margin-right: 0;
+      max-width: 100%;
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  input {
+    &::placeholder {
+      color: $silver;
+      text-align: left;
+    }
+  }
+}
+
+
+
+.main-form {
+  input {
+    background: $white;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    border: none;
+    padding: 15px 25px;
+    height: 55px;
+    font-family: $lato-light;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base - 2;
+    border-radius: 5px;
+  }
+
+  span {
+    display: block;
+    font-family: $lato-light;
+    font-size: $font-size-base - 4;
+    line-height: $line-height-base - 5;
+    color: $cinnabar;
+
+    @include breakpoint($mobile) {
+      letter-spacing: -0.5px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 135px;
+    background: $white;
+    border: none;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 20px;
+
+    &::placeholder {
+      font-family: $lato-light;
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 2;
+      color: $silver;
+    }
+
+    &::-webkit-resizer{
+      background: url("../images/textarea-img.svg") no-repeat;
+    }
+  }
+
+  label {
+    display: block;
+    font-family: $lato-light;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
+    color: $mine-shaft;
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+    @include breakpoint($mobile-sm) {
+      font-family: $lato-light;
+    }
+  }
+
+  .toggle-button {
+    padding: 0 33px;
+
+    @include breakpoint($mobile-sm) {
+      padding: 0 19px;
+    }
+  }
+
+  .input-area {
+    input {
+      @include breakpoint($mobile) {
+        height: 60px;
+      }
+
+      @include breakpoint($mobile-sm) {
+        height: 55px;
+      }
+    }
+  }
+
+  .form-group {
+    border-radius: 5px;
+    //overflow: hidden;
+    margin-bottom: 16px;
+
+    @include breakpoint($mobile-sm) {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .custom-select {
+    span {
+      font-family: $lato-light;
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 4;
+      color: $mine-shaft;
+      padding-left: 15px;
+      margin-bottom: 10px;
+
+      @include breakpoint($mobile-sm) {
+        font-family: $lato-light;
+      }
+    }
+  }
+
+  .selected-item {
+    background: $white !important;
+    border-bottom: none;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    padding: 20px 22px;
+    height: 60px;
+  }
+
+  .all-items {
+    z-index: 1;
+  }
+}
+
+.success,
+.warning,
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+}
+
+.warning {
+  background: $saffron;
+  width: 50%;
+}
+
+.error {
+  background: $bittersweet;
+  width: 17%;
+}
+
+.registration-form {
+  label {
+    font-family: $base-font-default;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
+    padding-left: 0;
+
+    @include breakpoint($mobile-sm) {
+      font-family: $lato-light;
+    }
+  }
+
+  input {
+    background: $transparent;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid $gray;
+    margin-bottom: 2px;
+    border-radius: 0;
+    box-shadow: none;
+
+    @include breakpoint($mobile-sm) {
+      font-family: $lato-light;
+    }
+
+    &::placeholder {
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 2;
+      color: $alto;
+
+      @include breakpoint($mobile-sm) {
+        font-size: $font-size-base;
+        line-height: $line-height-base - 2;
+      }
+    }
+  }
+
+  .custom-select {
+    max-width: inherit;
+
+    span {
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 4;
+      color: $mine-shaft;
+      padding-left: 0;
+    }
+  }
+
+  .selected-item {
+    border-bottom: 1px solid $gray;
+    background: $transparent !important;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 14px 43px 13px 0;
+  }
+
+  a {
+    font-family: $lato-light;
+    font-size: $font-size-base - 4;
+    line-height: $line-height-base - 5;
+    color: $azure;
+  }
+
+  .btn {
+    max-width: 310px;
+
+    @include breakpoint($mobile-sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+
+

@@ -4,6 +4,7 @@
     <title>Authentication</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -169,10 +170,10 @@
         </div>
         <main class="main-wrap main-wrap-security-setting main-wrap-authentication">
             <h1 class="title-page title-page-security-setting">Изменить пароль</h1>
-            <form action="#" class="registration-form personal-data-form security-settings-form">
+            <form action="#" class="main-form security-settings-form">
                 <div class="form-group">
                     <label for="old-password">Старый пароль:</label>
-                    <div class="input-area">
+                    <div class="input-area position-relative">
                         <input type="password" autocomplete="off" class="toggle-input" id="old-password" placeholder="Введите пароль" />
                         <button class="toggle-button" id="toggle-one">
                             <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
@@ -182,7 +183,7 @@
                 </div>
                 <div class="form-group">
                     <label for="new-password">Новый пароль:</label>
-                    <div class="input-area">
+                    <div class="input-area position-relative">
                         <input type="password" autocomplete="off" class="toggle-input" id="new-password" placeholder="Введите пароль" />
                         <button class="toggle-button" id="toggle-two">
                             <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
@@ -192,7 +193,7 @@
                 </div>
                 <div class="form-group">
                     <label for="сonfirm-password-rwo">Повторите пароль:</label>
-                    <div class="input-area">
+                    <div class="input-area position-relative">
                         <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password-rwo" placeholder="Введите пароль" />
                         <button class="toggle-button" id="toggle">
                             <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
@@ -249,6 +250,7 @@
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

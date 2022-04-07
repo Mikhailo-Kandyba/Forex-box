@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+
+.main-wrap-open-ticket-two {
+  p {
+    font-family: $lato-light;
+    max-width: 1030px;
+    
+    a {
+      color: $azure;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
