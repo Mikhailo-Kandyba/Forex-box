@@ -83,6 +83,7 @@
 
 .btn-holder {
   display: flex;
+  align-items: center;
   margin-bottom: 28px;
   flex-wrap: wrap;
 
@@ -95,6 +96,7 @@
   }
 
   @include breakpoint($mobile-sm) {
+    flex-direction: column;
     margin-bottom: 8px;
   }
 

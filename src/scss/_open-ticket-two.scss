@@ -2,9 +2,40 @@
 @import "mixin";
 
 .main-wrap-open-ticket-two {
+  @include breakpoint($desktop) {
+    padding: 50px 20px 20px 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 40px 29px 20px 30px;
+  }
+
   p {
     font-family: $lato-light;
     max-width: 1030px;
+    margin-bottom: 22px;
+
+    @include breakpoint($desktop) {
+      margin-bottom: 36px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 11px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      margin-bottom: 16px;
+    }
     
     a {
       color: $azure;
@@ -15,5 +46,42 @@
       }
     }
   }
+
+  .btn-holder {
+    margin-bottom: 45px;
+
+    .btn {
+      max-width: 308px;
+
+      @include breakpoint($mobile-sm) {
+        max-width: 100%;
+      }
+    }
+  }
 }
 
+.offer-area {
+  max-width: 600px;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.offer-list {
+  a {
+    display: block;
+    margin-bottom: 8px;
+    color: $azure;
+    text-decoration: underline;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

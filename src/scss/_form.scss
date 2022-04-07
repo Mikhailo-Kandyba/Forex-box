@@ -96,33 +96,21 @@
 
 .reviews-form-ticket-two {
   max-width: 707px !important;
+  margin-bottom: 32px;
 
   .custom-select {
     max-width: 100%;
   }
-  //
-  //input {
-  //  background: $white;
-  //  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-  //  width: 100%;
-  //  border: none;
-  //  padding: 15px 25px;
-  //  height: 55px;
-  //  font-family: $lato-light;
-  //  font-size: $font-size-base + 2;
-  //  line-height: $line-height-base - 2;
-  //}
 
-  textarea {
-    height: 243px !important;
-  }
+  label {
+    padding-left: 30px;
+    margin-bottom: 5px;
 
-  .file-input {
-    padding: 0;
+    @include breakpoint($mobile-sm) {
+      padding-left: 15px;
+    }
   }
 }
-
-
 
 .security-settings-form {
   max-width: 365px;
@@ -158,20 +146,6 @@
       padding: 10px 63px 10px 16px;
     }
   }
-
-  //.form-group {
-  //  border-radius: 5px;
-  //  overflow: hidden;
-  //  margin-bottom: 16px;
-  //
-  //  @include breakpoint($mobile-sm) {
-  //    margin-bottom: 12px;
-  //  }
-  //
-  //  &:last-child {
-  //    margin-bottom: 0;
-  //  }
-  //}
 }
 
 .search-form {
@@ -300,69 +274,7 @@
   }
 }
 
-
-
-.main-form {
-  input {
-    background: $white;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    width: 100%;
-    border: none;
-    padding: 15px 25px;
-    height: 55px;
-    font-family: $lato-light;
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base - 2;
-    border-radius: 5px;
-  }
-
-  span {
-    display: block;
-    font-family: $lato-light;
-    font-size: $font-size-base - 4;
-    line-height: $line-height-base - 5;
-    color: $cinnabar;
-
-    @include breakpoint($mobile) {
-      letter-spacing: -0.5px;
-    }
-  }
-
-  textarea {
-    width: 100%;
-    height: 135px;
-    background: $white;
-    border: none;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    padding: 20px;
-
-    &::placeholder {
-      font-family: $lato-light;
-      font-size: $font-size-base + 2;
-      line-height: $line-height-base + 2;
-      color: $silver;
-    }
-
-    &::-webkit-resizer{
-      background: url("../images/textarea-img.svg") no-repeat;
-    }
-  }
-
-  label {
-    display: block;
-    font-family: $lato-light;
-    font-size: $font-size-base - 3;
-    line-height: $line-height-base - 4;
-    color: $mine-shaft;
-    padding-left: 15px;
-    margin-bottom: 10px;
-
-    @include breakpoint($mobile-sm) {
-      font-family: $lato-light;
-    }
-  }
-
+form {
   .toggle-button {
     padding: 0 33px;
 
@@ -385,8 +297,7 @@
 
   .form-group {
     border-radius: 5px;
-    //overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     @include breakpoint($mobile-sm) {
       margin-bottom: 12px;
@@ -395,9 +306,23 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    span {
+      display: block;
+      font-family: $lato-light;
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 5;
+      color: $cinnabar;
+
+      @include breakpoint($mobile) {
+        letter-spacing: -0.5px;
+      }
+    }
   }
 
   .custom-select {
+    margin-bottom: 0;
+
     span {
       font-family: $lato-light;
       font-size: $font-size-base - 3;
@@ -417,12 +342,89 @@
     border-bottom: none;
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
-    padding: 20px 22px;
-    height: 60px;
+    padding: 15px 22px;
+    height: 55px;
+
+    @include breakpoint($mobile-sm) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 15px 52px 15px 15px;
+    }
+  }
+
+  .item {
+    padding: 10px 17px 10px;
   }
 
   .all-items {
     z-index: 1;
+  }
+}
+
+label {
+  display: block;
+  font-family: $lato-light;
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 4;
+  color: $mine-shaft;
+  padding-left: 15px;
+  margin-bottom: 10px;
+
+  @include breakpoint($mobile-sm) {
+    font-family: $lato-light;
+  }
+}
+
+input {
+  background: $white;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  height: 55px;
+  font-family: $lato-light;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base - 2;
+  border-radius: 5px;
+
+  @include breakpoint($mobile-sm) {
+    font-size: $font-size-base;
+    line-height: $line-height-base - 4;
+    padding: 15px 52px 15px 15px;
+  }
+}
+
+textarea {
+  width: 100%;
+  background: $white;
+  border: none;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 20px;
+  height: 243px;
+
+  @include breakpoint($desktop) {
+    height: 160px;
+  }
+
+  @include breakpoint($mobile) {
+    height: 110px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 15px;
+  }
+
+  &::placeholder {
+    font-family: $lato-light;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    color: $silver;
+  }
+
+  &::-webkit-resizer{
+    background: url("../images/textarea-img.svg") no-repeat;
   }
 }
 
