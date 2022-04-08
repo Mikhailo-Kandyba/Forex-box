@@ -147,6 +147,26 @@
   font-family: $base-font-default !important;
 }
 
+.star-icon {
+  padding-left: 40px;
+  position: relative;
+
+  @include breakpoint($desktop) {
+    padding-left: 30px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/star.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 21px;
+  }
+}
+
 .gradient-border {
   border-width: 2px;
   border-style: solid;

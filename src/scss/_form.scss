@@ -81,6 +81,11 @@
       background-repeat: no-repeat;
       background-position: right;
 
+      @include breakpoint($desktop) {
+        font-size: $font-size-base;
+        line-height: $line-height-base - 2;
+      }
+
       @include breakpoint($mobile-sm) {
         background-image: url("../images/check-mark-mobile.svg");
       }
@@ -517,6 +522,108 @@ textarea {
     }
   }
 }
+
+.internal-transfers {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 43px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 37px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    margin-bottom: 19px;
+  }
+
+  .form-body {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+    @include breakpoint($mobile-sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-group {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    @include breakpoint($mobile-sm) {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    &:first-child {
+      max-width: 183px;
+
+      @include breakpoint($mobile-sm) {
+        max-width: 100%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+      max-width: 305px;
+
+      @include breakpoint($mobile-sm) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .checkbox-area {
+    margin: 0 30px 0 0;
+
+    @include breakpoint($mobile-sm) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .btn-holder {
+    width: 100%;
+    margin-bottom: 0;
+
+    @include breakpoint($mobile-sm) {
+      margin-top: 10px;
+    }
+  }
+
+  .btn {
+    max-width: 305px;
+    padding: 10px;
+
+    @include breakpoint($tablet) {
+      max-width: 265px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 305px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      max-width: 100%;
+    }
+  }
+
+  input {
+    height: 50px;
+  }
+}
+
 
 
 

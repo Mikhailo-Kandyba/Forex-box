@@ -89,18 +89,14 @@
 
   input[type="checkbox"]:checked + label:after,
   input[type="checkbox"]:not(:checked) + label:after {
-    left: 7px;
-    top: 4px;
-    width: 10px;
-    height: 5px;
-    border-radius: 1px;
-    border-left: 4px solid $saffron;
-    border-bottom: 4px solid $saffron;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 15px;
+    height: 17px;
+    background-image: url("../images/vector.svg");
+    background-repeat: no-repeat;
   }
 
   input[type="checkbox"]:not(:checked) + label:after {
@@ -358,6 +354,7 @@
     font-size: $font-size-base - 2;
     line-height: $line-height-base - 2;
     margin-right: 10px;
+    margin-bottom: 0 !important;
 
     @include breakpoint($mobile) {
       font-size: $font-size-base - 4;
