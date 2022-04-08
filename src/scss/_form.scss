@@ -524,7 +524,7 @@ textarea {
 }
 
 .internal-transfers {
-  max-width: 600px;
+  max-width: 1115px;
   width: 100%;
   margin-bottom: 30px;
 
@@ -621,6 +621,40 @@ textarea {
 
   input {
     height: 50px;
+  }
+
+  p {
+    font-family: $lato-light;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 2;
+    color: $black;
+    padding-left: 20px;
+    position: relative;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 6px;
+      background: $cinnabar;
+      width: 4px;
+    }
+  }
+
+  a {
+    color: $azure;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
