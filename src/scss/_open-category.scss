@@ -1,0 +1,215 @@
+@import "mixin";
+@import "variables";
+
+.main-wrap-open-category {
+  @include breakpoint($desktop) {
+    padding: 50px 20px 20px 195px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 25px 30px 20px 150px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 35px 58px 20px 60px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 25px 29px 20px 30px;
+  }
+}
+
+.tabs-content-category {
+  max-width: 1260px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    max-width: 760px;
+  }
+
+  .ui-tabs-nav {
+    justify-content: flex-start !important;
+
+    @include breakpoint($desktop) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-right: 15px;
+    }
+
+    .ui-tabs-anchor {
+      font-family: $lato-light;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
+  }
+}
+
+/* accordion styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  label {
+    display: flex;
+    font-family: $base-font-default;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    padding: 20px 70px 20px 20px;
+    position: relative;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    background: $white;
+    cursor: pointer;
+    border-radius: 5px;
+
+    @include breakpoint($mobile) {
+      padding: 15px 70px 15px 20px;
+    }
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      padding: 10px 17px 51px 17px;
+    }
+
+    span {
+      display: block;
+      padding-right: 25px;
+
+      @include breakpoint($desktop) {
+        padding-right: 11px;
+      }
+
+      @include breakpoint($mobile-sm) {
+        display: none;
+      }
+    }
+
+    .block {
+      display: none;
+
+      @include breakpoint($mobile-sm) {
+        display: block !important;
+        background: $white;
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+        height: 42px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.tab-content {
+  max-height: 0;
+  //overflow: hidden;
+  -webkit-transition: all ease .35s;
+  -o-transition: all ease .35s;
+  transition: all ease .35s;
+  color: $black;
+
+  p {
+    font-family: $lato-light !important;
+    font-size: $font-size-base !important;
+    line-height: $line-height-base !important;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2 !important;
+      line-height: $line-height-base - 2 !important;
+    }
+  }
+
+  h4 {
+    font-family: $base-font-default;
+    margin-bottom: 20px;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base - 2;
+      line-height: $line-height-base - 2;
+      margin-bottom: 17px;
+    }
+  }
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+  //max-height: 100vh;
+  max-height: 100%;
+  padding: 20px;
+
+  @include breakpoint($desktop) {
+    padding: 20px 0;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 15px 0;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 11px 0;
+  }
+}
+
+.tab input[type=checkbox] + label::after {
+  content: '';
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  background-image: url("../images/arrow-accordion.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 12px;
+
+  @include breakpoint($mobile-sm) {
+    bottom: 10px;
+    top: auto;
+    right: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(-180deg);
+}
+
+.scroll-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 20%;
+  right: 30px;
+  z-index: 1000;
+
+  @include breakpoint($desktop) {
+    right: 10px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 1;
+  }
+
+  @include breakpoint($mobile-sm) {
+    display: none;
+  }
+
+  img {
+    width: 16px;
+  }
+}
