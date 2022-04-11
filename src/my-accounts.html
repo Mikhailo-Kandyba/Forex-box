@@ -99,72 +99,68 @@
                         </div>
                     </div>
                     <ul class="sidebar-mobile">
-                        <li class="sidebar-item active-item">
-                            <a href="index.html">
+                        <li class="active-item">
+                            <button>
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
                                 <span>Услуги</span>
-                            </a>
+                            </button>
                             <ul class="mobile-menu">
                                 <li><a href="index.html">Заказ услуги</a></li>
                                 <li><a href="my-services.html">Мои услуги</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="balance.html">
+                        <li>
+                            <button>
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
                                 <span>Биллинг</span>
-                            </a>
+                            </button>
                             <ul class="mobile-menu">
                                 <li><a href="balance.html">Баланс</a></li>
                                 <li><a href="#">Мои счета</a></li>
                                 <li><a href="#">Внутренние переводы</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="personal-data.html">
+                        <li>
+                            <button>
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
                                 <span>Данные аккаунта</span>
-                            </a>
+                            </button>
                             <ul class="mobile-menu">
                                 <li><a href="#">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#">
+                        <li>
+                            <button>
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
                                 <span>Поддержка</span>
-                            </a>
+                            </button>
                             <ul class="mobile-menu">
                                 <li><a href="#">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#">
+                        <li>
+                            <button>
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
                                 <span>Партнерская программа</span>
-                            </a>
+                            </button>
                             <ul class="mobile-menu">
                                 <li><a href="#">Заказ услуги</a></li>
                                 <li><a href="#">Мои услуги</a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item">
+                        <li class="output">
                             <a href="#">
                                 <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
                                 <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
                                 <span>Выйти</span>
                             </a>
-                            <ul class="mobile-menu">
-                                <li><a href="#">Заказ услуги</a></li>
-                                <li><a href="#">Мои услуги</a></li>
-                            </ul>
                         </li>
                     </ul>
                     <span class="overlay"></span>
@@ -305,6 +301,9 @@
                     <div class="modal-content modal-content-view-account">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-body modal-body-view-account">
+                            <----------------------------------------content in active position------------------------->
+                            <h3 class="status-active" style="display: none">Платеж выполнен успешно!</h3>
+                            <------------------------------------------------------------->
                             <h4>
                                 Оплачен с баланса
                                 <span>(24.08.2021 15:35:30)</span>
@@ -351,15 +350,38 @@
                                     </p>
                                 </div>
                                 <div class="results">
-                                    <h5>
-                                        Сумма:<span>€2.52 EUR</span>
-                                    </h5>
-                                    <h5>
-                                        Оплачено с баланса:<span>€2.52 EUR</span>
-                                    </h5>
+                                    <p>
+                                        <strong>Сумма:</strong><span>€2.52 EUR</span>
+                                    </p>
+                                    <p>
+                                        <strong>Оплачено с баланса:</strong><span>€2.52 EUR</span>
+                                    </p>
                                 </div>
                             </div>
                             <h5>Платежные операции:</h5>
+                            <----------------------------------------content in active position------------------------->
+                            <div class="info-service" style="display: none">
+                                <div class="service">
+                                    <p>
+                                        <strong>Дата платежа:</strong><span>31.08.2021</span>
+                                    </p>
+                                    <p>
+                                        <strong>Оплачено через:</strong><span>Mastercard/Visa (Cardinity)</span>
+                                    </p>
+                                    <p>
+                                        <strong>ID транзакции:</strong><span>65745745нруг5ун54апвее</span>
+                                    </p>
+                                </div>
+                                <div class="results">
+                                    <p>
+                                        <strong>Сумма:</strong><span>€2.52 EUR</span>
+                                    </p>
+                                    <p>
+                                        <strong>Оплачено с баланса:</strong><span>€2.52 EUR</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <-------------------------------------------------------->
                             <p>Платежей не найдено</p>
                         </div>
                     </div>

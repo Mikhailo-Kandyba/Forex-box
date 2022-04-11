@@ -30,10 +30,10 @@ $( function() {
 // //end
 
 // When the user clicks on div, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
+// function myFunction() {
+//     var popup = document.getElementById("myPopup");
+//     popup.classList.toggle("show");
+// }
 
 //custom-select
 (function($) {
@@ -123,9 +123,10 @@ let accordion = document.querySelector('.sidebar-mobile');
 
 function accordionOpener(node) {
     if (node) {
+        console.log(node.children.length);
         for (let i = 0; i < node.children.length; i++) {
             node.children[i].addEventListener("click", function(e) {
-                e.preventDefault();
+                // e.preventDefault();
                 node.children[i].classList.toggle("active-item");
             });
         }
@@ -143,8 +144,6 @@ var _hmt = _hmt || [];
     s.parentNode.insertBefore(hm, s);
 })();
 
-
-JavaScript
 (function($) {
     $.toggleShowPassword = function(options) {
         var settings = $.extend({

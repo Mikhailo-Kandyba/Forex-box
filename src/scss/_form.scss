@@ -58,15 +58,7 @@
   }
 
   input {
-    font-size: $font-size-base + 2;
-    line-height: $line-height-base - 2;
-    height: 55px;
-    width: 100%;
-    border: none;
-    background: rgba(255, 255, 255, 0.8);
     box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
-    border-radius: 5px;
-    padding: 15px 20px;
 
     @include breakpoint($mobile-sm) {
       font-size: $font-size-base - 2;
@@ -177,16 +169,9 @@
 
 
   input {
-    font-family: $lato-light;
     font-size: $font-size-base;
-    line-height: $line-height-base;
-    background: $white;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    height: 52px;
+    line-height: $line-height-base - 2;
     padding: 15px 60px 15px 20px;
-    width: 100%;
-    border: none;
 
     @include breakpoint($mobile-sm) {
       font-size: $font-size-base - 2;
@@ -281,7 +266,7 @@
 
 form {
   .toggle-button {
-    padding: 0 33px;
+    padding: 0 13px;
 
     @include breakpoint($mobile-sm) {
       padding: 0 19px;
@@ -316,7 +301,7 @@ form {
       display: block;
       font-family: $lato-light;
       font-size: $font-size-base - 4;
-      line-height: $line-height-base - 5;
+      line-height: $line-height-base - 6;
       color: $cinnabar;
 
       @include breakpoint($mobile) {
@@ -367,6 +352,27 @@ form {
   }
 }
 
+.input-region {
+  .region {
+    font-family: $base-font-default;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    color: $mine-shaft;
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base;
+    }
+  }
+
+  input {
+    padding: 10px 10px 10px 70px !important;
+  }
+}
+
 label {
   display: block;
   font-family: $lato-light;
@@ -392,6 +398,17 @@ input {
   font-size: $font-size-base + 2;
   line-height: $line-height-base - 2;
   border-radius: 5px;
+
+  &::placeholder {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base + 2;
+    color: $alto;
+
+    @include breakpoint($mobile-sm) {
+      font-size: $font-size-base;
+      line-height: $line-height-base - 2;
+    }
+  }
 
   @include breakpoint($mobile-sm) {
     font-size: $font-size-base;
@@ -455,8 +472,6 @@ textarea {
 .registration-form {
   label {
     font-family: $base-font-default;
-    font-size: $font-size-base - 3;
-    line-height: $line-height-base - 4;
     padding-left: 0;
 
     @include breakpoint($mobile-sm) {
@@ -468,23 +483,15 @@ textarea {
     background: $transparent;
     padding: 10px 10px 10px 0;
     border-bottom: 1px solid $gray;
+    font-family: $base-font-default;
+    font-size: $font-size-base + 2;
+    height: 45px;
     margin-bottom: 2px;
     border-radius: 0;
     box-shadow: none;
 
     @include breakpoint($mobile-sm) {
       font-family: $lato-light;
-    }
-
-    &::placeholder {
-      font-size: $font-size-base + 2;
-      line-height: $line-height-base + 2;
-      color: $alto;
-
-      @include breakpoint($mobile-sm) {
-        font-size: $font-size-base;
-        line-height: $line-height-base - 2;
-      }
     }
   }
 

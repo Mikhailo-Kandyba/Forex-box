@@ -91,17 +91,15 @@
 
     .ui-tabs-anchor {
       padding: 0 0 7px 0;
-      font-family: $lato-light;
+      font-family: $base-font-default;
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 2;
       color: $silver;
 
       @include breakpoint($mobile) {
         font-family: $base-font-default;
         font-size: $font-size-base + 2;
         line-height: $line-height-base + 2;
-      }
-
-      @include breakpoint($mobile-sm) {
-        font-family: $lato-light;
       }
     }
   }

@@ -1,97 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <title>Freezing</title>
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!------------connection style tabs-------------------------------->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <!----------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div id="wrapper">
-    <header class="header">
-        <a class="logo d-none-xl d-block-md" href="index.html">
-            <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
-        </a>
-        <ul class="menu">
-            <li><a href="#">Заказ услуги</a></li>
-            <li><a href="personal-data.html" class="active">Мои услуги</a></li>
-        </ul>
-        <div class="btn-group">
-            <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
-            <div class="custom-select">
-                <select>
-                    <option value="1">Ru</option>
-                    <option value="2">Ua</option>
-                </select>
-            </div>
-        </div>
-        <button class="btn-menu">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-        </button>
-    </header>
-    <div>
-        <div class="sidebar-wrap">
-            <ul class="sidebar">
-                <li class="sidebar-item">
-                    <a class="logo d-none-sm" href="index.html">
-                        <img src="./images/logo.svg" width="90" height="18" alt="logo">
-                    </a>
-                </li>
-                <li class="sidebar-item active-item">
-                    <a href="index.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
-                        <span>Услуги</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="balance.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
-                        <span>Биллинг</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="personal-data.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
-                        <span>Данные аккаунта</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
-                        <span>Поддержка</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
-                        <span>Партнерская программа</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
-                        <span>Выйти</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="header-sidebar">
-                <a class="logo d-none-sm d-none-xl" href="index.html">
-                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+    <head>
+        <title>Freezing</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!------------connection style tabs-------------------------------->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <!----------------------------------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="header">
+                <a class="logo d-none-xl d-block-md" href="index.html">
+                    <img class="width-sm-120" src="./images/logo.svg" width="90" height="18" alt="logo">
                 </a>
-                <div class="btn-group d-none-xl d-flex-sm">
-                    <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                <ul class="menu">
+                    <li><a href="#">Заказ услуги</a></li>
+                    <li><a href="personal-data.html" class="active">Мои услуги</a></li>
+                </ul>
+                <div class="btn-group">
+                    <button class="btn gradient-border btn-padding-custom img-button">0.00 EUR</button>
                     <div class="custom-select">
                         <select>
                             <option value="1">Ru</option>
@@ -99,223 +29,289 @@
                         </select>
                     </div>
                 </div>
-            </div>
-            <ul class="sidebar-mobile">
-                <li class="sidebar-item active-item">
-                    <a href="index.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
-                        <span>Услуги</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="index.html">Заказ услуги</a></li>
-                        <li><a href="my-services.html">Мои услуги</a></li>
+                <button class="btn-menu">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+            </header>
+            <div>
+                <div class="sidebar-wrap">
+                    <ul class="sidebar">
+                        <li class="sidebar-item">
+                            <a class="logo d-none-sm" href="index.html">
+                                <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                            </a>
+                        </li>
+                        <li class="sidebar-item active-item">
+                            <a href="index.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="balance.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="personal-data.html">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="balance.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
-                        <span>Биллинг</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="balance.html">Баланс</a></li>
-                        <li><a href="#">Мои счета</a></li>
-                        <li><a href="#">Внутренние переводы</a></li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="personal-data.html">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
-                        <span>Данные аккаунта</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="#">Заказ услуги</a></li>
-                        <li><a href="#">Мои услуги</a></li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
-                        <span>Поддержка</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="#">Заказ услуги</a></li>
-                        <li><a href="#">Мои услуги</a></li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
-                        <span>Партнерская программа</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="#">Заказ услуги</a></li>
-                        <li><a href="#">Мои услуги</a></li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#">
-                        <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
-                        <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
-                        <span>Выйти</span>
-                    </a>
-                    <ul class="mobile-menu">
-                        <li><a href="#">Заказ услуги</a></li>
-                        <li><a href="#">Мои услуги</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <span class="overlay"></span>
-        </div>
-        <main class="main-wrap main-wrap-personal-data">
-            <div class="tabs tabs-content tabs-freezing">
-                <ul>
-                    <li><a href="#tabs-1">Все услуги</a></li>
-                    <li><a href="#tabs-2">Заморозка</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <div class="all-services">
-                        <div class="row-title">
-                            <div class="column">Услуга</div>
-                            <div class="column">Цена</div>
-                            <div class="column">Итого</div>
-                            <div class="column">Возвратится на баланс</div>
+                    <div class="header-sidebar">
+                        <a class="logo d-none-sm d-none-xl" href="index.html">
+                            <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                        </a>
+                        <div class="btn-group d-none-xl d-flex-sm">
+                            <button class="btn gradient-border btn-padding-custom img-button d-after-sm-none">0.00 EUR</button>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="1">Ru</option>
+                                    <option value="2">Ua</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="row-content">
-                            <div class="column-group">
-                                <div class="column">
-                                    <div class="col-sm-heading">Услуга </div>
-                                    <strong class="marker-green">FX1 - U98198</strong>
+                    </div>
+                    <ul class="sidebar-mobile">
+                        <li class="active-item">
+                            <button>
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-1.svg" alt="icon-slide-1">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-1.svg"  alt="icon-sidebar-hover-1">
+                                <span>Услуги</span>
+                            </button>
+                            <ul class="mobile-menu">
+                                <li><a href="index.html">Заказ услуги</a></li>
+                                <li><a href="my-services.html">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-2.svg" alt="icon-slide-2">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-2.svg" alt="icon-sidebar-hover-2">
+                                <span>Биллинг</span>
+                            </button>
+                            <ul class="mobile-menu">
+                                <li><a href="balance.html">Баланс</a></li>
+                                <li><a href="#">Мои счета</a></li>
+                                <li><a href="#">Внутренние переводы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-3.svg" alt="icon-slide-3">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-3.svg" alt="icon-sidebar-hover-3">
+                                <span>Данные аккаунта</span>
+                            </button>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-4.svg" alt="icon-slide-4">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-4.svg" alt="icon-sidebar-hover-4">
+                                <span>Поддержка</span>
+                            </button>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button>
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-5.svg" alt="icon-slide-5">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-5.svg" alt="icon-sidebar-hover-5">
+                                <span>Партнерская программа</span>
+                            </button>
+                            <ul class="mobile-menu">
+                                <li><a href="#">Заказ услуги</a></li>
+                                <li><a href="#">Мои услуги</a></li>
+                            </ul>
+                        </li>
+                        <li class="output">
+                            <a href="#">
+                                <img class="sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-6.svg" alt="icon-slide-6">
+                                <img class="hover-sidebar-icon" style="width: 33px; height: 27px;" src="./images/icon-sidebar-hover-6.svg" alt="icon-sidebar-hover-6">
+                                <span>Выйти</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="overlay"></span>
+                </div>
+                <main class="main-wrap main-wrap-personal-data">
+                    <div class="tabs tabs-content tabs-freezing">
+                        <ul>
+                            <li><a href="#tabs-1">Все услуги</a></li>
+                            <li><a href="#tabs-2">Заморозка</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div class="all-services">
+                                <div class="row-title">
+                                    <div class="column">Услуга</div>
+                                    <div class="column">Цена</div>
+                                    <div class="column">Итого</div>
+                                    <div class="column">Возвратится на баланс</div>
                                 </div>
-                                <div class="column">
-                                    <div class="col-sm-heading">Цена</div>
-                                    <p>€2.52 EUR</p>
+                                <div class="row-content">
+                                    <div class="column-group">
+                                        <div class="column">
+                                            <div class="col-sm-heading">Услуга </div>
+                                            <strong class="marker-green">FX1 - U98198</strong>
+                                        </div>
+                                        <div class="column">
+                                            <div class="col-sm-heading">Цена</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                    </div>
+                                    <div class="column-group">
+                                        <div class="column">
+                                            <div class="col-sm-heading">Итого</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                        <div class="column">
+                                            <div class="col-sm-heading">Возвратится на баланс</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column-group">
-                                <div class="column">
-                                    <div class="col-sm-heading">Итого</div>
-                                    <p>€2.52 EUR</p>
+                        </div>
+                        <div id="tabs-2">
+                            <div class="all-services">
+                                <div class="row-title">
+                                    <div class="column">Услуга</div>
+                                    <div class="column">Цена</div>
+                                    <div class="column">Итого</div>
+                                    <div class="column">Возвратится на баланс22</div>
                                 </div>
-                                <div class="column">
-                                    <div class="col-sm-heading">Возвратится на баланс</div>
-                                    <p>€2.52 EUR</p>
+                                <div class="row-content">
+                                    <div class="column-group">
+                                        <div class="column">
+                                            <div class="col-sm-heading">Услуга </div>
+                                            <strong class="marker-green">FX1 - U98198</strong>
+                                        </div>
+                                        <div class="column">
+                                            <div class="col-sm-heading">Цена</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                    </div>
+                                    <div class="column-group">
+                                        <div class="column">
+                                            <div class="col-sm-heading">Итого</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                        <div class="column">
+                                            <div class="col-sm-heading">Возвратится на баланс</div>
+                                            <p>€2.52 EUR</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="tabs-2">
-                    <div class="all-services">
-                        <div class="row-title">
-                            <div class="column">Услуга</div>
-                            <div class="column">Цена</div>
-                            <div class="column">Итого</div>
-                            <div class="column">Возвратится на баланс22</div>
+                    <a class="btn gradient-border" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Активировать заморозку</a>
+                </main>
+            </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-confirmation">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body modal-body-confirmation">
+                            <p>
+                                Вы действительно хотите активировать услугу “Заморозка”?
+                            </p>
                         </div>
-                        <div class="row-content">
-                            <div class="column-group">
-                                <div class="column">
-                                    <div class="col-sm-heading">Услуга </div>
-                                    <strong class="marker-green">FX1 - U98198</strong>
-                                </div>
-                                <div class="column">
-                                    <div class="col-sm-heading">Цена</div>
-                                    <p>€2.52 EUR</p>
-                                </div>
-                            </div>
-                            <div class="column-group">
-                                <div class="column">
-                                    <div class="col-sm-heading">Итого</div>
-                                    <p>€2.52 EUR</p>
-                                </div>
-                                <div class="column">
-                                    <div class="col-sm-heading">Возвратится на баланс</div>
-                                    <p>€2.52 EUR</p>
-                                </div>
-                            </div>
+                        <div class="modal-footer modal-footer-confirmation">
+                            <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Да</button>
+                            <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Нет</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="btn gradient-border" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Активировать заморозку</a>
-        </main>
-    </div>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-content-confirmation">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body modal-body-confirmation">
-                    <p>
-                        Вы действительно хотите активировать услугу “Заморозка”?
-                    </p>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-forced-termination">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-header">
+                            <h5 class="modal-title modal-title-forced-termination" id="exampleModalToggleLabel">Подтвердите действие на странице my.forex-box.com</h5>
+                        </div>
+                        <div class="modal-body modal-body-forced-termination">
+                            <p>
+                                Все ваши запущенные терминалы будут закрыты (остановлены) и выполнен принудительный выход из системы
+                            </p>
+                        </div>
+                        <div class="modal-footer modal-footer-forced-termination">
+                            <button class="btn gradient-border btn-lg btn-background btn-text-white" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
+                            <button class="btn gradient-border btn-lg" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Продолжить</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer modal-footer-confirmation">
-                    <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Да</button>
-                    <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Нет</button>
+            </div>
+            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-deleted-account">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <p>
+                                Вы действительно хотите удалить выбранный аккаунт?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Удалить</button>
+                            <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-success">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body modal-body-success">
+                            <img src="./images/check-mark-two.png" width="87" height="87" alt="check-mark-two">
+                            <p>
+                                Действие успешно завершено!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-content-forced-termination">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-header">
-                    <h5 class="modal-title modal-title-forced-termination" id="exampleModalToggleLabel">Подтвердите действие на странице my.forex-box.com</h5>
-                </div>
-                <div class="modal-body modal-body-forced-termination">
-                    <p>
-                        Все ваши запущенные терминалы будут закрыты (остановлены) и выполнен принудительный выход из системы
-                    </p>
-                </div>
-                <div class="modal-footer modal-footer-forced-termination">
-                    <button class="btn gradient-border btn-lg btn-background btn-text-white" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
-                    <button class="btn gradient-border btn-lg" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Продолжить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-content-deleted-account">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body">
-                    <p>
-                        Вы действительно хотите удалить выбранный аккаунт?
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn gradient-border btn-md btn-background btn-text-white" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Удалить</button>
-                    <button class="btn gradient-border btn-md" data-bs-dismiss="modal" aria-label="Close">Отмена</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-content-success">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body modal-body-success">
-                    <img src="./images/check-mark-two.png" width="87" height="87" alt="check-mark-two">
-                    <p>
-                        Действие успешно завершено!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--------------connection libraries tabs--------------------->
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-<!--------------------------------------->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--------------connection libraries tabs--------------------->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <!--------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

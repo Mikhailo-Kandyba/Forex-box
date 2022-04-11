@@ -260,7 +260,8 @@ h6 {
   border-bottom: 1px solid #373737;
   padding: 0; }
   .btn-cancellation:hover {
-    font-family: Lato-Regular; }
+    font-family: Lato-Regular;
+    border-bottom: none; }
 
 .btn-download {
   max-width: 73px;
@@ -342,6 +343,55 @@ h6 {
   .sidebar .mobile-menu,
   .sidebar-mobile .mobile-menu {
     display: none; }
+  .sidebar button,
+  .sidebar-mobile button {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    color: #373737;
+    font-family: Lato-Regular;
+    font-size: 18px;
+    line-height: 22px;
+    background: transparent;
+    padding: 10px 50px;
+    position: relative; }
+    .sidebar button img,
+    .sidebar-mobile button img {
+      margin-right: 20px; }
+    .sidebar button:hover,
+    .sidebar-mobile button:hover {
+      font-family: Lato-Regular; }
+      .sidebar button:hover .hover-sidebar-icon,
+      .sidebar-mobile button:hover .hover-sidebar-icon {
+        display: block; }
+      .sidebar button:hover .sidebar-icon,
+      .sidebar-mobile button:hover .sidebar-icon {
+        display: none; }
+    @media only screen and (max-width: 767px) {
+      .sidebar button:after,
+      .sidebar-mobile button:after {
+        content: '';
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/plus.svg");
+        width: 23px;
+        height: 23px;
+        background-repeat: no-repeat; } }
+    @media only screen and (max-width: 710px) {
+      .sidebar button:after,
+      .sidebar-mobile button:after {
+        right: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .sidebar button img,
+      .sidebar-mobile button img {
+        margin-bottom: 0;
+        margin-right: 20px; } }
+    @media only screen and (max-width: 710px) {
+      .sidebar button img,
+      .sidebar-mobile button img {
+        margin-right: 11px; } }
 
 @media only screen and (max-width: 767px) {
   .sidebar-wrap {
@@ -375,7 +425,8 @@ h6 {
   @media only screen and (max-width: 767px) and (max-width: 710px) {
     .sidebar-wrap .sidebar-mobile {
       top: 70px;
-      padding-top: 25px; } }
+      padding-top: 25px;
+      height: auto; } }
   @media only screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile li {
       border: none;
@@ -400,27 +451,6 @@ h6 {
   @media only screen and (max-width: 710px) {
     .sidebar-wrap .sidebar-mobile a {
       padding: 10px 53px 10px 20px; } }
-  @media only screen and (max-width: 767px) {
-    .sidebar-wrap .sidebar-mobile a:after {
-      content: '';
-      position: absolute;
-      right: 60px;
-      top: 50%;
-      transform: translate(0, -50%);
-      background-image: url("../images/plus.svg");
-      width: 23px;
-      height: 23px;
-      background-repeat: no-repeat; } }
-  @media only screen and (max-width: 710px) {
-    .sidebar-wrap .sidebar-mobile a:after {
-      right: 30px; } }
-  @media only screen and (max-width: 767px) {
-    .sidebar-wrap .sidebar-mobile a img {
-      margin-bottom: 0;
-      margin-right: 20px; } }
-  @media only screen and (max-width: 710px) {
-    .sidebar-wrap .sidebar-mobile a img {
-      margin-right: 11px; } }
   .sidebar-wrap .sidebar-mobile a .mobile-menu {
     padding: 10px 50px;
     width: 100%; }
@@ -428,7 +458,7 @@ h6 {
     width: 100%; }
     .sidebar-wrap .sidebar-mobile .mobile-menu li {
       border-bottom: 1px solid rgba(184, 129, 70, 0.1);
-      margin: 0 50px 5px; }
+      margin: 0 65px 5px; }
     @media only screen and (max-width: 710px) {
       .sidebar-wrap .sidebar-mobile .mobile-menu a {
         font-size: 17px;
@@ -439,16 +469,27 @@ h6 {
     .sidebar-wrap .sidebar-mobile .mobile-menu a:after {
       display: none; }
 
-.sidebar-wrap .active-item a {
+.sidebar-wrap .active-item a,
+.sidebar-wrap .active-item button {
   font-family: Lato-Regular; }
-  .sidebar-wrap .active-item a .hover-sidebar-icon {
+  .sidebar-wrap .active-item a .hover-sidebar-icon,
+  .sidebar-wrap .active-item button .hover-sidebar-icon {
     display: block; }
-  .sidebar-wrap .active-item a .sidebar-icon {
+  .sidebar-wrap .active-item a .sidebar-icon,
+  .sidebar-wrap .active-item button .sidebar-icon {
     display: none; }
-  .sidebar-wrap .active-item a:after {
+  .sidebar-wrap .active-item a:after,
+  .sidebar-wrap .active-item button:after {
     background-image: url("../images/minus.svg");
     width: 23px;
     height: 3px; }
+
+.sidebar-wrap .active-item .mobile-menu a {
+  font-family: Lato-Light;
+  font-size: 17px;
+  line-height: 21px; }
+  .sidebar-wrap .active-item .mobile-menu a:hover {
+    font-family: Lato-Regular; }
 
 @media only screen and (max-width: 767px) {
   .sidebar-wrap .active-item .mobile-menu {
@@ -475,6 +516,17 @@ h6 {
     margin: 0 5px 5px 0; }
   .sidebar-wrap .header-sidebar .selected-item {
     margin: 0 5px 5px 0 !important; }
+
+.output {
+  border-top: 1px solid rgba(184, 129, 70, 0.1) !important;
+  padding: 50px 0 0; }
+  .output a {
+    padding: 10px 50px !important; }
+    .output a:after {
+      display: none !important; }
+    .output a img {
+      margin-bottom: 0;
+      margin-right: 20px; }
 
 .overlay {
   display: none; }
@@ -607,7 +659,6 @@ h6 {
         margin-right: 0; } }
   .menu a {
     font-family: Lato-Light;
-    color: #373737;
     position: relative;
     padding-bottom: 7px;
     display: block; }
@@ -734,7 +785,8 @@ h6 {
   position: relative;
   margin-right: 35px;
   padding: 15px;
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 5px; }
   @media only screen and (max-width: 1023px) {
     .service-item {
       margin-right: 18px;
@@ -829,7 +881,8 @@ h6 {
     transition: all 0.3s ease-out; }
 
 .arrowanim.selected-item:after {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  top: 21px !important; }
 
 .item {
   font-size: 20px;
@@ -981,15 +1034,7 @@ input:checked + .slider:before {
       margin-bottom: 20px;
       max-width: 100%; } }
   .promo-code-form input {
-    font-size: 20px;
-    line-height: 20px;
-    height: 55px;
-    width: 100%;
-    border: none;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14);
-    border-radius: 5px;
-    padding: 15px 20px; }
+    box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14); }
     @media only screen and (max-width: 710px) {
       .promo-code-form input {
         font-size: 16px;
@@ -1070,16 +1115,9 @@ input:checked + .slider:before {
     transform: translate(0, -50%);
     padding: 0 20px; }
   .search-form input {
-    font-family: Lato-Light;
     font-size: 18px;
-    line-height: 22px;
-    background: #fff;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    height: 52px;
-    padding: 15px 60px 15px 20px;
-    width: 100%;
-    border: none; }
+    line-height: 20px;
+    padding: 15px 60px 15px 20px; }
     @media only screen and (max-width: 710px) {
       .search-form input {
         font-size: 16px;
@@ -1145,7 +1183,7 @@ input:checked + .slider:before {
     text-align: left; }
 
 form .toggle-button {
-  padding: 0 33px; }
+  padding: 0 13px; }
   @media only screen and (max-width: 710px) {
     form .toggle-button {
       padding: 0 19px; } }
@@ -1170,7 +1208,7 @@ form .form-group {
     display: block;
     font-family: Lato-Light;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 16px;
     color: #e23737; }
     @media only screen and (max-width: 767px) {
       form .form-group span {
@@ -1209,6 +1247,22 @@ form .item {
 form .all-items {
   z-index: 1; }
 
+.input-region .region {
+  font-family: Lato-Regular;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  color: #373737;
+  font-size: 20px;
+  line-height: 24px; }
+  @media only screen and (max-width: 710px) {
+    .input-region .region {
+      font-size: 18px; } }
+
+.input-region input {
+  padding: 10px 10px 10px 70px !important; }
+
 label {
   display: block;
   font-family: Lato-Light;
@@ -1232,6 +1286,14 @@ input {
   font-size: 20px;
   line-height: 20px;
   border-radius: 5px; }
+  input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+    color: #d0cfcf; }
+    @media only screen and (max-width: 710px) {
+      input::placeholder {
+        font-size: 18px;
+        line-height: 20px; } }
   @media only screen and (max-width: 710px) {
     input {
       font-size: 18px;
@@ -1281,8 +1343,6 @@ textarea {
 
 .registration-form label {
   font-family: Lato-Regular;
-  font-size: 15px;
-  line-height: 18px;
   padding-left: 0; }
   @media only screen and (max-width: 710px) {
     .registration-form label {
@@ -1292,20 +1352,15 @@ textarea {
   background: transparent;
   padding: 10px 10px 10px 0;
   border-bottom: 1px solid #848484;
+  font-family: Lato-Regular;
+  font-size: 20px;
+  height: 45px;
   margin-bottom: 2px;
   border-radius: 0;
   box-shadow: none; }
   @media only screen and (max-width: 710px) {
     .registration-form input {
       font-family: Lato-Light; } }
-  .registration-form input::placeholder {
-    font-size: 20px;
-    line-height: 24px;
-    color: #d0cfcf; }
-    @media only screen and (max-width: 710px) {
-      .registration-form input::placeholder {
-        font-size: 18px;
-        line-height: 20px; } }
 
 .registration-form .custom-select {
   max-width: inherit; }
@@ -1435,9 +1490,7 @@ textarea {
   margin-bottom: 32px; }
 
 .title-page-balance {
-  margin-bottom: 16px;
-  font-size: 20px;
-  line-height: 24px; }
+  margin-bottom: 16px; }
   @media only screen and (max-width: 1540px) {
     .title-page-balance {
       margin-bottom: 20px; } }
@@ -1664,7 +1717,6 @@ textarea {
 
 .account-title {
   font-family: Lato-Light;
-  line-height: 27px;
   margin-bottom: 21px; }
   @media only screen and (max-width: 710px) {
     .account-title {
@@ -1840,16 +1892,15 @@ textarea {
       margin-bottom: 17px; } }
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     padding: 0 0 7px 0;
-    font-family: Lato-Light;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    line-height: 24px;
     color: #b9b9b9; }
     @media only screen and (max-width: 767px) {
       .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
         font-family: Lato-Regular;
         font-size: 20px;
         line-height: 24px; } }
-    @media only screen and (max-width: 710px) {
-      .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-        font-family: Lato-Light; } }
 
 .ui-tabs .ui-tabs-panel {
   padding: 0; }
@@ -1914,7 +1965,6 @@ textarea {
     padding-left: 38px;
     font-size: 16px;
     line-height: 20px;
-    font-family: Lato-Light;
     cursor: pointer; }
     @media only screen and (max-width: 710px) {
       .checkbox-area input[type="checkbox"]:checked + label,
@@ -2119,6 +2169,14 @@ textarea {
     .pagination-wrap {
       max-width: 100%;
       flex-direction: column; } }
+  .pagination-wrap .selected-item:after {
+    background-image: url("../images/arrow-black-accordion.svg");
+    width: 12px;
+    height: 9px;
+    top: 21px; }
+  .pagination-wrap .arrowanim.selected-item:after {
+    transform: rotate(180deg);
+    top: 15px !important; }
 
 .select-pages-content {
   display: flex;
@@ -2369,6 +2427,10 @@ textarea {
   margin: 0 auto;
   padding: 30px 30px 23px; }
 
+.modal-body-view-account h3 {
+  font-size: 22px;
+  line-height: 27px; }
+
 .modal-body-view-account h4 {
   font-size: 16px;
   line-height: 20px;
@@ -2413,11 +2475,11 @@ textarea {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px; }
-  .info-service h5 {
+  .info-service p {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px; }
-    .info-service h5 span {
+    .info-service p span {
       font-family: Lato-Light;
       font-size: 16px;
       line-height: 20px;
@@ -2826,6 +2888,9 @@ textarea {
       .main-wrap-security-setting p {
         font-size: 16px;
         line-height: 20px; } }
+
+.main-wrap-setting-two {
+  padding: 90px 10px; }
 
 .main-wrap-authentication p {
   margin-bottom: 26px; }

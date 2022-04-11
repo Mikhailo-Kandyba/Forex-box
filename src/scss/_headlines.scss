@@ -9,8 +9,6 @@
 
 .title-page-balance {
   margin-bottom: 16px;
-  font-size: $font-size-base + 2;
-  line-height: $line-height-base + 2;
 
   @include breakpoint($desktop) {
     margin-bottom: 20px;
@@ -294,7 +292,6 @@
 
 .account-title {
   font-family: $lato-light;
-  line-height: $line-height-base + 5;
   margin-bottom: 21px;
 
   @include breakpoint($mobile-sm) {
