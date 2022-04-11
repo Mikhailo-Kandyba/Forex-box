@@ -211,24 +211,17 @@ h6 {
   font-size: 20px !important;
   line-height: 24px;
   padding: 15px;
-  max-width: 310px;
   width: 100%;
   background: transparent;
   border-radius: 5px;
   background: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none; }
   @media only screen and (max-width: 1540px) {
     .btn {
       padding: 13px; } }
-  @media only screen and (max-width: 1023px) {
-    .btn {
-      max-width: 285px; } }
-  @media only screen and (max-width: 710px) {
-    .btn {
-      padding: 11px;
-      max-width: 100%; } }
   .btn:hover {
-    background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+    background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
     color: #fff;
     transition: all .50s; }
 
@@ -278,6 +271,17 @@ h6 {
   @media only screen and (max-width: 767px) {
     .btn-download {
       margin-right: 24px; } }
+
+.btn-width {
+  max-width: 310px;
+  width: 100%; }
+  @media only screen and (max-width: 1023px) {
+    .btn-width {
+      max-width: 285px; } }
+  @media only screen and (max-width: 710px) {
+    .btn-width {
+      padding: 11px;
+      max-width: 100%; } }
 
 .sidebar,
 .sidebar-mobile {
@@ -561,6 +565,20 @@ h6 {
     .header {
       padding: 23px 29px 18px 30px; } }
 
+.select-area {
+  margin: 0 0 10px 10px; }
+  @media only screen and (max-width: 1540px) {
+    .select-area {
+      margin: 0 0 11px 16px;
+      padding: 7px 10px; } }
+  @media only screen and (max-width: 1023px) {
+    .select-area {
+      margin: 0 0 5px 5px; } }
+  @media only screen and (max-width: 710px) {
+    .select-area {
+      padding: 4px 10px;
+      margin: 0 10px 5px; } }
+
 .btn-group {
   display: flex;
   align-items: center;
@@ -579,36 +597,29 @@ h6 {
   .btn-group .btn {
     max-width: none;
     width: auto; }
-  .btn-group button {
+  .btn-group .btn-area {
     margin: 0 0 10px 10px; }
     @media only screen and (max-width: 1540px) {
-      .btn-group button {
+      .btn-group .btn-area {
         margin: 0 0 10px 16px; } }
     @media only screen and (max-width: 1023px) {
-      .btn-group button {
+      .btn-group .btn-area {
         margin: 0 0 5px 5px; } }
   .btn-group .custom-select {
     margin-bottom: 0; }
     .btn-group .custom-select .selected-item {
-      margin: 0 0 10px 10px;
       cursor: pointer;
-      border-width: 2px;
-      border-style: solid;
-      border-image: linear-gradient(to right, #eb800c 0%, #fabb35 100%) 1;
-      padding: 7px 20px; }
+      padding: 7px 20px;
+      background: #fff;
+      border-radius: 4px; }
       @media only screen and (max-width: 1540px) {
         .btn-group .custom-select .selected-item {
-          margin: 0 0 11px 16px;
           padding: 7px 10px; } }
-      @media only screen and (max-width: 1023px) {
-        .btn-group .custom-select .selected-item {
-          margin: 0 0 5px 5px; } }
       @media only screen and (max-width: 710px) {
         .btn-group .custom-select .selected-item {
-          padding: 4px 10px;
-          margin: 0 10px 5px; } }
+          padding: 4px 10px; } }
       .btn-group .custom-select .selected-item:hover {
-        background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+        background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
         color: #fff;
         transition: all .50s; }
     .btn-group .custom-select .all-items {
@@ -772,6 +783,15 @@ h6 {
   .service-list .text {
     margin-bottom: 15px; }
 
+.service-area-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4px;
+  min-height: inherit;
+  background: #fBf9f8; }
+
 .service-item {
   display: flex;
   align-items: center;
@@ -800,7 +820,8 @@ h6 {
       margin-right: 0;
       margin-bottom: 16px; } }
   .service-item:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    display: block; }
   .service-item .view {
     font-size: 35px;
     line-height: 38px;
@@ -1016,6 +1037,9 @@ input:checked + .slider:before {
       margin-bottom: 27px; } }
   .personal-data-form .custom-select {
     max-width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .personal-data-form .custom-select {
+        margin-bottom: 12px; } }
   @media only screen and (max-width: 710px) {
     .personal-data-form .row-tbody-form {
       flex-direction: column; } }
@@ -1421,7 +1445,7 @@ textarea {
     @media only screen and (max-width: 710px) {
       .internal-transfers .form-group {
         margin-right: 0;
-        margin-bottom: 5px; } }
+        margin-bottom: 15px; } }
     .internal-transfers .form-group:first-child {
       max-width: 183px; }
       @media only screen and (max-width: 710px) {
@@ -1962,7 +1986,7 @@ textarea {
   .checkbox-area input[type="checkbox"]:not(:checked) + label {
     display: inline-block;
     position: relative;
-    padding-left: 38px;
+    padding-left: 45px;
     font-size: 16px;
     line-height: 20px;
     cursor: pointer; }
@@ -2327,12 +2351,22 @@ textarea {
   justify-content: center;
   border: none;
   padding: 0; }
-  .modal-footer .btn {
-    max-width: 335px; }
+  @media only screen and (max-width: 710px) {
+    .modal-footer .btn {
+      font-size: 15px !important;
+      line-height: 20px !important; } }
+  .modal-footer .btn-width {
+    max-width: 125px !important;
+    width: 100%; }
+  .modal-footer .btn-width-lg {
+    max-width: 155px !important;
+    width: 100%; }
     @media only screen and (max-width: 710px) {
-      .modal-footer .btn {
-        font-size: 15px !important;
-        line-height: 20px !important; } }
+      .modal-footer .btn-width-lg {
+        max-width: 125px !important; } }
+  .modal-footer .btn-width-md {
+    max-width: 125px !important;
+    width: 100%; }
 
 .fade {
   background: rgba(0, 0, 0, 0.5); }
@@ -2502,6 +2536,9 @@ textarea {
 .results {
   width: 50%;
   padding-left: 27px; }
+
+.modal-footer-deleted-account {
+  justify-content: space-between; }
 
 @media only screen and (max-width: 1540px) {
   .main-wrap-balance {
@@ -3229,7 +3266,8 @@ textarea {
         max-width: 230px; } }
     @media only screen and (max-width: 767px) {
       .btn-holder button {
-        max-width: 255px; } }
+        max-width: 255px;
+        margin-right: 5px; } }
     @media only screen and (max-width: 710px) {
       .btn-holder button {
         margin-right: 0;
@@ -3237,6 +3275,8 @@ textarea {
         margin-bottom: 17px; } }
     .btn-holder button:last-child {
       margin-right: 0; }
+  .btn-holder .btn-width {
+    max-width: 305px; }
 
 .reviews {
   background: #fff;
@@ -4598,7 +4638,7 @@ textarea {
   .form-body input[type="checkbox"]:checked + label:after,
   .form-body input[type="checkbox"]:not(:checked) + label:after {
     top: 2px;
-    left: 9px; }
+    left: 10px; }
 
 .operations-history {
   max-width: 1190px;
@@ -4859,9 +4899,6 @@ textarea {
     .btn-lg {
       max-width: 125px !important; } }
 
-.btn-md {
-  max-width: 125px !important; }
-
 /**********************************img-button************************/
 .img-button {
   position: relative; }
@@ -4953,6 +4990,11 @@ textarea {
 
 .text-regular {
   font-family: Lato-Regular !important; }
+
+.bg-gradient-border {
+  background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
+  padding: 2px;
+  border-radius: 5px; }
 
 .star-icon {
   padding-left: 40px;

@@ -110,6 +110,7 @@
 
     @include breakpoint($mobile) {
       max-width: 255px;
+      margin-right: 5px;
     }
 
     @include breakpoint($mobile-sm) {
@@ -121,6 +122,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .btn-width {
+    max-width: 305px;
   }
 }
 

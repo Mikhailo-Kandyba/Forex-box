@@ -27,6 +27,24 @@
   }
 }
 
+.select-area {
+  margin: 0 0 10px 10px;
+
+  @include breakpoint($desktop) {
+    margin: 0 0 11px 16px;
+    padding: 7px 10px;
+  }
+
+  @include breakpoint($tablet) {
+    margin: 0 0 5px 5px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 4px 10px;
+    margin: 0 10px 5px;
+  }
+}
+
 .btn-group {
   display: flex;
   align-items: center;
@@ -51,7 +69,7 @@
     width: auto;
   }
 
-  button {
+  .btn-area {
     margin: 0 0 10px 10px;
 
     @include breakpoint($desktop) {
@@ -67,29 +85,21 @@
     margin-bottom: 0;
 
     .selected-item {
-      margin: 0 0 10px 10px;
       cursor: pointer;
-      border-width: 2px;
-      border-style: solid;
-      border-image: linear-gradient(to right, $christine 0%, $saffron 100%) 1;
       padding: 7px 20px;
+      background: $white;
+      border-radius: 4px;
 
       @include breakpoint($desktop) {
-        margin: 0 0 11px 16px;
         padding: 7px 10px;
-      }
-
-      @include breakpoint($tablet) {
-        margin: 0 0 5px 5px;
       }
 
       @include breakpoint($mobile-sm) {
         padding: 4px 10px;
-        margin: 0 10px 5px;
       }
 
       &:hover {
-        background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+        background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
         color: #fff;
         transition: all .50s;
       }

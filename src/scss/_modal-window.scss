@@ -78,12 +78,31 @@
   padding: 0;
 
   .btn {
-    max-width: 335px;
+    //max-width: 335px;
 
     @include breakpoint($mobile-sm) {
       font-size: $font-size-base - 3 !important;
       line-height: $line-height-base - 2 !important;
     }
+  }
+
+  .btn-width {
+    max-width: 125px !important;
+    width: 100%;
+  }
+
+  .btn-width-lg {
+    max-width: 155px !important;
+    width: 100%;
+
+    @include breakpoint($mobile-sm) {
+      max-width: 125px !important;
+    }
+  }
+
+  .btn-width-md {
+    max-width: 125px !important;
+    width: 100%;
   }
 }
 
@@ -339,4 +358,8 @@
 .results {
   width: 50%;
   padding-left: 27px;
+}
+
+.modal-footer-deleted-account {
+  justify-content: space-between;
 }

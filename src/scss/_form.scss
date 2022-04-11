@@ -18,6 +18,10 @@
 
   .custom-select {
     max-width: 100%;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
+    }
   }
 
   //.selected-item {
@@ -571,7 +575,7 @@ textarea {
 
     @include breakpoint($mobile-sm) {
       margin-right: 0;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     &:first-child {

@@ -116,28 +116,20 @@
   font-size: $font-size-base + 2 !important;
   line-height: $line-height-base + 2;
   padding: 15px;
-  max-width: 310px;
   width: 100%;
   background: $transparent;
   border-radius: 5px;
   background: $white;
   cursor: pointer;
+  border: none;
 
   @include breakpoint($desktop) {
     padding: 13px;
   }
 
-  @include breakpoint($tablet) {
-    max-width: 285px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 11px;
-    max-width: 100%;
-  }
-
   &:hover {
-    background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+    //background: linear-gradient(to right, #EB800C 100%, #FABB35 100%);
+    background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
     color: #fff;
     transition: all .50s;
   }
@@ -200,6 +192,19 @@
   }
 }
 
+.btn-width {
+  max-width: 310px;
+  width: 100%;
+
+  @include breakpoint($tablet) {
+    max-width: 285px;
+  }
+
+  @include breakpoint($mobile-sm) {
+    padding: 11px;
+    max-width: 100%;
+  }
+}
 
 
 
