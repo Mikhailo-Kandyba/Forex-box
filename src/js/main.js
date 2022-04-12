@@ -4,6 +4,7 @@ $(".btn-menu").on('click', function(e) {
     $(this).toggleClass("active");
     $(".sidebar-wrap").toggleClass('show-menu');
     $("body").toggleClass('overflow-hidden');
+    $("header").toggleClass('header-position');
 });
 
 //tabs

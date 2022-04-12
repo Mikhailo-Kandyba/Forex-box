@@ -2,22 +2,22 @@
 @import "mixin";
 
 .main-wrap {
-  padding: 65px 20px 20px 255px;
+  padding: 165px 20px 20px 255px;
 
   @include breakpoint($desktop) {
-    padding: 32px 20px 20px 195px;
+    padding: 122px 20px 20px 195px;
   }
 
   @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
+    padding: 95px 30px 20px 150px;
   }
 
   @include breakpoint($mobile) {
-    padding: 40px 58px 20px 60px;
+    padding: 130px 58px 20px 60px;
   }
 
   @include breakpoint($mobile-sm) {
-    padding: 40px 29px 20px 30px;
+    padding: 110px 29px 20px 30px;
   }
 }
 
@@ -76,14 +76,16 @@
     max-width: 285px;
   }
 
-  @include breakpoint($mobile-sm) {
-    max-width: 100%;
+  @include breakpoint($mobile) {
+    min-height: 172px;
+    max-width: 310px;
+    margin-right: 5px;
+    margin-bottom: 16px;
   }
 
   @include breakpoint($mobile-sm) {
+    max-width: 100%;
     min-height: 150px;
-    margin-right: 0;
-    margin-bottom: 16px;
   }
 
   &:last-child {
@@ -101,6 +103,10 @@
       line-height: $line-height-base - 7;
     }
   }
+}
+
+.service-item-data {
+  min-height: 165px;
 }
 
 .name-price {
@@ -138,10 +144,6 @@
   position: relative;
   max-width: 310px;
   margin-bottom: 20px;
-
-  @include breakpoint($tablet) {
-    max-width: 285px;
-  }
 
   @include breakpoint($mobile-sm) {
     margin-bottom: 15px;

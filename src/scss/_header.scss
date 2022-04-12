@@ -5,9 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px 9px 255px;
+  padding: 18px 20px 18px 255px;
+  //padding: 0 20px 0 0;
   background: $white;
-  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  box-shadow: 133px 3px 9px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  z-index: 70;
+  width: 100%;
 
   @include breakpoint($desktop) {
     padding: 21px 75px 11px 195px;
@@ -19,11 +23,44 @@
 
   @include breakpoint($mobile) {
     padding: 32px 58px 28px 60px;
-    background: $transparent;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
   }
 
   @include breakpoint($mobile-sm) {
     padding: 23px 29px 18px 30px;
+  }
+}
+
+.logo {
+  max-width: 130px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+  background: $soft-peach;
+  //margin-right: 123px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  @include breakpoint($desktop) {
+    max-width: 122px;
+  }
+
+  @include breakpoint($mobile) {
+    position: static;
+    background: $transparent;
+    box-shadow: none;
+  }
+
+  img {
+    width: 90px;
+
+    @include breakpoint($mobile) {
+      width: 120px;
+    }
   }
 }
 
@@ -86,7 +123,7 @@
 
     .selected-item {
       cursor: pointer;
-      padding: 7px 20px;
+      padding: 8px 20px;
       background: $white;
       border-radius: 4px;
 
@@ -106,8 +143,7 @@
     }
 
     .all-items {
-      margin-top: -10px !important;
-      width: calc(100% - 10%) !important;
+      margin-top: -2px !important;
       right: 0;
       left: auto;
     }
@@ -202,6 +238,7 @@
 
   .active {
     font-family: $base-font-default;
+
     &:after {
       width: 100%;
     }

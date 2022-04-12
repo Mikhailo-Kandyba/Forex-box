@@ -85,14 +85,14 @@
 }
 
 .btn-padding-custom {
-  padding: 9px 22px 9px 65px !important;
+  padding: 10px 22px 10px 57px !important;
 
   @include breakpoint($desktop) {
     padding: 9px 22px 9px 50px !important;
   }
 
   @include breakpoint($mobile-sm) {
-    padding: 6px 22px !important;
+    padding: 6px 6px 6px 42px !important;
   }
 }
 
@@ -146,7 +146,7 @@
 
 .bg-gradient-border {
   background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
-  padding: 2px;
+  padding: 1px;
   border-radius: 5px;
 
   .btn {
@@ -324,6 +324,10 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.header-position {
+  position: static;
 }
 
 .min-height-300 {
