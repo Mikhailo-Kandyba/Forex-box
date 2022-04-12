@@ -3258,22 +3258,22 @@ textarea {
     .btn-holder {
       flex-direction: column;
       margin-bottom: 8px; } }
-  .btn-holder button {
+  .btn-holder .btn-width {
     max-width: 253px;
     margin-right: 20px; }
     @media only screen and (max-width: 1023px) {
-      .btn-holder button {
+      .btn-holder .btn-width {
         max-width: 230px; } }
     @media only screen and (max-width: 767px) {
-      .btn-holder button {
+      .btn-holder .btn-width {
         max-width: 255px;
         margin-right: 5px; } }
     @media only screen and (max-width: 710px) {
-      .btn-holder button {
+      .btn-holder .btn-width {
         margin-right: 0;
         max-width: 100%;
         margin-bottom: 17px; } }
-    .btn-holder button:last-child {
+    .btn-holder .btn-width:last-child {
       margin-right: 0; }
   .btn-holder .btn-width {
     max-width: 305px; }
@@ -3406,6 +3406,25 @@ textarea {
     .date {
       font-size: 14px;
       line-height: 19px; } }
+
+@media only screen and (max-width: 1540px) {
+  .main-wrap-open-ticket-form {
+    padding: 50px 72px 20px 195px; } }
+
+@media only screen and (max-width: 1023px) {
+  .main-wrap-open-ticket-form {
+    padding: 25px 30px 20px 150px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-wrap-open-ticket-form {
+    padding: 39px 58px 20px 60px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-wrap-open-ticket-form {
+    padding: 30px 29px 20px 30px; } }
+
+.main-wrap-open-ticket-form .btn-width {
+  max-width: 253px; }
 
 @media only screen and (max-width: 1540px) {
   .main-wrap-open-ticket-two {
@@ -4995,6 +5014,11 @@ textarea {
   background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
   padding: 2px;
   border-radius: 5px; }
+  .bg-gradient-border .btn {
+    padding: 13px 15px; }
+
+.bg-gradient-border-hover:hover {
+  background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%); }
 
 .star-icon {
   padding-left: 40px;

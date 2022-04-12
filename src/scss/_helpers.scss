@@ -148,6 +148,16 @@
   background: linear-gradient(91.67deg, #EB800C 1.81%, #FABB35 97.99%);
   padding: 2px;
   border-radius: 5px;
+
+  .btn {
+    padding: 13px 15px;
+  }
+}
+
+.bg-gradient-border-hover {
+  &:hover {
+    background: linear-gradient(90deg, #fabb35 0%, #eb800c 100%);
+  }
 }
 
 .star-icon {
