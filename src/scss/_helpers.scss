@@ -35,19 +35,23 @@
     transform: translate(0, -50%);
     width: 25px;
     height: 25px;
-    background-image: url("../images/img-button.png");
+    background-image: url("../images/img-button.svg");
     background-repeat: no-repeat;
-    z-index: 50;
 
     @include breakpoint($desktop) {
-      background-image: url("../images/img-button-table.png");
+      background-image: url("../images/img-button-table.svg");
       background-repeat: no-repeat;
       width: 21px;
       height: 21px;
     }
+  }
 
-    &:hover {
-      filter: contrast(20%);
+  &:hover {
+    &:after {
+      background-image: url("../images/img-button-hover.svg");
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
     }
   }
 }
@@ -180,12 +184,12 @@
   }
 }
 
-.gradient-border {
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to right, $christine 0%, $saffron 100%) 1;
-}
-
+//.gradient-border {
+//  border-width: 2px;
+//  border-style: solid;
+//  border-image: linear-gradient(to right, $christine 0%, $saffron 100%) 1;
+//}
+//
 .gradient-text {
   background: linear-gradient(180deg, #FABB35 0%, #EB800C 121.87%);
   -webkit-background-clip: text;
