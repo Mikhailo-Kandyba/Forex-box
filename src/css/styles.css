@@ -1327,7 +1327,7 @@ form .item {
   padding: 10px 17px 10px; }
 
 form .all-items {
-  z-index: 1; }
+  z-index: 7; }
 
 .input-region .region {
   font-family: Lato-Regular;
@@ -2642,7 +2642,7 @@ textarea {
     font-size: 20px;
     line-height: 24px;
     padding: 15px 45px 15px 27px;
-    letter-spacing: 6px; }
+    letter-spacing: 1px; }
     @media only screen and (max-width: 745px) {
       .balance-select-wrap .selected-item {
         padding: 15px 45px 15px 23px;
@@ -2681,21 +2681,11 @@ textarea {
       line-height: 20px;
       margin-bottom: 18px; } }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-personal-data {
-    padding: 50px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-personal-data {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-personal-data {
-    padding: 40px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-personal-data {
-    padding: 40px 29px 20px 30px; } }
+.main-wrap-personal-data .btn-width {
+  margin-right: 10px; }
+  @media only screen and (max-width: 745px) {
+    .main-wrap-personal-data .btn-width {
+      margin-right: 0; } }
 
 .header-btn {
   display: flex;
@@ -2917,50 +2907,38 @@ textarea {
     .pagination-wrap-my-accounts {
       max-width: 755px; } }
 
-.main-wrap-security-setting {
-  margin-bottom: 50px; }
-  @media only screen and (max-width: 1540px) {
-    .main-wrap-security-setting {
-      padding: 43px 20px 20px 195px; } }
-  @media only screen and (max-width: 1023px) {
-    .main-wrap-security-setting {
-      padding: 25px 30px 20px 150px; } }
-  @media only screen and (max-width: 767px) {
-    .main-wrap-security-setting {
-      padding: 40px 48px 20px 60px; } }
+.main-wrap-security-setting .btn {
+  max-width: 365px; }
   @media only screen and (max-width: 745px) {
-    .main-wrap-security-setting {
-      padding: 40px 29px 20px 30px; } }
-  .main-wrap-security-setting .btn {
-    max-width: 365px; }
-    @media only screen and (max-width: 745px) {
-      .main-wrap-security-setting .btn {
-        max-width: 100%; } }
-  .main-wrap-security-setting h3 {
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 25px; }
-    @media only screen and (max-width: 1540px) {
-      .main-wrap-security-setting h3 {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 21px; } }
-    @media only screen and (max-width: 745px) {
-      .main-wrap-security-setting h3 {
-        font-size: 19px;
-        line-height: 23px; } }
-  .main-wrap-security-setting p {
-    font-family: Lato-Light;
-    max-width: 1125px;
-    margin-bottom: 27px; }
-    @media only screen and (max-width: 1540px) {
-      .main-wrap-security-setting p {
-        max-width: 755px;
-        margin-bottom: 24px; } }
-    @media only screen and (max-width: 745px) {
-      .main-wrap-security-setting p {
-        font-size: 16px;
-        line-height: 20px; } }
+    .main-wrap-security-setting .btn {
+      max-width: 100%; } }
+
+.main-wrap-security-setting h3 {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 25px; }
+  @media only screen and (max-width: 1540px) {
+    .main-wrap-security-setting h3 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 21px; } }
+  @media only screen and (max-width: 745px) {
+    .main-wrap-security-setting h3 {
+      font-size: 19px;
+      line-height: 23px; } }
+
+.main-wrap-security-setting p {
+  font-family: Lato-Light;
+  max-width: 1125px;
+  margin-bottom: 27px; }
+  @media only screen and (max-width: 1540px) {
+    .main-wrap-security-setting p {
+      max-width: 755px;
+      margin-bottom: 24px; } }
+  @media only screen and (max-width: 745px) {
+    .main-wrap-security-setting p {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .main-wrap-setting-two {
   padding: 90px 10px; }
@@ -3092,22 +3070,6 @@ textarea {
   .qr-code img {
     display: flex; }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-my-tickets {
-    padding: 50px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-my-tickets {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-my-tickets {
-    padding: 45px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-my-tickets {
-    padding: 40px 29px 20px 30px; } }
-
 .main-wrap-my-tickets .pagination-wrap {
   max-width: 1040px; }
   @media only screen and (max-width: 1540px) {
@@ -3215,22 +3177,6 @@ textarea {
         line-height: 20px; } }
     .my-tickets .link:hover {
       text-decoration: underline; }
-
-@media only screen and (max-width: 1540px) {
-  .main-wrap-open-ticket {
-    padding: 50px 72px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-open-ticket {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-open-ticket {
-    padding: 39px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-open-ticket {
-    padding: 30px 29px 20px 30px; } }
 
 .link-back {
   display: block;
@@ -3443,40 +3389,8 @@ textarea {
       font-size: 14px;
       line-height: 19px; } }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-open-ticket-form {
-    padding: 50px 72px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-open-ticket-form {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-open-ticket-form {
-    padding: 39px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-open-ticket-form {
-    padding: 30px 29px 20px 30px; } }
-
 .main-wrap-open-ticket-form .btn-width {
   max-width: 253px; }
-
-@media only screen and (max-width: 1540px) {
-  .main-wrap-open-ticket-two {
-    padding: 50px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-open-ticket-two {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-open-ticket-two {
-    padding: 40px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-open-ticket-two {
-    padding: 40px 29px 20px 30px; } }
 
 .main-wrap-open-ticket-two p {
   font-family: Lato-Light;
@@ -3662,22 +3576,6 @@ textarea {
           height: 6px; } }
     .popular-questions a:hover {
       text-decoration: none; }
-
-@media only screen and (max-width: 1540px) {
-  .main-wrap-file-archive {
-    padding: 55px 72px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-file-archive {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-file-archive {
-    padding: 39px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-file-archive {
-    padding: 39px 29px 20px 30px; } }
 
 .main-wrap-file-archive p {
   font-family: Lato-Light;
@@ -4066,22 +3964,6 @@ textarea {
     .service-area {
       flex-direction: column; } }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-statistics-two {
-    padding: 36px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-statistics-two {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-statistics-two {
-    padding: 40px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-statistics-two {
-    padding: 31px 29px 20px 30px; } }
-
 .main-wrap-statistics-two h4 {
   font-size: 22px;
   line-height: 27px;
@@ -4156,6 +4038,9 @@ textarea {
     .copy-area {
       max-width: 490px;
       width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    .copy-area {
+      max-width: 100%; } }
   @media only screen and (max-width: 745px) {
     .copy-area {
       padding: 15px 60px 15px 15px; } }
@@ -4398,22 +4283,6 @@ textarea {
       .form-area .btn {
         max-width: 100%; } }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-referral {
-    padding: 50px 70px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-referral {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-referral {
-    padding: 41px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-referral {
-    padding: 40px 29px 20px 30px; } }
-
 .main-wrap-referral h4 {
   margin-bottom: 10px; }
   @media only screen and (max-width: 745px) {
@@ -4551,22 +4420,6 @@ textarea {
   .table-referral .link:hover {
     text-decoration: underline; }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-referral-link {
-    padding: 35px 70px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-referral-link {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-referral-link {
-    padding: 30px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-referral-link {
-    padding: 32px 29px 20px 30px; } }
-
 .referral-table {
   margin: 0 0 42px -5px; }
   @media only screen and (max-width: 1540px) {
@@ -4624,22 +4477,6 @@ textarea {
   .pay-table .height-10 {
     height: 10px; }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-internal-transfers {
-    padding: 40px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-internal-transfers {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-internal-transfers {
-    padding: 40px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-internal-transfers {
-    padding: 35px 29px 20px 30px; } }
-
 .main-wrap-internal-transfers .heading {
   margin-bottom: 30px; }
 
@@ -4662,6 +4499,14 @@ textarea {
     text-decoration: underline; }
     .main-wrap-internal-transfers > p a:hover {
       text-decoration: none; }
+
+@media only screen and (max-width: 1540px) {
+  .main-wrap-internal-transfers .btn-holder .btn-width {
+    max-width: 230px; } }
+
+@media only screen and (max-width: 767px) {
+  .main-wrap-internal-transfers .btn-holder .btn-width {
+    margin-right: 10px; } }
 
 .form-body {
   display: flex; }
@@ -4759,22 +4604,6 @@ textarea {
 
 .pagination-wrap-internal-transfers {
   max-width: 1160px; }
-
-@media only screen and (max-width: 1540px) {
-  .main-wrap-open-category {
-    padding: 50px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-open-category {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-open-category {
-    padding: 35px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-open-category {
-    padding: 25px 29px 20px 30px; } }
 
 .tabs-content-category {
   max-width: 1260px;

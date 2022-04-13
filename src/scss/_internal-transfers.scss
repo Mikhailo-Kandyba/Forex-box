@@ -2,21 +2,21 @@
 @import "variables";
 
 .main-wrap-internal-transfers {
-  @include breakpoint($desktop) {
-    padding: 40px 20px 20px 195px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 40px 58px 20px 60px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 35px 29px 20px 30px;
-  }
+  //@include breakpoint($desktop) {
+  //  padding: 40px 20px 20px 195px;
+  //}
+  //
+  //@include breakpoint($tablet) {
+  //  padding: 25px 30px 20px 150px;
+  //}
+  //
+  //@include breakpoint($mobile) {
+  //  padding: 40px 58px 20px 60px;
+  //}
+  //
+  //@include breakpoint($mobile-sm) {
+  //  padding: 35px 29px 20px 30px;
+  //}
 
   .heading {
     margin-bottom: 30px;
@@ -45,6 +45,18 @@
 
       &:hover {
         text-decoration: none;
+      }
+    }
+  }
+
+  .btn-holder {
+    .btn-width {
+      @include breakpoint($desktop) {
+        max-width: 230px;
+      }
+
+      @include breakpoint($mobile) {
+        margin-right: 10px;
       }
     }
   }

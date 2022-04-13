@@ -2,21 +2,21 @@
 @import "variables";
 
 .main-wrap-statistics-two {
-  @include breakpoint($desktop) {
-    padding: 36px 20px 20px 195px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 40px 58px 20px 60px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 31px 29px 20px 30px;
-  }
+  //@include breakpoint($desktop) {
+  //  padding: 36px 20px 20px 195px;
+  //}
+  //
+  //@include breakpoint($tablet) {
+  //  padding: 25px 30px 20px 150px;
+  //}
+  //
+  //@include breakpoint($mobile) {
+  //  padding: 40px 58px 20px 60px;
+  //}
+  //
+  //@include breakpoint($mobile-sm) {
+  //  padding: 31px 29px 20px 30px;
+  //}
 
   h4 {
     font-size: $font-size-base + 4;
@@ -109,6 +109,10 @@
   @include breakpoint($desktop) {
     max-width: 490px;
     width: 100%;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
   }
 
   @include breakpoint($mobile-sm) {

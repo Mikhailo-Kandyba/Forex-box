@@ -69,7 +69,7 @@
     font-size: $font-size-base + 2;
     line-height: $line-height-base + 2;
     padding: 15px 45px 15px 27px;
-    letter-spacing: 6px;
+    letter-spacing: 1px;
 
     @include breakpoint($mobile-sm) {
       padding: 15px 45px 15px 23px;

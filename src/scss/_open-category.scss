@@ -1,23 +1,23 @@
 @import "mixin";
 @import "variables";
 
-.main-wrap-open-category {
-  @include breakpoint($desktop) {
-    padding: 50px 20px 20px 195px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 35px 58px 20px 60px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 25px 29px 20px 30px;
-  }
-}
+//.main-wrap-open-category {
+//  @include breakpoint($desktop) {
+//    padding: 50px 20px 20px 195px;
+//  }
+//
+//  @include breakpoint($tablet) {
+//    padding: 25px 30px 20px 150px;
+//  }
+//
+//  @include breakpoint($mobile) {
+//    padding: 35px 58px 20px 60px;
+//  }
+//
+//  @include breakpoint($mobile-sm) {
+//    padding: 25px 29px 20px 30px;
+//  }
+//}
 
 .tabs-content-category {
   max-width: 1260px;
