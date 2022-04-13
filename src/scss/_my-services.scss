@@ -1,23 +1,23 @@
 @import "variables";
 @import "mixin";
 
-.main-wrap-my-services {
-  @include breakpoint($desktop) {
-    padding: 50px 20px 20px 195px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 40px 58px 20px 60px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 40px 29px 20px 30px;
-  }
-}
+//.main-wrap-my-services {
+//  @include breakpoint($desktop) {
+//    padding: 50px 20px 20px 195px;
+//  }
+//
+//  @include breakpoint($tablet) {
+//    padding: 25px 30px 20px 150px;
+//  }
+//
+//  @include breakpoint($mobile) {
+//    padding: 40px 58px 20px 60px;
+//  }
+//
+//  @include breakpoint($mobile-sm) {
+//    padding: 40px 29px 20px 30px;
+//  }
+//}
 
 .checkbox-area {
   margin-bottom: 26px;
@@ -344,7 +344,8 @@
       background-image: url("../images/arrow-black-accordion.svg");
       width: 12px;
       height: 9px;
-      top: 21px;
+      top: 17px;
+      transform: rotate(0deg);
     }
   }
 
@@ -472,7 +473,7 @@
   border: 0.5px solid rgba(235, 128, 12, 0.5);
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   transform: translate(0px, 48px) !important;
-  min-width: 328px;
+  min-width: 338px;
   width: 100%;
 
   @include breakpoint($mobile-sm) {

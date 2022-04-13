@@ -2,26 +2,27 @@
 @import "mixin";
 
 .main-wrap-program-statistics {
-  @include breakpoint($desktop) {
-    padding: 50px 72px 20px 195px;
-  }
-
-  @include breakpoint($tablet) {
-    padding: 25px 30px 20px 150px;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 40px 58px 20px 60px;
-  }
-
-  @include breakpoint($mobile-sm) {
-    padding: 30px 29px 20px 30px;
-  }
+  //@include breakpoint($desktop) {
+  //  padding: 50px 72px 20px 195px;
+  //}
+  //
+  //@include breakpoint($tablet) {
+  //  padding: 25px 30px 20px 150px;
+  //}
+  //
+  //@include breakpoint($mobile) {
+  //  padding: 40px 58px 20px 60px;
+  //}
+  //
+  //@include breakpoint($mobile-sm) {
+  //  padding: 30px 29px 20px 30px;
+  //}
 
   > p {
     font-family: $lato-light;
     margin-bottom: 43px;
     max-width: 1265px;
+    color: $black;
 
     @include breakpoint($desktop) {
       font-size: $font-size-base - 2;
@@ -148,6 +149,7 @@
       font-family: $lato-light;
       max-width: 209px;
       text-align: center;
+      color: $black;
 
       @include breakpoint($mobile) {
         font-size: $font-size-base - 2;
@@ -196,6 +198,7 @@
 
   p {
     font-family: $lato-light;
+    color: $black;
 
     @include breakpoint($desktop) {
       font-size: $font-size-base - 2;
@@ -245,6 +248,7 @@
     font-size: $font-size-base + 4;
     line-height: $line-height-base + 5;
     margin-bottom: 25px;
+    color: $black;
 
     @include breakpoint($desktop) {
       font-size: $font-size-base + 2;
