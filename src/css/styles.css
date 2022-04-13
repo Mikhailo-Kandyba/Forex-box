@@ -1863,17 +1863,25 @@ textarea {
         margin: 0 33px 15px 0; } }
     @media only screen and (max-width: 1023px) {
       .bank-card-list > li {
-        margin: 0 0 15px 0;
-        max-width: 312px;
+        margin: 0 53px 15px 0;
+        max-width: 265px;
         min-height: 170px; } }
     @media only screen and (max-width: 745px) {
       .bank-card-list > li {
         max-width: 100%;
         margin: 0 0 17px 0;
         min-height: 142px; } }
+    .bank-card-list > li:last-child {
+      margin-right: 0; }
     .bank-card-list > li:hover {
       max-width: 310px;
-      min-height: 170px; }
+      min-height: 170px;
+      margin: -20px 28px 0px -10px; }
+      @media only screen and (max-width: 1023px) {
+        .bank-card-list > li:hover {
+          margin: 0 53px 15px 0;
+          max-width: 265px;
+          min-height: 170px; } }
   .bank-card-list .img-area {
     max-width: 168px;
     width: 100%;
@@ -2577,22 +2585,6 @@ textarea {
 .modal-footer-deleted-account {
   justify-content: space-between; }
 
-@media only screen and (max-width: 1540px) {
-  .main-wrap-balance {
-    padding: 47px 20px 20px 195px; } }
-
-@media only screen and (max-width: 1023px) {
-  .main-wrap-balance {
-    padding: 25px 30px 20px 150px; } }
-
-@media only screen and (max-width: 767px) {
-  .main-wrap-balance {
-    padding: 40px 58px 20px 60px; } }
-
-@media only screen and (max-width: 745px) {
-  .main-wrap-balance {
-    padding: 40px 29px 20px 30px; } }
-
 .balance-select-wrap {
   margin-bottom: 40px; }
   @media only screen and (max-width: 1540px) {
@@ -2656,7 +2648,8 @@ textarea {
 .description-balance {
   font-family: Lato-Light;
   max-width: 1068px;
-  margin-bottom: 26px; }
+  margin-bottom: 26px;
+  color: #000; }
   @media only screen and (max-width: 1540px) {
     .description-balance {
       font-size: 16px;

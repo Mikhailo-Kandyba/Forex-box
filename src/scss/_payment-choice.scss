@@ -52,8 +52,8 @@
     }
 
     @include breakpoint($tablet) {
-      margin: 0 0 15px 0;
-      max-width: 312px;
+      margin: 0 53px 15px 0;
+      max-width: 265px;
       min-height: 170px;
     }
 
@@ -63,9 +63,20 @@
       min-height: 142px;
     }
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:hover {
       max-width: 310px;
       min-height: 170px;
+      margin: -20px 28px 0px -10px;
+
+      @include breakpoint($tablet) {
+        margin: 0 53px 15px 0;
+        max-width: 265px;
+        min-height: 170px;
+      }
     }
   }
 
