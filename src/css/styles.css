@@ -1198,7 +1198,8 @@ input:checked + .slider:before {
   .search-form input {
     font-size: 18px;
     line-height: 20px;
-    padding: 15px 60px 15px 20px; }
+    padding: 15px 60px 15px 20px;
+    height: 51px; }
     @media only screen and (max-width: 745px) {
       .search-form input {
         font-size: 16px;
@@ -1421,20 +1422,24 @@ textarea {
   background: #ff6565;
   width: 17%; }
 
+.registration-form .form-group {
+  margin-bottom: 7px; }
+
 .registration-form label {
   font-family: Lato-Regular;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 0; }
   @media only screen and (max-width: 745px) {
     .registration-form label {
       font-family: Lato-Light; } }
 
 .registration-form input {
   background: transparent;
-  padding: 10px 10px 10px 0;
+  padding: 5px 5px 5px 0;
   border-bottom: 1px solid #848484;
   font-family: Lato-Regular;
   font-size: 20px;
-  height: 45px;
+  height: 37px;
   margin-bottom: 2px;
   border-radius: 0;
   box-shadow: none; }
@@ -2012,7 +2017,7 @@ textarea {
   padding: 10px 50px 10px 10px; }
 
 .checkbox-area {
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   margin-left: 18px; }
   @media only screen and (max-width: 1540px) {
     .checkbox-area {
@@ -2051,8 +2056,7 @@ textarea {
     transform: translate(0, -50%);
     width: 26px;
     height: 26px;
-    border: 1px solid #373737;
-    background-color: #ffffff; }
+    border: 1px solid #373737; }
   .checkbox-area input[type="checkbox"]:checked + label:before,
   .checkbox-area input[type="checkbox"]:not(:checked) + label:before {
     border-radius: 2px; }
@@ -2082,7 +2086,7 @@ textarea {
 .information-table {
   max-width: 980px;
   width: 100%;
-  margin-bottom: 23px; }
+  margin-bottom: 17px; }
   @media only screen and (max-width: 1540px) {
     .information-table {
       margin-bottom: 33px; } }
@@ -2128,9 +2132,11 @@ textarea {
     @media only screen and (max-width: 767px) {
       .information-table strong {
         font-size: 16px; } }
-  @media only screen and (max-width: 745px) {
-    .information-table .row-heading {
-      display: none; } }
+  .information-table .row-heading {
+    margin: 0; }
+    @media only screen and (max-width: 745px) {
+      .information-table .row-heading {
+        display: none; } }
 
 .row-heading {
   font-family: Lato-Light;
@@ -4983,8 +4989,8 @@ textarea {
 .padding-90 {
   padding: 50px 0; }
 
-.margin-bottom-18 {
-  margin-bottom: 18px; }
+.margin-bottom-25 {
+  margin-bottom: 25px; }
 
 .btn-padding-custom {
   padding: 10px 22px 10px 57px !important; }

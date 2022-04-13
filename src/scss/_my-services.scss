@@ -20,7 +20,7 @@
 //}
 
 .checkbox-area {
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   margin-left: 18px;
 
   @include breakpoint($desktop) {
@@ -68,7 +68,6 @@
     width: 26px;
     height: 26px;
     border: 1px solid $mine-shaft;
-    background-color: #ffffff;
   }
 
   input[type="checkbox"]:checked + label:before,
@@ -110,7 +109,7 @@
 .information-table {
   max-width: 980px;
   width: 100%;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 
   @include breakpoint($desktop) {
     margin-bottom: 33px;
@@ -176,6 +175,8 @@
   }
 
   .row-heading {
+    margin: 0;
+
     @include breakpoint($mobile-sm) {
       display: none;
     }

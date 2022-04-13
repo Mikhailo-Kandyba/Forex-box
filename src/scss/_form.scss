@@ -184,6 +184,7 @@
     font-size: $font-size-base;
     line-height: $line-height-base - 2;
     padding: 15px 60px 15px 20px;
+    height: 51px;
 
     @include breakpoint($mobile-sm) {
       font-size: $font-size-base - 2;
@@ -481,9 +482,14 @@ textarea {
 }
 
 .registration-form {
+  .form-group {
+    margin-bottom: 7px;
+  }
+
   label {
     font-family: $base-font-default;
     padding-left: 0;
+    margin-bottom: 0;
 
     @include breakpoint($mobile-sm) {
       font-family: $lato-light;
@@ -492,11 +498,11 @@ textarea {
 
   input {
     background: $transparent;
-    padding: 10px 10px 10px 0;
+    padding: 5px 5px 5px 0;
     border-bottom: 1px solid $gray;
     font-family: $base-font-default;
     font-size: $font-size-base + 2;
-    height: 45px;
+    height: 37px;
     margin-bottom: 2px;
     border-radius: 0;
     box-shadow: none;
