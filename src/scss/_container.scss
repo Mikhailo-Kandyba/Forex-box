@@ -1,0 +1,9 @@
+@import "mixin";
+@import "variables";
+
+.container {
+  margin: 0 auto;
+  max-width: 1305px;
+  padding: 0 15px;
+  width: 100%;
+}

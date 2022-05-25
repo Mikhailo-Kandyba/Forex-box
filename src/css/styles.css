@@ -1,3 +1,9 @@
+.container {
+  margin: 0 auto;
+  max-width: 1305px;
+  padding: 0 15px;
+  width: 100%; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -152,7 +158,7 @@ h6 {
     line-height: 19px;
     font-family: Lato-Light;
     /* Popup arrow */ }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .popup .popup-text {
         left: auto;
         right: 0;
@@ -166,7 +172,7 @@ h6 {
       border-width: 5px;
       border-style: solid;
       border-color: #fff transparent transparent transparent; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .popup .popup-text::after {
           left: auto;
           right: 10px; } }
@@ -216,7 +222,7 @@ h6 {
   background: #fBf9f8;
   cursor: pointer;
   border: none; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn {
       padding: 13px; } }
   .btn:hover {
@@ -262,25 +268,25 @@ h6 {
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   padding: 23px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn-download {
       max-width: 54px;
       padding: 15px;
       margin-right: 25px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-download {
       margin-right: 24px; } }
 
 .btn-width {
   max-width: 310px;
   width: 100%; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .btn-width {
       max-width: 285px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-width {
       max-width: 310px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-width {
       padding: 11px;
       max-width: 100%; } }
@@ -291,10 +297,10 @@ h6 {
 
 .sidebar {
   margin-top: 94px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .sidebar {
       margin-top: 88px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .sidebar {
       margin-top: 73px; } }
 
@@ -309,7 +315,7 @@ h6 {
   width: 130px;
   z-index: 60;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.08); }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .sidebar,
     .sidebar-mobile {
       width: 122px; } }
@@ -349,11 +355,11 @@ h6 {
       .sidebar a:hover .sidebar-icon,
       .sidebar-mobile a:hover .sidebar-icon {
         display: none; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .sidebar .logo,
     .sidebar-mobile .logo {
       padding: 9px 0; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .sidebar .logo,
     .sidebar-mobile .logo {
       padding: 0; } }
@@ -389,7 +395,7 @@ h6 {
       .sidebar button:hover .sidebar-icon,
       .sidebar-mobile button:hover .sidebar-icon {
         display: none; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .sidebar button:after,
       .sidebar-mobile button:after {
         content: '';
@@ -401,21 +407,21 @@ h6 {
         width: 23px;
         height: 23px;
         background-repeat: no-repeat; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .sidebar button:after,
       .sidebar-mobile button:after {
         right: 30px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .sidebar button img,
       .sidebar-mobile button img {
         margin-bottom: 0;
         margin-right: 20px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .sidebar button img,
       .sidebar-mobile button img {
         margin-right: 11px; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrap {
     max-width: 495px;
     width: 100%;
@@ -429,13 +435,13 @@ h6 {
     background: #fff;
     overflow-y: scroll; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrap .sidebar {
     display: none; } }
 
 .sidebar-wrap .sidebar-mobile {
   display: none; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile {
       display: flex;
       position: absolute;
@@ -444,12 +450,12 @@ h6 {
       background: #fff;
       top: 90px;
       padding-top: 35px; } }
-  @media only screen and (max-width: 767px) and (max-width: 745px) {
+  @media screen and (max-width: 767px) and (max-width: 745px) {
     .sidebar-wrap .sidebar-mobile {
       top: 70px;
       padding-top: 25px;
       height: auto; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile li {
       border: none;
       box-shadow: none;
@@ -457,12 +463,12 @@ h6 {
       flex-grow: inherit;
       flex-direction: column;
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile li .custom-select {
       max-width: 48px; } }
   .sidebar-wrap .sidebar-mobile li .btn-group {
     justify-content: flex-start; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .sidebar-wrap .sidebar-mobile a {
       flex-direction: row;
       padding: 10px 50px;
@@ -470,7 +476,7 @@ h6 {
       position: relative;
       height: auto;
       justify-content: flex-start; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .sidebar-wrap .sidebar-mobile a {
       padding: 10px 53px 10px 20px; } }
   .sidebar-wrap .sidebar-mobile a .mobile-menu {
@@ -481,7 +487,7 @@ h6 {
     .sidebar-wrap .sidebar-mobile .mobile-menu li {
       border-bottom: 1px solid rgba(184, 129, 70, 0.1);
       margin: 0 65px 5px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .sidebar-wrap .sidebar-mobile .mobile-menu a {
         font-size: 17px;
         line-height: 21px;
@@ -497,7 +503,7 @@ h6 {
   background: #fff;
   box-shadow: -7px 1px 16px rgba(0, 0, 0, 0.08);
   border-bottom: none; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .sidebar-wrap .active-item a,
     .sidebar-wrap .active-item button {
       box-shadow: none; } }
@@ -520,11 +526,11 @@ h6 {
   .sidebar-wrap .active-item .mobile-menu a:hover {
     font-family: Lato-Regular; }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrap .active-item .mobile-menu {
     display: block; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrap .header-sidebar {
     position: fixed;
     z-index: 120;
@@ -534,7 +540,7 @@ h6 {
     max-width: 495px;
     width: 100%;
     display: flex; } }
-  @media only screen and (max-width: 767px) and (max-width: 745px) {
+  @media screen and (max-width: 767px) and (max-width: 745px) {
     .sidebar-wrap .header-sidebar {
       padding: 14px 20px; } }
 
@@ -554,7 +560,7 @@ h6 {
 
 .overlay {
   display: none; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .overlay {
       position: fixed;
       top: 0;
@@ -574,17 +580,17 @@ h6 {
   position: fixed;
   z-index: 70;
   width: 100%; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .header {
       padding: 21px 75px 11px 195px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .header {
       padding: 11px 30px 11px 150px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .header {
       padding: 32px 58px 28px 60px;
       box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08); } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .header {
       padding: 23px 29px 18px 30px; } }
 
@@ -600,30 +606,30 @@ h6 {
   top: 0;
   bottom: 0;
   left: 0; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .logo {
       max-width: 122px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .logo {
       position: static;
       background: transparent;
       box-shadow: none; } }
   .logo img {
     width: 90px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .logo img {
         width: 120px; } }
 
 .select-area {
   margin: 0 0 10px 10px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .select-area {
       margin: 0 0 11px 16px;
       padding: 7px 10px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .select-area {
       margin: 0 0 5px 5px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .select-area {
       padding: 4px 10px;
       margin: 0 10px 5px; } }
@@ -634,13 +640,13 @@ h6 {
   justify-content: flex-end;
   flex-wrap: wrap;
   min-width: 270px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn-group {
       min-width: 235px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .btn-group {
       min-width: 217px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-group {
       display: none; } }
   .btn-group .btn {
@@ -648,10 +654,10 @@ h6 {
     width: auto; }
   .btn-group .btn-area {
     margin: 0 0 10px 10px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .btn-group .btn-area {
         margin: 0 0 10px 16px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .btn-group .btn-area {
         margin: 0 0 5px 5px; } }
   .btn-group .custom-select {
@@ -661,10 +667,10 @@ h6 {
       padding: 8px 20px;
       background: #fff;
       border-radius: 4px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .btn-group .custom-select .selected-item {
           padding: 7px 10px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .btn-group .custom-select .selected-item {
           padding: 4px 10px; } }
       .btn-group .custom-select .selected-item:hover {
@@ -690,7 +696,7 @@ h6 {
       display: none; }
   .btn-group .item {
     color: #000; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .btn-group .item {
         padding: 5px 7px; } }
 
@@ -699,21 +705,21 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   margin-right: 20px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .menu {
       margin-right: 0; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .menu {
       display: none; } }
   .menu li {
     margin-right: 60px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .menu li {
         margin-right: 20px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .menu li {
         margin-right: 15px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .menu li:last-child {
         margin-right: 0; } }
   .menu a {
@@ -740,7 +746,7 @@ h6 {
     .menu .active:after {
       width: 100%; }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .show-menu {
     right: 0; } }
 
@@ -759,10 +765,10 @@ h6 {
   z-index: 120;
   transform: rotate(180deg);
   background: transparent; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-menu {
       display: block; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-menu {
       top: 23px;
       right: 28px; } }
@@ -801,16 +807,16 @@ h6 {
 
 .main-wrap {
   padding: 165px 20px 20px 255px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap {
       padding: 122px 20px 20px 195px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .main-wrap {
       padding: 95px 30px 20px 150px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap {
       padding: 130px 58px 20px 60px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap {
       padding: 110px 29px 20px 30px; } }
 
@@ -819,13 +825,13 @@ h6 {
   align-items: center;
   margin-bottom: 21px;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .service-list {
       margin-bottom: 5px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .service-list {
       justify-content: space-between; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .service-list {
       flex-direction: column; } }
   .service-list .text {
@@ -855,17 +861,17 @@ h6 {
   padding: 15px;
   background: #fff;
   margin-bottom: 5px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .service-item {
       margin-right: 18px;
       max-width: 285px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .service-item {
       min-height: 172px;
       max-width: 310px;
       margin-right: 5px;
       margin-bottom: 16px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .service-item {
       max-width: 100%;
       min-height: 150px; } }
@@ -876,7 +882,7 @@ h6 {
     font-size: 35px;
     line-height: 38px;
     text-transform: uppercase; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .service-item .view {
         font-size: 25px;
         line-height: 15px; } }
@@ -888,7 +894,7 @@ h6 {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 3px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .name-price {
       font-size: 18px;
       line-height: 22px; } }
@@ -915,13 +921,13 @@ h6 {
   position: relative;
   max-width: 310px;
   margin-bottom: 20px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .custom-select {
       max-width: 285px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .custom-select {
       max-width: 310px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .custom-select {
       margin-bottom: 15px;
       max-width: 100%; } }
@@ -938,10 +944,10 @@ h6 {
   border-radius: 5px;
   cursor: pointer;
   z-index: 5; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .selected-item {
       padding: 17px 45px 17px 28px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .selected-item {
       font-size: 16px;
       line-height: 20px;
@@ -981,10 +987,10 @@ h6 {
 /*end styles centering*/
 .breadcrumb-wrap {
   margin-bottom: 35px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .breadcrumb-wrap {
       margin-bottom: 30px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .breadcrumb-wrap {
       margin-bottom: 22px; } }
 
@@ -992,7 +998,7 @@ h6 {
   font-family: Lato-Light;
   position: relative;
   padding-right: 15px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .breadcrumb-item {
       font-size: 16px;
       line-height: 20px; } }
@@ -1080,41 +1086,41 @@ input:checked + .slider:before {
   max-width: 750px;
   width: 100%;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .personal-data-form {
       margin-bottom: 16px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .personal-data-form {
       max-width: 100%;
       margin-bottom: 27px; } }
   .personal-data-form .custom-select {
     max-width: 100%; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .personal-data-form .custom-select {
         margin-bottom: 12px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .personal-data-form .row-tbody-form {
       flex-direction: column; } }
 
 .promo-code-form {
   max-width: 310px;
   margin-bottom: 25px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .promo-code-form {
       margin-bottom: 28px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .promo-code-form {
       max-width: 285px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .promo-code-form {
       max-width: 310px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .promo-code-form {
       margin-bottom: 20px;
       max-width: 100%; } }
   .promo-code-form input {
     box-shadow: 2px 2px 10px rgba(150, 78, 30, 0.14); }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .promo-code-form input {
         font-size: 16px;
         line-height: 24px;
@@ -1125,11 +1131,11 @@ input:checked + .slider:before {
       background-image: url("../images/check-mark.svg");
       background-repeat: no-repeat;
       background-position: right; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .promo-code-form input::placeholder {
           font-size: 18px;
           line-height: 20px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .promo-code-form input::placeholder {
           background-image: url("../images/check-mark-mobile.svg"); } }
 
@@ -1146,33 +1152,33 @@ input:checked + .slider:before {
   .reviews-form-ticket-two label {
     padding-left: 30px;
     margin-bottom: 5px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .reviews-form-ticket-two label {
         padding-left: 15px; } }
 
 .security-settings-form {
   max-width: 365px;
   margin-bottom: 56px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .security-settings-form {
       margin-bottom: 47px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .security-settings-form {
       margin-bottom: 36px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .security-settings-form {
       margin-bottom: 46px;
       max-width: 100%; } }
   .security-settings-form .btn {
     max-width: 100%;
     margin-top: 10px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .security-settings-form .btn {
         margin-top: 23px; } }
   .security-settings-form input {
     border-right: none;
     padding: 10px 63px 10px 22px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .security-settings-form input {
         padding: 10px 63px 10px 16px; } }
   .security-settings-form .input-area {
@@ -1181,10 +1187,10 @@ input:checked + .slider:before {
 .search-form {
   margin-bottom: 30px;
   max-width: 316px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .search-form {
       margin-bottom: 21px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .search-form {
       max-width: 100%; } }
   .search-form .btn-search {
@@ -1200,7 +1206,7 @@ input:checked + .slider:before {
     line-height: 20px;
     padding: 15px 60px 15px 20px;
     height: 51px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .search-form input {
         font-size: 16px;
         line-height: 20px;
@@ -1211,21 +1217,21 @@ input:checked + .slider:before {
 
 .search-form-fqa {
   max-width: 622px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .search-form-fqa {
       max-width: 538px;
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .search-form-fqa {
       margin-bottom: 21px; } }
   .search-form-fqa input {
     height: 57px;
     padding: 15px 60px 15px 30px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .search-form-fqa input {
         height: 50px;
         padding: 15px 60px 15px 23px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .search-form-fqa input {
         height: 44px;
         padding: 15px 60px 15px 15px; } }
@@ -1236,13 +1242,13 @@ input:checked + .slider:before {
 .referral-form {
   display: flex;
   margin-bottom: 20px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .referral-form {
       margin-bottom: 24px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .referral-form {
       margin-bottom: 11px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .referral-form {
       flex-direction: column;
       margin-bottom: 7px; } }
@@ -1250,10 +1256,10 @@ input:checked + .slider:before {
     max-width: 327px;
     width: 100%;
     margin-right: 32px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .referral-form .form-group {
         max-width: 310px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .referral-form .form-group {
         margin-right: 0;
         max-width: 100%;
@@ -1266,22 +1272,22 @@ input:checked + .slider:before {
 
 form .toggle-button {
   padding: 0 13px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     form .toggle-button {
       padding: 0 19px; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   form .input-area input {
     height: 60px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   form .input-area input {
     height: 55px; } }
 
 form .form-group {
   border-radius: 5px;
   margin-bottom: 12px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     form .form-group {
       margin-bottom: 12px; } }
   form .form-group:last-child {
@@ -1292,7 +1298,7 @@ form .form-group {
     font-size: 14px;
     line-height: 16px;
     color: #e23737; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       form .form-group span {
         letter-spacing: -0.5px; } }
 
@@ -1305,7 +1311,7 @@ form .custom-select {
     color: #373737;
     padding-left: 15px;
     margin-bottom: 10px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       form .custom-select span {
         font-family: Lato-Light; } }
 
@@ -1316,7 +1322,7 @@ form .selected-item {
   border-radius: 5px;
   padding: 15px 22px;
   height: 55px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     form .selected-item {
       white-space: nowrap;
       overflow: hidden;
@@ -1338,7 +1344,7 @@ form .all-items {
   color: #373737;
   font-size: 20px;
   line-height: 24px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .input-region .region {
       font-size: 18px; } }
 
@@ -1353,7 +1359,7 @@ label {
   color: #373737;
   padding-left: 15px;
   margin-bottom: 10px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     label {
       font-family: Lato-Light; } }
 
@@ -1372,11 +1378,11 @@ input {
     font-size: 20px;
     line-height: 24px;
     color: #d0cfcf; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       input::placeholder {
         font-size: 18px;
         line-height: 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     input {
       font-size: 18px;
       line-height: 18px;
@@ -1390,13 +1396,13 @@ textarea {
   border-radius: 5px;
   padding: 20px;
   height: 243px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     textarea {
       height: 160px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     textarea {
       height: 110px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     textarea {
       padding: 15px; } }
   textarea::placeholder {
@@ -1429,7 +1435,7 @@ textarea {
   font-family: Lato-Regular;
   padding-left: 0;
   margin-bottom: 0; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .registration-form label {
       font-family: Lato-Light; } }
 
@@ -1443,7 +1449,7 @@ textarea {
   margin-bottom: 2px;
   border-radius: 0;
   box-shadow: none; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .registration-form input {
       font-family: Lato-Light; } }
 
@@ -1470,7 +1476,7 @@ textarea {
 
 .registration-form .btn {
   max-width: 310px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .registration-form .btn {
       max-width: 100%; } }
 
@@ -1478,20 +1484,20 @@ textarea {
   max-width: 1115px;
   width: 100%;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .internal-transfers {
       margin-bottom: 43px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .internal-transfers {
       margin-bottom: 37px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .internal-transfers {
       margin-bottom: 19px; } }
   .internal-transfers .form-body {
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers .form-body {
         flex-direction: column;
         align-items: flex-start;
@@ -1503,42 +1509,42 @@ textarea {
     width: 100%;
     margin-right: 20px;
     margin-bottom: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers .form-group {
         margin-right: 0;
         margin-bottom: 15px; } }
     .internal-transfers .form-group:first-child {
       max-width: 183px; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .internal-transfers .form-group:first-child {
           max-width: 100%; } }
     .internal-transfers .form-group:last-child {
       margin-right: 0;
       max-width: 305px; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .internal-transfers .form-group:last-child {
           max-width: 100%; } }
   .internal-transfers .checkbox-area {
     margin: 0 30px 0 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers .checkbox-area {
         margin: 0 0 10px 0; } }
   .internal-transfers .btn-holder {
     width: 100%;
     margin-bottom: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers .btn-holder {
         margin-top: 10px; } }
   .internal-transfers .btn {
     max-width: 305px;
     padding: 10px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .internal-transfers .btn {
         max-width: 265px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .internal-transfers .btn {
         max-width: 305px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers .btn {
         max-width: 100%; } }
   .internal-transfers input {
@@ -1550,7 +1556,7 @@ textarea {
     color: #000;
     padding-left: 20px;
     position: relative; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .internal-transfers p {
         font-size: 16px;
         line-height: 20px; } }
@@ -1576,33 +1582,33 @@ textarea {
 
 .title-page-balance {
   margin-bottom: 16px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-balance {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .title-page-balance {
       font-size: 20px;
       line-height: 24px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-balance {
       margin-bottom: 19px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-balance {
       margin-bottom: 16px; } }
 
-@media only screen and (max-width: 1540px) {
+@media screen and (max-width: 1540px) {
   .title-page-my-services {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 26px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .title-page-my-services {
     margin-bottom: 21px; } }
 
 .title-page-personal-data {
   margin-bottom: 16px; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-personal-data {
       font-size: 20px;
       line-height: 24px;
@@ -1611,15 +1617,15 @@ textarea {
 .title-page-my-accounts {
   font-size: 22px;
   line-height: 27px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-my-accounts {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 18px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-my-accounts {
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-my-accounts {
       font-size: 18px;
       line-height: 22px;
@@ -1629,40 +1635,40 @@ textarea {
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 24px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-security-setting {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 21px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-security-setting {
       margin-bottom: 12px; } }
 
-@media only screen and (max-width: 1540px) {
+@media screen and (max-width: 1540px) {
   .title-page-my-tickets {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 26px; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .title-page-my-tickets {
     margin-bottom: 14px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .title-page-my-tickets {
     margin-bottom: 21px; } }
 
 .title-page-open-ticket {
   margin-bottom: 22px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-open-ticket {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 15px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-open-ticket {
       margin-bottom: 14px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-open-ticket {
       font-size: 18px;
       line-height: 22px;
@@ -1670,15 +1676,15 @@ textarea {
 
 .title-page-faq {
   margin-bottom: 28px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-faq {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 33px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-faq {
       margin-bottom: 33px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-faq {
       font-size: 20px;
       line-height: 24px;
@@ -1686,15 +1692,15 @@ textarea {
 
 .title-page-file-archive {
   margin-bottom: 40px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-file-archive {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 30px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-file-archive {
       margin-bottom: 30px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-file-archive {
       font-size: 20px;
       line-height: 24px;
@@ -1703,10 +1709,10 @@ textarea {
     font-family: Lato-Light;
     font-size: 18px;
     line-height: 22px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .title-page-file-archive span:last-child {
         font-size: 16px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .title-page-file-archive span:last-child {
         display: block;
         line-height: 19px;
@@ -1717,15 +1723,15 @@ textarea {
 
 .title-page-program-statistics {
   margin-bottom: 21px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-program-statistics {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 14px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-program-statistics {
       margin-bottom: 18px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-program-statistics {
       font-size: 20px;
       line-height: 24px;
@@ -1733,15 +1739,15 @@ textarea {
 
 .title-page-referral {
   margin-bottom: 32px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-referral {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 24px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-referral {
       margin-bottom: 24px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-referral {
       font-size: 20px;
       line-height: 24px;
@@ -1749,31 +1755,31 @@ textarea {
 
 .title-page-referral-link {
   margin-bottom: 26px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .title-page-referral-link {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 24px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .title-page-referral-link {
       margin-bottom: 16px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-page-referral-link {
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 13px; } }
 
-@media only screen and (max-width: 1540px) {
+@media screen and (max-width: 1540px) {
   .title-page-internal-transfers {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 17px; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .title-page-internal-transfers {
     margin-bottom: 22px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .title-page-internal-transfers {
     font-size: 20px;
     line-height: 24px;
@@ -1783,11 +1789,11 @@ textarea {
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 25px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .heading {
       font-size: 20px;
       line-height: 24px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .heading {
       font-size: 20px;
       line-height: 24px;
@@ -1796,14 +1802,14 @@ textarea {
 .heading-faq {
   font-size: 20px;
   line-height: 24px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .heading-faq {
       margin-bottom: 15px; } }
 
 .account-title {
   font-family: Lato-Light;
   margin-bottom: 21px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .account-title {
       font-size: 16px;
       line-height: 10px; } }
@@ -1812,7 +1818,7 @@ textarea {
   font-size: 15px;
   line-height: 11px;
   display: none; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .col-sm-heading {
       display: block;
       margin-bottom: 10px; } }
@@ -1821,7 +1827,7 @@ textarea {
   font-size: 15px;
   line-height: 11px;
   display: none; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .col-md-heading {
       font-family: Lato-Light;
       display: block;
@@ -1842,10 +1848,10 @@ textarea {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .bank-card-list {
       justify-content: space-between; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .bank-card-list {
       flex-direction: column; } }
   .bank-card-list > li {
@@ -1863,15 +1869,15 @@ textarea {
     position: relative;
     margin: 0 53px 15px 0;
     transition: all .25s ease-out; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .bank-card-list > li {
         margin: 0 33px 15px 0; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .bank-card-list > li {
         margin: 0 53px 15px 0;
         max-width: 265px;
         min-height: 170px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .bank-card-list > li {
         max-width: 100%;
         margin: 0 0 17px 0;
@@ -1882,7 +1888,7 @@ textarea {
       max-width: 310px;
       min-height: 170px;
       margin: -20px 28px 0px -10px; }
-      @media only screen and (max-width: 1023px) {
+      @media screen and (max-width: 1023px) {
         .bank-card-list > li:hover {
           margin: 0 53px 15px 0;
           max-width: 265px;
@@ -1920,7 +1926,7 @@ textarea {
 .tabs-content {
   max-width: 705px;
   width: 100%; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .tabs-content {
       max-width: 100%; } }
 
@@ -1972,13 +1978,13 @@ textarea {
   margin-bottom: 18px;
   position: relative;
   border: none; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .ui-tabs .ui-tabs-nav {
       margin-bottom: 40px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .ui-tabs .ui-tabs-nav {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .ui-tabs .ui-tabs-nav {
       margin-bottom: 17px; } }
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
@@ -1987,7 +1993,7 @@ textarea {
     font-size: 20px;
     line-height: 24px;
     color: #b9b9b9; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
         font-family: Lato-Regular;
         font-size: 20px;
@@ -2019,14 +2025,14 @@ textarea {
 .checkbox-area {
   margin-bottom: 16px;
   margin-left: 18px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .checkbox-area {
       margin-bottom: 42px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .checkbox-area {
       margin-left: 31px;
       margin-bottom: 31px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .checkbox-area {
       margin-left: 19px;
       margin-bottom: 28px; } }
@@ -2042,7 +2048,7 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     cursor: pointer; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .checkbox-area input[type="checkbox"]:checked + label,
       .checkbox-area input[type="checkbox"]:not(:checked) + label {
         font-size: 14px;
@@ -2087,10 +2093,10 @@ textarea {
   max-width: 980px;
   width: 100%;
   margin-bottom: 17px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .information-table {
       margin-bottom: 33px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .information-table {
       max-width: 100%;
       margin-bottom: 16px; } }
@@ -2100,21 +2106,21 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .information-table p {
         margin-bottom: 10px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .information-table p {
         font-size: 15px;
         line-height: 17px; } }
     .information-table p:last-child {
       margin-bottom: 0; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .information-table p:last-child {
           margin-bottom: 5px; } }
   .information-table .row {
     margin: 0 0 10px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .information-table .row {
         margin: 0 0 4px; } }
     .information-table .row:first-child {
@@ -2123,18 +2129,18 @@ textarea {
     display: block;
     margin-bottom: 20px;
     margin-right: 6px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .information-table strong {
         font-size: 15px;
         line-height: 20px;
         font-weight: 400;
         margin-bottom: 10px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .information-table strong {
         font-size: 16px; } }
   .information-table .row-heading {
     margin: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .information-table .row-heading {
         display: none; } }
 
@@ -2142,18 +2148,18 @@ textarea {
   font-family: Lato-Light;
   font-size: 15px;
   line-height: 13px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .row-heading {
       font-size: 15px;
       line-height: 11px; } }
   .row-heading .col {
     padding: 0 15px 0 27px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .row-heading .col:nth-child(2) {
         padding: 0 15px 0 52px; } }
     .row-heading .col:last-child {
       padding: 0 15px 0 0; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .row-heading .col:last-child {
           padding: 0 35px 0 0; } }
 
@@ -2165,13 +2171,13 @@ textarea {
   background: #fff;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .row-tbody {
       flex-direction: column;
       padding: 12px 12px 5px; } }
   .row-tbody .col {
     width: 35%; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .row-tbody .col {
         width: 100%;
         padding: 0; } }
@@ -2179,14 +2185,14 @@ textarea {
 .col-tbody {
   display: flex;
   width: 65%; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .col-tbody {
       width: 100%;
       padding: 0; } }
   .col-tbody .col {
     width: 50%;
     padding: 0 15px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .col-tbody .col {
         padding: 0; } }
 
@@ -2242,7 +2248,7 @@ textarea {
   max-width: 980px;
   width: 100%;
   margin-bottom: 200px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .pagination-wrap {
       max-width: 100%;
       flex-direction: column; } }
@@ -2256,7 +2262,7 @@ textarea {
 .select-pages-content {
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .select-pages-content {
       margin-bottom: 25px; } }
   .select-pages-content p {
@@ -2265,7 +2271,7 @@ textarea {
     line-height: 20px;
     margin-right: 10px;
     margin-bottom: 0 !important; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .select-pages-content p {
         font-size: 14px;
         line-height: 17px; } }
@@ -2286,7 +2292,7 @@ textarea {
   position: absolute;
   right: 0;
   top: -10px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .dropdown-wrap {
       top: 0; } }
 
@@ -2316,10 +2322,10 @@ textarea {
   line-height: 35px;
   color: #000;
   padding: 3px 15px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .dropdown-item {
       line-height: 34px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .dropdown-item {
       font-size: 16px;
       line-height: 17px;
@@ -2340,7 +2346,7 @@ textarea {
   transform: translate(0px, 48px) !important;
   min-width: 338px;
   width: 100%; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .dropdown-menu {
       min-width: 268px;
       transform: translate(-26px, 38px) !important; } }
@@ -2351,7 +2357,7 @@ textarea {
   line-height: 30px;
   text-align: center;
   margin-bottom: 20px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-title {
       font-size: 18px;
       line-height: 22px; } }
@@ -2382,7 +2388,7 @@ textarea {
     line-height: 24px;
     margin-bottom: 25px;
     text-align: center; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .modal-body p {
         font-size: 15px;
         line-height: 20px; } }
@@ -2394,7 +2400,7 @@ textarea {
       max-width: 125px;
       width: 100%;
       margin-right: 0; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .modal-body .header-btn .btn {
           max-width: 95px; } }
 
@@ -2402,7 +2408,7 @@ textarea {
   justify-content: center;
   border: none;
   padding: 0; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-footer .btn {
       font-size: 15px !important;
       line-height: 20px !important; } }
@@ -2412,7 +2418,7 @@ textarea {
   .modal-footer .btn-width-lg {
     max-width: 155px !important;
     width: 100%; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .modal-footer .btn-width-lg {
         max-width: 125px !important; } }
   .modal-footer .btn-width-md {
@@ -2438,7 +2444,7 @@ textarea {
 
 .account-replacement-content {
   padding: 28px 20px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .account-replacement-content {
       padding: 28px 10px; } }
 
@@ -2452,7 +2458,7 @@ textarea {
 .modal-content-success {
   justify-content: center;
   min-height: 300px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-content-success {
       min-height: 230px; } }
 
@@ -2467,7 +2473,7 @@ textarea {
   margin: 0 auto;
   max-width: 433px !important;
   padding: 46px 75px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-content-cancellation {
       padding: 36px 15px; } }
 
@@ -2475,7 +2481,7 @@ textarea {
   margin: 0 auto;
   max-width: 433px;
   padding: 58px 60px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-content-confirmation {
       padding: 48px 10px; } }
 
@@ -2490,7 +2496,7 @@ textarea {
   max-width: 433px !important;
   margin: 0 auto;
   padding: 34px 40px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-content-forced-termination {
       padding: 34px 10px; } }
 
@@ -2501,7 +2507,7 @@ textarea {
   max-width: 433px !important;
   margin: 0 auto;
   padding: 80px 60px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .modal-content-deleted-account {
       padding: 40px 10px; } }
 
@@ -2593,10 +2599,10 @@ textarea {
 
 .balance-select-wrap {
   margin-bottom: 40px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .balance-select-wrap {
       margin-bottom: 50px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .balance-select-wrap {
       margin-bottom: 40px; } }
   .balance-select-wrap h4 {
@@ -2604,18 +2610,18 @@ textarea {
     line-height: 18px;
     padding-left: 20px;
     margin-bottom: 8px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .balance-select-wrap h4 {
         font-size: 16px;
         line-height: 20px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .balance-select-wrap h4 {
         font-family: Lato-Light;
         font-size: 15px; } }
   .balance-select-wrap .all-items {
     z-index: 1;
     padding: 17px 13px 7px 25px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .balance-select-wrap .all-items {
         padding: 12px; } }
     .balance-select-wrap .all-items .item {
@@ -2635,7 +2641,7 @@ textarea {
   .balance-select-wrap .custom-select-balance {
     max-width: 275px;
     margin-bottom: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .balance-select-wrap .custom-select-balance {
         max-width: 100%; } }
   .balance-select-wrap .selected-item {
@@ -2643,7 +2649,7 @@ textarea {
     line-height: 24px;
     padding: 15px 45px 15px 27px;
     letter-spacing: 1px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .balance-select-wrap .selected-item {
         padding: 15px 45px 15px 23px;
         font-size: 18px;
@@ -2656,26 +2662,26 @@ textarea {
   max-width: 1068px;
   margin-bottom: 26px;
   color: #000; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .description-balance {
       font-size: 16px;
       line-height: 20px;
       max-width: 750px;
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .description-balance {
       margin-bottom: 13px; } }
 
 .payment-wrap-balance h3 {
   margin-bottom: 15px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .payment-wrap-balance h3 {
       font-size: 20px;
       line-height: 24px; } }
 
 .payment-wrap-balance p {
   font-family: Lato-Light; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .payment-wrap-balance p {
       font-size: 16px;
       line-height: 20px;
@@ -2683,26 +2689,26 @@ textarea {
 
 .main-wrap-personal-data .btn-width {
   margin-right: 10px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-personal-data .btn-width {
       margin-right: 0; } }
 
 .header-btn {
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .header-btn {
       flex-direction: column; } }
   .header-btn .btn {
     margin-right: 20px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .header-btn .btn {
         margin-right: 0;
         margin-bottom: 20px; } }
 
 .switch-wrap {
   margin-bottom: 40px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .switch-wrap {
       margin-bottom: 32px; } }
 
@@ -2710,17 +2716,17 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px 8px 45px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .row-title {
       padding: 5px 5px 8px 5px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .row-title {
       display: none; } }
   .row-title .column {
     font-family: Lato-Light;
     font-size: 15px;
     width: 25%; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .row-title .column {
         padding: 0 5px; } }
 
@@ -2730,17 +2736,17 @@ textarea {
   border-radius: 5px;
   padding: 20px 10px 20px 45px;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08); }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .row-content {
       padding: 20px 10px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .row-content {
       flex-direction: column; } }
 
 .column-group {
   display: flex;
   width: 50%; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .column-group {
       width: 100%;
       flex-direction: column; } }
@@ -2749,10 +2755,10 @@ textarea {
     font-family: Lato-Light;
     font-size: 18px;
     line-height: 22px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .column-group .column {
         padding: 0 5px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .column-group .column {
         width: 100%;
         margin-bottom: 10px; } }
@@ -2762,28 +2768,28 @@ textarea {
 .tabs-freezing.tabs-content {
   max-width: 985px; }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .tabs-freezing {
     margin-bottom: 30px; } }
 
 .tabs-freezing .ui-tabs-nav {
   justify-content: flex-start;
   margin-bottom: 45px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .tabs-freezing .ui-tabs-nav {
       margin-bottom: 35px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .tabs-freezing .ui-tabs-nav {
       margin-bottom: 20px; } }
   .tabs-freezing .ui-tabs-nav .ui-tabs-anchor {
     padding: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .tabs-freezing .ui-tabs-nav .ui-tabs-anchor {
         font-size: 18px;
         line-height: 22px; } }
   .tabs-freezing .ui-tabs-nav .ui-tabs-tab {
     margin-right: 38px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .tabs-freezing .ui-tabs-nav .ui-tabs-tab {
         margin-right: 20px; } }
 
@@ -2817,21 +2823,21 @@ textarea {
   max-width: 1105px;
   width: 100%;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .my-accounts {
       max-width: 755px;
       margin-bottom: 19px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .my-accounts {
       display: flex;
       justify-content: space-between; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .my-accounts {
       flex-direction: column;
       margin-bottom: 2px; } }
   .my-accounts .column {
     width: 20%; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-accounts .column {
         width: 100%;
         display: flex;
@@ -2839,7 +2845,7 @@ textarea {
         margin-bottom: 11px; } }
     .my-accounts .column p {
       font-family: Lato-Light; }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .my-accounts .column p {
           font-size: 16px;
           line-height: 20px; } }
@@ -2854,39 +2860,39 @@ textarea {
     justify-content: space-between;
     padding: 20px 30px 20px 33px;
     margin-bottom: 8px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .my-accounts .row-content {
         padding: 20px 30px 20px 15px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-accounts .row-content {
         max-width: 302px;
         width: 100%;
         flex-direction: column;
         padding: 22px 80px 6px 22px;
         margin-right: 5px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-accounts .row-content {
         max-width: 100%;
         padding: 22px 50px 6px 22px;
         margin-bottom: 16px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-accounts .row-content:last-child {
         margin-right: 0; } }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .my-accounts .dropdown-wrap-my-account {
       right: -20px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .my-accounts .dropdown-wrap-my-account {
       right: 13px;
       top: 7px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .my-accounts .dropdown-wrap-my-account {
       right: 5px;
       top: 10px; } }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .my-accounts .dropdown-wrap-my-account .dropdown-menu {
       right: -8px !important; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .my-accounts .dropdown-wrap-my-account .dropdown-menu {
       right: -31px !important; } }
   .my-accounts .row-heading {
@@ -2894,22 +2900,22 @@ textarea {
     justify-content: space-between;
     padding: 0 34px;
     margin-bottom: 12px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .my-accounts .row-heading {
         padding: 0 15px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-accounts .row-heading {
         display: none; } }
 
 .pagination-wrap-my-accounts {
   max-width: 1105px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .pagination-wrap-my-accounts {
       max-width: 755px; } }
 
 .main-wrap-security-setting .btn {
   max-width: 365px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-security-setting .btn {
       max-width: 100%; } }
 
@@ -2917,12 +2923,12 @@ textarea {
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 25px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-security-setting h3 {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 21px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-security-setting h3 {
       font-size: 19px;
       line-height: 23px; } }
@@ -2931,11 +2937,11 @@ textarea {
   font-family: Lato-Light;
   max-width: 1125px;
   margin-bottom: 27px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-security-setting p {
       max-width: 755px;
       margin-bottom: 24px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-security-setting p {
       font-size: 16px;
       line-height: 20px; } }
@@ -2945,17 +2951,17 @@ textarea {
 
 .main-wrap-authentication p {
   margin-bottom: 26px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-authentication p {
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-authentication p {
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 16px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-authentication p {
       font-size: 16px;
       line-height: 20px; } }
@@ -2968,24 +2974,24 @@ textarea {
   max-width: 1205px;
   width: 100%;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .authentication {
       padding: 26px 87px 30px 34px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .authentication {
       padding: 26px 34px 30px 34px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .authentication {
       max-width: 100%;
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .authentication {
       padding: 18px 16px 30px 16px; } }
   .authentication h3 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 14px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .authentication h3 {
         font-size: 18px;
         line-height: 22px; } }
@@ -2994,28 +3000,28 @@ textarea {
       font-size: 22px !important;
       line-height: 27px !important;
       margin-right: 5px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .authentication h3 span {
           font-size: 20px !important;
           line-height: 24px !important; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .authentication h3 span {
           display: none; } }
   .authentication > p {
     max-width: 782px;
     width: 100%;
     margin-bottom: 14px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .authentication > p {
         font-size: 16px;
         line-height: 20px;
         max-width: 472px;
         margin-bottom: 7px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .authentication > p {
         max-width: 100%;
         margin-bottom: 25px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .authentication > p {
         margin-bottom: 16px; } }
 
@@ -3023,10 +3029,10 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .authentication-area {
       margin-right: 32px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .authentication-area {
       flex-direction: column;
       align-items: center;
@@ -3034,13 +3040,13 @@ textarea {
 
 .authentication-description {
   margin-right: 5px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .authentication-description {
       margin-bottom: 15px; } }
   .authentication-description p {
     margin-bottom: 0;
     color: 1540px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .authentication-description p {
         font-size: 16px !important;
         line-height: 20px !important; } }
@@ -3052,18 +3058,18 @@ textarea {
   width: 100%;
   padding: 11px 15px;
   margin-top: -140px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .qr-code {
       max-width: 189px;
       margin-top: -120px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .qr-code {
       margin-top: 0; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .qr-code {
       max-width: 150px;
       margin-top: -24px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .qr-code {
       margin-top: 0;
       max-width: 180px; } }
@@ -3072,13 +3078,13 @@ textarea {
 
 .main-wrap-my-tickets .pagination-wrap {
   max-width: 1040px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-my-tickets .pagination-wrap {
       max-width: 755px; } }
 
 .main-wrap-my-tickets .search-form {
   margin-bottom: 37px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-my-tickets .search-form {
       margin-bottom: 28px; } }
 
@@ -3086,7 +3092,7 @@ textarea {
   max-width: 1040px;
   width: 100%;
   margin-bottom: 22px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .my-tickets {
       max-width: 755px; } }
   .my-tickets .row-heading {
@@ -3094,59 +3100,59 @@ textarea {
     justify-content: space-between;
     padding: 0 8px 0 44px;
     margin-bottom: 11px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .my-tickets .row-heading {
         padding: 0 8px 0 53px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .my-tickets .row-heading {
         padding: 0 8px 0 10px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-tickets .row-heading {
         padding: 0 8px 0 37px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-tickets .row-heading {
         display: none; } }
     .my-tickets .row-heading .column-title {
       width: 50%;
       color: #000; }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .my-tickets .row-heading .column-title {
           width: 45%; } }
   .my-tickets .row-content {
     margin-bottom: 7px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .my-tickets .row-content {
         padding: 17px 10px 17px 53px;
         margin-bottom: 10px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .my-tickets .row-content {
         padding: 17px 10px 17px 10px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-tickets .row-content {
         padding: 17px 10px 17px 36px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-tickets .row-content {
         padding: 19px 10px 17px 17px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .my-tickets .row-content > .column {
         padding-right: 10px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-tickets .row-content > .column {
         padding-right: 80px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-tickets .row-content > .column {
         padding-right: 0; } }
     .my-tickets .row-content .column {
       width: 50%; }
-      @media only screen and (max-width: 1023px) {
+      @media screen and (max-width: 1023px) {
         .my-tickets .row-content .column {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis; } }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .my-tickets .row-content .column {
           width: 45%; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .my-tickets .row-content .column {
           width: 100%;
           white-space: normal;
@@ -3155,13 +3161,13 @@ textarea {
   .my-tickets .col-group {
     display: flex;
     width: 50%; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-tickets .col-group {
         width: 55%; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-tickets .col-group {
         width: 100%; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .my-tickets .col-group .column-title {
         width: 50%; } }
     .my-tickets .col-group .column {
@@ -3171,7 +3177,7 @@ textarea {
   .my-tickets .link {
     font-family: Lato-Light;
     color: #345ba7; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .my-tickets .link {
         font-size: 16px;
         line-height: 20px; } }
@@ -3184,13 +3190,13 @@ textarea {
   color: #616161;
   text-decoration: underline;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .link-back {
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .link-back {
       margin-bottom: 31px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .link-back {
       font-size: 16px;
       line-height: 20px;
@@ -3202,10 +3208,10 @@ textarea {
 .ticket-data {
   display: flex;
   margin-bottom: 24px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .ticket-data {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .ticket-data {
       flex-direction: column;
       margin-bottom: 15px; } }
@@ -3214,11 +3220,11 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     margin-right: 20px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .ticket-data p {
         font-size: 14px;
         line-height: 21px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .ticket-data p {
         line-height: 16px;
         margin-bottom: 7px; } }
@@ -3230,27 +3236,27 @@ textarea {
   align-items: center;
   margin-bottom: 28px;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn-holder {
       margin-bottom: 45px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-holder {
       margin-bottom: 41px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-holder {
       flex-direction: column;
       margin-bottom: 8px; } }
   .btn-holder .btn-width {
     max-width: 253px;
     margin-right: 20px; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .btn-holder .btn-width {
         max-width: 230px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .btn-holder .btn-width {
         max-width: 255px;
         margin-right: 5px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .btn-holder .btn-width {
         margin-right: 0;
         max-width: 100%;
@@ -3268,21 +3274,21 @@ textarea {
   max-width: 1275px;
   width: 100%;
   margin-bottom: 20px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .reviews {
       padding: 23px 44px 12px 23px;
       margin-bottom: 15px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .reviews {
       padding: 20px 32px 9px 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .reviews {
       padding: 14px 15px 9px 15px; } }
 
 .reviews-area {
   font-family: Lato-Light;
   padding-right: 16px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .reviews-area {
       padding-right: 0; } }
   .reviews-area p {
@@ -3290,11 +3296,11 @@ textarea {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .reviews-area p {
         font-size: 18px;
         line-height: 22px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .reviews-area p {
         font-size: 16px;
         line-height: 20px; } }
@@ -3303,7 +3309,7 @@ textarea {
     color: #000;
     font-size: 18px;
     line-height: 22px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .reviews-area span {
         font-size: 16px;
         line-height: 20px; } }
@@ -3315,10 +3321,10 @@ textarea {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .feedback-data {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .feedback-data {
       flex-direction: column;
       align-items: flex-start;
@@ -3329,21 +3335,21 @@ textarea {
     justify-content: flex-start;
     border-radius: 0;
     margin-bottom: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .feedback-data .user-info {
         margin-bottom: 15px; } }
     .feedback-data .user-info span {
       display: block;
       margin-right: 20px; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .feedback-data .user-info span {
           margin-right: 13px; } }
     .feedback-data .user-info .badge-md {
       padding: 11px 45px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .feedback-data .user-info .badge-md {
           padding: 9px 33px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .feedback-data .user-info .badge-md {
           padding: 5px 20px;
           max-width: 100px; } }
@@ -3356,11 +3362,11 @@ textarea {
   line-height: 22px;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .badge {
       border-radius: 3px;
       padding: 8px 18px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .badge {
       font-size: 16px;
       line-height: 20px;
@@ -3372,7 +3378,7 @@ textarea {
 .user {
   font-family: Lato-Light;
   color: #000; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .user {
       font-size: 16px;
       line-height: 20px; } }
@@ -3384,7 +3390,7 @@ textarea {
   color: 745px;
   padding-right: 0;
   margin-bottom: 0; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .date {
       font-size: 14px;
       line-height: 19px; } }
@@ -3396,13 +3402,13 @@ textarea {
   font-family: Lato-Light;
   max-width: 1030px;
   margin-bottom: 22px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-open-ticket-two p {
       margin-bottom: 36px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-open-ticket-two p {
       margin-bottom: 11px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-open-ticket-two p {
       font-size: 16px;
       line-height: 20px;
@@ -3417,7 +3423,7 @@ textarea {
   margin-bottom: 45px; }
   .main-wrap-open-ticket-two .btn-holder .btn {
     max-width: 308px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .main-wrap-open-ticket-two .btn-holder .btn {
         max-width: 100%; } }
 
@@ -3431,7 +3437,7 @@ textarea {
   margin-bottom: 8px;
   color: #345ba7;
   text-decoration: underline; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .offer-list a {
       font-size: 16px;
       line-height: 20px; } }
@@ -3442,7 +3448,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-questions {
       margin-bottom: 20px; } }
   .main-questions li {
@@ -3458,12 +3464,12 @@ textarea {
     padding: 35px 20px 20px;
     transition: all .25s ease-out;
     margin-bottom: 17px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-questions li {
         max-width: 260px;
         margin-right: 20px;
         padding: 35px 20px 28px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .main-questions li {
         max-width: 100%;
         margin-right: 0;
@@ -3472,10 +3478,10 @@ textarea {
     .main-questions li:hover {
       max-width: 305px;
       box-shadow: 0 1px 13px rgba(0, 0, 0, 0.2); }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .main-questions li:hover {
           max-width: 280px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .main-questions li:hover {
           max-width: inherit; } }
     .main-questions li:last-child {
@@ -3484,11 +3490,11 @@ textarea {
     max-width: 90px;
     margin-bottom: 15px;
     position: relative; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-questions .img-area {
         max-width: 60px;
         margin-bottom: 22px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .main-questions .img-area {
         max-width: 52px;
         margin-bottom: 12px; } }
@@ -3498,14 +3504,14 @@ textarea {
     display: block;
     font-family: Lato-Light;
     margin-bottom: 25px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-questions span {
         display: none; } }
   .main-questions h4 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-questions h4 {
         font-size: 18px;
         line-height: 22px;
@@ -3516,7 +3522,7 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     text-decoration: underline; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-questions a {
         font-size: 16px;
         line-height: 20px; } }
@@ -3542,7 +3548,7 @@ textarea {
   max-width: 1100px;
   width: 100%;
   justify-content: space-between; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .popular-questions {
       flex-direction: column;
       max-width: 100%; } }
@@ -3553,10 +3559,10 @@ textarea {
     text-decoration: underline;
     position: relative;
     margin-bottom: 15px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .popular-questions a {
         padding-left: 15px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .popular-questions a {
         font-size: 16px;
         line-height: 20px; } }
@@ -3569,7 +3575,7 @@ textarea {
       background-image: url("../images/ellipse-link.svg");
       width: 9px;
       height: 9px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .popular-questions a:after {
           background-image: url("../images/ellipse-link-desktop.svg");
           width: 6px;
@@ -3582,11 +3588,11 @@ textarea {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-file-archive p {
       font-size: 16px;
       line-height: 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-file-archive p {
       margin-bottom: 25px; } }
 
@@ -3595,13 +3601,13 @@ textarea {
 
 .downloads {
   margin-bottom: 65px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .downloads {
       margin-bottom: 0; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .downloads {
       margin-bottom: 15px; } }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .downloads .row-body {
       flex-direction: column; } }
 
@@ -3609,23 +3615,23 @@ textarea {
   display: flex;
   align-items: flex-start;
   margin-bottom: 14px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .downloads-item {
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .downloads-item {
       margin-bottom: 15px; } }
   .downloads-item .btn-download {
     margin-right: 18px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .downloads-item .btn-download {
         margin-right: 15px; } }
   .downloads-item .description h4 {
     margin-bottom: 10px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .downloads-item .description h4 {
         margin-bottom: 0; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .downloads-item .description h4 {
         font-size: 16px;
         line-height: 20px; } }
@@ -3634,7 +3640,7 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .downloads-item .description p {
         display: none; } }
 
@@ -3643,7 +3649,7 @@ textarea {
   margin-bottom: 43px;
   max-width: 1265px;
   color: #000; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-program-statistics > p {
       font-size: 16px;
       line-height: 20px;
@@ -3654,29 +3660,29 @@ textarea {
   justify-content: center;
   max-width: 1307px;
   margin-bottom: 60px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-program-statistics .btn-holder {
       margin-bottom: 42px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-program-statistics .btn-holder {
       margin-bottom: 14px; } }
   .main-wrap-program-statistics .btn-holder .btn {
     max-width: 442px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-wrap-program-statistics .btn-holder .btn {
         max-width: 370px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .main-wrap-program-statistics .btn-holder .btn {
         max-width: 100%; } }
 
 .main-wrap-program-statistics .heading {
   color: #000; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-program-statistics .heading {
       font-size: 20px;
       line-height: 24px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .step-area {
     display: flex;
     flex-direction: column-reverse; } }
@@ -3689,20 +3695,20 @@ textarea {
   border-radius: 5px;
   max-width: 1307px;
   margin-bottom: 25px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .steps-list {
       flex-direction: column; } }
   .steps-list .img-area {
     max-width: 42px;
     margin-bottom: 13px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .steps-list .img-area {
         max-width: 38px;
         margin-bottom: 8px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .steps-list .img-area {
         max-width: 30px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .steps-list .img-area {
         margin-bottom: 12px; } }
   .steps-list li {
@@ -3712,13 +3718,13 @@ textarea {
     border-right: 1px solid rgba(235, 128, 12, 0.14);
     width: 33.3%;
     padding: 25px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .steps-list li {
         padding: 23px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .steps-list li {
         padding: 33px 10px 28px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .steps-list li {
         width: 100%;
         border-bottom: 1px solid rgba(235, 128, 12, 0.14);
@@ -3730,7 +3736,7 @@ textarea {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 3px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .steps-list li h4 {
           font-size: 18px;
           line-height: 22px;
@@ -3740,7 +3746,7 @@ textarea {
       max-width: 209px;
       text-align: center;
       color: #000; }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .steps-list li p {
           font-size: 16px;
           line-height: 20px;
@@ -3752,10 +3758,10 @@ textarea {
   justify-content: space-between;
   max-width: 1300px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .affiliate-program-list {
       margin-bottom: 13px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .affiliate-program-list {
       margin-bottom: 22px; } }
   .affiliate-program-list strong {
@@ -3763,21 +3769,21 @@ textarea {
     font-size: 30px;
     line-height: 36px;
     margin-right: 30px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .affiliate-program-list strong {
         font-size: 20px;
         line-height: 27px;
         margin-right: 20px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .affiliate-program-list strong {
         margin-right: 15px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .affiliate-program-list strong {
         margin-right: 0; } }
   .affiliate-program-list p {
     font-family: Lato-Light;
     color: #000; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .affiliate-program-list p {
         font-size: 16px;
         line-height: 20px; } }
@@ -3786,17 +3792,17 @@ textarea {
     margin-bottom: 22px;
     max-width: 620px;
     width: 100%; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .affiliate-program-list li {
         max-width: 371px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .affiliate-program-list li {
         max-width: 100%; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .affiliate-program-list li {
         max-width: 318px;
         margin-bottom: 10px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .affiliate-program-list li {
         flex-direction: column;
         max-width: 100%; } }
@@ -3804,10 +3810,10 @@ textarea {
 .affiliate-table-area {
   max-width: 627px;
   width: 100%; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .affiliate-table-area {
       max-width: 100%; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .affiliate-table-area {
       display: none; } }
   .affiliate-table-area h4 {
@@ -3815,11 +3821,11 @@ textarea {
     line-height: 27px;
     margin-bottom: 25px;
     color: #000; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .affiliate-table-area h4 {
         font-size: 20px;
         line-height: 24px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .affiliate-table-area h4 {
         margin-bottom: 18px; } }
 
@@ -3827,7 +3833,7 @@ textarea {
   background: #fff;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .affiliate-table {
       margin-bottom: 40px; } }
   .affiliate-table .row-heading {
@@ -3842,7 +3848,7 @@ textarea {
       padding: 18px 10px;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       color: #000; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .affiliate-table .row-heading .column {
           font-size: 16px;
           line-height: 20px;
@@ -3859,7 +3865,7 @@ textarea {
       width: 33.3%;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       padding: 12px 12px 21px; }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .affiliate-table .row-body .column {
           padding: 19px 12px 21px; } }
       .affiliate-table .row-body .column:last-child {
@@ -3867,7 +3873,7 @@ textarea {
       .affiliate-table .row-body .column p {
         color: #000;
         margin-bottom: 20px; }
-        @media only screen and (max-width: 1540px) {
+        @media screen and (max-width: 1540px) {
           .affiliate-table .row-body .column p {
             margin-bottom: 14px; } }
         .affiliate-table .row-body .column p:last-child {
@@ -3876,14 +3882,14 @@ textarea {
 .bonuses-area {
   max-width: 627px;
   width: 100%; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .bonuses-area {
       max-width: 100%; } }
   .bonuses-area h4 {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 25px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .bonuses-area h4 {
         font-size: 20px;
         line-height: 24px; } }
@@ -3893,35 +3899,35 @@ textarea {
   background: #fff;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .bonuses-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 30px 47px 0 33px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .bonuses-list {
       padding: 30px 47px 30px 33px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .bonuses-list {
       display: flex;
       padding: 24px 25px 30px 32px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .bonuses-list {
       padding: 24px 12px 30px 12px; } }
   .bonuses-list li {
     margin-bottom: 26px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .bonuses-list li {
         max-width: 327px;
         margin-bottom: 20px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .bonuses-list li {
         max-width: 100%; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .bonuses-list li {
         max-width: 290px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .bonuses-list li {
         max-width: 100%; } }
     .bonuses-list li:last-child {
@@ -3931,11 +3937,11 @@ textarea {
     padding-left: 45px;
     position: relative;
     margin-bottom: 26px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .bonuses-list p {
         padding-left: 37px;
         margin-bottom: 20px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .bonuses-list p {
         font-size: 16px;
         line-height: 20px;
@@ -3950,7 +3956,7 @@ textarea {
       background-image: url("../images/bonus-tick.svg");
       width: 23px;
       height: 23px; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .bonuses-list p:before {
           background-image: url("../images/bonus-tick-sm.svg");
           width: 19px;
@@ -3960,7 +3966,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   max-width: 1307px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .service-area {
       flex-direction: column; } }
 
@@ -3969,11 +3975,11 @@ textarea {
   line-height: 27px;
   color: #000;
   margin-bottom: 15px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-statistics-two h4 {
       font-size: 20px;
       line-height: 24px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-statistics-two h4 {
       margin-bottom: 17px; } }
 
@@ -3981,14 +3987,14 @@ textarea {
   font-family: Lato-Light;
   max-width: 1255px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-statistics-two p {
       max-width: 750px;
       margin-bottom: 20px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-statistics-two p {
       margin-bottom: 25px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-statistics-two p {
       font-size: 16px;
       line-height: 20px; } }
@@ -3997,30 +4003,30 @@ textarea {
   display: flex;
   align-items: center;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .title-area {
       margin-bottom: 21px; } }
   .title-area h4 {
     margin-right: 60px;
     margin-bottom: 0;
     color: #000; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .title-area h4 {
         font-size: 20px;
         line-height: 24px;
         margin-right: 27px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .title-area h4 {
         margin-bottom: 10px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .title-area h4 {
         margin-bottom: 13px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .title-area h4 {
         font-size: 19px;
         line-height: 24px;
         margin-bottom: 16px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .title-area {
       flex-direction: column;
       align-items: flex-start; } }
@@ -4034,14 +4040,14 @@ textarea {
   border-radius: 5px;
   padding: 15px 100px 15px 30px;
   position: relative; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .copy-area {
       max-width: 490px;
       width: 100%; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .copy-area {
       max-width: 100%; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .copy-area {
       padding: 15px 60px 15px 15px; } }
   .copy-area p {
@@ -4049,11 +4055,11 @@ textarea {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 0; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .copy-area p {
         font-size: 18px;
         line-height: 22px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .copy-area p {
         font-size: 16px;
         line-height: 20px;
@@ -4075,15 +4081,15 @@ textarea {
   max-width: 1230px;
   width: 100%;
   margin: 0 -15px 8px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .info-list {
       max-width: 790px;
       margin: 0 -10px 33px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .info-list {
       max-width: 100%;
       margin: 0 -5px 19px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .info-list {
       flex-direction: column;
       margin: 0 0 40px 0; } }
@@ -4097,14 +4103,14 @@ textarea {
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     text-align: center; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .info-list div {
         padding: 15px 10px;
         min-height: 135px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .info-list div {
         min-height: 115px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .info-list div {
         min-height: 135px;
         padding: 15px 30px; } }
@@ -4112,17 +4118,17 @@ textarea {
     padding: 0 15px;
     width: 33.3%;
     margin-bottom: 27px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .info-list li {
         padding: 0 10px;
         margin-bottom: 15px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .info-list li {
         max-width: 275px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .info-list li {
         padding: 0 5px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .info-list li {
         width: 100%;
         padding: 0;
@@ -4133,16 +4139,16 @@ textarea {
       line-height: 24px;
       font-family: Lato-Regular;
       margin-bottom: 15px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .info-list li p {
           font-size: 18px;
           line-height: 22px;
           margin-bottom: 5px; } }
-      @media only screen and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         .info-list li p {
           font-size: 16px;
           line-height: 20px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .info-list li p {
           font-size: 18px;
           line-height: 22px; } }
@@ -4151,7 +4157,7 @@ textarea {
       display: block;
       font-size: 30px;
       line-height: 35px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .info-list li .number {
           font-size: 25px;
           line-height: 30px; } }
@@ -4163,14 +4169,14 @@ textarea {
 
 .payments-area {
   max-width: 485px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .payments-area {
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: flex-end;
       max-width: 100%; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .payments-area {
       flex-direction: column-reverse; } }
 
@@ -4179,12 +4185,12 @@ textarea {
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   margin-bottom: 25px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .payments-table {
       max-width: 445px;
       width: 100%;
       margin-bottom: 0; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .payments-table {
       max-width: 100%; } }
   .payments-table .row-body {
@@ -4192,7 +4198,7 @@ textarea {
     .payments-table .row-body .col-body {
       text-align: center;
       padding: 20px 10px; }
-      @media only screen and (max-width: 1023px) {
+      @media screen and (max-width: 1023px) {
         .payments-table .row-body .col-body {
           padding: 15px 5px; } }
       .payments-table .row-body .col-body:first-child {
@@ -4200,36 +4206,36 @@ textarea {
         border-right: 1px solid rgba(0, 0, 0, 0.1); }
         .payments-table .row-body .col-body:first-child p {
           text-align: left; }
-        @media only screen and (max-width: 1540px) {
+        @media screen and (max-width: 1540px) {
           .payments-table .row-body .col-body:first-child {
             width: 60%; } }
       .payments-table .row-body .col-body:last-child {
         width: 35%; }
-        @media only screen and (max-width: 1540px) {
+        @media screen and (max-width: 1540px) {
           .payments-table .row-body .col-body:last-child {
             width: 40%; } }
     .payments-table .row-body p {
       font-family: Lato-Light;
       color: #000;
       margin-bottom: 15px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .payments-table .row-body p {
           font-size: 16px;
           line-height: 20px; } }
       .payments-table .row-body p:last-child {
         margin-bottom: 0; }
 
-@media only screen and (max-width: 1540px) {
+@media screen and (max-width: 1540px) {
   .form-wrap {
     max-width: 270px;
     width: 100%;
     margin-right: 40px; } }
 
-@media only screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .form-wrap {
     margin-right: 15px; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .form-wrap {
     margin-right: 0;
     max-width: 100%; } }
@@ -4240,27 +4246,27 @@ textarea {
   line-height: 18px;
   padding-left: 15px;
   margin-bottom: 10px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .form-wrap p {
       padding-left: 0; } }
 
 .form-area {
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .form-area {
       flex-direction: column; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .form-area {
       margin-bottom: 30px; } }
   .form-area .form-group {
     max-width: 205px;
     width: 100%; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .form-area .form-group {
         max-width: 100%;
         margin-bottom: 20px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .form-area .form-group {
         margin-bottom: 11px; } }
     .form-area .form-group input {
@@ -4279,13 +4285,13 @@ textarea {
         text-align: center; }
   .form-area .btn {
     max-width: 270px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .form-area .btn {
         max-width: 100%; } }
 
 .main-wrap-referral h4 {
   margin-bottom: 10px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-referral h4 {
       font-size: 16px;
       line-height: 20px; } }
@@ -4293,26 +4299,26 @@ textarea {
 .main-wrap-referral .form-wrap {
   flex-direction: column;
   margin-bottom: 60px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-referral .form-wrap {
       max-width: 100%;
       margin-bottom: 43px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .main-wrap-referral .form-wrap {
       margin-bottom: 36px; } }
   .main-wrap-referral .form-wrap .btn {
     max-width: 328px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .main-wrap-referral .form-wrap .btn {
         padding: 17px 15px; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .main-wrap-referral .form-wrap .btn {
         max-width: 250px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .main-wrap-referral .form-wrap .btn {
         max-width: 310px;
         padding: 15px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .main-wrap-referral .form-wrap .btn {
         max-width: 100%; } }
 
@@ -4321,21 +4327,21 @@ textarea {
   padding-left: 25px;
   max-width: 1380px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .instructions-list {
       margin-bottom: 22px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .instructions-list {
       margin-bottom: 37px; } }
   .instructions-list li {
     font-family: Lato-Light; }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .instructions-list li {
         margin-bottom: 5px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .instructions-list li {
         margin-bottom: 0; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .instructions-list li {
         font-size: 16px;
         line-height: 20px; } }
@@ -4345,7 +4351,7 @@ textarea {
   .tabs-referral .ui-tabs-nav {
     justify-content: flex-start;
     margin-bottom: 9px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .tabs-referral .ui-tabs-nav {
         margin-bottom: 15px; } }
     .tabs-referral .ui-tabs-nav .ui-tabs-anchor {
@@ -4356,7 +4362,7 @@ textarea {
     .tabs-referral .ui-tabs-nav .text-item {
       font-family: Lato-Regular;
       color: #373737; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .tabs-referral .ui-tabs-nav .text-item {
           font-size: 16px;
           line-height: 20px; } }
@@ -4365,13 +4371,13 @@ textarea {
   display: flex;
   padding: 0 10px 0 90px;
   margin-bottom: 8px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .table-referral .row-body {
       padding: 0 20px 0 33px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .table-referral .row-body {
       padding: 0 3px 0 15px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .table-referral .row-body {
       display: none; } }
   .table-referral .row-body .column {
@@ -4385,26 +4391,26 @@ textarea {
 .table-referral .row-content {
   padding: 25px 10px 20px 90px;
   margin-bottom: 10px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .table-referral .row-content {
       padding: 25px 19px 20px 33px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .table-referral .row-content {
       padding: 25px 3px 20px 15px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .table-referral .row-content {
       padding: 22px 28px 10px 20px; } }
   .table-referral .row-content .column {
     font-family: Lato-Light;
     color: #373737;
     width: 20%; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .table-referral .row-content .column {
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 9px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .table-referral .row-content .column:last-child {
         margin-bottom: 0; } }
     .table-referral .row-content .column p {
@@ -4413,7 +4419,7 @@ textarea {
 .table-referral .link {
   font-family: Lato-Light;
   color: #345ba7; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .table-referral .link {
       font-size: 16px;
       line-height: 20px; } }
@@ -4422,28 +4428,28 @@ textarea {
 
 .referral-table {
   margin: 0 0 42px -5px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .referral-table {
       margin: 0 0 35px -5px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .referral-table {
       margin: 0 0 26px -5px; } }
   .referral-table td {
     font-family: Lato-Light;
     padding: 5px 25px 5px 5px; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .referral-table td {
         font-size: 16px;
         line-height: 20px;
         padding: 5px 45px 5px 5px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .referral-table td {
         padding: 5px 24px 5px 5px; } }
 
 .pay-table {
   min-width: 385px;
   margin-bottom: 28px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .pay-table {
       min-width: 220px; } }
   .pay-table caption {
@@ -4452,7 +4458,7 @@ textarea {
     text-align: left;
     color: #373737;
     margin-bottom: 10px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .pay-table caption {
         font-size: 18px;
         line-height: 22px; } }
@@ -4483,13 +4489,13 @@ textarea {
 .main-wrap-internal-transfers > p {
   font-family: Lato-Light;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .main-wrap-internal-transfers > p {
       font-size: 16px;
       line-height: 26px;
       padding-right: 60px;
       margin-bottom: 17px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .main-wrap-internal-transfers > p {
       font-size: 16px;
       line-height: 24px;
@@ -4500,11 +4506,11 @@ textarea {
     .main-wrap-internal-transfers > p a:hover {
       text-decoration: none; }
 
-@media only screen and (max-width: 1540px) {
+@media screen and (max-width: 1540px) {
   .main-wrap-internal-transfers .btn-holder .btn-width {
     max-width: 230px; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main-wrap-internal-transfers .btn-holder .btn-width {
     margin-right: 10px; } }
 
@@ -4535,19 +4541,19 @@ textarea {
   .operations-history .row-heading {
     display: flex;
     align-items: center; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .operations-history .row-heading {
         display: none; } }
   .operations-history .column-body-left {
     display: flex;
     width: 40%; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .operations-history .column-body-left {
         width: 60%; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .operations-history .column-body-left {
         width: 55%; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .operations-history .column-body-left {
         display: flex;
         flex-direction: column;
@@ -4555,10 +4561,10 @@ textarea {
     .operations-history .column-body-left .column {
       padding: 5px 5px 5px 47px;
       width: 33.3%; }
-      @media only screen and (max-width: 1023px) {
+      @media screen and (max-width: 1023px) {
         .operations-history .column-body-left .column {
           padding: 5px 5px 5px 17px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .operations-history .column-body-left .column {
           display: flex;
           align-items: center;
@@ -4570,32 +4576,32 @@ textarea {
     padding: 15px 0; }
   .operations-history .column-body-right {
     width: 60%; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .operations-history .column-body-right {
         width: 40%; } }
-    @media only screen and (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       .operations-history .column-body-right {
         width: 45%; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .operations-history .column-body-right {
         display: flex;
         flex-direction: column;
         width: 100%; } }
     .operations-history .column-body-right .column {
       padding: 5px 60px 5px 0; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .operations-history .column-body-right .column {
           padding: 5px 5px 5px 18px; } }
   .operations-history p {
     font-family: Lato-Light; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .operations-history p {
         font-size: 16px;
         line-height: 20px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .operations-history p {
         white-space: inherit;
         overflow: auto; } }
@@ -4608,15 +4614,15 @@ textarea {
 .tabs-content-category {
   max-width: 1260px;
   width: 100%; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .tabs-content-category {
       max-width: 760px; } }
   .tabs-content-category .ui-tabs-nav {
     justify-content: flex-start !important; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .tabs-content-category .ui-tabs-nav {
         margin-bottom: 20px; } }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .tabs-content-category .ui-tabs-nav {
         margin-bottom: 15px; } }
     .tabs-content-category .ui-tabs-nav li {
@@ -4648,10 +4654,10 @@ textarea {
     background: #fff;
     cursor: pointer;
     border-radius: 5px; }
-    @media only screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .tab label {
         padding: 15px 70px 15px 20px; } }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .tab label {
         font-size: 16px;
         line-height: 20px;
@@ -4659,15 +4665,15 @@ textarea {
     .tab label span {
       display: block;
       padding-right: 25px; }
-      @media only screen and (max-width: 1540px) {
+      @media screen and (max-width: 1540px) {
         .tab label span {
           padding-right: 11px; } }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .tab label span {
           display: none; } }
     .tab label .block {
       display: none; }
-      @media only screen and (max-width: 745px) {
+      @media screen and (max-width: 745px) {
         .tab label .block {
           display: block !important;
           background: #fff;
@@ -4688,14 +4694,14 @@ textarea {
     font-family: Lato-Light !important;
     font-size: 18px !important;
     line-height: 22px !important; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .tab-content p {
         font-size: 16px !important;
         line-height: 20px !important; } }
   .tab-content h4 {
     font-family: Lato-Regular;
     margin-bottom: 20px; }
-    @media only screen and (max-width: 745px) {
+    @media screen and (max-width: 745px) {
       .tab-content h4 {
         font-size: 16px;
         line-height: 20px;
@@ -4705,13 +4711,13 @@ textarea {
 .tab input:checked ~ .tab-content {
   max-height: 100%;
   padding: 20px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .tab input:checked ~ .tab-content {
       padding: 20px 0; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .tab input:checked ~ .tab-content {
       padding: 15px 0; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .tab input:checked ~ .tab-content {
       padding: 11px 0; } }
 
@@ -4724,7 +4730,7 @@ textarea {
   background-repeat: no-repeat;
   width: 17px;
   height: 12px; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .tab input[type=checkbox] + label::after {
       bottom: 10px;
       top: auto;
@@ -4742,17 +4748,212 @@ textarea {
   bottom: 20%;
   right: 30px;
   z-index: 1000; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .scroll-btn {
       right: 10px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .scroll-btn {
       font-size: 17px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .scroll-btn {
       display: none; } }
   .scroll-btn img {
     width: 16px; }
+
+.header-entrance {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  z-index: 20; }
+  @media screen and (max-width: 767px) {
+    .header-entrance {
+      background: #fBf9f8;
+      padding: 15px 0; } }
+  @media screen and (max-width: 767px) {
+    .header-entrance .btn-group {
+      display: block;
+      min-width: 47px; } }
+  @media screen and (max-width: 767px) {
+    .header-entrance .btn-group .select-area {
+      margin: 0; } }
+
+.header-content {
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
+
+.logo-entrance {
+  display: block;
+  position: static;
+  background: none;
+  box-shadow: none; }
+  .logo-entrance img {
+    width: 120px; }
+
+.main-entrance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 0; }
+
+.form-entrance-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: rgba(254, 254, 253, 0.95);
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  margin: 0 auto 20px; }
+  @media screen and (max-width: 767px) {
+    .form-entrance-wrap {
+      padding: 10px; } }
+  .form-entrance-wrap h3 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 16px; }
+  .form-entrance-wrap h4 {
+    font-size: 22px;
+    line-height: 27px;
+    padding-right: 10px;
+    margin-bottom: 16px; }
+  .form-entrance-wrap p {
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    margin-bottom: 16px; }
+  .form-entrance-wrap .registration-form {
+    width: 100%; }
+    .form-entrance-wrap .registration-form .form-group {
+      margin-bottom: 10px; }
+    .form-entrance-wrap .registration-form input {
+      margin-bottom: 8px; }
+    .form-entrance-wrap .registration-form .btn {
+      margin-bottom: 11px; }
+
+.ellipse-position {
+  position: relative; }
+  .ellipse-position .ellipse {
+    position: absolute;
+    z-index: -1; }
+  .ellipse-position .ellipse-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 770px; }
+
+.checkbox-wrap {
+  margin: 0 0 17px 0; }
+
+.link-holder a {
+  font-family: Lato-Light;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+  color: #345ba7;
+  text-decoration: underline; }
+  .link-holder a:hover {
+    text-decoration: none; }
+
+.validation-message {
+  position: relative; }
+  .validation-message .error-message {
+    display: none; }
+
+.validation-error:after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  background-image: url("../images/vector-2.svg");
+  width: 13px;
+  height: 13px; }
+  @media screen and (max-width: 767px) {
+    .validation-error:after {
+      top: 20%; } }
+
+.validation-error .error-message {
+  display: block; }
+
+.validation-error input {
+  border-color: red; }
+
+.validation-success:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  background-image: url("../images/vector.svg");
+  width: 15px;
+  height: 17px; }
+
+.info-area {
+  align-items: flex-start; }
+
+.btn-hint {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.modal-content-info {
+  padding: 20px; }
+
+.modal-body-info h4 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px; }
+
+.modal-footer-info {
+  font-family: Lato-Light; }
+  .modal-footer-info ol {
+    list-style: auto;
+    padding-left: 16px; }
+  .modal-footer-info a {
+    color: #345ba7;
+    text-decoration: underline; }
+    .modal-footer-info a:hover {
+      text-decoration: none; }
+
+.registration-area .link-area p {
+  font-family: Lato-Light;
+  font-size: 19px;
+  line-height: 21px;
+  text-align: center; }
+
+.registration-area .link-area a {
+  color: #345ba7;
+  text-decoration: underline; }
+  .registration-area .link-area a:hover {
+    text-decoration: none; }
+
+.registration-area {
+  margin: 0 auto;
+  max-width: 395px;
+  width: 100%; }
+  .registration-area .form-entrance-wrap {
+    max-width: 100%; }
+    .registration-area .form-entrance-wrap .custom-select {
+      margin-bottom: 10px; }
+  .registration-area .btn {
+    max-width: 100%; }
+
+.registration-form .link-area p {
+  font-family: Lato-Light;
+  font-size: 14px;
+  line-height: 16px; }
+
+.g-recaptcha-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; }
 
 /**********************************size button***************************/
 .size-md {
@@ -4761,13 +4962,13 @@ textarea {
 
 .btn-sm {
   padding: 7px 20px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn-sm {
       padding: 7px 10px; } }
 
 .btn-lg {
   max-width: 155px !important; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-lg {
       max-width: 125px !important; } }
 
@@ -4784,7 +4985,7 @@ textarea {
     height: 25px;
     background-image: url("../images/img-button.svg");
     background-repeat: no-repeat; }
-    @media only screen and (max-width: 1540px) {
+    @media screen and (max-width: 1540px) {
       .img-button:after {
         background-image: url("../images/img-button-table.svg");
         background-repeat: no-repeat;
@@ -4802,16 +5003,16 @@ textarea {
 
 .padding-left-255 {
   padding-left: 255px; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .padding-left-255 {
       padding-left: 195px; } }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .padding-left-255 {
       padding-left: 135px; } }
 
 .padding-right-27 {
   padding-right: 27px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .padding-right-27 {
       padding-right: 0; } }
 
@@ -4823,22 +5024,22 @@ textarea {
 
 .btn-padding-custom {
   padding: 10px 22px 10px 57px !important; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .btn-padding-custom {
       padding: 9px 22px 9px 50px !important; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-padding-custom {
       padding: 6px 6px 6px 42px !important; } }
 
 .btn-xl {
   max-width: 365px; }
-  @media only screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .btn-xl {
       max-width: 285px; } }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .btn-xl {
       max-width: 315px; } }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .btn-xl {
       max-width: 100%; } }
 
@@ -4878,7 +5079,7 @@ textarea {
 .star-icon {
   padding-left: 40px;
   position: relative; }
-  @media only screen and (max-width: 1540px) {
+  @media screen and (max-width: 1540px) {
     .star-icon {
       padding-left: 30px; } }
   .star-icon:after {
@@ -4925,7 +5126,7 @@ textarea {
 .justify-content-flex-start {
   justify-content: flex-start; }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .flex-direction-sm-column {
     flex-direction: column; } }
 
@@ -4935,19 +5136,19 @@ textarea {
 .d-none-xl {
   display: none; }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .d-block-md {
     display: block; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .d-flex-sm {
     display: flex; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .d-none-sm {
     display: none !important; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .d-after-sm-none:after {
     display: none; } }
 
@@ -4959,25 +5160,25 @@ textarea {
 
 .position-relative-col {
   position: relative; }
-  @media only screen and (max-width: 745px) {
+  @media screen and (max-width: 745px) {
     .position-relative-col {
       position: static; } }
 
-@media only screen and (max-width: 745px) {
+@media screen and (max-width: 745px) {
   .position-relative-sm-row {
     position: relative; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .position-relative-md-row {
     position: relative; } }
 
 .position-relative-md-col {
   position: relative; }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .position-relative-md-col {
       position: static; } }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .width-sm-120 {
     width: 120px; } }
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header-entrance">
+        <section class="container">
+            <div class="header-content">
+                <a class="logo logo-entrance" href="index.html">
+                    <img src="./images/logo.svg" width="90" height="18" alt="logo">
+                </a>
+                <div class="btn-group">
+                    <div class="bg-gradient-border select-area">
+                        <div class="custom-select">
+                            <select>
+                                <option value="1">Ru</option>
+                                <option value="2">Ua</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="ellipse-position main-entrance">
+        <section class="container">
+            <div class="registration-area">
+                <div class="form-entrance-wrap">
+                    <h3>Регистрация</h3>
+                    <form action="#" class="registration-form">
+                        <div class="form-group">
+                            <label for="name">Имя и Отчество:</label>
+                            <div class="validation-message validation-success">
+                                <input type="text" id="name" placeholder="Введите текст">
+                                <span class="error-message">Вы воспользовались некорректными символами</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Фамилия:</label>
+                            <div class="validation-message validation-success">
+                                <input type="text" id="last-name" placeholder="Введите текст">
+                                <span class="error-message">Вы воспользовались некорректными символами</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <div class="validation-message validation-success">
+                                <input type="email" id="email" placeholder="Введите текст">
+                                <span class="error-message">Некорректные данные</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <div class="validation-message validation-error">
+                                <input type="password" id="password" placeholder="Введите текст">
+                                <span class="error-message">Вы воспользовались некорректными символами</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="сonfirm-password">Подтверждение пароля:</label>
+                            <div class="input-area position-relative">
+                                <input type="password" autocomplete="off" class="toggle-input" id="сonfirm-password" />
+                                <button class="toggle-button" id="toggle">
+                                    <img src="./images/show-password.svg" width="24" height="12" alt="show-password">
+                                </button>
+                            </div>
+                            <span>Вы воспользовались некорректными символами</span>
+                        </div>
+                        <div class="custom-select">
+                            <span>Страна:</span>
+                            <select>
+                                <option value="0">Ukraine</option>
+                                <option value="1">America</option>
+                                <option value="2">Czech</option>
+                                <option value="3">Poland</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Номер телефона:</label>
+                            <div class="input-region position-relative">
+                                <input type="tel" id="phone-number" placeholder="-- --- -- --">
+                                <span class="region">+380</span>
+                            </div>
+                        </div>
+                        <div class="g-recaptcha-area">
+                            <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                        </div>
+                        <button class="btn btn-text-white btn-background">Готово</button>
+                        <div class="link-area">
+                            <p>
+                                Отправляя данную форму, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="link-area">
+                    <p>
+                        У меня уже есть аккаунт. <a href="entrance.html">Войти</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <img class="ellipse ellipse-1" src="./images/ellipse-1.png" width="494" height="512" alt="ellipse">
+    </main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/main.js"></script>
+</body>
+</html>

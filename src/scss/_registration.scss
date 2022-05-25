@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+
+.registration-area {
+  .link-area {
+    p {
+      font-family: $lato-light;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 1;
+      text-align: center;
+    }
+
+    a {
+      color: $azure;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.registration-area {
+  margin: 0 auto;
+  max-width: 395px;
+  width: 100%;
+
+  .form-entrance-wrap {
+    max-width: 100%;
+
+    .custom-select {
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn {
+    max-width: 100%;
+  }
+}
+
+.registration-form {
+  .link-area {
+    p {
+      font-family: $lato-light;
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 6;
+    }
+  }
+}
+
+.g-recaptcha-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
